@@ -72,11 +72,17 @@ def test_api_harmony_attacks(neighbour_score):
     attacks = r if isinstance(r, list) else (r.get("attacks") or r.get("chords") or r.get("items"))
     n = attacks if isinstance(attacks, int) else len(attacks)
     assert n == EXPECTED["harmony_stats"]["attacks"]
-    if isinstance(r, dict) and "stats" in r:
-        s, e = r["stats"], EXPECTED["harmony_stats"]
-        for k in ("seventh_type_pct", "dim7_pct", "distinct_labels"):
-            if k in s:
-                assert round(s[k]) == e[k], k
+    if not (isinstance(r, dict) and "stats" in r):
+        pytest.fail("not landed: harmony.analyse(...)['stats'] (the --stats summary)")
+    st, e = r["stats"], EXPECTED["harmony_stats"]
+    pct = lambda share: round(100 * share)
+    want = {"seventh_share": ("seventh_type_pct", pct), "dim7_share": ("dim7_pct", pct),
+            "chromatic_share": ("chromatic_to_key_pct", pct), "distinct": ("distinct_labels", int),
+            "attacks": ("attacks", int)}
+    for key, (ek, conv) in want.items():
+        if key not in st:
+            pytest.fail(f"not landed: harmony stats key {key!r} (have {sorted(st)})")
+        assert conv(st[key]) == e[ek], f"harmony stats {key}: {st[key]} vs original {e[ek]}"
 
 
 # ---- CLI -------------------------------------------------------------------------------------

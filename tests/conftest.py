@@ -32,6 +32,24 @@ def neighbour() -> Path:
     return root
 
 
+@pytest.fixture(scope="session", autouse=True)
+def fixture_stays_clean():
+    """Golden tests must never modify the fixture checkout (fugue-jp is not the kit's to write)."""
+    root = Path(os.environ.get("KAPELL_FIXTURE_NEIGHBOUR", DEFAULT_NEIGHBOUR))
+
+    def status():
+        p = subprocess.run(["git", "-C", str(root), "status", "--porcelain", "--untracked-files=all", "."],
+                           capture_output=True, text=True)
+        return p.stdout if p.returncode == 0 else None
+
+    before = status() if root.is_dir() else None
+    yield
+    if before is not None:
+        after = status()
+        new = sorted(set(after.splitlines()) - set(before.splitlines()))
+        assert not new, f"tests modified the fixture {root}: {new[:10]}"
+
+
 @pytest.fixture(scope="session")
 def neighbour_score(neighbour) -> Path:
     return neighbour / "score" / "music-voices.ly"
