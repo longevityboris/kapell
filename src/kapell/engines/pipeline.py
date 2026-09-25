@@ -335,11 +335,21 @@ def render_version(root: Path, cfg: dict, v: dict, bars: tuple[int, int] | None,
         man = perf["manifest"]
         if bars:
             m = json.loads(man.read_text())
-            first = None
-            for g in m["groups"].values():
-                p = build / g["midi"]
-                crop_bars(p, p, bars, measure)
+            first, silent = None, []
+            for g, gd in m["groups"].items():
+                p = build / gd["midi"]
                 first = first or p
+                if crop_bars(p, p, bars, measure)["notes_kept"] == 0:
+                    silent.append(g)          # a group that has not entered yet (the quintet's piano before bar 35)
+            if len(silent) == len(m["groups"]):
+                raise KapellError("no_notes", f"no notes start in bars {bars[0]}-{bars[1]}", "pick bars where the music plays")
+            for g in silent:
+                del m["groups"][g]
+            if m.get("reference_group") in silent:
+                m["reference_group"] = next(iter(m["groups"]))
+            man = build / f"manifest.{tag}.json"
+            man.write_text(json.dumps(m, indent=1))
+            digest["groups_silent"] = silent
             front = seconds_at_tick(first, int((bars[0] - 1) * 4 * mido.MidiFile(str(first)).ticks_per_beat * measure))
         cmd = [py, MIX, man, "--out", out]
         if stems:
