@@ -161,7 +161,7 @@ def run(args, ctx):
         if "skipped" not in cov:
             gates["form"] = cov["ok"]
             measured["form_violations"] = len(cov["violations"])
-        viol += cov.get("violations", [])
+        viol += [v["message"] for v in cov.get("violations", [])]
         if not full and "violations" in cov:
             cov["violations"] = len(cov["violations"])
 

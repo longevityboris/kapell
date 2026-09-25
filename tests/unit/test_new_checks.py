@@ -190,3 +190,10 @@ def test_neighbour_known_gaps(neighbour):
     for version in ("bach_organ", "beethoven_piano", "beethoven_quartet"):
         assert f"{version}: tenor arioso tenor lament" in msgs and f"{version}: bass arioso bass head" in msgs
     assert "quintet:" not in msgs
+
+
+def test_declared_version_without_performance_dir_fails(tmp_path):
+    (tmp_path / "kapell.toml").write_text('[versions]\nrender = ["organ"]\n[checks]\nfeatured_roles = []\n')
+    from kapell import project as proj
+    r = roles.lint(tmp_path, proj.load(tmp_path))
+    assert not r["ok"] and "missing" in r["violations"][0]["message"]

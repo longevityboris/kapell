@@ -155,8 +155,8 @@ def lint(root, cfg: dict, versions=None) -> dict:
     if pm and pm.endswith(".py") and (root / pm).is_file():
         MARKS.update(section_marks(root / pm))
     perf = root / (cfg.get("paths") or {}).get("performance", "performance")
-    names = versions or (cfg.get("versions") or {}).get("render") or sorted(
-        d.name for d in perf.iterdir() if d.is_dir()) if perf.is_dir() else []
+    names = versions or (cfg.get("versions") or {}).get("render") or (
+        sorted(d.name for d in perf.iterdir() if d.is_dir()) if perf.is_dir() else [])
     min_cover = float((cfg.get("checks") or {}).get("feature_cover", MIN_COVER))
     viol, per = [], {}
     for v in names:
