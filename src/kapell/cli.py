@@ -24,7 +24,8 @@ AGENT_INFO_SPEC = {
     "effect": "read",
     "help": "machine-readable manifest of every command (or one with --command X)",
     "runtime_s": 0.1,
-    "output_tokens_typ": 250,
+    "output_tokens_typ": 1700,          # full manifest with ~8 commands; grows with the kit
+    "output_tokens_command": 150,       # agent-info --command X
     "examples": [["agent-info"], ["agent-info", "--command", "check"]],
 }
 
