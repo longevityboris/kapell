@@ -141,7 +141,7 @@ def check(src: str, voices, measure=F(1), beats: int = 4, bars=None) -> list:
             f = _seventh(sc, v, n, (rl, rpc), sev, win, bass)
             if f:
                 f.update(code="DIS7", at=pos(n.start, measure), voice=v, note=n.name, chord=cname)
-                f["message"] = f"{cname} at {pos(t, measure)}: seventh {n.name} ({v}) {f.pop('how')}"
+                f["message"] = f"{v} {n.name}, seventh of {cname}, {f.pop('how')}"
                 out.append(f)
         # leading tone of V7 in the top voice
         if q == "Mm7" and snd and (snd[0][0], snd[0][1].start) not in seen:
@@ -151,7 +151,7 @@ def check(src: str, voices, measure=F(1), beats: int = 4, bars=None) -> list:
                 f = _leading(sc, v, n, (rl, rpc), win)
                 if f:
                     f.update(code="LT", at=pos(n.start, measure), voice=v, note=n.name, chord=cname)
-                    f["message"] = f"{cname} to {f.pop('next')}: leading tone {n.name} ({v}) {f.pop('how')}"
+                    f["message"] = f"{v} {n.name}, leading tone of {cname} (to {f.pop('next')}), {f.pop('how')}"
                     out.append(f)
     return out
 
@@ -229,10 +229,10 @@ def _seventh(sc, v, n, root, sev, win, bass):
         if bn and ba and ba.start == t and ba.midi - bn.midi in (1, 2):
             return None
     if nxt is None:
-        how = f"is left by a rest at {pos(t, sc.measure)}, unresolved within {int(win * 4)} beats"
+        how = f"left by a rest at {pos(t, sc.measure)}, unresolved in {int(win * 4)} beats"
         to = None
     else:
-        how = f"moves {nxt.midi - cur.midi:+d} to {nxt.name} at {pos(t, sc.measure)}, no step-down resolution within {int(win * 4)} beats"
+        how = f"moves {nxt.midi - cur.midi:+d} to {nxt.name} at {pos(t, sc.measure)}, no step-down in {int(win * 4)} beats"
         to = nxt.name
     return {"to": to, "how": how}
 
