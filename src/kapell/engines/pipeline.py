@@ -136,9 +136,10 @@ def helper_args(root: Path, cfg: dict, v: dict, helper: str, build: Path) -> lis
     for line in text.splitlines():
         if f"{helper}.py" not in line or line.lstrip().startswith("#"):
             continue
-        toks = shlex.split(line.split(f"{helper}.py", 1)[1].split(";")[0].split("&&")[0])
-        toks = toks[1:]                                # drop the MIDI path
-        return [t.replace('"', "").replace("$D/build", str(build)).replace("${D}/build", str(build)) for t in toks]
+        toks = shlex.split(line.split(";")[0].split("&&")[0].split("||")[0])
+        i = next(i for i, x in enumerate(toks) if x.endswith(f"{helper}.py"))
+        toks = toks[i + 2:]                            # drop the script and the MIDI path
+        return [x.replace("${D}/build", str(build)).replace("$D/build", str(build)) for x in toks]
     return None
 
 
