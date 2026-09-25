@@ -4,8 +4,6 @@ The golden tier runs on The Neighbour (the fugue-jp ricercar). Its location come
 KAPELL_FIXTURE_NEIGHBOUR, default /Users/biobook/Music/llm-music/fugue-jp/ricercar. Golden tests
 skip only when that directory is missing; a kit feature that has not landed yet makes its test
 fail with a message naming the missing piece.
-
-Slow golden tests (lilypond engraving) run only with --slow or KAPELL_GOLDEN_SLOW=1.
 """
 import json
 import os
@@ -23,24 +21,6 @@ DEFAULT_NEIGHBOUR = "/Users/biobook/Music/llm-music/fugue-jp/ricercar"
 # Test the working tree, not whatever kapell happens to be installed.
 if str(KIT_SRC) not in sys.path:
     sys.path.insert(0, str(KIT_SRC))
-
-
-def pytest_addoption(parser):
-    parser.addoption("--slow", action="store_true", default=False,
-                     help="run slow golden tests (lilypond engraving)")
-
-
-def pytest_configure(config):
-    config.addinivalue_line("markers", "slow: slow golden test; run with --slow or KAPELL_GOLDEN_SLOW=1")
-
-
-def pytest_collection_modifyitems(config, items):
-    if config.getoption("--slow") or os.environ.get("KAPELL_GOLDEN_SLOW") == "1":
-        return
-    mark = pytest.mark.skip(reason="slow golden test: run with --slow or KAPELL_GOLDEN_SLOW=1")
-    for item in items:
-        if "slow" in item.keywords:
-            item.add_marker(mark)
 
 
 @pytest.fixture(scope="session")
