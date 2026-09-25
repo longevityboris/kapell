@@ -1,5 +1,5 @@
 """kapell perform: the version's performance MIDI (perform.py / orchestrate.py and its helpers), no audio."""
-from kapell.commands import KapellError
+from kapell.commands import KapellError, Result
 from kapell.engines import pipeline
 
 SPEC = {
@@ -32,4 +32,17 @@ def run(args, ctx):
         m = json.loads(perf["manifest"].read_text())
         data.update(manifest=str(perf["manifest"]),
                     per_group={g: sum(pipeline.note_counts(out / "build" / gd["midi"]).values()) for g, gd in m["groups"].items()})
+    from kapell.analysis.roles import lint
+    try:
+        report = lint(ctx.root, ctx.cfg, versions=[v["name"]])
+    except (ValueError, KeyError, TypeError) as exc:
+        raise KapellError("config_invalid", str(exc), "check features and performance plans", 2) from exc
+    data["lint"] = {"features": report["features"], "ok": report["ok"],
+                    "uncued": len(report["violations"])}
+    if not report["ok"]:
+        data["violations"] = report["violations"][:12]
+        if len(report["violations"]) > 12:
+            data["violations_truncated"] = len(report["violations"]) - 12
+            data["hint"] = "kapell xray --full lists every missing cue"
+        return Result("fail", data)
     return data

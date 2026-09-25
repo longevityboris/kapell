@@ -17,7 +17,7 @@ least MIN_NOTES notes and MIN_SHARE of the theme; at most MAX_ALTERED of its int
 (a minor theme restated in major alters about that many).
 
 form_check(occurrences, form, subjects) tests a form claim against the ledger. For "double-fugue"
-every subject after the first needs: a transposed statement (answer), an inversion or a stretto,
+every subject after the first needs: a transposed statement (answer), an inversion,
 and a combination with the first subject (sounding at once in another voice).
 
 Positions are "bar:beat" with 1-based quarter beats, as everywhere in the kit.
@@ -174,9 +174,9 @@ def ledger(src: str, themes: dict, voices, measure=F(1), theme_src: str | None =
 # ---------------------------------------------------------------- form claims
 
 FORMS = {
-    # each later subject must be: answered at another pitch, inverted or in stretto, combined with S1
-    "double-fugue": dict(n_subjects=2, later=("answer", "inversion_or_stretto", "combination")),
-    "triple-fugue": dict(n_subjects=3, later=("answer", "inversion_or_stretto", "combination")),
+    # each later subject must be: answered at another pitch, inverted, combined with S1
+    "double-fugue": dict(n_subjects=2, later=("answer", "inversion", "combination")),
+    "triple-fugue": dict(n_subjects=3, later=("answer", "inversion", "combination")),
     "fugue": dict(n_subjects=1, later=()),
 }
 
@@ -223,8 +223,8 @@ def form_check(occ: list, form: str | None, subjects: list) -> list:
         else:
             if "answer" in rule["later"] and not tr["answer"]:
                 missing.append("answer")
-            if "inversion_or_stretto" in rule["later"] and not (tr["inversion"] or tr["stretto"]):
-                missing.append("inversion_or_stretto")
+            if "inversion" in rule["later"] and not tr["inversion"]:
+                missing.append("inversion")
             if "combination" in rule["later"] and not tr["combination"]:
                 missing.append(f"combination_with_{first}")
         if missing:

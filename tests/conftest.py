@@ -5,6 +5,9 @@ KAPELL_FIXTURE_NEIGHBOUR, default /Users/biobook/Music/llm-music/fugue-jp/ricerc
 skip only when that directory is missing; a kit feature that has not landed yet makes its test
 fail with a message naming the missing piece.
 """
+import hashlib
+import io
+import tarfile
 import json
 import os
 import subprocess
@@ -24,30 +27,27 @@ if str(KIT_SRC) not in sys.path:
 
 
 @pytest.fixture(scope="session")
-def neighbour() -> Path:
-    """Root of The Neighbour fixture project (has kapell.toml)."""
+def neighbour(tmp_path_factory) -> Path:
+    """Immutable snapshot of the original known-gap fixture; never write to its checkout."""
     root = Path(os.environ.get("KAPELL_FIXTURE_NEIGHBOUR", DEFAULT_NEIGHBOUR))
     if not root.is_dir():
         pytest.skip(f"fixture The Neighbour not found at {root} (set KAPELL_FIXTURE_NEIGHBOUR)")
-    return root
+    # The live piece continues to evolve; golden numbers refer to this exact revision.
+    revision = os.environ.get("KAPELL_FIXTURE_REVISION", "9b343c0ce827389007127f0ccb1da090e15b782c")
+    repo = subprocess.run(["git", "-C", str(root), "rev-parse", "--show-toplevel"],
+                          capture_output=True, text=True, check=True).stdout.strip()
+    archive = subprocess.run(["git", "-C", repo, "archive", revision + ":ricercar"],
+                             capture_output=True, check=True)
+    snapshot = tmp_path_factory.mktemp("neighbour-golden")
+    with tarfile.open(fileobj=io.BytesIO(archive.stdout)) as tar:
+        tar.extractall(snapshot, filter="data")
+    def fingerprint():
+        return {str(p.relative_to(snapshot)): hashlib.sha256(p.read_bytes()).hexdigest()
+                for p in snapshot.rglob("*") if p.is_file() and "__pycache__" not in p.parts}
 
-
-@pytest.fixture(scope="session", autouse=True)
-def fixture_stays_clean():
-    """Golden tests must never modify the fixture checkout (fugue-jp is not the kit's to write)."""
-    root = Path(os.environ.get("KAPELL_FIXTURE_NEIGHBOUR", DEFAULT_NEIGHBOUR))
-
-    def status():
-        p = subprocess.run(["git", "-C", str(root), "status", "--porcelain", "--untracked-files=all", "."],
-                           capture_output=True, text=True)
-        return p.stdout if p.returncode == 0 else None
-
-    before = status() if root.is_dir() else None
-    yield
-    if before is not None:
-        after = status()
-        new = sorted(set(after.splitlines()) - set(before.splitlines()))
-        assert not new, f"tests modified the fixture {root}: {new[:10]}"
+    before = fingerprint()
+    yield snapshot
+    assert fingerprint() == before, "tests modified the pinned fixture snapshot"
 
 
 @pytest.fixture(scope="session")

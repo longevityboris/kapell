@@ -17,6 +17,15 @@
 
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import json
 import sys
 from pathlib import Path
@@ -24,8 +33,7 @@ from pathlib import Path
 import mido
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import LEAD_IN, SR, TMP, kweight, read, render, rms_db, save, write_midi  # noqa: E402
+from kapell.engines.piano.qa.qa_lib import LEAD_IN, SR, TMP, kweight, read, render, rms_db, save, write_midi  # noqa: E402
 
 N = mido.Message
 SCALE = [0, 2, 4, 5, 7, 9, 11]

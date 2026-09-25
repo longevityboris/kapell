@@ -167,6 +167,11 @@ def test_broken_module_is_a_verb_that_exits_2(pkg):
     assert "kapell_this_module_does_not_exist" in env["error"]["message"]
 
 
+def test_broken_module_with_options_still_exits_2(pkg):
+    code, env, _, _ = call(["broken", "--version", "piano"], pkg)
+    assert code == 2 and env["error"]["code"] == "command_unavailable"
+
+
 def test_global_flags_anywhere_and_quiet(pkg):
     code, env, _, _ = call(["good", "x.ly", "--json"], pkg)
     assert code == 0 and env["data"]["target"] == "x.ly"
@@ -335,10 +340,8 @@ def test_status_reads_sections_without_executing_piece_model(tmp_path):
     assert env["data"]["phase"] == "compose" and "sec02_b" in env["data"]["next"]["command"]
 
 
-def test_status_under_2k_tokens_on_fixture():
-    fixture = Path("/Users/biobook/Music/llm-music/fugue-jp/ricercar")
-    if not (fixture / "kapell.toml").is_file():
-        pytest.skip("fixture missing")
+def test_status_under_2k_tokens_on_fixture(neighbour):
+    fixture = neighbour
     code, env, text, _ = call(["status", "--project", str(fixture)])
     assert code == 0 and len(text) / 4 < 2000
     d = env["data"]

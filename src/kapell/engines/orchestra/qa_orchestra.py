@@ -32,6 +32,15 @@ demo_crescendo, and writes evidence/qa.json:
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import subprocess
@@ -43,9 +52,8 @@ import soundfile as sf
 from scipy.signal import lfilter, resample_poly
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-from orch_common import PARTS, SR, midi_name  # noqa: E402
-import orch_measure as M  # noqa: E402
+from kapell.engines.orchestra.orch_common import PARTS, SR, midi_name  # noqa: E402
+import kapell.engines.orchestra.orch_measure as M
 
 QA = HERE / "out" / "qa"
 EV = HERE / "evidence"

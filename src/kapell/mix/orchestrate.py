@@ -47,6 +47,15 @@ score with lyparse and the written MIDI files with mido)
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[2])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import contextlib
 import copy
@@ -66,9 +75,6 @@ import runpy
 import mido
 
 TOOLS = Path(__file__).resolve().parent
-_SRC = str(Path(__file__).resolve().parents[2])   # .../src: kapell importable when run as a script
-if _SRC not in sys.path:
-    sys.path.append(_SRC)
 from kapell.engines import ENGINES  # noqa: E402
 from kapell.perform import perform  # noqa: E402
 from kapell.analysis.lyparse import parse_voice  # noqa: E402
@@ -105,9 +111,8 @@ ORGAN_DEFAULT_DIV = {"soprano": "HW", "alto": "HW", "tenor": "POS", "bass": "PED
 def quartet_compass() -> dict:
     """Instrument compass as render_quartet.py plays it (its table, plus its downward stretch)."""
     try:
-        sys.path.insert(0, str(ENGINES / "strings"))
         with contextlib.redirect_stdout(io.StringIO()):
-            import render_quartet as rq  # noqa: E402
+            import kapell.engines.strings.render_quartet as rq
         return {k: (v["lo"] - rq.EXT_DOWN, v["hi"]) for k, v in rq.INSTR.items()}
     except Exception:  # the renderer is not importable: its documented table
         return {"vn1": (53, 100), "vn2": (53, 100), "va": (46, 91), "vc": (34, 81), "cb": (22, 67)}
@@ -116,8 +121,7 @@ def quartet_compass() -> dict:
 def orchestra_parts() -> tuple[dict, object]:
     """(part id -> compass, track-name parser) from the orchestra renderer, else from its contract."""
     try:
-        sys.path.insert(0, str(ENGINES / "orchestra"))
-        import orch_common as oc  # noqa: E402
+        import kapell.engines.orchestra.orch_common as oc
         return {k: (v["lo"], v["hi"]) for k, v in oc.PARTS.items()}, lambda n: oc.part_of_name(n)[0]
     except Exception:
         import re

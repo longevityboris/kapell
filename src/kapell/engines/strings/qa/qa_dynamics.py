@@ -25,6 +25,15 @@ C. Zipper in the engine itself: violin.sfz with every sample replaced by sfizz's
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import re
 import subprocess
 import sys
@@ -33,11 +42,9 @@ from pathlib import Path
 import mido
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import QA, QUARTET, SR, TMP, db, env_db, k_weight, load, midi_cc, perform, render, save, state  # noqa
+from kapell.engines.strings.qa.qa_lib import QA, QUARTET, SR, TMP, db, env_db, k_weight, load, midi_cc, perform, render, save, state  # noqa
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from iowa_common import SFIZZ_RENDER  # noqa: E402
+from kapell.engines.strings.iowa_common import SFIZZ_RENDER  # noqa: E402
 
 BPM = 72
 BAR = 4 * 60 / BPM

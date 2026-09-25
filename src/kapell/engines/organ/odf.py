@@ -16,6 +16,15 @@ RIFF ``smpl`` loops and ``cue`` point that GrandOrgue uses:
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import re
 import struct
 import subprocess
@@ -26,7 +35,7 @@ from pathlib import Path
 
 import numpy as np
 
-from organ_paths import ODF, SET_DIR, WVUNPACK
+from kapell.engines.organ.organ_paths import ODF, SET_DIR, WVUNPACK
 
 # Real divisions of the instrument (manual index in the ODF -> contract name).
 DIVISIONS = {'000': 'PED', '001': 'POS', '002': 'HW', '003': 'OW'}

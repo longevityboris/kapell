@@ -15,6 +15,15 @@ Each event is reported with the nearest note-on / note-off of that job.
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import json
 import sys
 from pathlib import Path
@@ -24,8 +33,7 @@ import numpy as np
 from scipy.ndimage import median_filter, uniform_filter1d
 from scipy.signal import butter, sosfilt
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import SR, TMP, load, save, state  # noqa: E402
+from kapell.engines.strings.qa.qa_lib import SR, TMP, load, save, state  # noqa: E402
 
 
 def frames_db(x, n):

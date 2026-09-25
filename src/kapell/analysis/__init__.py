@@ -27,20 +27,29 @@ def parse_bars(spec):
     """'A-B' | 'A' | (A, B) | None -> (A, B) or None."""
     if spec is None or spec == '':
         return None
-    if isinstance(spec, (tuple, list)):
-        return (int(spec[0]), int(spec[1]))
-    s = str(spec)
-    if '-' in s:
-        a, b = s.split('-', 1)
-        return (int(a), int(b))
-    return (int(s), int(s))
+    try:
+        parts = list(spec) if isinstance(spec, (tuple, list)) else str(spec).split('-')
+        if len(parts) == 1:
+            parts *= 2
+        a, b = map(int, parts)
+        if a < 1 or b < a:
+            raise ValueError
+    except (ValueError, TypeError):
+        raise ValueError("bars must satisfy 1 <= A <= B") from None
+    return a, b
 
 
 def parse_measure(spec):
     """'4/4' | '3/4' | '1' | Fraction | None -> bar length as a fraction of a whole note."""
     if spec is None or spec == '':
         return F(1)
-    return F(spec) if not isinstance(spec, F) else spec
+    try:
+        value = F(spec)
+        if value <= 0:
+            raise ValueError
+    except (ValueError, ZeroDivisionError):
+        raise ValueError('measure must be a positive fraction') from None
+    return value
 
 
 def parse_voices(spec):

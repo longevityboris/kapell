@@ -16,6 +16,15 @@ The fix is re-measured by qa_clarity.py instead; do not re-run this script as is
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import subprocess
 import sys
 from pathlib import Path
@@ -23,12 +32,10 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import LEAD_IN, PIANO, SR, TMP, kweight, rms_db, save  # noqa: E402
+from kapell.engines.piano.qa.qa_lib import LEAD_IN, PIANO, SR, TMP, kweight, rms_db, save  # noqa: E402
 
-sys.path.insert(0, str(PIANO))
-import render_piano as rp  # noqa: E402
-from piano_paths import DERIVED_SFZ_NO_PEDAL_NOISE, SALAMANDER_DIR, SFIZZ_RENDER  # noqa: E402
+import kapell.engines.piano.render_piano as rp
+from kapell.engines.piano.piano_paths import DERIVED_SFZ_NO_PEDAL_NOISE, SALAMANDER_DIR, SFIZZ_RENDER  # noqa: E402
 
 
 def sfz_with_release(rel: float) -> Path:

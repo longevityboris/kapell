@@ -37,6 +37,15 @@ Then write_sfz() writes built/<part>/<set>.sfz:
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import hashlib
 import json
@@ -50,12 +59,11 @@ import numpy as np
 import soundfile as sf
 from scipy.signal import butter, resample_poly, sosfiltfilt
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from orch_common import (BUILT, IOWA_WINDS, PARTS, SR, VPO3_ROOT, VSCO_ROOT, midi_name,  # noqa: E402
+from kapell.engines.orchestra.orch_common import (BUILT, IOWA_WINDS, PARTS, SR, VPO3_ROOT, VSCO_ROOT, midi_name,  # noqa: E402
                          midi_to_hz, note_to_midi)
-from iowa_common import env_db, estimate_f0, load_audio  # noqa: E402  (strings helpers, read-only)
-from iowa_analyze import segment  # noqa: E402
-from iowa_build import extend_sustain, find_loop, k_level_db, stable_window  # noqa: E402
+from kapell.engines.strings.iowa_common import env_db, estimate_f0, load_audio  # noqa: E402  (strings helpers, read-only)
+from kapell.engines.strings.iowa_analyze import segment  # noqa: E402
+from kapell.engines.strings.iowa_build import extend_sustain, find_loop, k_level_db, stable_window  # noqa: E402
 
 SUSTAIN_S = 8.0
 BUILD_VERSION = 3

@@ -23,7 +23,9 @@ SPEC = {
     "examples": [["engrave", "--layout", "all"], ["engrave", "--layout", "piano", "--out", "/tmp/scores"]],
 }
 LAYOUTS = ("piano", "quartet", "organ", "orchestra", "ensemble")
-TEMPLATES = Path(__file__).resolve().parents[3] / "templates" / "layouts"
+TEMPLATES = Path(__file__).resolve().parents[1] / "data" / "layouts"
+if not TEMPLATES.is_dir():
+    TEMPLATES = Path(__file__).resolve().parents[3] / "templates" / "layouts"
 
 
 def add_arguments(p):
@@ -52,6 +54,9 @@ def run(args, ctx):
     score_dir = (ctx.root / cfg.get("paths", {}).get("score", "score/music-voices.ly")).parent
     out_dir = Path(args.out).expanduser().resolve() if args.out else ctx.root / cfg.get("paths", {}).get("scores_out", "score/out")
     out_dir.mkdir(parents=True, exist_ok=True)
+    # Check the output location before launching LilyPond: permission failures are environment errors.
+    with tempfile.TemporaryFile(dir=out_dir):
+        pass
     have = sources(ctx.root, cfg)
     want = list(have) if args.layout == "all" else [args.layout]
     missing = [w for w in want if w not in have]

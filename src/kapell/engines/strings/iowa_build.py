@@ -42,6 +42,15 @@ Outputs: IowaMIS/quartet/{violin,violin2,viola,cello,bass}.sfz and samples/<inst
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import sys
@@ -54,9 +63,8 @@ import numpy as np
 import soundfile as sf
 from scipy.signal import bilinear, butter, lfilter, resample_poly, sosfiltfilt
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import attack_tune  # noqa: E402
-from iowa_common import (DYNAMICS, INSTRUMENTS, QUARTET_DIR, RAW_DIR, base_of, load_audio,  # noqa: E402
+import kapell.engines.strings.attack_tune as attack_tune
+from kapell.engines.strings.iowa_common import (DYNAMICS, INSTRUMENTS, QUARTET_DIR, RAW_DIR, base_of, load_audio,  # noqa: E402
                          load_iowa, midi_name, midi_to_hz)
 
 SR = 48000

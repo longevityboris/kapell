@@ -21,3 +21,12 @@ Output is a JSON envelope whenever stdout is not a terminal (or with `--json`): 
 Exit codes: 0 ok; 1 transient (retry); 2 config or environment (run `kapell doctor`); 3 bad input; 4 rate limited; 5 a musical check failed, with the violations in `data`. So `until kapell check …; do …; done` works in a shell loop.
 
 Commands are plug-ins: each module in `src/kapell/commands/` defines `SPEC`, `add_arguments(parser)` and `run(args, ctx)` (see that package's docstring). A module that fails to import still appears as a verb that exits 2 with the import error, and `kapell doctor` lists it.
+
+## Tests
+
+Run `PYTHONPATH=src python3 -m pytest tests -q`. Golden tests read a temporary Git archive of
+The Neighbour at revision `9b343c0ce827389007127f0ccb1da090e15b782c`, before its bar-54 repair.
+This keeps the known-gap regressions stable while the piece continues to change. Set
+`KAPELL_FIXTURE_NEIGHBOUR` to its checkout; `KAPELL_FIXTURE_REVISION` explicitly overrides the pin.
+Tests never alter that checkout. Audio tests require `KAPELL_ENGINE_TESTS=1` and current derived
+sample-library assets; generator changes require rebuilding those assets with the engine setup scripts.

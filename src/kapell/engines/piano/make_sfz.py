@@ -118,6 +118,15 @@ Outputs (next to the original SFZ, see piano_paths.py):
 
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import hashlib
 import json
@@ -130,7 +139,7 @@ import numpy as np
 import scipy.signal as ss
 import soundfile as sf
 
-from piano_paths import (
+from kapell.engines.piano.piano_paths import (
     CALIBRATION_JSON,
     DERIVED_SFZ,
     DERIVED_SFZ_NO_PEDAL_NOISE,

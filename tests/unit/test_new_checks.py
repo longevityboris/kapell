@@ -77,7 +77,7 @@ def test_theme_at_one_pitch_fails_double_fugue():
     assert [(o["voice"], o["at"]) for o in s2] == [("soprano", "1:1"), ("alto", "3:1")]
     viol = coverage.form_check(occ, "double-fugue", ["S1", "S2"])
     assert len(viol) == 1 and viol[0]["theme"] == "S2"
-    assert "answer" in viol[0]["missing"] and "inversion_or_stretto" in viol[0]["missing"]
+    assert "answer" in viol[0]["missing"] and "inversion" in viol[0]["missing"]
     assert "one pitch" in viol[0]["message"]
 
 

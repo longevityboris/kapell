@@ -62,6 +62,15 @@ HOW IT SOUNDS THE WAY IT DOES (details and measurements in README.md)
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import math
@@ -80,10 +89,9 @@ import soundfile as sf
 from scipy.signal import butter, sosfilt
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-from orch_common import (BUILT, GERMAN, GM_PROGRAM, PARTS, SFIZZ_RENDER, SR, VEL_AT, balance_db,  # noqa: E402
+from kapell.engines.orchestra.orch_common import (BUILT, GERMAN, GM_PROGRAM, PARTS, SFIZZ_RENDER, SR, VEL_AT, balance_db,  # noqa: E402
                          cc1_to_level, level_to_cc1, part_of_name, satb_part)
-from render_quartet import Note, cc1_curve, cc_value_at, rel_cc, shape_articulation, tempo_map, true_peak  # noqa: E402
+from kapell.engines.strings.render_quartet import Note, cc1_curve, cc_value_at, rel_cc, shape_articulation, tempo_map, true_peak  # noqa: E402
 
 WET_DEFAULT = -5.0
 R0 = 10.0                     # metres: direct-sound distance law 20 log10(R0 / (R0 + depth))
@@ -643,7 +651,8 @@ def export(y: np.ndarray, out: Path, peak_db: float | None):
     sf.write(str(wav), y.astype(np.float32), SR, subtype="PCM_24")
     if m4a.exists():
         m4a.unlink()
-    subprocess.run(["afconvert", "-f", "m4af", "-d", "aac", "-b", "256000", str(wav), str(m4a)], check=True)
+    from kapell.engines.encoding import encode_aac
+    encode_aac(wav, m4a)
     return wav, m4a, 20 * math.log10(g), 20 * math.log10(true_peak(y))
 
 
@@ -762,7 +771,7 @@ def main(argv=None):
     mix = dry
     c80 = None
     if not a.no_reverb:
-        import hall                      # audio/strings/hall.py: Detmold IR, tail extended, unit energy
+        import kapell.engines.strings.hall as hall
         h = hall.Hall("detmold", SR)
         g = 10 ** (wet_db / 20)
         from scipy.signal import fftconvolve

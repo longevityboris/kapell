@@ -35,7 +35,7 @@ import soundfile as sf
 
 HERE = Path(__file__).resolve().parent.parent
 REN = str(HERE / 'render_organ.py')
-TMP = Path(tempfile.mkdtemp(prefix='organ_tests_'))
+TMP: Path | None = None
 TPB = 480
 
 
@@ -98,6 +98,8 @@ def level_centroid(x, a, b, sr=48000):
 
 
 def main():
+    global TMP
+    TMP = Path(tempfile.mkdtemp(prefix="organ_tests_"))
     res = {}
     # 1. registration ladder -------------------------------------------------------------------
     chord = {'soprano': [(65, 0, 4, 90), (67, 4, 1, 90), (69, 5, 1, 90), (70, 6, 2, 90)],

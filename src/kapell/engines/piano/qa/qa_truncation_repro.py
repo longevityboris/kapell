@@ -13,6 +13,15 @@ every stem (truncation_check in the render report); see results/truncation_after
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import json
 import os
 import subprocess
@@ -21,9 +30,8 @@ from pathlib import Path
 
 import soundfile as sf
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import qa_truncation as qt  # noqa: E402
-from qa_lib import PIANO, TMP, read, render, save  # noqa: E402
+import kapell.engines.piano.qa.qa_truncation as qt
+from kapell.engines.piano.qa.qa_lib import PIANO, TMP, read, render, save  # noqa: E402
 
 
 def load_avg() -> float:

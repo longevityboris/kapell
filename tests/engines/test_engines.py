@@ -169,7 +169,9 @@ def test_quartet_helper_args_from_legacy_render_sh(ctx, tmp_path):
 def test_perform_organ_writes_outside_the_project(ctx, tmp_path, monkeypatch):
     monkeypatch.setenv("KAPELL_RENDERS", str(tmp_path))
     from kapell.commands import perform
-    d = perform.run(argparse.Namespace(version="organ"), ctx)
+    result = perform.run(argparse.Namespace(version="organ"), ctx)
+    assert result.status == "fail" and result.data["violations"]
+    d = result.data
     assert d["version"] == "bach_organ" and d["notes"] == 741      # the fixture's full organ MIDI
     assert Path(d["midi"]).is_relative_to(tmp_path)
 
@@ -190,13 +192,6 @@ def test_setup_check_reports_missing_library(ctx, monkeypatch, tmp_path):
     assert e.value.code == "engine_not_ready" and e.value.exit_code == 2
 
 
-def _strip_pdf_dates(b: bytes) -> bytes:
-    b = re.sub(rb"\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d[+-]\d\d:\d\d", b"", b)
-    b = re.sub(rb"D:\d{14}[+-]\d\d'\d\d'", b"", b)
-    b = re.sub(rb"/ID \[<[0-9A-F]+><[0-9A-F]+>\]", b"", b)
-    return re.sub(rb"uuid:[0-9a-f-]+", b"", b)
-
-
 @pytest.mark.skipif(not __import__("shutil").which("lilypond"), reason="lilypond not installed")
 def test_engrave_all_matches_committed_pdfs(ctx, tmp_path):
     from kapell.commands import engrave
@@ -205,7 +200,9 @@ def test_engrave_all_matches_committed_pdfs(ctx, tmp_path):
     for name in ("piano", "quartet"):
         committed = ctx.root / "score" / "out" / f"{name}.pdf"
         if committed.exists():
-            assert _strip_pdf_dates((tmp_path / f"{name}.pdf").read_bytes()) == _strip_pdf_dates(committed.read_bytes())
+            # PDF object IDs, compressed streams and offsets vary across LilyPond runs.
+            from test_engrave_skeleton import pdf_facts
+            assert pdf_facts(tmp_path / f"{name}.pdf") == pdf_facts(committed)
 
 
 # ------------------------------------------------------------------------------ opt-in audio

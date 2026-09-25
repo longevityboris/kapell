@@ -13,6 +13,15 @@ and 200 ms after the note-on, plus the median over 40-200 ms.
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import subprocess
 import sys
@@ -21,11 +30,9 @@ from pathlib import Path
 import mido
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import QUARTET, SR, TMP, hz, load, pitch_spectral, save, state  # noqa: E402
+from kapell.engines.strings.qa.qa_lib import QUARTET, SR, TMP, hz, load, pitch_spectral, save, state  # noqa: E402
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from iowa_common import INSTRUMENTS, SFIZZ_RENDER  # noqa: E402
+from kapell.engines.strings.iowa_common import INSTRUMENTS, SFIZZ_RENDER  # noqa: E402
 
 LAYERS = [("pp", 49), ("mf", 88), ("ff", 114)]
 STROKES = [("short", 112, 6), ("normal", 0, 18)]       # CC20, CC21 as render_quartet sets them

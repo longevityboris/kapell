@@ -53,6 +53,15 @@ Nothing is played through the speakers.
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[2])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import contextlib
 import hashlib
@@ -72,14 +81,9 @@ import soundfile as sf
 from scipy.signal import butter, fftconvolve, resample_poly, sosfilt
 
 TOOLS = Path(__file__).resolve().parent
-_SRC = str(Path(__file__).resolve().parents[2])   # .../src: kapell importable when run as a script
-if _SRC not in sys.path:
-    sys.path.append(_SRC)
 from kapell.config import lib_dir, renders_dir  # noqa: E402
 from kapell.engines import ENGINES as AUDIO  # noqa: E402  (was ricercar/audio)
-sys.path.insert(0, str(TOOLS))
-sys.path.insert(0, str(AUDIO / "strings"))
-import hall as hallmod  # noqa: E402  (audio/strings/hall.py: the shared Detmold hall and stage placement)
+import kapell.engines.strings.hall as hallmod
 
 SR = 48000
 CAL_DIR = TOOLS / "calibration"   # the chorale probe and the shipped table (was ricercar/orchestration/calibration)
@@ -177,7 +181,7 @@ def true_peak(x: np.ndarray) -> float:
 # ----------------------------------------------------------------------------- renderer adapters
 def quartet_instr() -> dict:
     with contextlib.redirect_stdout(io.StringIO()):
-        import render_quartet as rq  # noqa: E402
+        import kapell.engines.strings.render_quartet as rq
     return rq.INSTR
 
 
@@ -573,7 +577,7 @@ def per_note_lags(env: np.ndarray, times_s: list, pre_ms=30, post_ms=60) -> np.n
 # ----------------------------------------------------------------------------- calibration
 def calibrate(renderers: set, lead_in: float, force: bool) -> dict:
     """K-weighted loudness (LUFS, raw scale, placed dry sum) of the calibration chorale per renderer."""
-    import orchestrate
+    import kapell.mix.orchestrate as orchestrate
     import pyloudnorm as pyln
     cal_path = CAL_WORK / "calibration.json"
     seed = cal_path if cal_path.exists() else CAL_DIR / "calibration.json"
@@ -1146,7 +1150,8 @@ def encode_m4a(wav: Path, m4a: Path, peak_db: float) -> float:
     for _ in range(3):
         if m4a.exists():
             m4a.unlink()
-        subprocess.run(["afconvert", "-f", "m4af", "-d", "aac", "-b", "256000", str(src), str(m4a)], check=True)
+        from kapell.engines.encoding import encode_aac
+        encode_aac(src, m4a)
         with tempfile.TemporaryDirectory() as td:
             dec = Path(td) / "dec.wav"
             subprocess.run(["afconvert", "-f", "WAVE", "-d", "LEF32", str(m4a), str(dec)], check=True)

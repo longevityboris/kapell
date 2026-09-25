@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
 authors = [{ name = "Boris Djordjevic" }]
-dependencies = ["numpy", "scipy", "mido", "soundfile", "music21"]
+dependencies = ["numpy", "scipy", "mido", "soundfile", "music21", "soxr"]
 
 [project.optional-dependencies]
 test = ["pytest"]
@@ -23,3 +23,6 @@ packages = ["src/kapell"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"templates/layouts" = "kapell/data/layouts"

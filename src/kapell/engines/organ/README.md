@@ -19,7 +19,7 @@ python3 tests/loop_sweep.py              # every pipe held 5 s: loop wraps and r
   Pedahl (7): 36 stops, 1769 sample files, every pipe recorded separately in stereo (44.1 kHz,
   24-bit) with several loops and releases chosen by how long the key was held. Sample set by Lars
   Palo, version 20230618, **CC BY-SA 4.0** (familjenpalo.se). 1.9 GB in
-  `/Users/biobook/Music/SampleLibraries/Organ/NorrfjardenChurch`.
+  `${KAPELL_LIB:-$HOME/Music/SampleLibraries}/Organ/NorrfjardenChurch`.
 * **Church:** OpenAIR impulse response, Lady Chapel, St Albans Cathedral, ORTF position A
   (University of York Audiolab), **CC BY 4.0**, added by convolution with its direct sound
   removed (the samples already carry the Norrfjärden church). Default level -4 dB relative to the
