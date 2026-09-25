@@ -139,7 +139,7 @@ def _slug(s: str) -> str:
 def renders(root: Path, cfg: dict) -> dict:
     versions = list((cfg.get("versions") or {}).get("render") or [])
     if not versions:
-        return {"planned": [], "done": [], "missing": []}
+        return {"planned": 0, "done": [], "missing": []}
     perf = _p(root, cfg, "performance") or root / "performance"
     names = {root.name, _slug((cfg.get("piece") or {}).get("name", "")), _slug(root.name)} - {""}
     done = []
@@ -174,13 +174,13 @@ def _next(phase: str, secs: dict, rend: dict) -> dict:
     return {"command": cmd, "why": why}
 
 
-def summarise(root: Path | None, cfg: dict, live: bool = True) -> dict:
+def summarise(root: Path | None, cfg: dict, live: bool = True, cfg_error: str | None = None) -> dict:
     if root is None:
         return {"project": None, "phase": "none",
                 "next": {"command": "kapell new DIR --brief brief.md",
                          "why": "no kapell.toml here or in any parent directory (or pass --project DIR)"}}
     piece = cfg.get("piece") or {}
-    warnings = []
+    warnings = [cfg_error] if cfg_error else []
     pin = (cfg.get("kapell") or {}).get("kit")
     if pin and __version__.split(".")[: len(str(pin).split("."))] != str(pin).split("."):
         warnings.append(f"project pins kit {pin}, installed kit is {__version__}")

@@ -17,7 +17,7 @@ def add_arguments(parser):
 
 
 def run(args, ctx):
-    data = summarise(ctx.root, ctx.cfg, live=not args.no_check)
+    data = summarise(ctx.root, ctx.cfg, live=not args.no_check, cfg_error=getattr(ctx, "cfg_error", None))
     if ctx.root is None:
         from . import Result
         return Result("no_results", data)

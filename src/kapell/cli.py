@@ -130,6 +130,7 @@ def _context(flags: dict, verb: str, as_json: bool) -> Context:
         raise KapellError("bad_input", f"--project {start}: not a directory", "", 3)
     root = project.find_root(Path(start).expanduser() if start else None)
     cfg: dict = {}
+    cfg_error = None
     if root is not None:
         try:
             cfg = project.load(root)
@@ -137,7 +138,10 @@ def _context(flags: dict, verb: str, as_json: bool) -> Context:
             if verb not in LENIENT:
                 raise KapellError("config_invalid", f"{root / 'kapell.toml'}: {exc}",
                                   "fix the TOML syntax in kapell.toml", 2) from exc
-    return Context(root=root, cfg=cfg, json=as_json, quiet=flags["quiet"])
+            cfg_error = f"kapell.toml unreadable: {exc}"
+    ctx = Context(root=root, cfg=cfg, json=as_json, quiet=flags["quiet"])
+    ctx.cfg_error = cfg_error  # lenient commands (status, doctor, ...) report it instead of failing
+    return ctx
 
 
 def _normalise(result) -> dict | Raw:
