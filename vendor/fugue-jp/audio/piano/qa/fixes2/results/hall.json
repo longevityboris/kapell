@@ -1,0 +1,223 @@
+{
+ "wet_db_default": 0.0,
+ "old_default_equivalent_wet_db": 5.4,
+ "render_report_hall": {
+  "default": {
+   "wet_db": 0.0,
+   "ir_gain_on_piano_spectrum_db": 9.37,
+   "ir_scale_db": -9.37,
+   "hall_re_dry_db": -0.2,
+   "c80_db": 4.9
+  },
+  "no_reverb": null,
+  "old_default_level": {
+   "wet_db": 5.4,
+   "ir_gain_on_piano_spectrum_db": 9.37,
+   "ir_scale_db": -3.97,
+   "hall_re_dry_db": 5.2,
+   "c80_db": 2.1
+  }
+ },
+ "demo_program_per_band_at_default": {
+  "broadband": {
+   "wet_re_dry_db": -0.2,
+   "C80_program_db": 4.9
+  },
+  "63": {
+   "wet_re_dry_db": 1.3,
+   "C80_program_db": 5.3,
+   "share_of_dry_energy_db": -14.7
+  },
+  "125": {
+   "wet_re_dry_db": 1.5,
+   "C80_program_db": 3.7,
+   "share_of_dry_energy_db": -7.7
+  },
+  "250": {
+   "wet_re_dry_db": -0.7,
+   "C80_program_db": 5.4,
+   "share_of_dry_energy_db": -6.2
+  },
+  "500": {
+   "wet_re_dry_db": -0.5,
+   "C80_program_db": 4.8,
+   "share_of_dry_energy_db": -3.4
+  },
+  "1000": {
+   "wet_re_dry_db": -0.7,
+   "C80_program_db": 5.8,
+   "share_of_dry_energy_db": -9.7
+  },
+  "2000": {
+   "wet_re_dry_db": -3.8,
+   "C80_program_db": 9.0,
+   "share_of_dry_energy_db": -15.6
+  },
+  "4000": {
+   "wet_re_dry_db": -4.8,
+   "C80_program_db": 9.0,
+   "share_of_dry_energy_db": -24.0
+  }
+ },
+ "demo_articulation_final_file": {
+  "no_reverb": {
+   "alto": {
+    "n": 170,
+    "median_db": 25.2,
+    "p10_db": 8.2,
+    "n_below_3db": 6
+   },
+   "soprano": {
+    "n": 160,
+    "median_db": 25.3,
+    "p10_db": 10.2,
+    "n_below_3db": 4
+   },
+   "tenor": {
+    "n": 110,
+    "median_db": 18.4,
+    "p10_db": 2.0,
+    "n_below_3db": 15
+   },
+   "pedal": {
+    "n": 86,
+    "median_db": 14.4,
+    "p10_db": 3.2,
+    "n_below_3db": 7
+   }
+  },
+  "default": {
+   "alto": {
+    "n": 170,
+    "median_db": 24.4,
+    "p10_db": 7.1,
+    "n_below_3db": 9
+   },
+   "soprano": {
+    "n": 160,
+    "median_db": 23.3,
+    "p10_db": 7.9,
+    "n_below_3db": 7
+   },
+   "tenor": {
+    "n": 110,
+    "median_db": 16.1,
+    "p10_db": 0.8,
+    "n_below_3db": 18
+   },
+   "pedal": {
+    "n": 86,
+    "median_db": 12.0,
+    "p10_db": 1.5,
+    "n_below_3db": 11
+   }
+  },
+  "old_default_level": {
+   "alto": {
+    "n": 170,
+    "median_db": 22.4,
+    "p10_db": 6.2,
+    "n_below_3db": 9
+   },
+   "soprano": {
+    "n": 160,
+    "median_db": 21.8,
+    "p10_db": 6.2,
+    "n_below_3db": 9
+   },
+   "tenor": {
+    "n": 110,
+    "median_db": 15.5,
+    "p10_db": 0.6,
+    "n_below_3db": 19
+   },
+   "pedal": {
+    "n": 86,
+    "median_db": 10.7,
+    "p10_db": 0.7,
+    "n_below_3db": 12
+   }
+  }
+ },
+ "fast16_articulation_rise_db": {
+  "no_reverb": {
+   "bass_q66": {
+    "median_db": 8.6,
+    "min_db": 3.4
+   },
+   "tenor_q66": {
+    "median_db": 16.9,
+    "min_db": 7.9
+   },
+   "bass_q100": {
+    "median_db": 7.5,
+    "min_db": 2.0
+   },
+   "tenor_q100": {
+    "median_db": 15.2,
+    "min_db": 5.1
+   },
+   "bass_q144": {
+    "median_db": 6.6,
+    "min_db": 1.6
+   },
+   "tenor_q144": {
+    "median_db": 15.4,
+    "min_db": 5.1
+   }
+  },
+  "default": {
+   "bass_q66": {
+    "median_db": 9.1,
+    "min_db": -3.3
+   },
+   "tenor_q66": {
+    "median_db": 16.1,
+    "min_db": -1.1
+   },
+   "bass_q100": {
+    "median_db": 7.3,
+    "min_db": -7.2
+   },
+   "tenor_q100": {
+    "median_db": 16.3,
+    "min_db": 1.1
+   },
+   "bass_q144": {
+    "median_db": 6.4,
+    "min_db": -3.0
+   },
+   "tenor_q144": {
+    "median_db": 13.8,
+    "min_db": 1.5
+   }
+  },
+  "old_default_level": {
+   "bass_q66": {
+    "median_db": 5.6,
+    "min_db": -3.2
+   },
+   "tenor_q66": {
+    "median_db": 12.9,
+    "min_db": -2.1
+   },
+   "bass_q100": {
+    "median_db": 5.8,
+    "min_db": -6.9
+   },
+   "tenor_q100": {
+    "median_db": 14.7,
+    "min_db": -2.3
+   },
+   "bass_q144": {
+    "median_db": 4.8,
+    "min_db": -2.1
+   },
+   "tenor_q144": {
+    "median_db": 10.4,
+    "min_db": -0.4
+   }
+  }
+ },
+ "before_fix_qa_round2": "default -4 (white-noise scale): hall +5.2 dB re dry, program C80 +2.1 dB, while the report said C80 8.4; articulation medians alto 25.4->22.1, tenor 18.3->15.4, pedal 14.5->10.6 dB from no reverb to the default (qa/round2/results/hall.json, demo_clarity.json)"
+}

@@ -1,0 +1,103 @@
+{
+ "entries": [
+  {
+   "voice": "alto",
+   "at": "1:1",
+   "role": "subject",
+   "re_loudest_other_db": null,
+   "re_mean_other_db": null
+  },
+  {
+   "voice": "soprano",
+   "at": "3:1",
+   "role": "answer",
+   "re_loudest_other_db": 1.3,
+   "re_mean_other_db": 1.3
+  },
+  {
+   "voice": "tenor",
+   "at": "6:1",
+   "role": "subject",
+   "re_loudest_other_db": 6.9,
+   "re_mean_other_db": 7.8
+  },
+  {
+   "voice": "pedal",
+   "at": "8:1",
+   "role": "answer",
+   "re_loudest_other_db": 6.4,
+   "re_mean_other_db": 9.6
+  },
+  {
+   "voice": "soprano",
+   "at": "12:1",
+   "role": "subject",
+   "re_loudest_other_db": 2.0,
+   "re_mean_other_db": 3.0
+  },
+  {
+   "voice": "tenor",
+   "at": "16:1",
+   "role": "subject",
+   "re_loudest_other_db": 3.2,
+   "re_mean_other_db": 4.5
+  },
+  {
+   "voice": "alto",
+   "at": "20:1",
+   "role": "subject",
+   "re_loudest_other_db": 1.9,
+   "re_mean_other_db": 4.2
+  },
+  {
+   "voice": "tenor",
+   "at": "26:1",
+   "role": "subject",
+   "re_loudest_other_db": 1.8,
+   "re_mean_other_db": 2.2
+  },
+  {
+   "voice": "soprano",
+   "at": "27:1",
+   "role": "subject",
+   "re_loudest_other_db": 1.6,
+   "re_mean_other_db": 2.8
+  },
+  {
+   "voice": "alto",
+   "at": "28:1",
+   "role": "subject",
+   "re_loudest_other_db": 3.7,
+   "re_mean_other_db": 4.1
+  },
+  {
+   "voice": "soprano",
+   "at": "31:1",
+   "role": "subject",
+   "re_loudest_other_db": 0.3,
+   "re_mean_other_db": 2.4
+  },
+  {
+   "voice": "pedal",
+   "at": "33:1",
+   "role": "subject",
+   "re_loudest_other_db": 2.9,
+   "re_mean_other_db": 3.7
+  },
+  {
+   "voice": "tenor",
+   "at": "35:1",
+   "role": "subject",
+   "re_loudest_other_db": 3.6,
+   "re_mean_other_db": 4.7
+  }
+ ],
+ "stem_rms_dbfs": {
+  "alto": -35.81,
+  "soprano": -35.53,
+  "tenor": -35.57,
+  "pedal": -35.12
+ },
+ "stem_spread_db": 0.69,
+ "min_entry_margin_db": 0.3
+}

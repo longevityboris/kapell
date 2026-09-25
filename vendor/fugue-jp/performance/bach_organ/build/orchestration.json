@@ -1,0 +1,172 @@
+{
+ "spec": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/bach_organ/bach_organ.json",
+ "score": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/score/music-voices.ly",
+ "plan": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/bach_organ/plan.json",
+ "score_sha256": "0132d043358cbcb9",
+ "plan_sha256": "751f07bdd7ee4b53",
+ "duration_s": 235.515,
+ "bars": 66.0,
+ "marks": {
+  "sec01_expo": {
+   "at": "1:1",
+   "t_s": 0.0
+  },
+  "expo": {
+   "at": "1:1",
+   "t_s": 0.0
+  },
+  "sec02_entry4_episode": {
+   "at": "13:1",
+   "t_s": 37.895
+  },
+  "entry4_episode": {
+   "at": "13:1",
+   "t_s": 37.895
+  },
+  "sec03_stretto_liquidation": {
+   "at": "20:1",
+   "t_s": 60.0
+  },
+  "stretto_liquidation": {
+   "at": "20:1",
+   "t_s": 60.0
+  },
+  "sec04_arioso": {
+   "at": "30:1",
+   "t_s": 96.365
+  },
+  "arioso": {
+   "at": "30:1",
+   "t_s": 96.365
+  },
+  "sec05_inversa": {
+   "at": "35:1",
+   "t_s": 118.193
+  },
+  "inversa": {
+   "at": "35:1",
+   "t_s": 118.193
+  },
+  "sec06_pedal_climax": {
+   "at": "46:1",
+   "t_s": 156.053
+  },
+  "pedal_climax": {
+   "at": "46:1",
+   "t_s": 156.053
+  },
+  "sec07_apotheosis_coda": {
+   "at": "55:1",
+   "t_s": 188.83
+  },
+  "apotheosis_coda": {
+   "at": "55:1",
+   "t_s": 188.83
+  }
+ },
+ "groups": {
+  "organ": {
+   "renderer": "organ",
+   "midi": "organ.mid",
+   "parts": {
+    "soprano": {
+     "track": "soprano",
+     "channel": 0,
+     "program": 19,
+     "instrument": "HW",
+     "notes": 191,
+     "range": [
+      65,
+      84
+     ],
+     "windows": [
+      {
+       "kind": "line",
+       "voice": "soprano",
+       "at": "1:1",
+       "until": "67:1",
+       "octave": 0,
+       "level": 0.0,
+       "articulation": "auto",
+       "t0_s": 0.0,
+       "t1_s": 235.515
+      }
+     ]
+    },
+    "alto": {
+     "track": "alto",
+     "channel": 1,
+     "program": 19,
+     "instrument": "OW",
+     "notes": 217,
+     "range": [
+      53,
+      77
+     ],
+     "windows": [
+      {
+       "kind": "line",
+       "voice": "alto",
+       "at": "1:1",
+       "until": "67:1",
+       "octave": 0,
+       "level": 0.0,
+       "articulation": "auto",
+       "t0_s": 0.0,
+       "t1_s": 235.515
+      }
+     ]
+    },
+    "tenor": {
+     "track": "tenor",
+     "channel": 2,
+     "program": 19,
+     "instrument": "POS",
+     "notes": 192,
+     "range": [
+      48,
+      68
+     ],
+     "windows": [
+      {
+       "kind": "line",
+       "voice": "tenor",
+       "at": "1:1",
+       "until": "67:1",
+       "octave": 0,
+       "level": 0.0,
+       "articulation": "auto",
+       "t0_s": 0.0,
+       "t1_s": 235.515
+      }
+     ]
+    },
+    "bass": {
+     "track": "bass",
+     "channel": 3,
+     "program": 19,
+     "instrument": "PED",
+     "notes": 141,
+     "range": [
+      36,
+      57
+     ],
+     "windows": [
+      {
+       "kind": "line",
+       "voice": "bass",
+       "at": "1:1",
+       "until": "67:1",
+       "octave": 0,
+       "level": 0.0,
+       "articulation": "auto",
+       "t0_s": 0.0,
+       "t1_s": 235.515
+      }
+     ]
+    }
+   },
+   "sidecar": "organ.registration.json"
+  }
+ }
+}

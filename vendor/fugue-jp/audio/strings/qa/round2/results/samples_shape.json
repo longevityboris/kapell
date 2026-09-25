@@ -1,0 +1,47 @@
+{
+ "per_inst": {
+  "vn1": {
+   "regions": 272,
+   "flagged": 0,
+   "flagged_used_by_test_music": 0,
+   "test_music_notes_on_flagged": 0
+  },
+  "vn2": {
+   "regions": 272,
+   "flagged": 0,
+   "flagged_used_by_test_music": 0,
+   "test_music_notes_on_flagged": 0
+  },
+  "va": {
+   "regions": 276,
+   "flagged": 0,
+   "flagged_used_by_test_music": 0,
+   "test_music_notes_on_flagged": 0
+  },
+  "vc": {
+   "regions": 274,
+   "flagged": 0,
+   "flagged_used_by_test_music": 0,
+   "test_music_notes_on_flagged": 0
+  }
+ },
+ "n_regions": 1094,
+ "n_flagged": 0,
+ "flagged_by_use": [],
+ "distribution": {
+  "early_db_p5": -1.4,
+  "notch_db_p5": -3.1
+ },
+ "state": {
+  "head": "2f0b8c9",
+  "render_quartet_sha": "8413041399533f7e",
+  "perform_sha": "4d527a2643657675",
+  "sfz": {
+   "bass.sfz": "fc96ab59f9e683a7",
+   "cello.sfz": "e002fbc00fac9a98",
+   "viola.sfz": "7ecae68c0f77a41c",
+   "violin.sfz": "d103bf15d9facbdb",
+   "violin2.sfz": "f083e98b2947f500"
+  }
+ }
+}

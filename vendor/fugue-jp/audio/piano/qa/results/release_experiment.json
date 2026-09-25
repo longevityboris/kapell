@@ -1,0 +1,98 @@
+{
+ "bass_q66_release_1.0": {
+  "overlap_prev_db_median": -8.7,
+  "overlap_prev_db_worst": -7.0,
+  "noteoff_crest_db_median": 7.0,
+  "noteoff_crest_db_max": 9.2
+ },
+ "bass_q66_release_0.5": {
+  "overlap_prev_db_median": -13.6,
+  "overlap_prev_db_worst": -12.2,
+  "noteoff_crest_db_median": 7.3,
+  "noteoff_crest_db_max": 8.9
+ },
+ "bass_q66_release_0.35": {
+  "overlap_prev_db_median": -17.3,
+  "overlap_prev_db_worst": -15.6,
+  "noteoff_crest_db_median": 7.3,
+  "noteoff_crest_db_max": 8.8
+ },
+ "bass_q66_release_0.2": {
+  "overlap_prev_db_median": -23.2,
+  "overlap_prev_db_worst": -20.0,
+  "noteoff_crest_db_median": 7.1,
+  "noteoff_crest_db_max": 8.5
+ },
+ "bass_q100_release_1.0": {
+  "overlap_prev_db_median": -7.5,
+  "overlap_prev_db_worst": -5.8,
+  "noteoff_crest_db_median": 6.5,
+  "noteoff_crest_db_max": 10.8
+ },
+ "bass_q100_release_0.5": {
+  "overlap_prev_db_median": -12.7,
+  "overlap_prev_db_worst": -10.6,
+  "noteoff_crest_db_median": 6.4,
+  "noteoff_crest_db_max": 11.1
+ },
+ "bass_q100_release_0.35": {
+  "overlap_prev_db_median": -16.5,
+  "overlap_prev_db_worst": -13.9,
+  "noteoff_crest_db_median": 6.3,
+  "noteoff_crest_db_max": 11.1
+ },
+ "bass_q100_release_0.2": {
+  "overlap_prev_db_median": -23.3,
+  "overlap_prev_db_worst": -19.0,
+  "noteoff_crest_db_median": 6.1,
+  "noteoff_crest_db_max": 10.9
+ },
+ "tenor_q66_release_1.0": {
+  "overlap_prev_db_median": -10.5,
+  "overlap_prev_db_worst": -9.0,
+  "noteoff_crest_db_median": 7.1,
+  "noteoff_crest_db_max": 9.4
+ },
+ "tenor_q66_release_0.5": {
+  "overlap_prev_db_median": -15.6,
+  "overlap_prev_db_worst": -14.1,
+  "noteoff_crest_db_median": 6.8,
+  "noteoff_crest_db_max": 9.2
+ },
+ "tenor_q66_release_0.35": {
+  "overlap_prev_db_median": -19.4,
+  "overlap_prev_db_worst": -17.7,
+  "noteoff_crest_db_median": 6.7,
+  "noteoff_crest_db_max": 9.0
+ },
+ "tenor_q66_release_0.2": {
+  "overlap_prev_db_median": -27.0,
+  "overlap_prev_db_worst": -24.2,
+  "noteoff_crest_db_median": 6.4,
+  "noteoff_crest_db_max": 8.7
+ },
+ "tenor_q100_release_1.0": {
+  "overlap_prev_db_median": -9.1,
+  "overlap_prev_db_worst": -7.8,
+  "noteoff_crest_db_median": 6.8,
+  "noteoff_crest_db_max": 9.6
+ },
+ "tenor_q100_release_0.5": {
+  "overlap_prev_db_median": -14.3,
+  "overlap_prev_db_worst": -12.8,
+  "noteoff_crest_db_median": 6.9,
+  "noteoff_crest_db_max": 9.7
+ },
+ "tenor_q100_release_0.35": {
+  "overlap_prev_db_median": -18.3,
+  "overlap_prev_db_worst": -16.4,
+  "noteoff_crest_db_median": 6.8,
+  "noteoff_crest_db_max": 9.5
+ },
+ "tenor_q100_release_0.2": {
+  "overlap_prev_db_median": -25.7,
+  "overlap_prev_db_worst": -22.8,
+  "noteoff_crest_db_median": 6.8,
+  "noteoff_crest_db_max": 9.2
+ }
+}

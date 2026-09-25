@@ -1,0 +1,55 @@
+{
+ "_comment": "Performance plan for the old organ fugue (fugue-jp/fugue.ly) played on the concert grand. Form and entry positions from fugue-jp/NOTES.md. pp opening, the exposition grows as voices enter, episodes breathe, Episode 4 (pedal returns, bars 22-25) crescendos to f at the stretto (bar 26), a last rise to ff over the final pedal entry, rit. and fermata. Subject/answer entries are voiced +12, countersubjects +3, the theme quotation of Episode 3 +5, free voices -5 (perform.py velocity units; with +9/-4 the entries sat only 0-2 dB over the loudest other voice). In the three-voice stretto (bars 26-30) each entry is voiced as subject for its first bar only and its tail then recedes with the free voices, so that every new head is heard over the previous one.",
+ "voices": ["soprano", "alto", "tenor", "pedal"],
+ "measure": "1",
+ "tempo": [
+  {"at": "1:1", "bpm": 66},
+  {"at": "36:1", "until": "37:1", "to_bpm": 54}
+ ],
+ "breaths": [
+  {"at": "12:1", "ms": 90},
+  {"at": "26:1", "ms": 140},
+  {"at": "33:1", "ms": 110}
+ ],
+ "fermatas": [{"at": "37:1", "extra_beats": 3}],
+ "dynamics": [
+  {"at": "1:1", "level": "pp"},
+  {"at": "3:1", "until": "10:1", "to": "p"},
+  {"at": "10:1", "until": "12:1", "to": "mp"},
+  {"at": "14:1", "until": "16:1", "to": 3.5},
+  {"at": "16:1", "until": "17:1", "to": "mp"},
+  {"at": "18:1", "until": "20:1", "to": 3.3},
+  {"at": "22:1", "until": "26:1", "to": "f"},
+  {"at": "30:1", "until": "31:1", "to": 6.3},
+  {"at": "33:1", "until": "36:3", "to": "ff"}
+ ],
+ "roles": [
+  {"voice": "alto",    "at": "1:1",  "until": "3:1",  "role": "subject"},
+  {"voice": "soprano", "at": "3:1",  "until": "5:1",  "role": "answer"},
+  {"voice": "alto",    "at": "3:1",  "until": "5:1",  "role": "cs"},
+  {"voice": "tenor",   "at": "6:1",  "until": "8:1",  "role": "subject"},
+  {"voice": "soprano", "at": "6:1",  "until": "8:1",  "role": "cs"},
+  {"voice": "pedal",   "at": "8:1",  "until": "10:1", "role": "answer"},
+  {"voice": "tenor",   "at": "8:1",  "until": "10:1", "role": "cs"},
+  {"voice": "soprano", "at": "12:1", "until": "14:1", "role": "subject"},
+  {"voice": "alto",    "at": "12:1", "until": "14:1", "role": "cs"},
+  {"voice": "tenor",   "at": "16:1", "until": "18:1", "role": "subject"},
+  {"voice": "soprano", "at": "16:1", "until": "18:1", "role": "cs"},
+  {"voice": "soprano", "at": "18:1", "until": "20:1", "role": "theme"},
+  {"voice": "alto",    "at": "20:1", "until": "22:1", "role": "subject"},
+  {"voice": "tenor",   "at": "20:1", "until": "22:1", "role": "cs"},
+  {"voice": "soprano", "at": "26:1", "until": "27:1", "role": "cs"},
+  {"voice": "tenor",   "at": "26:1", "until": "27:1", "role": "subject"},
+  {"voice": "tenor",   "at": "27:1", "until": "28:1", "role": "free"},
+  {"voice": "soprano", "at": "27:1", "until": "28:1", "role": "subject"},
+  {"voice": "soprano", "at": "28:1", "until": "29:1", "role": "free"},
+  {"voice": "alto",    "at": "28:1", "until": "30:1", "role": "subject"},
+  {"voice": "soprano", "at": "31:1", "until": "33:1", "role": "subject"},
+  {"voice": "alto",    "at": "31:1", "until": "33:1", "role": "cs"},
+  {"voice": "pedal",   "at": "33:1", "until": "35:1", "role": "subject"},
+  {"voice": "soprano", "at": "33:1", "until": "35:1", "role": "cs"},
+  {"voice": "tenor",   "at": "35:1", "until": "37:1", "role": "subject"}
+ ],
+ "role_boost": {"subject": 12, "answer": 12, "cs": 3, "theme": 5, "free": -5},
+ "humanize": {"ms": 5, "vel": 2}
+}

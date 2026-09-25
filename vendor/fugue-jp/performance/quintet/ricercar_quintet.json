@@ -1,0 +1,556 @@
+{
+ "title": "The Neighbour - ricercar a 4 on the Theme from Jurassic Park - piano quintet",
+ "comment": "Shostakovich, Piano Quintet Op. 57, ii (Fugue). Strings alone through the exposition, the false dawn, Climax I and the arioso; the piano enters with the fuga inversa (35) and carries it, the viola bringing the tenor's stretto entry (37); the cello returns with the augmented inversion (46), violin II with S2 (48), violin I with the diminution heads (50:3); Climax II and the major apotheosis are tutti with the piano's octave doublings; the coda thins to violin I's d'' over the piano's tolling tonic pedal in octaves. Written by performance/quintet/make_spec.py; the piano's pedal spans are computed there.",
+ "marks": {
+  "from": "../../design/final-lab/piece.py"
+ },
+ "groups": {
+  "quartet": {
+   "renderer": "quartet",
+   "parts": [
+    "vn1",
+    "vn2",
+    "va",
+    "vc"
+   ]
+  },
+  "piano": {
+   "renderer": "piano",
+   "parts": [
+    "soprano",
+    "alto",
+    "tenor",
+    "bass",
+    "soprano_8va",
+    "bass_8vb",
+    "pedal_8vb"
+   ],
+   "options": {
+    "pedal": [
+     {
+      "at": "50:1",
+      "until": "50:2.5",
+      "every": "bar"
+     },
+     {
+      "at": "50:2.5",
+      "until": "50:4.5",
+      "every": "bar"
+     },
+     {
+      "at": "51:1",
+      "until": "51:2.5",
+      "every": "bar"
+     },
+     {
+      "at": "51:3",
+      "until": "51:4",
+      "every": "bar"
+     },
+     {
+      "at": "52:1",
+      "until": "52:2.5",
+      "every": "bar"
+     },
+     {
+      "at": "52:3",
+      "until": "53:2.5",
+      "every": "bar"
+     },
+     {
+      "at": "53:3",
+      "until": "53:4",
+      "every": "bar"
+     },
+     {
+      "at": "53:4",
+      "until": "54:2",
+      "every": "bar"
+     },
+     {
+      "at": "54:2",
+      "until": "55:1",
+      "every": "bar"
+     },
+     {
+      "at": "55:1",
+      "until": "55:2.5",
+      "every": "bar"
+     },
+     {
+      "at": "55:3",
+      "until": "55:4.5",
+      "every": "bar"
+     },
+     {
+      "at": "56:1",
+      "until": "56:2",
+      "every": "bar"
+     },
+     {
+      "at": "56:2",
+      "until": "56:3",
+      "every": "bar"
+     },
+     {
+      "at": "56:3",
+      "until": "56:4",
+      "every": "bar"
+     },
+     {
+      "at": "57:1",
+      "until": "57:2",
+      "every": "bar"
+     },
+     {
+      "at": "57:3",
+      "until": "58:1",
+      "every": "bar"
+     },
+     {
+      "at": "58:1",
+      "until": "58:2",
+      "every": "bar"
+     },
+     {
+      "at": "58:2",
+      "until": "58:3",
+      "every": "bar"
+     },
+     {
+      "at": "58:4",
+      "until": "59:1",
+      "every": "bar"
+     },
+     {
+      "at": "59:1",
+      "until": "59:2.5",
+      "every": "bar"
+     },
+     {
+      "at": "59:2.5",
+      "until": "59:4",
+      "every": "bar"
+     },
+     {
+      "at": "60:1",
+      "until": "60:2",
+      "every": "bar"
+     },
+     {
+      "at": "60:2",
+      "until": "60:4",
+      "every": "bar"
+     },
+     {
+      "at": "61:1",
+      "until": "61:2.5",
+      "every": "bar"
+     },
+     {
+      "at": "61:2.5",
+      "until": "61:4.5",
+      "every": "bar"
+     },
+     {
+      "at": "61:4.5",
+      "until": "62:4",
+      "every": "bar"
+     },
+     {
+      "at": "62:4",
+      "until": "63:1",
+      "every": "bar"
+     },
+     {
+      "at": "63:1",
+      "until": "63:4.5",
+      "every": "bar"
+     },
+     {
+      "at": "64:1",
+      "until": "64:2.5",
+      "every": "bar"
+     },
+     {
+      "at": "64:2.5",
+      "until": "64:4",
+      "every": "bar"
+     },
+     {
+      "at": "64:4",
+      "until": "65:3",
+      "every": "bar"
+     },
+     {
+      "at": "65:3",
+      "until": "66:1",
+      "every": "bar"
+     },
+     {
+      "at": "66:1",
+      "until": "66:4",
+      "every": "bar"
+     }
+    ]
+   }
+  }
+ },
+ "assignments": [
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "1:1",
+   "until": "5:4"
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "5:4",
+   "until": "6:1",
+   "level": -1.0,
+   "articulation": "detache"
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "6:1",
+   "until": "7:1",
+   "level": -1.0
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "7:1",
+   "until": "9:1",
+   "level": -0.6
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "9:1",
+   "until": "10:1",
+   "level": -0.25
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "10:1",
+   "until": "35:1"
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "46:1",
+   "until": "59:1"
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "59:1",
+   "until": "65:1",
+   "level": 0.5
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "65:1",
+   "until": "end"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "1:1",
+   "until": "9:4"
+  },
+  {
+   "voice": "alto",
+   "part": "va",
+   "at": "9:4",
+   "until": "13:1"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "13:1",
+   "until": "30:1"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "30:1",
+   "until": "35:1",
+   "articulation": "detache"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "46:1",
+   "until": "end"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "13:1",
+   "until": "30:1"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "30:1",
+   "until": "30:4.5",
+   "articulation": "detache"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "30:4.5",
+   "until": "32:1",
+   "articulation": "detache",
+   "level": 0.4
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "32:1",
+   "until": "35:1",
+   "articulation": "detache"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "37:1",
+   "until": "43:1"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "43:1",
+   "until": "45:1",
+   "level": -0.3
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "45:1",
+   "until": "48:1"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "50:1",
+   "until": "end"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "1:1",
+   "until": "30:2"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "30:2",
+   "until": "31:1",
+   "level": 0.4
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "31:1",
+   "until": "35:1"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "46:1",
+   "until": "end"
+  },
+  {
+   "voice": "soprano",
+   "part": "soprano",
+   "at": "35:1",
+   "until": "46:1"
+  },
+  {
+   "voice": "alto",
+   "part": "alto",
+   "at": "35:1",
+   "until": "46:1"
+  },
+  {
+   "voice": "bass",
+   "part": "bass",
+   "at": "35:1",
+   "until": "46:1"
+  },
+  {
+   "voice": "tenor",
+   "part": "tenor",
+   "at": "48:1",
+   "until": "55:1"
+  },
+  {
+   "voice": "soprano",
+   "part": "soprano",
+   "at": "50:1",
+   "until": "52:1"
+  },
+  {
+   "voice": "soprano",
+   "part": "soprano_8va",
+   "at": "52:1",
+   "until": "63:1",
+   "octave": 12,
+   "level": -1.0
+  },
+  {
+   "voice": "soprano",
+   "part": "soprano",
+   "at": "63:1",
+   "until": "end"
+  },
+  {
+   "voice": "alto",
+   "part": "alto",
+   "at": "50:1",
+   "until": "55:1"
+  },
+  {
+   "voice": "alto",
+   "part": "alto",
+   "at": "55:1",
+   "until": "63:1",
+   "level": -1.0
+  },
+  {
+   "voice": "tenor",
+   "part": "tenor",
+   "at": "55:1",
+   "until": "63:1",
+   "level": -1.0
+  },
+  {
+   "voice": "alto",
+   "part": "alto",
+   "at": "63:1",
+   "until": "end"
+  },
+  {
+   "voice": "tenor",
+   "part": "tenor",
+   "at": "63:1",
+   "until": "end"
+  },
+  {
+   "voice": "bass",
+   "part": "bass",
+   "at": "50:1",
+   "until": "59:1"
+  },
+  {
+   "voice": "bass",
+   "part": "bass",
+   "at": "59:1",
+   "until": "63:1",
+   "level": -1.0
+  },
+  {
+   "voice": "bass",
+   "part": "bass",
+   "at": "63:1",
+   "until": "end"
+  },
+  {
+   "voice": "bass",
+   "part": "bass_8vb",
+   "at": "50:1",
+   "until": "55:1",
+   "octave": -12,
+   "level": -0.5
+  },
+  {
+   "voice": "bass",
+   "part": "bass_8vb",
+   "at": "59:1",
+   "until": "63:1",
+   "octave": -12,
+   "level": -2.0
+  },
+  {
+   "voice": "bass",
+   "part": "bass_8vb",
+   "at": "63:1",
+   "until": "end",
+   "octave": -12,
+   "level": -1.0
+  }
+ ],
+ "pedal_points": [
+  {
+   "voice": "bass",
+   "part": "pedal_8vb",
+   "at": "46:1",
+   "until": "48:1",
+   "octave": -12,
+   "mode": "sustain",
+   "bridge": 1,
+   "min_beats": 4,
+   "level": -0.5
+  },
+  {
+   "voice": "bass",
+   "part": "pedal_8vb",
+   "at": "48:1",
+   "until": "50:1",
+   "octave": -12,
+   "mode": "sustain",
+   "bridge": 1,
+   "min_beats": 4,
+   "level": -1.0
+  }
+ ],
+ "mix": {
+  "lead_in": 0.5,
+  "reference_group": "quartet",
+  "groups": {
+   "quartet": {
+    "gain_db": 0.0,
+    "hall_re_dry_db": 4.0,
+    "stage": {
+     "vn1": {
+      "az": 30,
+      "depth": 0.0
+     },
+     "vn2": {
+      "az": 10,
+      "depth": 0.4
+     },
+     "va": {
+      "az": -10,
+      "depth": 0.4
+     },
+     "vc": {
+      "az": -28,
+      "depth": 0.0
+     }
+    }
+   },
+   "piano": {
+    "gain_db": -1.0,
+    "hall_re_dry_db": 4.0,
+    "stage": {
+     "*": {
+      "az": 0,
+      "depth": 1.2,
+      "width": 0.7
+     }
+    },
+    "render_args": [
+     "--jobs",
+     "2"
+    ]
+   }
+  }
+ }
+}

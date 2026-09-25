@@ -1,0 +1,68 @@
+{
+ "state": {
+  "head": "f3a7af6",
+  "render_quartet_commit": "c71ee34",
+  "render_quartet_sha": "b32c34e0dd47ed48",
+  "sfz": {
+   "bass.sfz": "00762544528904ce",
+   "cello.sfz": "1509632bd473c8ed",
+   "viola.sfz": "eeb0117a420062b4",
+   "violin.sfz": "bf2e18602a9816a2",
+   "violin2.sfz": "c50e3d0762fdcf75"
+  }
+ },
+ "jobs": {
+  "jobs_fugue/j0_vc.wav": {
+   "seconds": 144.3,
+   "events": 0,
+   "hf_bursts": 0,
+   "steps": 0,
+   "list": []
+  },
+  "jobs_fugue/j1_va.wav": {
+   "seconds": 144.3,
+   "events": 0,
+   "hf_bursts": 0,
+   "steps": 0,
+   "list": []
+  },
+  "jobs_fugue/j2_vn2.wav": {
+   "seconds": 144.3,
+   "events": 0,
+   "hf_bursts": 0,
+   "steps": 0,
+   "list": []
+  },
+  "jobs_fugue/j3_vn1.wav": {
+   "seconds": 144.3,
+   "events": 0,
+   "hf_bursts": 0,
+   "steps": 0,
+   "list": []
+  },
+  "jobs_fugue/j4_vc.wav": {
+   "seconds": 142.7,
+   "events": 0,
+   "hf_bursts": 0,
+   "steps": 0,
+   "list": []
+  }
+ },
+ "self_test": {
+  "planted": [
+   20.5,
+   30.2
+  ],
+  "found": [
+   20.5,
+   30.2,
+   20.5,
+   30.2001
+  ],
+  "rms": 0.004550061268711359
+ },
+ "mix": {
+  "events": 0,
+  "list": []
+ }
+}

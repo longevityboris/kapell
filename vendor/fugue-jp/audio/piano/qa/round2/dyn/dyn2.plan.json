@@ -1,0 +1,18 @@
+{
+ "_comment": "Round-2 QA dynamics plan: same phrase pp / mf / ff, a hairpin pp-ff-pp over repeated notes, and a voicing A/B at mf (alto free, then alto as subject). No humanising, so only the dynamic plan differs.",
+ "voices": ["soprano", "alto", "bass"],
+ "measure": "1",
+ "tempo": [{"at": "1:1", "bpm": 80}],
+ "dynamics": [
+  {"at": "1:1", "level": "pp"},
+  {"at": "4:1", "level": "mf"},
+  {"at": "7:1", "level": "ff"},
+  {"at": "10:1", "level": "pp"},
+  {"at": "10:1", "until": "14:1", "to": "ff"},
+  {"at": "14:1", "until": "18:1", "to": "pp"},
+  {"at": "19:1", "level": "mf"}
+ ],
+ "roles": [{"voice": "alto", "at": "22:1", "until": "24:1", "role": "subject"}],
+ "role_boost": {"subject": 12, "free": 0},
+ "humanize": {"ms": 0, "vel": 0}
+}

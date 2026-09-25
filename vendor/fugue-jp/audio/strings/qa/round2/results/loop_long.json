@@ -1,0 +1,106 @@
+{
+ "vn1": {
+  "key": 81,
+  "sample": "samples/violin/violin_mf_081_A5.wav",
+  "seams_s": [
+   9.74,
+   12.241,
+   14.741,
+   17.242,
+   19.743
+  ],
+  "seam_level_step_db": [
+   -0.35,
+   -0.11,
+   -0.07,
+   0.04,
+   0.35
+  ],
+  "sustain_step_p99_db": 4.35,
+  "sustain_step_max_db": 4.93,
+  "gated_click_hits": 0,
+  "hits_within_60ms_of_a_seam": 0,
+  "hits": []
+ },
+ "vn2": {
+  "key": 62,
+  "sample": "samples/violin2/violin2_mf_062_D4.wav",
+  "seams_s": [
+   10.245,
+   12.747,
+   15.248,
+   17.75,
+   20.252
+  ],
+  "seam_level_step_db": [
+   -0.14,
+   -0.08,
+   0.09,
+   0.11,
+   0.37
+  ],
+  "sustain_step_p99_db": 2.01,
+  "sustain_step_max_db": 2.19,
+  "gated_click_hits": 0,
+  "hits_within_60ms_of_a_seam": 0,
+  "hits": []
+ },
+ "va": {
+  "key": 48,
+  "sample": "samples/viola/viola_mf_048_C3.wav",
+  "seams_s": [
+   9.735,
+   12.237,
+   14.739,
+   17.241,
+   19.743
+  ],
+  "seam_level_step_db": [
+   0.36,
+   0.37,
+   0.37,
+   0.39,
+   0.4
+  ],
+  "sustain_step_p99_db": 0.81,
+  "sustain_step_max_db": 0.84,
+  "gated_click_hits": 0,
+  "hits_within_60ms_of_a_seam": 0,
+  "hits": []
+ },
+ "vc": {
+  "key": 36,
+  "sample": "samples/cello/cello_mf_036_C2.wav",
+  "seams_s": [
+   9.95,
+   12.449,
+   14.948,
+   17.448,
+   19.947
+  ],
+  "seam_level_step_db": [
+   0.21,
+   0.32,
+   0.07,
+   0.18,
+   -0.09
+  ],
+  "sustain_step_p99_db": 0.87,
+  "sustain_step_max_db": 1.29,
+  "gated_click_hits": 0,
+  "hits_within_60ms_of_a_seam": 0,
+  "hits": []
+ },
+ "state": {
+  "head": "73640e1",
+  "render_quartet_sha": "b32c34e0dd47ed48",
+  "perform_sha": "4d527a2643657675",
+  "sfz": {
+   "bass.sfz": "00762544528904ce",
+   "cello.sfz": "1509632bd473c8ed",
+   "viola.sfz": "eeb0117a420062b4",
+   "violin.sfz": "bf2e18602a9816a2",
+   "violin2.sfz": "c50e3d0762fdcf75"
+  }
+ }
+}

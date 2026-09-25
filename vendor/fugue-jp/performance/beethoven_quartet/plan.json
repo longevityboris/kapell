@@ -1,0 +1,945 @@
+{
+ "comment": "Beethoven string quartet (Grosse Fuge / Op. 131 spirit): the same interpretation as the Beethoven piano version. Timing (tempo, rubato, fermatas, breaths, humanise), dynamics and roles are copied unchanged from performance/beethoven_piano/plan.json (sha256 022c22e645321fc1, commit 27b7fc0); read its _interpretation for the reading. What changes for four bowed players is the voicing: the piano brings entries out by hammer velocity (role_boost), the strings by bow pressure and timbre, so every role of the piano plan gets a role_level on the CC1/CC11 envelope in proportion to its velocity boost (+12 velocity is about one dynamic step): subject and answer +1.0, the apotheosis tune +1.1 (piano +14), cf and the major answer +0.7 (+9), the pivot's sigh (melody) +0.5 (+6), the liquidation heads +0.4 (+5, so Climax I stays below Climax II), subject tails and countersubjects +0.2 (+3), free voices -0.3 (-5). role_boost is kept (perform.py halves it for strings: the attack bite). Pedal spans are the piano's and are ignored by the strings. Everything specific to the quartet (the viola hand-off, balance trims, sforzandi, articulation, the deeper swells, hall) is in quartet.json and render.sh.",
+ "voices": [
+  "soprano",
+  "alto",
+  "tenor",
+  "bass"
+ ],
+ "measure": "1",
+ "tempo": [
+  {
+   "at": "1:1",
+   "bpm": 78
+  },
+  {
+   "at": "17:1",
+   "until": "17:4",
+   "to_bpm": 72
+  },
+  {
+   "at": "18:1",
+   "bpm": 78
+  },
+  {
+   "at": "20:1",
+   "until": "26:1",
+   "to_bpm": 82
+  },
+  {
+   "at": "28:1",
+   "until": "29:1",
+   "to_bpm": 64
+  },
+  {
+   "at": "30:1",
+   "bpm": 50
+  },
+  {
+   "at": "30:1",
+   "until": "30:4",
+   "to_bpm": 54
+  },
+  {
+   "at": "30:4",
+   "until": "31:1",
+   "to_bpm": 50
+  },
+  {
+   "at": "31:1",
+   "until": "31:4",
+   "to_bpm": 54
+  },
+  {
+   "at": "31:4",
+   "until": "32:1",
+   "to_bpm": 46
+  },
+  {
+   "at": "32:1",
+   "bpm": 48
+  },
+  {
+   "at": "32:1",
+   "until": "32:3",
+   "to_bpm": 52
+  },
+  {
+   "at": "32:3",
+   "until": "33:3",
+   "to_bpm": 47
+  },
+  {
+   "at": "33:3",
+   "until": "34:1",
+   "to_bpm": 45
+  },
+  {
+   "at": "34:1",
+   "until": "35:1",
+   "to_bpm": 40
+  },
+  {
+   "at": "35:1",
+   "bpm": 60
+  },
+  {
+   "at": "35:1",
+   "until": "44:1",
+   "to_bpm": 76
+  },
+  {
+   "at": "44:1",
+   "until": "45:3",
+   "to_bpm": 70
+  },
+  {
+   "at": "45:3",
+   "until": "46:1",
+   "to_bpm": 66
+  },
+  {
+   "at": "46:1",
+   "bpm": 70
+  },
+  {
+   "at": "48:1",
+   "until": "51:3",
+   "to_bpm": 78
+  },
+  {
+   "at": "51:3",
+   "until": "53:3",
+   "to_bpm": 64
+  },
+  {
+   "at": "54:1",
+   "bpm": 60
+  },
+  {
+   "at": "54:1",
+   "until": "55:1",
+   "to_bpm": 50
+  },
+  {
+   "at": "55:1",
+   "bpm": 70
+  },
+  {
+   "at": "59:1",
+   "until": "61:1",
+   "to_bpm": 66
+  },
+  {
+   "at": "61:1",
+   "until": "63:1",
+   "to_bpm": 64
+  },
+  {
+   "at": "63:1",
+   "bpm": 62
+  },
+  {
+   "at": "63:1",
+   "until": "66:3",
+   "to_bpm": 48
+  }
+ ],
+ "fermatas": [
+  {
+   "at": "29:1",
+   "extra_beats": 3
+  },
+  {
+   "at": "53:4",
+   "extra_beats": 3
+  },
+  {
+   "at": "66:3",
+   "extra_beats": 3
+  }
+ ],
+ "breaths": [
+  {
+   "at": "30:1",
+   "ms": 1500
+  },
+  {
+   "at": "32:1",
+   "ms": 150
+  },
+  {
+   "at": "35:1",
+   "ms": 700
+  },
+  {
+   "at": "46:1",
+   "ms": 350
+  },
+  {
+   "at": "63:1",
+   "ms": 200
+  }
+ ],
+ "dynamics": [
+  {
+   "at": "1:1",
+   "level": "p"
+  },
+  {
+   "at": "5:1",
+   "until": "13:1",
+   "to": "mp"
+  },
+  {
+   "at": "13:1",
+   "until": "17:3",
+   "to": "mf"
+  },
+  {
+   "at": "18:1",
+   "level": 3.2
+  },
+  {
+   "at": "20:1",
+   "until": "24:3",
+   "to": "f"
+  },
+  {
+   "at": "24:3",
+   "level": 4.2
+  },
+  {
+   "at": "25:1",
+   "until": "28:1",
+   "to": 6.4
+  },
+  {
+   "at": "29:1",
+   "level": 6.3
+  },
+  {
+   "at": "30:1",
+   "level": "pp"
+  },
+  {
+   "at": "30:1",
+   "until": "32:1",
+   "to": 3.8
+  },
+  {
+   "at": "32:1",
+   "until": "34:1",
+   "to": 2.5
+  },
+  {
+   "at": "35:1",
+   "level": "pp"
+  },
+  {
+   "at": "35:1",
+   "until": "44:1",
+   "to": "mf"
+  },
+  {
+   "at": "44:1",
+   "until": "45:3",
+   "to": 5.8
+  },
+  {
+   "at": "46:1",
+   "level": 2.3
+  },
+  {
+   "at": "47:3",
+   "until": "50:1",
+   "to": 4.4
+  },
+  {
+   "at": "50:1",
+   "until": "52:3",
+   "to": 7.6
+  },
+  {
+   "at": "52:3",
+   "until": "53:1",
+   "to": "fff"
+  },
+  {
+   "at": "53:4",
+   "level": 7.6
+  },
+  {
+   "at": "54:1",
+   "level": "f"
+  },
+  {
+   "at": "54:1",
+   "until": "55:1",
+   "to": "p"
+  },
+  {
+   "at": "55:1",
+   "level": 3.2
+  },
+  {
+   "at": "55:1",
+   "until": "59:1",
+   "to": "mf"
+  },
+  {
+   "at": "59:1",
+   "until": "60:4",
+   "to": 5.8
+  },
+  {
+   "at": "61:3",
+   "until": "63:1",
+   "to": "mp"
+  },
+  {
+   "at": "63:1",
+   "until": "66:1",
+   "to": 2.2
+  }
+ ],
+ "roles": [
+  {
+   "voice": "soprano",
+   "at": "1:1",
+   "until": "5:1",
+   "role": "subject"
+  },
+  {
+   "voice": "soprano",
+   "at": "5:1",
+   "until": "5:4",
+   "role": "subject_tail"
+  },
+  {
+   "voice": "alto",
+   "at": "5:1",
+   "until": "9:1",
+   "role": "answer"
+  },
+  {
+   "voice": "alto",
+   "at": "9:1",
+   "until": "9:4",
+   "role": "subject_tail"
+  },
+  {
+   "voice": "soprano",
+   "at": "5:4",
+   "until": "9:4",
+   "role": "cs"
+  },
+  {
+   "voice": "bass",
+   "at": "9:1",
+   "until": "13:1",
+   "role": "subject"
+  },
+  {
+   "voice": "bass",
+   "at": "13:1",
+   "until": "13:4",
+   "role": "subject_tail"
+  },
+  {
+   "voice": "alto",
+   "at": "9:4",
+   "until": "13:4",
+   "role": "cs"
+  },
+  {
+   "voice": "soprano",
+   "at": "10:1",
+   "until": "13:1",
+   "role": "cs"
+  },
+  {
+   "voice": "tenor",
+   "at": "13:1",
+   "until": "17:4",
+   "role": "answer"
+  },
+  {
+   "voice": "bass",
+   "at": "13:4",
+   "until": "17:3",
+   "role": "cs"
+  },
+  {
+   "voice": "alto",
+   "at": "14:1",
+   "until": "17:1",
+   "role": "cs"
+  },
+  {
+   "voice": "tenor",
+   "at": "20:1",
+   "until": "22:1",
+   "role": "subject"
+  },
+  {
+   "voice": "tenor",
+   "at": "22:1",
+   "until": "24:4",
+   "role": "subject_tail"
+  },
+  {
+   "voice": "bass",
+   "at": "20:4",
+   "until": "24:3",
+   "role": "cs"
+  },
+  {
+   "voice": "soprano",
+   "at": "22:1",
+   "until": "26:3",
+   "role": "subject"
+  },
+  {
+   "voice": "bass",
+   "at": "26:3",
+   "until": "29:1",
+   "role": "head"
+  },
+  {
+   "voice": "tenor",
+   "at": "27:1",
+   "until": "29:1",
+   "role": "head"
+  },
+  {
+   "voice": "alto",
+   "at": "27:3",
+   "until": "29:1",
+   "role": "head"
+  },
+  {
+   "voice": "soprano",
+   "at": "28:1",
+   "until": "29:1",
+   "role": "head"
+  },
+  {
+   "voice": "soprano",
+   "at": "30:1",
+   "until": "34:1",
+   "role": "subject"
+  },
+  {
+   "voice": "bass",
+   "at": "35:1",
+   "until": "37:1",
+   "role": "subject"
+  },
+  {
+   "voice": "bass",
+   "at": "37:1",
+   "until": "39:4",
+   "role": "subject_tail"
+  },
+  {
+   "voice": "alto",
+   "at": "35:4",
+   "until": "39:4",
+   "role": "cs"
+  },
+  {
+   "voice": "soprano",
+   "at": "36:1",
+   "until": "39:1",
+   "role": "cs"
+  },
+  {
+   "voice": "tenor",
+   "at": "37:1",
+   "until": "41:1",
+   "role": "answer"
+  },
+  {
+   "voice": "tenor",
+   "at": "41:1",
+   "until": "41:4",
+   "role": "subject_tail"
+  },
+  {
+   "voice": "soprano",
+   "at": "41:1",
+   "until": "45:4",
+   "role": "subject"
+  },
+  {
+   "voice": "bass",
+   "at": "41:4",
+   "until": "45:1",
+   "role": "cs"
+  },
+  {
+   "voice": "alto",
+   "at": "42:1",
+   "until": "45:1",
+   "role": "cs"
+  },
+  {
+   "voice": "bass",
+   "at": "46:1",
+   "until": "55:1",
+   "role": "cf"
+  },
+  {
+   "voice": "alto",
+   "at": "48:1",
+   "until": "50:3",
+   "role": "subject"
+  },
+  {
+   "voice": "alto",
+   "at": "50:3",
+   "until": "52:1",
+   "role": "cf"
+  },
+  {
+   "voice": "tenor",
+   "at": "48:1",
+   "until": "50:3",
+   "role": "subject"
+  },
+  {
+   "voice": "tenor",
+   "at": "50:3",
+   "until": "52:1",
+   "role": "cf"
+  },
+  {
+   "voice": "tenor",
+   "at": "52:1",
+   "until": "52:3",
+   "role": "cs"
+  },
+  {
+   "voice": "soprano",
+   "at": "50:3",
+   "until": "52:1",
+   "role": "subject"
+  },
+  {
+   "voice": "soprano",
+   "at": "52:1",
+   "until": "52:3",
+   "role": "free"
+  },
+  {
+   "voice": "soprano",
+   "at": "52:3",
+   "until": "53:4",
+   "role": "subject"
+  },
+  {
+   "voice": "alto",
+   "at": "52:1",
+   "until": "52:3",
+   "role": "subject"
+  },
+  {
+   "voice": "alto",
+   "at": "52:3",
+   "until": "53:1",
+   "role": "free"
+  },
+  {
+   "voice": "alto",
+   "at": "53:1",
+   "until": "53:3",
+   "role": "subject"
+  },
+  {
+   "voice": "soprano",
+   "at": "55:1",
+   "until": "63:2",
+   "role": "tune"
+  },
+  {
+   "voice": "bass",
+   "at": "55:4",
+   "until": "58:4",
+   "role": "cs"
+  },
+  {
+   "voice": "tenor",
+   "at": "56:1",
+   "until": "59:1",
+   "role": "cs"
+  },
+  {
+   "voice": "bass",
+   "at": "59:1",
+   "until": "63:1",
+   "role": "answer_major"
+  },
+  {
+   "voice": "tenor",
+   "at": "61:1",
+   "until": "63:1",
+   "role": "cs"
+  },
+  {
+   "voice": "tenor",
+   "at": "65:1",
+   "until": "66:4",
+   "role": "subject"
+  },
+  {
+   "voice": "tenor",
+   "at": "46:1",
+   "until": "48:1",
+   "role": "cs"
+  },
+  {
+   "voice": "soprano",
+   "at": "34:1",
+   "until": "35:1",
+   "role": "melody"
+  }
+ ],
+ "keep": [
+  {
+   "voice": "bass",
+   "at": "18:1",
+   "until": "20:1",
+   "what": "the episode bass falls in fifths F-B-flat-E-flat-A-flat into D-flat"
+  },
+  {
+   "voice": "alto",
+   "at": "24:3",
+   "until": "25:1",
+   "what": "E-flat over the three A-flats: the bare fifth that turns minor"
+  },
+  {
+   "voice": "tenor",
+   "at": "24:4",
+   "until": "25:1",
+   "what": "C-flat: A-flat minor, the false dawn darkening"
+  },
+  {
+   "voice": "alto",
+   "at": "26:3",
+   "until": "27:3",
+   "what": "G under the first head: E dim7 complete at 26:3"
+  },
+  {
+   "voice": "tenor",
+   "at": "26:3",
+   "until": "27:1",
+   "what": "B-flat under the first head: E dim7 complete at 26:3"
+  },
+  {
+   "voice": "soprano",
+   "at": "29:1",
+   "until": "30:1",
+   "what": "fermata chord re-struck"
+  },
+  {
+   "voice": "alto",
+   "at": "29:1",
+   "until": "30:1",
+   "what": "fermata chord re-struck"
+  },
+  {
+   "voice": "tenor",
+   "at": "29:1",
+   "until": "30:1",
+   "what": "fermata chord re-struck"
+  },
+  {
+   "voice": "bass",
+   "at": "29:1",
+   "until": "30:1",
+   "what": "fermata chord re-struck"
+  },
+  {
+   "voice": "soprano",
+   "at": "34:1",
+   "until": "35:1",
+   "what": "the pivot: C held over E, then B (b6-5)"
+  },
+  {
+   "voice": "alto",
+   "at": "31:4",
+   "until": "32:2",
+   "what": "F held over the G-flat bass: the 7-6 at the arioso peak"
+  },
+  {
+   "voice": "tenor",
+   "at": "32:1",
+   "until": "33:4",
+   "what": "B-flat held (cadential 6/4) resolving to A at 33:3"
+  },
+  {
+   "voice": "tenor",
+   "at": "34:1",
+   "until": "35:1",
+   "what": "G-sharp, A (the A-minor 6/4 over E), G-sharp"
+  },
+  {
+   "voice": "bass",
+   "at": "31:1",
+   "until": "33:1",
+   "what": "E-flat D, the diminished-fourth fall D-G-flat, F"
+  },
+  {
+   "voice": "soprano",
+   "at": "39:3",
+   "until": "41:1",
+   "what": "E over the root-position A minor, then D, D-sharp into the third entry"
+  },
+  {
+   "voice": "alto",
+   "at": "39:3",
+   "until": "41:1",
+   "what": "C (A minor complete at 39:3), B, F-sharp (B major), E"
+  },
+  {
+   "voice": "bass",
+   "at": "45:1",
+   "until": "46:1",
+   "what": "the cadence bass F-D-A and the E that resolves deceptively to F"
+  },
+  {
+   "voice": "alto",
+   "at": "45:1",
+   "until": "46:1",
+   "what": "cadence and G-sharp of the E7 link"
+  },
+  {
+   "voice": "tenor",
+   "at": "45:1",
+   "until": "46:1",
+   "what": "cadence and B of the E7 link"
+  },
+  {
+   "voice": "tenor",
+   "at": "46:1",
+   "until": "48:1",
+   "what": "lament lead-in B-flat A A-flat G, then C into the S1 entry"
+  },
+  {
+   "voice": "tenor",
+   "at": "52:3",
+   "until": "54:1",
+   "what": "B-flat, G (C7 and E dim7 complete), C"
+  },
+  {
+   "voice": "alto",
+   "at": "53:3",
+   "until": "55:1",
+   "what": "E, F (root doubled at the V fermata), then the hinge C A C"
+  },
+  {
+   "voice": "soprano",
+   "at": "53:4",
+   "until": "55:1",
+   "what": "A at the fermata, then F E-flat C A into the tune"
+  },
+  {
+   "voice": "tenor",
+   "at": "54:1",
+   "until": "55:1",
+   "what": "hinge: A C E-flat"
+  },
+  {
+   "voice": "alto",
+   "at": "59:1",
+   "until": "59:2.5",
+   "what": "A, the third of V7 (never F)"
+  },
+  {
+   "voice": "alto",
+   "at": "60:3",
+   "until": "61:1",
+   "what": "A under the tune peak f, then G (C7/E)"
+  },
+  {
+   "voice": "alto",
+   "at": "62:1",
+   "until": "63:1",
+   "what": "E (C7/B-flat complete), A"
+  },
+  {
+   "voice": "tenor",
+   "at": "62:4",
+   "until": "63:1",
+   "what": "E-flat: V7 complete before the cadence"
+  },
+  {
+   "voice": "soprano",
+   "at": "63:1",
+   "until": "65:1",
+   "what": "the tune open c rises to d, held"
+  },
+  {
+   "voice": "bass",
+   "at": "63:1",
+   "until": "67:1",
+   "what": "tonic pedal re-struck every bar"
+  }
+ ],
+ "pedal": [
+  {
+   "at": "29:1",
+   "until": "30:1",
+   "every": "bar"
+  },
+  {
+   "at": "30:1",
+   "until": "30:4",
+   "every": "bar"
+  },
+  {
+   "at": "30:4",
+   "until": "31:1",
+   "every": "bar"
+  },
+  {
+   "at": "31:1",
+   "until": "31:2",
+   "every": "bar"
+  },
+  {
+   "at": "31:2",
+   "until": "31:3",
+   "every": "bar"
+  },
+  {
+   "at": "31:3",
+   "until": "31:4",
+   "every": "bar"
+  },
+  {
+   "at": "31:4",
+   "until": "32:1",
+   "every": "bar"
+  },
+  {
+   "at": "32:1",
+   "until": "32:2",
+   "every": "bar"
+  },
+  {
+   "at": "32:2",
+   "until": "32:3",
+   "every": "bar"
+  },
+  {
+   "at": "32:3",
+   "until": "32:4.5",
+   "every": "bar"
+  },
+  {
+   "at": "32:4.5",
+   "until": "33:2.5",
+   "every": "bar"
+  },
+  {
+   "at": "33:3",
+   "until": "34:1",
+   "every": "bar"
+  },
+  {
+   "at": "34:1",
+   "until": "34:2",
+   "every": "bar"
+  },
+  {
+   "at": "34:2",
+   "until": "34:3",
+   "every": "bar"
+  },
+  {
+   "at": "34:3",
+   "until": "34:4",
+   "every": "bar"
+  },
+  {
+   "at": "34:4.5",
+   "until": "35:1",
+   "every": "bar"
+  },
+  {
+   "at": "53:4",
+   "until": "54:1",
+   "every": "bar"
+  },
+  {
+   "at": "63:1",
+   "until": "63:3",
+   "every": "bar"
+  },
+  {
+   "at": "63:3",
+   "until": "63:4.5",
+   "every": "bar"
+  },
+  {
+   "at": "64:1",
+   "until": "64:2",
+   "every": "bar"
+  },
+  {
+   "at": "64:4",
+   "until": "65:1",
+   "every": "bar"
+  },
+  {
+   "at": "65:1",
+   "until": "65:3",
+   "every": "bar"
+  },
+  {
+   "at": "65:3",
+   "until": "65:4.5",
+   "every": "bar"
+  },
+  {
+   "at": "65:4.5",
+   "until": "66:1",
+   "every": "bar"
+  },
+  {
+   "at": "66:1",
+   "until": "67:1",
+   "every": "bar"
+  }
+ ],
+ "humanize": {
+  "ms": 5,
+  "vel": 2
+ },
+ "role_boost": {
+  "subject": 12,
+  "answer": 12,
+  "cf": 9,
+  "subject_tail": 3,
+  "melody": 6,
+  "tune": 14,
+  "answer_major": 9,
+  "head": 5,
+  "cs": 3,
+  "free": -5
+ },
+ "role_level": {
+  "subject": 1.0,
+  "answer": 1.0,
+  "tune": 1.1,
+  "cf": 0.7,
+  "answer_major": 0.7,
+  "melody": 0.5,
+  "head": 0.4,
+  "subject_tail": 0.2,
+  "cs": 0.2,
+  "free": -0.3
+ }
+}

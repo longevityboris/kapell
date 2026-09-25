@@ -1,0 +1,19 @@
+{
+ "runs": [
+  {
+   "cmd": "./setup_piano.sh",
+   "exit": 0,
+   "wall_s": 13.06
+  },
+  {
+   "cmd": "./setup_piano.sh",
+   "exit": 0,
+   "wall_s": 7.49
+  }
+ ],
+ "load_average_at_test": "~800 on 16 cores",
+ "derived_files_changed_between_runs": false,
+ "checked": "mtime+size of both derived SFZ, calibration JSON, hall IR, sfizz_render, alignment.json; listing hash of samples-aligned/; files in samples-aligned newer than the SFZ",
+ "hall_ir_regenerated_to_tmp_matches_installed": true,
+ "note": "setup rebuilds the hall IR only when it is missing or with --force; unlike the SFZ it carries no generator hash, so an edited make_ir.py would not be noticed (it matches today)"
+}

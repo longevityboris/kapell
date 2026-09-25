@@ -1,0 +1,44 @@
+{
+ "title": "test: orchestra and organ groups",
+ "comment": "Exercises the orchestra (part ids, tags, a2 players, timpani roll and horn pedal points, divisi, Webern hand-offs between woodwinds, sidecar) and organ (divisions, registration sidecar, swell) contracts. Not a musical proposal.",
+ "groups": {
+  "orch": {
+   "renderer": "orchestra",
+   "parts": {"vn1": {}, "vn2": {}, "va": {}, "vc": {}, "cb": {"gain_db": -1.0},
+             "fl": {"players": "solo"}, "ob": {}, "cl": {}, "bn": {},
+             "hn.1": {"players": "a2"}, "timp": {}, "vc.div": {"divisi": true}},
+   "options": {"sidecar": {"hall": {"wet_db": -3.0}}}
+  },
+  "organ": {
+   "renderer": "organ",
+   "parts": {"Soprano": {}, "alto": {}, "tenor": {"division": "POS"}, "bass": {}},
+   "options": {"swell": true,
+               "registration": {"changes": [{"at": "1:1", "HW": "flute8", "POS": "flute8", "PED": "pedal16"},
+                                            {"at": "20:1", "HW": "principal8+4", "PED": "pedal16+8"}],
+                                "manual_changes": [{"at": "30:1", "voice": "tenor", "division": "HW"}]}}
+  }
+ },
+ "assignments": [
+  {"voice": "soprano", "part": "vn1"},
+  {"voice": "alto", "part": "vn2"},
+  {"voice": "tenor", "part": "va"},
+  {"voice": "bass", "part": "vc"},
+  {"voice": "bass", "part": "cb", "at": "20:1", "until": "30:1", "octave": -12},
+  {"voice": "soprano", "part": "fl", "at": "1:1", "until": "5:4", "level": -0.5},
+  {"voice": "soprano", "part": "ob", "at": "5:4", "until": "9:4", "articulation": "legato"},
+  {"voice": "soprano", "part": "cl", "at": "10:1", "until": "13:1"},
+  {"voice": "soprano", "part": "fl", "at": "46:1", "until": "51:1", "octave": 12, "players": "a2"},
+  {"voice": "bass", "part": "bn", "at": "13:1", "until": "17:4", "articulation": "short"},
+  {"voice": "tenor", "part": "vc.div", "at": "30:1", "until": "35:1", "octave": -12},
+
+  {"voice": "soprano", "part": "Soprano"},
+  {"voice": "alto", "part": "alto"},
+  {"voice": "tenor", "part": "tenor"},
+  {"voice": "bass", "part": "bass"}
+ ],
+ "pedal_points": [
+  {"voice": "bass", "part": "hn.1", "at": "42:1", "until": "46:1", "level": -1},
+  {"voice": "bass", "part": "timp", "at": "42:1", "until": "46:1", "articulation": "roll", "level": -1}
+ ],
+ "mix": {"groups": {"orch": {"wet_db": -3.0}, "organ": {"wet_db": -2.0}}}
+}

@@ -1,0 +1,27 @@
+{
+ "description": "After the fix (hint_ram_based=1, pruned per-stem SFZ, truncation guard): the demo MIDI (out/fugue_jp.mid, --transpose pedal=-12) rendered three times concurrently (12 sfizz instances, load average about 250 on 16 cores) plus the shipped demo render. truncation_check from each render report; stems compared sample by sample.",
+ "runs": [
+  {
+   "checked_stems": 4,
+   "rerendered": {},
+   "found": {}
+  },
+  {
+   "checked_stems": 4,
+   "rerendered": {},
+   "found": {}
+  },
+  {
+   "checked_stems": 4,
+   "rerendered": {},
+   "found": {}
+  }
+ ],
+ "stems_identical_across_runs_and_to_demo": {
+  "soprano": true,
+  "alto": true,
+  "tenor": true,
+  "pedal": true
+ },
+ "before_fix": "3 of 8 streamed renders dropped a held note (qa/results/truncation.json, truncation_repro.json)"
+}

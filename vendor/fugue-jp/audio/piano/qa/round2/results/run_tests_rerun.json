@@ -1,0 +1,69 @@
+{
+ "what": "run_tests.sh re-run in a scratch copy of ricercar/ (/tmp/pianoqa2/rt), load ~800",
+ "exit": 0,
+ "wall_s": 32.8,
+ "direct": {
+  "pp": [
+   -41.0,
+   298.1,
+   -44.39
+  ],
+  "mf": [
+   -24.9,
+   396.6,
+   -26.16
+  ],
+  "ff": [
+   -17.87,
+   429.3,
+   -23.13
+  ],
+  "cols": "RMS dBFS, centroid Hz, HF>2k dB"
+ },
+ "chain": {
+  "pp": [
+   -39.67,
+   278.8,
+   -42.79
+  ],
+  "mf": [
+   -24.7,
+   378.4,
+   -26.36
+  ],
+  "ff": [
+   -17.54,
+   414.8,
+   -23.37
+  ]
+ },
+ "ramps": {
+  "velocity": [
+   27.49,
+   29.14,
+   0.992
+  ],
+  "cc11": [
+   20.2,
+   13.63,
+   0.99
+  ],
+  "chain_hairpin": [
+   21.52,
+   15.25,
+   0.987
+  ],
+  "cols": "level span dB, HF span dB, corr"
+ },
+ "voicing": {
+  "tenor_minus_others_db": [
+   2.5,
+   7.3
+  ],
+  "tenor_centroid_hz": [
+   360,
+   378
+  ]
+ },
+ "matches_README_tables": true
+}

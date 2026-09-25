@@ -1,0 +1,176 @@
+{
+ "render": {
+  "duration_s": 128.24,
+  "key_sharing": {
+   "unisons_merged": 1,
+   "restrikes": 0
+  },
+  "c80_db": 8.4,
+  "normalise_gain_db": 1.86,
+  "rms_dbfs": -23.05,
+  "measured": {
+   "wav": {
+    "integrated_lufs": -18.4,
+    "lra_lu": 22.8,
+    "true_peak_dbtp": -1.0
+   },
+   "m4a": {
+    "integrated_lufs": -18.5,
+    "lra_lu": 22.8,
+    "true_peak_dbtp": -1.0
+   }
+  }
+ },
+ "voices": {
+  "alto": {
+   "midi_notes_in": 200,
+   "stem_notes": 200,
+   "stem_unterminated": 0,
+   "midi_missing_in_stem": [],
+   "midi_onset_shift_ms_maxabs": 0.026,
+   "durations_changed": [],
+   "audio_onsets_found": 200,
+   "audio_onsets_missing": [],
+   "flux_peak_offset_ms": {
+    "median": -0.09,
+    "p05": -1.34,
+    "p95": 1.55,
+    "max_abs_dev_from_median": 17.97
+   },
+   "harmonic_rise_db": {
+    "median": 38.3,
+    "min": 6.6
+   },
+   "weak_onsets": [],
+   "release_drop_db": {
+    "n": 161,
+    "median": -35.0,
+    "worst": 5.9
+   },
+   "stem_seconds": 128.59,
+   "last_note_off_s": 126.84
+  },
+  "soprano": {
+   "midi_notes_in": 206,
+   "stem_notes": 205,
+   "stem_unterminated": 0,
+   "midi_missing_in_stem": [
+    [
+     67,
+     56.253
+    ]
+   ],
+   "midi_onset_shift_ms_maxabs": 0.026,
+   "durations_changed": [],
+   "audio_onsets_found": 206,
+   "audio_onsets_missing": [],
+   "flux_peak_offset_ms": {
+    "median": -0.43,
+    "p05": -1.36,
+    "p95": 1.26,
+    "max_abs_dev_from_median": 3.36
+   },
+   "harmonic_rise_db": {
+    "median": 44.0,
+    "min": -9.0
+   },
+   "weak_onsets": [
+    {
+     "key": 67,
+     "t": 56.253,
+     "rise_db": -9.0,
+     "vel": 38
+    }
+   ],
+   "release_drop_db": {
+    "n": 153,
+    "median": -34.5,
+    "worst": 16.7
+   },
+   "stem_seconds": 128.59,
+   "last_note_off_s": 126.84
+  },
+  "tenor": {
+   "midi_notes_in": 141,
+   "stem_notes": 141,
+   "stem_unterminated": 0,
+   "midi_missing_in_stem": [],
+   "midi_onset_shift_ms_maxabs": 0.026,
+   "durations_changed": [],
+   "audio_onsets_found": 141,
+   "audio_onsets_missing": [],
+   "flux_peak_offset_ms": {
+    "median": 0.16,
+    "p05": -1.89,
+    "p95": 2.89,
+    "max_abs_dev_from_median": 4.98
+   },
+   "harmonic_rise_db": {
+    "median": 21.8,
+    "min": 0.7
+   },
+   "weak_onsets": [
+    {
+     "key": 43,
+     "t": 56.665,
+     "rise_db": 0.7,
+     "vel": 42
+    }
+   ],
+   "release_drop_db": {
+    "n": 103,
+    "median": -27.7,
+    "worst": 16.6
+   },
+   "stem_seconds": 128.59,
+   "last_note_off_s": 126.84
+  },
+  "pedal": {
+   "midi_notes_in": 101,
+   "stem_notes": 101,
+   "stem_unterminated": 0,
+   "midi_missing_in_stem": [],
+   "midi_onset_shift_ms_maxabs": 0.026,
+   "durations_changed": [],
+   "audio_onsets_found": 101,
+   "audio_onsets_missing": [],
+   "flux_peak_offset_ms": {
+    "median": -0.54,
+    "p05": -2.43,
+    "p95": 2.67,
+    "max_abs_dev_from_median": 15.22
+   },
+   "harmonic_rise_db": {
+    "median": 12.0,
+    "min": -1.4
+   },
+   "weak_onsets": [
+    {
+     "key": 28,
+     "t": 24.782,
+     "rise_db": -1.4,
+     "vel": 38
+    },
+    {
+     "key": 28,
+     "t": 26.455,
+     "rise_db": 0.4,
+     "vel": 36
+    },
+    {
+     "key": 33,
+     "t": 108.111,
+     "rise_db": 2.4,
+     "vel": 78
+    }
+   ],
+   "release_drop_db": {
+    "n": 83,
+    "median": -4.4,
+    "worst": 20.0
+   },
+   "stem_seconds": 128.59,
+   "last_note_off_s": 126.84
+  }
+ }
+}

@@ -1,0 +1,321 @@
+{
+ "state": {
+  "head": "f3a7af6",
+  "render_quartet_commit": "c71ee34",
+  "render_quartet_sha": "b32c34e0dd47ed48",
+  "sfz": {
+   "bass.sfz": "00762544528904ce",
+   "cello.sfz": "1509632bd473c8ed",
+   "viola.sfz": "eeb0117a420062b4",
+   "violin.sfz": "bf2e18602a9816a2",
+   "violin2.sfz": "c50e3d0762fdcf75"
+  }
+ },
+ "slur_timing": {
+  "vn1": {
+   "second_note_art": 80,
+   "first_note_rendered_off": 2.005,
+   "crossover_ms_after_note_on": 10.0,
+   "new_note_within_6db_ms": -0.0,
+   "level_dip_db": 3.5
+  },
+  "va": {
+   "second_note_art": 80,
+   "first_note_rendered_off": 2.005,
+   "crossover_ms_after_note_on": 10.0,
+   "new_note_within_6db_ms": -0.0,
+   "level_dip_db": 2.2
+  },
+  "vc": {
+   "second_note_art": 80,
+   "first_note_rendered_off": 2.005,
+   "crossover_ms_after_note_on": 15.0,
+   "new_note_within_6db_ms": 5.0,
+   "level_dip_db": 1.1
+  }
+ },
+ "cc21_order": {
+  "B_cc21=11": {
+   "A_minus20_ms": 45.0,
+   "A_minus40_ms": 75.0,
+   "B_release_s": 0.134
+  },
+  "B_cc21=58": {
+   "A_minus20_ms": 45.0,
+   "A_minus40_ms": 75.0,
+   "B_release_s": 0.578
+  },
+  "B_cc21=127": {
+   "A_minus20_ms": 45.0,
+   "A_minus40_ms": 75.0,
+   "B_release_s": 1.23
+  }
+ },
+ "cc21_chain": {
+  "slur_into_final": {
+   "job_midi_events": [
+    [
+     0.985,
+     "control_change",
+     null,
+     10
+    ],
+    [
+     0.985,
+     "note_on",
+     69,
+     null
+    ],
+    [
+     1.975,
+     "control_change",
+     null,
+     60
+    ],
+    [
+     1.975,
+     "note_on",
+     72,
+     null
+    ],
+    [
+     2.005,
+     "note_off",
+     69,
+     null
+    ],
+    [
+     2.6,
+     "note_off",
+     72,
+     null
+    ]
+   ],
+   "A_note_off_s": 2.005,
+   "A_minus20_ms": 35.0,
+   "A_minus40_ms": 75.0
+  },
+  "slur_into_slur": {
+   "job_midi_events": [
+    [
+     0.985,
+     "control_change",
+     null,
+     10
+    ],
+    [
+     0.985,
+     "note_on",
+     69,
+     null
+    ],
+    [
+     1.975,
+     "control_change",
+     null,
+     10
+    ],
+    [
+     1.975,
+     "note_on",
+     72,
+     null
+    ],
+    [
+     2.005,
+     "note_off",
+     69,
+     null
+    ],
+    [
+     2.575,
+     "control_change",
+     null,
+     60
+    ],
+    [
+     2.575,
+     "note_on",
+     74,
+     null
+    ],
+    [
+     2.605,
+     "note_off",
+     72,
+     null
+    ],
+    [
+     3.2,
+     "note_off",
+     74,
+     null
+    ]
+   ],
+   "A_note_off_s": 2.005,
+   "A_minus20_ms": 35.0,
+   "A_minus40_ms": 75.0
+  }
+ },
+ "cc20_input": {
+  "returncode": 0,
+  "stderr_tail": "",
+  "cc21_only_returncode": 0,
+  "cc21_stderr_tail": ""
+ },
+ "names": {
+  "vn2_first": {
+   "Cello": "vc",
+   "Viola": "va",
+   "Violin I": "vn1",
+   "Violin II": "vn2"
+  },
+  "lone_violin_ii": {
+   "Violin II": "vn2"
+  }
+ },
+ "map_malformed": {
+  "colon_returncode": 1,
+  "colon_stderr": "--map: expected voice=instrument, got 'soprano:vn1' (e.g. soprano=vn1 or 0=vn1; instruments: vn1 vn2 va vc cb)\n",
+  "bad_inst_returncode": 1,
+  "bad_inst_stderr": "--map: unknown instrument 'viola' (use vn1 vn2 va vc cb)\n"
+ },
+ "six_voices": {
+  "mapping": {
+   "extra": "vc",
+   "pedal": "cb",
+   "bass": "vc",
+   "tenor": "va",
+   "alto": "vn2",
+   "soprano": "vn1"
+  },
+  "notes": [
+   "extra: more voices than instruments, a second Cello desk plays it (median pitch 60)"
+  ]
+ },
+ "hanging": {
+  "notes_rendered": 2,
+  "log": [
+   "Violin I: note 72 at 1.20s has no note-off, closed at 2.20s (end of track)"
+  ],
+  "duration_s": 3.02
+ },
+ "out_of_range": {
+  "soprano_rendered_keys": [
+   92
+  ],
+  "log": [
+   "soprano: 40 at 0.50s below Violin I compass, doubled in unison by another voice -> dropped",
+   "soprano: 1 notes outside the Violin I compass octave-shifted"
+  ],
+  "stdout": "ys 40-40  (normal 1, legato 0, short 0)\n  tenor                        -> Viola          1 notes, keys 52-52  (normal 1, legato 0, short 0)\n  alto                         -> Violin II      1 notes, keys 60-60  (normal 1, legato 0, short 0)\n  soprano                      -> Violin I       1 notes, keys 92-92  (normal 1, legato 0, short 0)\n  note: soprano: 40 at 0.50s below Violin I compass, doubled in unison by another voice -> dropped\n  note: soprano: 1 notes outside the Violin I compass octave-shifted\nhall=none wet=-4.0 dB  true peak -1.00 dBTP  -> /tmp/sqa/edge/range.wav, range.m4a  (4.2 s)\n"
+ },
+ "bend": {
+  "before_cents_re_69": 0.8,
+  "after_cents_re_69": 197.6
+ },
+ "short_notes": {
+  "peak_level_db": {
+   "10ms": -18.9,
+   "40ms": -12.2,
+   "100ms": -12.3,
+   "500ms": -8.5
+  },
+  "rendered": [
+   [
+    0.5,
+    0.5099,
+    69
+   ],
+   [
+    1.5,
+    1.5401,
+    69
+   ],
+   [
+    2.5,
+    2.6,
+    69
+   ],
+   [
+    3.5,
+    4.0,
+    69
+   ]
+  ]
+ },
+ "long_note": {
+  "vn1": {
+   "level_std_db": 0.94,
+   "p2p_db": 4.3,
+   "max_50ms_jump_db": 3.01,
+   "jump_times_s": [
+    11.6,
+    4.95,
+    1.65,
+    14.1
+   ],
+   "hf_spikes_over_12db": 0,
+   "spike_times_s": [],
+   "level_first_vs_last_5s_db": 0.01
+  },
+  "va": {
+   "level_std_db": 0.19,
+   "p2p_db": 0.77,
+   "max_50ms_jump_db": 0.71,
+   "jump_times_s": [
+    20.6,
+    4.5,
+    6.8,
+    13.15
+   ],
+   "hf_spikes_over_12db": 0,
+   "spike_times_s": [],
+   "level_first_vs_last_5s_db": -0.01
+  },
+  "vc": {
+   "level_std_db": 0.25,
+   "p2p_db": 1.5,
+   "max_50ms_jump_db": 1.17,
+   "jump_times_s": [
+    17.85,
+    4.75,
+    4.1,
+    5.7
+   ],
+   "hf_spikes_over_12db": 0,
+   "spike_times_s": [],
+   "level_first_vs_last_5s_db": 0.01
+  }
+ },
+ "fermata_cc_gaps": [
+  {
+   "channel": 0,
+   "t0": 135.93,
+   "t1": 138.63,
+   "v0": 111,
+   "v1": 112
+  },
+  {
+   "channel": 1,
+   "t0": 135.93,
+   "t1": 138.63,
+   "v0": 111,
+   "v1": 112
+  },
+  {
+   "channel": 2,
+   "t0": 135.93,
+   "t1": 138.63,
+   "v0": 111,
+   "v1": 112
+  },
+  {
+   "channel": 3,
+   "t0": 135.93,
+   "t1": 138.63,
+   "v0": 111,
+   "v1": 112
+  }
+ ]
+}

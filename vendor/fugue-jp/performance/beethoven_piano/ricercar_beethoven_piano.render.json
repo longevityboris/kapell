@@ -1,0 +1,165 @@
+{
+ "input": "/var/folders/qh/7w8n7nzn5ns_qjyyllhjxnt40000gn/T/ricercar_beethoven_piano.mid",
+ "wav": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/beethoven_piano/ricercar_beethoven_piano.wav",
+ "m4a": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/beethoven_piano/ricercar_beethoven_piano.m4a",
+ "m4a_tagged": true,
+ "midi_marker": {
+  "source": "perform.py",
+  "target": "piano"
+ },
+ "velocity_scale": "perform",
+ "cc_dynamics": "velocity",
+ "duration_s": 243.56,
+ "voices": {
+  "soprano": {
+   "notes": 191,
+   "velocity_in_mean": 65.4,
+   "velocity_in_range": [
+    33,
+    124
+   ],
+   "velocity_eff_mean": 75.6,
+   "velocity_eff_range": [
+    31,
+    127
+   ],
+   "cc_dynamics_db_mean": 0.0,
+   "rms_dbfs_prenorm": -38.26,
+   "transpose": 0,
+   "zero_length_notes": 0,
+   "unterminated_notes": 0,
+   "folded_notes": 0,
+   "stereo": {
+    "lr_correlation": 0.68,
+    "mono_fold_db": -1.05,
+    "mono_fold_worst_1s_db": -6.11,
+    "balance_r_minus_l_db": 5.25
+   }
+  },
+  "alto": {
+   "notes": 217,
+   "velocity_in_mean": 58.5,
+   "velocity_in_range": [
+    23,
+    124
+   ],
+   "velocity_eff_mean": 66.7,
+   "velocity_eff_range": [
+    15,
+    127
+   ],
+   "cc_dynamics_db_mean": 0.0,
+   "rms_dbfs_prenorm": -38.79,
+   "transpose": 0,
+   "zero_length_notes": 0,
+   "unterminated_notes": 0,
+   "folded_notes": 0,
+   "stereo": {
+    "lr_correlation": 0.6,
+    "mono_fold_db": -1.28,
+    "mono_fold_worst_1s_db": -3.4,
+    "balance_r_minus_l_db": 5.78
+   }
+  },
+  "bass": {
+   "notes": 141,
+   "velocity_in_mean": 63.9,
+   "velocity_in_range": [
+    28,
+    124
+   ],
+   "velocity_eff_mean": 74.5,
+   "velocity_eff_range": [
+    23,
+    127
+   ],
+   "cc_dynamics_db_mean": 0.0,
+   "rms_dbfs_prenorm": -37.23,
+   "transpose": 0,
+   "zero_length_notes": 0,
+   "unterminated_notes": 0,
+   "folded_notes": 0,
+   "stereo": {
+    "lr_correlation": 0.541,
+    "mono_fold_db": -1.18,
+    "mono_fold_worst_1s_db": -3.26,
+    "balance_r_minus_l_db": -2.1
+   }
+  },
+  "tenor": {
+   "notes": 192,
+   "velocity_in_mean": 60.2,
+   "velocity_in_range": [
+    24,
+    112
+   ],
+   "velocity_eff_mean": 69.8,
+   "velocity_eff_range": [
+    16,
+    127
+   ],
+   "cc_dynamics_db_mean": 0.0,
+   "rms_dbfs_prenorm": -37.67,
+   "transpose": 0,
+   "zero_length_notes": 0,
+   "unterminated_notes": 0,
+   "folded_notes": 0,
+   "stereo": {
+    "lr_correlation": 0.558,
+    "mono_fold_db": -1.09,
+    "mono_fold_worst_1s_db": -3.54,
+    "balance_r_minus_l_db": 0.89
+   }
+  }
+ },
+ "key_sharing": {
+  "unisons_merged": 0,
+  "restrikes": 1
+ },
+ "folded_notes": {},
+ "truncation_check": {
+  "checked_stems": 4,
+  "rerendered": {},
+  "found": {}
+ },
+ "pedal_changes": 50,
+ "wet_db": -1.0,
+ "c80_db": 5.0,
+ "hall": {
+  "wet_db": -1.0,
+  "ir_gain_on_piano_spectrum_db": 9.37,
+  "ir_scale_db": -10.37,
+  "hall_re_dry_db": -1.5,
+  "c80_db": 5.0
+ },
+ "normalise_gain_db": 3.15,
+ "true_peak_dbfs": -1.0,
+ "rms_dbfs": -26.66,
+ "stereo": {
+  "dry": {
+   "lr_correlation": 0.542,
+   "mono_fold_db": -1.16,
+   "mono_fold_worst_1s_db": -3.37,
+   "balance_r_minus_l_db": 1.84
+  },
+  "mix": {
+   "lr_correlation": 0.476,
+   "mono_fold_db": -1.34,
+   "mono_fold_worst_1s_db": -3.34,
+   "balance_r_minus_l_db": 1.5
+  }
+ },
+ "measured": {
+  "wav": {
+   "integrated_lufs": -22.7,
+   "lra_lu": 18.8,
+   "true_peak_dbtp": -1.0
+  },
+  "m4a": {
+   "integrated_lufs": -22.7,
+   "lra_lu": 18.8,
+   "true_peak_dbtp": -1.0
+  }
+ },
+ "warnings": []
+}

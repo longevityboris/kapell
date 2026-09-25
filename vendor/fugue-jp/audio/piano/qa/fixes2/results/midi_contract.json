@@ -1,0 +1,201 @@
+{
+ "gm_cc1reset_default": {
+  "cc_dynamics": "cc11",
+  "normalise_gain_db": 11.42,
+  "voices": {
+   "Piano RH": {
+    "notes": 8,
+    "velocity_in": [
+     100,
+     100
+    ],
+    "velocity_eff": [
+     100,
+     100
+    ],
+    "rms_dbfs_prenorm": -36.3,
+    "cc_dynamics_db_mean": 0.0
+   },
+   "Piano LH": {
+    "notes": 8,
+    "velocity_in": [
+     100,
+     100
+    ],
+    "velocity_eff": [
+     100,
+     100
+    ],
+    "rms_dbfs_prenorm": -34.47,
+    "cc_dynamics_db_mean": 0.0
+   }
+  },
+  "warnings": []
+ },
+ "gm_cc1reset_--cc-dynamics_velocity": {
+  "cc_dynamics": "velocity",
+  "normalise_gain_db": 46.27,
+  "voices": {
+   "Piano RH": {
+    "notes": 8,
+    "velocity_in": [
+     100,
+     100
+    ],
+    "velocity_eff": [
+     1,
+     1
+    ],
+    "rms_dbfs_prenorm": -71.45,
+    "cc_dynamics_db_mean": -120.0
+   },
+   "Piano LH": {
+    "notes": 8,
+    "velocity_in": [
+     100,
+     100
+    ],
+    "velocity_eff": [
+     1,
+     1
+    ],
+    "rms_dbfs_prenorm": -67.19,
+    "cc_dynamics_db_mean": -120.0
+   }
+  },
+  "warnings": [
+   "Piano RH: mean velocity 100 becomes 1 (nearly silent): CC dynamics (velocity) move it by -120 dB on average; if the file uses CC1 as modulation or CC11 as a fader, try --cc-dynamics cc11 or off",
+   "Piano LH: mean velocity 100 becomes 1 (nearly silent): CC dynamics (velocity) move it by -120 dB on average; if the file uses CC1 as modulation or CC11 as a fader, try --cc-dynamics cc11 or off",
+   "the render needed +46.3 dB of make-up gain to reach -1 dBTP: it is nearly silent before normalisation (check velocities, CC1/CC11/CC7, --cc-dynamics)"
+  ]
+ },
+ "gm_cc1reset_--cc-dynamics_off": {
+  "cc_dynamics": "off",
+  "normalise_gain_db": 11.42,
+  "voices": {
+   "Piano RH": {
+    "notes": 8,
+    "velocity_in": [
+     100,
+     100
+    ],
+    "velocity_eff": [
+     100,
+     100
+    ],
+    "rms_dbfs_prenorm": -36.3,
+    "cc_dynamics_db_mean": 0.0
+   },
+   "Piano LH": {
+    "notes": 8,
+    "velocity_in": [
+     100,
+     100
+    ],
+    "velocity_eff": [
+     100,
+     100
+    ],
+    "rms_dbfs_prenorm": -34.47,
+    "cc_dynamics_db_mean": 0.0
+   }
+  },
+  "warnings": []
+ },
+ "odd_names_default": {
+  "cc_dynamics": "cc11",
+  "normalise_gain_db": 18.52,
+  "voices": {
+   "soprano": {
+    "notes": 1,
+    "velocity_in": [
+     80,
+     80
+    ],
+    "velocity_eff": [
+     80,
+     80
+    ],
+    "rms_dbfs_prenorm": -49.06,
+    "cc_dynamics_db_mean": 0.0
+   },
+   "track3": {
+    "notes": 1,
+    "velocity_in": [
+     80,
+     80
+    ],
+    "velocity_eff": [
+     80,
+     80
+    ],
+    "rms_dbfs_prenorm": -46.31,
+    "cc_dynamics_db_mean": 0.0
+   },
+   "soprano.2": {
+    "notes": 1,
+    "velocity_in": [
+     80,
+     80
+    ],
+    "velocity_eff": [
+     80,
+     80
+    ],
+    "rms_dbfs_prenorm": -49.38,
+    "cc_dynamics_db_mean": 0.0
+   }
+  },
+  "warnings": [
+   "track 'soprano' appears more than once; this one is voice 'soprano.2' (its own stem, CC7 fader and --transpose name)"
+  ]
+ },
+ "odd_names_--transpose_soprano.2=-12": {
+  "cc_dynamics": "cc11",
+  "normalise_gain_db": 16.79,
+  "voices": {
+   "soprano": {
+    "notes": 1,
+    "velocity_in": [
+     80,
+     80
+    ],
+    "velocity_eff": [
+     80,
+     80
+    ],
+    "rms_dbfs_prenorm": -49.06,
+    "cc_dynamics_db_mean": 0.0
+   },
+   "track3": {
+    "notes": 1,
+    "velocity_in": [
+     80,
+     80
+    ],
+    "velocity_eff": [
+     80,
+     80
+    ],
+    "rms_dbfs_prenorm": -46.31,
+    "cc_dynamics_db_mean": 0.0
+   },
+   "soprano.2": {
+    "notes": 1,
+    "velocity_in": [
+     80,
+     80
+    ],
+    "velocity_eff": [
+     80,
+     80
+    ],
+    "rms_dbfs_prenorm": -48.13,
+    "cc_dynamics_db_mean": 0.0
+   }
+  },
+  "warnings": [
+   "track 'soprano' appears more than once; this one is voice 'soprano.2' (its own stem, CC7 fader and --transpose name)"
+  ]
+ }
+}

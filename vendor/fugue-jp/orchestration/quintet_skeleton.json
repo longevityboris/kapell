@@ -1,0 +1,247 @@
+{
+ "title": "Ricercar (skeleton) - piano quintet",
+ "comment": "Shostakovich Op. 57 model. Positions are section marks from design/final-lab/piece.py, so the scoring follows the form when bars are inserted. Quartet alone through the exposition, stretto, Climax I and the arioso dolente; the alto's lament countersubject dips below the violin (F3, expo bars 9-12) and goes to the viola while the tenor still rests. The piano enters alone with the Fuga inversa; the viola brings the tenor's stretto entry (inversa+2). Over the dominant pedal the cello holds the augmented inversion with a piano F1 pedal point under it, and the tenor's S1 entry (pedal_climax+2) is the piano's colour while the viola rests. Climax II (pedal_climax+4) and the apotheosis are tutti with octave doublings (piano soprano 8va, bass 8vb).",
+ "marks": {
+  "from": "../design/final-lab/piece.py"
+ },
+ "groups": {
+  "quartet": {
+   "renderer": "quartet",
+   "parts": [
+    "vn1",
+    "vn2",
+    "va",
+    "vc"
+   ]
+  },
+  "piano": {
+   "renderer": "piano",
+   "parts": [
+    "soprano",
+    "alto",
+    "tenor",
+    "bass",
+    "soprano_8va",
+    "bass_8vb",
+    "pedal_8vb"
+   ],
+   "options": {
+    "pedal": [
+     {
+      "at": "pedal_climax+4:1",
+      "until": "pedal_climax+8:4",
+      "every": "half"
+     },
+     {
+      "at": "apotheosis_coda",
+      "until": "apotheosis_coda+11:4",
+      "every": "half"
+     }
+    ]
+   }
+  }
+ },
+ "assignments": [
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "expo",
+   "until": "inversa"
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "pedal_climax",
+   "until": "end"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "expo",
+   "until": "expo+8:4"
+  },
+  {
+   "voice": "alto",
+   "part": "va",
+   "at": "expo+8:4",
+   "until": "entry4_episode"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "entry4_episode",
+   "until": "arioso"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "arioso",
+   "until": "inversa",
+   "articulation": "detache"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "pedal_climax",
+   "until": "end"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "entry4_episode",
+   "until": "inversa"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "inversa+2",
+   "until": "pedal_climax+2"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "pedal_climax+4",
+   "until": "end"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "expo",
+   "until": "inversa"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "pedal_climax",
+   "until": "end"
+  },
+  {
+   "voice": "soprano",
+   "part": "soprano",
+   "at": "inversa",
+   "until": "pedal_climax"
+  },
+  {
+   "voice": "soprano",
+   "part": "soprano",
+   "at": "pedal_climax+4",
+   "until": "pedal_climax+6"
+  },
+  {
+   "voice": "soprano",
+   "part": "soprano",
+   "at": "apotheosis_coda+8",
+   "until": "end"
+  },
+  {
+   "voice": "soprano",
+   "part": "soprano_8va",
+   "at": "pedal_climax+6",
+   "until": "apotheosis_coda+8",
+   "octave": 12,
+   "level": -1
+  },
+  {
+   "voice": "alto",
+   "part": "alto",
+   "at": "inversa",
+   "until": "pedal_climax"
+  },
+  {
+   "voice": "alto",
+   "part": "alto",
+   "at": "pedal_climax+4",
+   "until": "end"
+  },
+  {
+   "voice": "tenor",
+   "part": "tenor",
+   "at": "pedal_climax+2",
+   "until": "end"
+  },
+  {
+   "voice": "bass",
+   "part": "bass",
+   "at": "inversa",
+   "until": "pedal_climax"
+  },
+  {
+   "voice": "bass",
+   "part": "bass",
+   "at": "pedal_climax+4",
+   "until": "end"
+  },
+  {
+   "voice": "bass",
+   "part": "bass_8vb",
+   "at": "pedal_climax+4",
+   "until": "apotheosis_coda",
+   "octave": -12,
+   "level": -0.5
+  },
+  {
+   "voice": "bass",
+   "part": "bass_8vb",
+   "at": "apotheosis_coda+4",
+   "until": "apotheosis_coda+8",
+   "octave": -12,
+   "level": -0.5
+  }
+ ],
+ "pedal_points": [
+  {
+   "voice": "bass",
+   "part": "pedal_8vb",
+   "at": "pedal_climax",
+   "until": "pedal_climax+4",
+   "octave": -12,
+   "mode": "sustain",
+   "bridge": 1,
+   "min_beats": 4,
+   "level": -0.5
+  }
+ ],
+ "mix": {
+  "lead_in": 0.5,
+  "reference_group": "quartet",
+  "groups": {
+   "quartet": {
+    "gain_db": 0.0,
+    "hall_re_dry_db": 4.0,
+    "stage": {
+     "vn1": {
+      "az": 30,
+      "depth": 0.0
+     },
+     "vn2": {
+      "az": 10,
+      "depth": 0.4
+     },
+     "va": {
+      "az": -10,
+      "depth": 0.4
+     },
+     "vc": {
+      "az": -28,
+      "depth": 0.0
+     }
+    }
+   },
+   "piano": {
+    "gain_db": -1.0,
+    "hall_re_dry_db": 4.0,
+    "stage": {
+     "*": {
+      "az": 0,
+      "depth": 1.2,
+      "width": 0.7
+     }
+    },
+    "render_args": [
+     "--jobs",
+     "2"
+    ]
+   }
+  }
+ }
+}

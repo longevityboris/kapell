@@ -1,0 +1,444 @@
+{
+ "mix_top": [
+  {
+   "t": 0.303,
+   "crest_db": 39.1,
+   "d2_level_re_max_db": -37.4,
+   "nearest_on": [
+    -0.003,
+    "on alto 70"
+   ],
+   "nearest_off": [
+    1.301,
+    "off alto 70"
+   ],
+   "attack": true
+  },
+  {
+   "t": 1.663,
+   "crest_db": 36.0,
+   "d2_level_re_max_db": -40.1,
+   "nearest_on": [
+    -0.0032,
+    "on alto 70"
+   ],
+   "nearest_off": [
+    -0.059,
+    "off alto 70"
+   ],
+   "attack": true
+  },
+  {
+   "t": 55.092,
+   "crest_db": 35.5,
+   "d2_level_re_max_db": -3.0,
+   "nearest_on": [
+    -0.1519,
+    "on alto 67"
+   ],
+   "nearest_off": [
+    -0.1689,
+    "off pedal 48"
+   ],
+   "attack": false
+  },
+  {
+   "t": 131.899,
+   "crest_db": 33.1,
+   "d2_level_re_max_db": -19.4,
+   "nearest_on": [
+    0.0019,
+    "on pedal 46"
+   ],
+   "nearest_off": [
+    -0.0107,
+    "off alto 69"
+   ],
+   "attack": true
+  },
+  {
+   "t": 13.018,
+   "crest_db": 30.9,
+   "d2_level_re_max_db": -22.6,
+   "nearest_on": [
+    -0.0031,
+    "on soprano 82"
+   ],
+   "nearest_off": [
+    -0.0031,
+    "off alto 70"
+   ],
+   "attack": true
+  },
+  {
+   "t": 20.003,
+   "crest_db": 30.6,
+   "d2_level_re_max_db": -20.5,
+   "nearest_on": [
+    0.0669,
+    "on tenor 57"
+   ],
+   "nearest_off": [
+    0.0299,
+    "off soprano 77"
+   ],
+   "attack": false
+  },
+  {
+   "t": 12.794,
+   "crest_db": 29.9,
+   "d2_level_re_max_db": -28.3,
+   "nearest_on": [
+    -0.0035,
+    "on soprano 82"
+   ],
+   "nearest_off": [
+    -0.0338,
+    "off soprano 79"
+   ],
+   "attack": true
+  },
+  {
+   "t": 14.383,
+   "crest_db": 28.1,
+   "d2_level_re_max_db": -31.1,
+   "nearest_on": [
+    -0.0025,
+    "on soprano 81"
+   ],
+   "nearest_off": [
+    -0.0044,
+    "off soprano 82"
+   ],
+   "attack": true
+  },
+  {
+   "t": 129.551,
+   "crest_db": 27.6,
+   "d2_level_re_max_db": -6.7,
+   "nearest_on": [
+    -0.0016,
+    "on tenor 63"
+   ],
+   "nearest_off": [
+    -0.0301,
+    "off tenor 60"
+   ],
+   "attack": true
+  },
+  {
+   "t": 3.477,
+   "crest_db": 27.5,
+   "d2_level_re_max_db": -47.5,
+   "nearest_on": [
+    -0.0047,
+    "on alto 70"
+   ],
+   "nearest_off": [
+    -0.0548,
+    "off alto 70"
+   ],
+   "attack": true
+  },
+  {
+   "t": 76.298,
+   "crest_db": 27.1,
+   "d2_level_re_max_db": -24.4,
+   "nearest_on": [
+    0.0001,
+    "on tenor 48"
+   ],
+   "nearest_off": [
+    -0.0113,
+    "off alto 65"
+   ],
+   "attack": true
+  },
+  {
+   "t": 101.888,
+   "crest_db": 25.3,
+   "d2_level_re_max_db": -12.5,
+   "nearest_on": [
+    0.0027,
+    "on pedal 46"
+   ],
+   "nearest_off": [
+    -0.0068,
+    "off pedal 48"
+   ],
+   "attack": true
+  },
+  {
+   "t": 105.523,
+   "crest_db": 24.9,
+   "d2_level_re_max_db": -19.5,
+   "nearest_on": [
+    -0.0026,
+    "on alto 62"
+   ],
+   "nearest_off": [
+    -0.0054,
+    "off alto 63"
+   ],
+   "attack": true
+  },
+  {
+   "t": 109.614,
+   "crest_db": 24.0,
+   "d2_level_re_max_db": -15.8,
+   "nearest_on": [
+    -0.0036,
+    "on soprano 70"
+   ],
+   "nearest_off": [
+    -0.0055,
+    "off alto 67"
+   ],
+   "attack": true
+  },
+  {
+   "t": 26.671,
+   "crest_db": 23.5,
+   "d2_level_re_max_db": -30.2,
+   "nearest_on": [
+    -0.0036,
+    "on tenor 62"
+   ],
+   "nearest_off": [
+    -0.0472,
+    "off tenor 57"
+   ],
+   "attack": true
+  },
+  {
+   "t": 98.249,
+   "crest_db": 23.2,
+   "d2_level_re_max_db": -20.3,
+   "nearest_on": [
+    -0.0022,
+    "on tenor 62"
+   ],
+   "nearest_off": [
+    -0.0041,
+    "off alto 67"
+   ],
+   "attack": true
+  },
+  {
+   "t": 74.703,
+   "crest_db": 23.1,
+   "d2_level_re_max_db": -26.3,
+   "nearest_on": [
+    -0.0025,
+    "on alto 65"
+   ],
+   "nearest_off": [
+    -0.0347,
+    "off alto 62"
+   ],
+   "attack": true
+  },
+  {
+   "t": 52.207,
+   "crest_db": 22.7,
+   "d2_level_re_max_db": -23.9,
+   "nearest_on": [
+    -0.0017,
+    "on alto 63"
+   ],
+   "nearest_off": [
+    -0.0386,
+    "off alto 65"
+   ],
+   "attack": true
+  },
+  {
+   "t": 23.701,
+   "crest_db": 22.2,
+   "d2_level_re_max_db": -31.6,
+   "nearest_on": [
+    -0.0033,
+    "on tenor 63"
+   ],
+   "nearest_off": [
+    -0.0317,
+    "off tenor 60"
+   ],
+   "attack": true
+  },
+  {
+   "t": 73.797,
+   "crest_db": 22.0,
+   "d2_level_re_max_db": -26.1,
+   "nearest_on": [
+    -0.0037,
+    "on alto 62"
+   ],
+   "nearest_off": [
+    -0.0378,
+    "off alto 60"
+   ],
+   "attack": true
+  },
+  {
+   "t": 129.989,
+   "crest_db": 22.0,
+   "d2_level_re_max_db": 0.0,
+   "nearest_on": [
+    -0.1794,
+    "on alto 69"
+   ],
+   "nearest_off": [
+    -0.1939,
+    "off alto 67"
+   ],
+   "attack": false
+  },
+  {
+   "t": 78.575,
+   "crest_db": 22.0,
+   "d2_level_re_max_db": -28.2,
+   "nearest_on": [
+    -0.0004,
+    "on tenor 58"
+   ],
+   "nearest_off": [
+    -0.0156,
+    "off tenor 60"
+   ],
+   "attack": true
+  },
+  {
+   "t": 69.474,
+   "crest_db": 21.8,
+   "d2_level_re_max_db": -33.7,
+   "nearest_on": [
+    -0.0017,
+    "on alto 60"
+   ],
+   "nearest_off": [
+    -0.0055,
+    "off soprano 74"
+   ],
+   "attack": true
+  },
+  {
+   "t": 15.53,
+   "crest_db": 21.8,
+   "d2_level_re_max_db": -44.9,
+   "nearest_on": [
+    -0.0018,
+    "on soprano 75"
+   ],
+   "nearest_off": [
+    -0.0425,
+    "off soprano 77"
+   ],
+   "attack": true
+  },
+  {
+   "t": 50.853,
+   "crest_db": 21.7,
+   "d2_level_re_max_db": -29.9,
+   "nearest_on": [
+    -0.0038,
+    "on soprano 72"
+   ],
+   "nearest_off": [
+    -0.0208,
+    "off soprano 74"
+   ],
+   "attack": true
+  }
+ ],
+ "mix_non_attack": [
+  {
+   "t": 55.092,
+   "crest_db": 35.5,
+   "d2_level_re_max_db": -3.0,
+   "nearest_on": [
+    -0.1519,
+    "on alto 67"
+   ],
+   "nearest_off": [
+    -0.1689,
+    "off pedal 48"
+   ],
+   "attack": false
+  },
+  {
+   "t": 20.003,
+   "crest_db": 30.6,
+   "d2_level_re_max_db": -20.5,
+   "nearest_on": [
+    0.0669,
+    "on tenor 57"
+   ],
+   "nearest_off": [
+    0.0299,
+    "off soprano 77"
+   ],
+   "attack": false
+  },
+  {
+   "t": 129.989,
+   "crest_db": 22.0,
+   "d2_level_re_max_db": 0.0,
+   "nearest_on": [
+    -0.1794,
+    "on alto 69"
+   ],
+   "nearest_off": [
+    -0.1939,
+    "off alto 67"
+   ],
+   "attack": false
+  }
+ ],
+ "stem_soprano_non_attack": [],
+ "stem_alto_non_attack": [],
+ "stem_tenor_non_attack": [
+  {
+   "t": 20.003,
+   "crest_db": 42.1,
+   "d2_level_re_max_db": -17.2,
+   "nearest_on": [
+    0.0669,
+    "on tenor 57"
+   ],
+   "nearest_off": [
+    0.0299,
+    "off soprano 77"
+   ]
+  },
+  {
+   "t": 55.092,
+   "crest_db": 39.8,
+   "d2_level_re_max_db": 0.0,
+   "nearest_on": [
+    -0.1519,
+    "on alto 67"
+   ],
+   "nearest_off": [
+    -0.1689,
+    "off pedal 48"
+   ]
+  }
+ ],
+ "stem_pedal_non_attack": [
+  {
+   "t": 129.989,
+   "crest_db": 39.9,
+   "d2_level_re_max_db": 0.0,
+   "nearest_on": [
+    -0.1794,
+    "on alto 69"
+   ],
+   "nearest_off": [
+    -0.1939,
+    "off alto 67"
+   ]
+  }
+ ],
+ "attack_crest_median_db": 24.45
+}

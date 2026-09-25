@@ -1,0 +1,56 @@
+{
+ "instrument": "Norrfjärden Church, Grönlunds Orgelbyggeri 1997, reconstruction of the 1684 organ of the German Church in Stockholm (Hauptwerck II, Rückpositief I, Oberwerck III, Pedahl). Sample set by Lars Palo, CC BY-SA 4.0.",
+ "note": "Named registrations per division (contract names). The Rückpositief has no 8' principal: its 'principal8' is Flött 8' + Principal 4', as an organist would draw it. The Oberwerck has no principal at all; its principal names use the Quintadena/flute chorus. Stop names are the ODF's (render_organ.py --list-stops).",
+ "divisions": {
+  "HW": {
+   "flute8": ["Gedackt flött 8'"],
+   "flute8+4": ["Gedackt flött 8'", "Spitz flött 4'"],
+   "principal8": ["Principal 8'"],
+   "principal8+4": ["Principal 8'", "Octava 4'"],
+   "principal8+4+2": ["Principal 8'", "Octava 4'", "Octava 2'"],
+   "plenum": ["Principal 8'", "Octava 4'", "Qvinta 3'", "Octava 2'", "Mixtur 6 fach"],
+   "plenum16": ["Quintadena 16'", "Principal 8'", "Octava 4'", "Qvinta 3'", "Octava 2'", "Mixtur 6 fach"],
+   "plenum_reed": ["Principal 8'", "Octava 4'", "Qvinta 3'", "Octava 2'", "Mixtur 6 fach", "Trommeten 8'"],
+   "plenum16_reed": ["Quintadena 16'", "Principal 8'", "Octava 4'", "Qvinta 3'", "Octava 2'", "Mixtur 6 fach", "Trommeten 8'"],
+   "reed8": ["Trommeten 8'", "Gedackt flött 8'"]
+  },
+  "POS": {
+   "flute8": ["Flött 8'"],
+   "flute8+4": ["Flött 8'", "Flött 4'"],
+   "principal8": ["Flött 8'", "Principal 4'"],
+   "principal8+4": ["Flött 8'", "Principal 4'", "Flött 4'"],
+   "principal8+4+2": ["Flött 8'", "Principal 4'", "Octava 2'"],
+   "plenum": ["Flött 8'", "Principal 4'", "Octava 2'", "Cimball 3f."],
+   "plenum_reed": ["Flött 8'", "Principal 4'", "Octava 2'", "Cimball 3f.", "Krumb Horn 8'"],
+   "reed8": ["Krumb Horn 8'", "Flött 8'"],
+   "sesquialtera": ["Flött 8'", "Flött 4'", "Sesquialtera"]
+  },
+  "OW": {
+   "flute8": ["Quintadena 8'"],
+   "flute8+4": ["Quintadena 8'", "Zap: flöite 4'"],
+   "principal8": ["Quintadena 8'", "Zap: flöite 4'"],
+   "principal8+4": ["Quintadena 8'", "Zap: flöite 4'"],
+   "principal8+4+2": ["Quintadena 8'", "Zap: flöite 4'", "Octava 2'"],
+   "plenum": ["Quintadena 8'", "Zap: flöite 4'", "Nasat 3'", "Octava 2'", "Spitzquinten 1 1/2'", "Zimball 2 fach"],
+   "plenum_reed": ["Quintadena 8'", "Zap: flöite 4'", "Nasat 3'", "Octava 2'", "Spitzquinten 1 1/2'", "Zimball 2 fach", "Schallmeijen 8'"],
+   "reed8": ["Schallmeijen 8'", "Quintadena 8'"],
+   "sesquialtera": ["Quintadena 8'", "Zap: flöite 4'", "Nasat 3'"]
+  },
+  "PED": {
+   "pedal8": ["Gedackter Bass 8'"],
+   "pedal16": ["Under Bass 16'"],
+   "pedal16+8": ["Under Bass 16'", "Gedackter Bass 8'"],
+   "pedal16+8+4": ["Under Bass 16'", "Gedackter Bass 8'", "Octava Bass 4'"],
+   "pedal_plenum": ["Under Bass 16'", "Gedackter Bass 8'", "Octava Bass 4'"],
+   "pedal_plenum_reed": ["Under Bass 16'", "Gedackter Bass 8'", "Octava Bass 4'", "Posaunen Bass 16'", "Trommeten Bass 8'"],
+   "pedal_reed": ["Posaunen Bass 16'", "Gedackter Bass 8'"],
+   "pedal_cantus": ["Gedackter Bass 8'", "Corneten Bass 4'"]
+  }
+ },
+ "defaults": {"HW": "principal8", "POS": "principal8", "OW": "flute8", "PED": "pedal16+8"},
+ "presets": {
+  "quiet": {"HW": "flute8", "POS": "flute8", "OW": "flute8", "PED": "pedal16+8"},
+  "principals": {"HW": "principal8+4", "POS": "principal8", "OW": "flute8+4", "PED": "pedal16+8"},
+  "plenum": {"HW": "plenum", "POS": "plenum", "OW": "plenum", "PED": "pedal_plenum_reed"}
+ }
+}

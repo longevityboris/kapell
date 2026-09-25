@@ -1,0 +1,57 @@
+{
+ "file": "/tmp/pianoqa2/demo_j4.wav",
+ "duration_s": 141.001,
+ "level": {
+  "sample_peak_dbfs": -1.006,
+  "true_peak_dbtp_4x": -1.0,
+  "n_samples_above_m0p1dbfs": 0,
+  "consecutive_peak_samples": 0,
+  "dc": [
+   -5.9341251964175816e-08,
+   -5.938889657794712e-08
+  ],
+  "dc_dbfs": [
+   -144.5,
+   -144.5
+  ],
+  "rms_dbfs": -23.01,
+  "below_18hz_re_total_db": -46.9
+ },
+ "noise": {
+  "lead_in_s": 0.3,
+  "lead_in_rms_dbfs": -141.5,
+  "quietest_second_s": 6,
+  "quietest_second_rms_dbfs": -55.8,
+  "quietest_second_above_8k_dbfs": -132.2
+ },
+ "tail": {
+  "last_keyup_s": 139.667,
+  "file_end_s": 141.001,
+  "end_minus_last_keyup_s": 1.33,
+  "last_0p5s_level_db_re_peak": -75.0,
+  "last_0p5s_slope_db_per_s": -26.1,
+  "t60_after_last_keyup_s": 1.33,
+  "level_at_last_keyup_db_re_peak": -38.2
+ },
+ "stereo": {
+  "lr_corr": 0.464,
+  "lr_corr_by_band": {
+   "40-160": 0.609,
+   "160-640": 0.508,
+   "640-2500": 0.353,
+   "2500-10000": -0.027
+  },
+  "balance_r_minus_l_db": 1.1
+ },
+ "clicks": {
+  "n": 0,
+  "first": []
+ },
+ "m4a": {
+  "decoded_duration_s": 141.012,
+  "lag_samples": 0,
+  "sample_peak_dbfs": -1.027,
+  "true_peak_dbtp_4x": -1.022,
+  "diff_re_signal_db": -43.3
+ }
+}

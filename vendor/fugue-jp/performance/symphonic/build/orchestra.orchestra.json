@@ -1,0 +1,13 @@
+{
+ "hall": {
+  "wet_db": -5.0
+ },
+ "tracks": {
+  "hn.1": {
+   "players": "a2"
+  },
+  "hn.2": {
+   "players": "a2"
+  }
+ }
+}

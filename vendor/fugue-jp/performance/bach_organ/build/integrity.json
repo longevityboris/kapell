@@ -1,0 +1,87 @@
+{
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "onset_tolerance_ticks": 60,
+ "tempo_changes": 86,
+ "parts": {
+  "soprano": {
+   "track": "soprano",
+   "expected": 191,
+   "matched": 191,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    65,
+    84
+   ]
+  },
+  "alto": {
+   "track": "alto",
+   "expected": 217,
+   "matched": 217,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    53,
+    77
+   ]
+  },
+  "tenor": {
+   "track": "tenor",
+   "expected": 192,
+   "matched": 192,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    48,
+    68
+   ]
+  },
+  "bass": {
+   "track": "bass",
+   "expected": 141,
+   "matched": 141,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    36,
+    57
+   ]
+  }
+ },
+ "coverage": {
+  "soprano": {
+   "notes": 191,
+   "covered": 191,
+   "allowed_gaps": 0,
+   "uncovered": []
+  },
+  "alto": {
+   "notes": 217,
+   "covered": 217,
+   "allowed_gaps": 0,
+   "uncovered": []
+  },
+  "tenor": {
+   "notes": 192,
+   "covered": 192,
+   "allowed_gaps": 0,
+   "uncovered": []
+  },
+  "bass": {
+   "notes": 141,
+   "covered": 141,
+   "allowed_gaps": 0,
+   "uncovered": []
+  }
+ }
+}

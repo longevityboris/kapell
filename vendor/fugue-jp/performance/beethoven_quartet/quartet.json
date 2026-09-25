@@ -1,0 +1,336 @@
+{
+ "title": "The Neighbour, ricercar a 4 - string quartet (Beethoven: Grosse Fuge / Op. 131)",
+ "comment": "The interpretation (tempo, rubato, dynamics, roles) is the Beethoven piano version's (plan.json). Solo string quartet, one player per voice: soprano vn1, alto vn2, tenor va, bass vc. The alto's lament countersubject (CS1, 9:4-12:4) dips to F3 and G-flat3, below violin II's G3, while the tenor still rests, so the viola plays it and hands it back to violin II at 13:1, where the viola itself enters with the tenor's answer (BLUEPRINT section 8); the viola's first lament note (F3 on its C string, 9:4-10:1) is +0.6 so the violin-to-viola seam does not dip (+0.3 left it 2.8 dB under violin II's last note), and orchestrate.py lifts the alto's F3 at 12:4 60 ms before the tenor's F3 on the same key at 13:1. Balance where register masks an entry: violin II +0.3 level for the answer (5:1), the viola +0.6 for the tenor's answer in its low register (13:1-17:4) over the cello's lament -0.2 (13:4-17:3), in the combination violin II +0.4 for S2 (48:1-50:3), then violin II and viola -0.3 (50:3-52:1) so the soprano's diminution heads lead the three speeds, as in the piano version, while the cello's augmentation (cf) gives -0.5 (48:1-50:3) and -0.8 (50:3-52:1). Climax I stays below Climax II (the plan's ff- against fff): all four parts -0.5 over the liquidation's peak (26:3-29:1; -0.4 left Climax II only 2.05 LU above it in 3 s loudness), but not on the fermata chord at 29:1, which starts at CC 101 and would drop into the mf layer; at Climax II (52:1-54:1), where the violins reach the CC ceiling, the viola -0.3 and the cello -0.7 (still in its ff layer) so the alto's diminution heads come through. Sforzando bite (velocity +12) at Climax I (28:1-30:1) and Climax II (52:1-54:1). The cello's re-struck tonic pedal in the coda (63:1-end) +0.5 so its tolling is heard under the tenor's head and the held d''. Articulation: the renderer infers per note with --short-ms 480 (render_args): eighths and sixteenths faster than 60 bpm get its short stroke, quarters and longer notes are slurred or new-bowed as the line connects. Hints (CC20): the arioso's pulsing eighths in violin II and viola (30:1-35:1) are detache (CC20 32, a new bow on every eighth; inferred, the repeated pitches re-bowed with a dip and the changes slurred, which limped); the cello's first inversion head at 35:4 (0.48 s eighths at 60 bpm, astride the 480 ms line) is short like every later head. A hinted part carries CC20 on every note; bowing.py (render.sh) gives its auto notes the renderer's own inference at 480 ms (orchestrate.py infers them at the renderer's default 260). Breaths: bowing.py ends the notes sounding into the breaths at 30:1 (the general pause after the fermata chord: 1.5 s), 35:1 (0.5 s of its 0.7) and 46:1 (0.3 s of its 0.35) and tapers their envelope 2 levels over their last 0.3 s, as the players lift their bows (perform.py lengthens those notes by the breath, which the piano's decay hides and a bow does not). Swells on long notes: perform.py's own 0.45-level swell on every note of a half or longer, deepened by swell.py after orchestrate.py (see render.sh) by 0.75 level at mf and softer, 0.375 at f and none at ff and louder, where the players hold a full bow; not on the notes starting in 61:3-63:1, where all four hold the C7 chord inside the diminuendo after the tune's peak. Positions are section marks from design/final-lab/piece.py.",
+ "marks": {
+  "from": "../../design/final-lab/piece.py"
+ },
+ "groups": {
+  "quartet": {
+   "renderer": "quartet",
+   "parts": [
+    "vn1",
+    "vn2",
+    "va",
+    "vc"
+   ]
+  }
+ },
+ "assignments": [
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "expo",
+   "until": "stretto_liquidation+6:3"
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "stretto_liquidation+6:3",
+   "until": "stretto_liquidation+8",
+   "level": -0.5
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "stretto_liquidation+8",
+   "until": "stretto_liquidation+9",
+   "accent": 12,
+   "level": -0.5
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "stretto_liquidation+9",
+   "until": "arioso",
+   "accent": 12
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "arioso",
+   "until": "pedal_climax+6"
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "pedal_climax+6",
+   "until": "pedal_climax+8",
+   "accent": 12
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "pedal_climax+8",
+   "until": "end"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "expo",
+   "until": "expo+8:4",
+   "level": 0.3
+  },
+  {
+   "voice": "alto",
+   "part": "va",
+   "at": "expo+8:4",
+   "until": "expo+9",
+   "level": 0.6
+  },
+  {
+   "voice": "alto",
+   "part": "va",
+   "at": "expo+9",
+   "until": "entry4_episode"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "entry4_episode",
+   "until": "stretto_liquidation+6:3"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "stretto_liquidation+6:3",
+   "until": "stretto_liquidation+8",
+   "level": -0.5
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "stretto_liquidation+8",
+   "until": "stretto_liquidation+9",
+   "accent": 12,
+   "level": -0.5
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "stretto_liquidation+9",
+   "until": "arioso",
+   "accent": 12
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "arioso",
+   "until": "inversa",
+   "articulation": "detache"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "inversa",
+   "until": "pedal_climax+2"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "pedal_climax+2",
+   "until": "pedal_climax+4:3",
+   "level": 0.4
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "pedal_climax+4:3",
+   "until": "pedal_climax+6",
+   "level": -0.3
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "pedal_climax+6",
+   "until": "pedal_climax+8",
+   "accent": 12
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "pedal_climax+8",
+   "until": "end"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "entry4_episode",
+   "until": "entry4_episode+4:4",
+   "level": 0.6
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "entry4_episode+4:4",
+   "until": "stretto_liquidation+6:3"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "stretto_liquidation+6:3",
+   "until": "stretto_liquidation+8",
+   "level": -0.5
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "stretto_liquidation+8",
+   "until": "stretto_liquidation+9",
+   "accent": 12,
+   "level": -0.5
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "stretto_liquidation+9",
+   "until": "arioso",
+   "accent": 12
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "arioso",
+   "until": "inversa",
+   "articulation": "detache"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "inversa",
+   "until": "pedal_climax+4:3"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "pedal_climax+4:3",
+   "until": "pedal_climax+6",
+   "level": -0.3
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "pedal_climax+6",
+   "until": "pedal_climax+8",
+   "accent": 12,
+   "level": -0.3
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "pedal_climax+8",
+   "until": "end"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "expo",
+   "until": "entry4_episode+0:4"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "entry4_episode+0:4",
+   "until": "entry4_episode+4:3",
+   "level": -0.2
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "entry4_episode+4:3",
+   "until": "stretto_liquidation+6:3"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "stretto_liquidation+6:3",
+   "until": "stretto_liquidation+8",
+   "level": -0.5
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "stretto_liquidation+8",
+   "until": "stretto_liquidation+9",
+   "accent": 12,
+   "level": -0.5
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "stretto_liquidation+9",
+   "until": "arioso",
+   "accent": 12
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "arioso",
+   "until": "inversa+0:4"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "inversa+0:4",
+   "until": "inversa+1",
+   "articulation": "short"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "inversa+1",
+   "until": "pedal_climax+2"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "pedal_climax+2",
+   "until": "pedal_climax+4:3",
+   "level": -0.5
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "pedal_climax+4:3",
+   "until": "pedal_climax+6",
+   "level": -0.8
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "pedal_climax+6",
+   "until": "pedal_climax+8",
+   "accent": 12,
+   "level": -0.7
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "pedal_climax+8",
+   "until": "apotheosis_coda+8"
+  },
+  {
+   "voice": "bass",
+   "part": "vc",
+   "at": "apotheosis_coda+8",
+   "until": "end",
+   "level": 0.5
+  }
+ ],
+ "allow_uncovered": [],
+ "allow_octave_shift": [],
+ "mix": {
+  "out": "../ricercar_beethoven_quartet",
+  "lead_in": 0.5,
+  "reference_group": "quartet",
+  "groups": {
+   "quartet": {
+    "gain_db": 0.0,
+    "hall_re_dry_db": 1.5,
+    "render_args": [
+     "--short-ms",
+     "480"
+    ]
+   }
+  }
+ }
+}

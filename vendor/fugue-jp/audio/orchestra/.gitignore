@@ -1,0 +1,10 @@
+*.wav
+*.m4a
+*.aif
+*.aiff
+*.stems/
+__pycache__/
+out/test/
+out/qa/
+out/compare/
+out/skeleton_symphonic/render/

@@ -1,0 +1,296 @@
+{
+ "manifest": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/quintet/ricercar_quintet/manifest.json",
+ "out": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/quintet/ricercar_quintet",
+ "lead_in_s": 0.5,
+ "groups": {
+  "quartet": {
+   "renderer": "quartet",
+   "midi": "quartet.mid",
+   "stems": [
+    "va",
+    "vc",
+    "vn1",
+    "vn2"
+   ],
+   "offset_s": -0.5,
+   "raw_scale_db": -13.732,
+   "raw_scale_estimates": {
+    "va": -13.733,
+    "vc": -13.73,
+    "vn1": -13.733,
+    "vn2": -13.729
+   },
+   "calibration_db": 0.0,
+   "gain_db": 0.0,
+   "total_gain_db": -13.732,
+   "alignment": {
+    "attack_rule": "new-bow and short strokes at their note-on (the renderer starts the bow's pre-roll early so that the stroke lands on the note-on); slurred notes, which enter by crossfade, are left out (articulation from its report)",
+    "entry_xcorr_lag_ms": 2.44,
+    "entries": 195,
+    "after_silence_xcorr_lag_ms": -10.76,
+    "after_silence_notes": 21,
+    "entry_lag_ms_by_quarter": [
+     -2.23,
+     -1.51,
+     3.66,
+     4.55
+    ],
+    "entry_per_note_lag_ms_median": 0.0,
+    "entry_per_note_lag_ms_p10_p90": [
+     -9.0,
+     10.0
+    ],
+    "requested_latency_ms": 0,
+    "all_notes_xcorr_lag_ms": -0.79,
+    "all_notes": 618,
+    "all_notes_per_note_lag_ms_median": 8.5,
+    "compensation_ms": 0.0,
+    "entry_lag_after_ms": 2.44,
+    "time_base_lag_ms": 2.27,
+    "time_base_after_compensation_ms": 2.27
+   },
+   "hall_re_dry_db_program": 4.0,
+   "wet_db": -4.33,
+   "c80_db_impulse": 8.71,
+   "seats": {
+    "va": {
+     "az": -10,
+     "depth": 0.4,
+     "width": 0.35
+    },
+    "vc": {
+     "az": -28,
+     "depth": 0.0,
+     "width": 0.35
+    },
+    "vn1": {
+     "az": 30,
+     "depth": 0.0,
+     "width": 0.35
+    },
+    "vn2": {
+     "az": 10,
+     "depth": 0.4,
+     "width": 0.35
+    }
+   },
+   "level_when_playing_lufs": -29.88
+  },
+  "piano": {
+   "renderer": "piano",
+   "midi": "piano.mid",
+   "stems": [
+    "alto",
+    "bass",
+    "bass_8vb",
+    "pedal_8vb",
+    "soprano",
+    "soprano_8va",
+    "tenor"
+   ],
+   "offset_s": -0.5,
+   "raw_scale_db": 0.0,
+   "raw_scale_estimates": {},
+   "calibration_db": 0.347,
+   "gain_db": -1.0,
+   "total_gain_db": -0.653,
+   "alignment": {
+    "attack_rule": "every note-on (the samples are onset-aligned to 0.2 ms)",
+    "entry_xcorr_lag_ms": 1.49,
+    "entries": 346,
+    "after_silence_xcorr_lag_ms": 0.73,
+    "after_silence_notes": 4,
+    "entry_lag_ms_by_quarter": [
+     null,
+     null,
+     1.42,
+     1.62
+    ],
+    "entry_per_note_lag_ms_median": 1.0,
+    "entry_per_note_lag_ms_p10_p90": [
+     0.0,
+     3.5
+    ],
+    "requested_latency_ms": 0,
+    "all_notes_xcorr_lag_ms": 1.78,
+    "all_notes": 348,
+    "all_notes_per_note_lag_ms_median": 1.0,
+    "compensation_ms": 0.0,
+    "entry_lag_after_ms": 1.49,
+    "time_base_lag_ms": 0.4,
+    "time_base_after_compensation_ms": 0.4
+   },
+   "hall_re_dry_db_program": 4.0,
+   "wet_db": -5.46,
+   "c80_db_impulse": 9.66,
+   "seats": {
+    "alto": {
+     "az": 0,
+     "depth": 1.2,
+     "width": 0.7
+    },
+    "bass": {
+     "az": 0,
+     "depth": 1.2,
+     "width": 0.7
+    },
+    "bass_8vb": {
+     "az": 0,
+     "depth": 1.2,
+     "width": 0.7
+    },
+    "pedal_8vb": {
+     "az": 0,
+     "depth": 1.2,
+     "width": 0.7
+    },
+    "soprano": {
+     "az": 0,
+     "depth": 1.2,
+     "width": 0.7
+    },
+    "soprano_8va": {
+     "az": 0,
+     "depth": 1.2,
+     "width": 0.7
+    },
+    "tenor": {
+     "az": 0,
+     "depth": 1.2,
+     "width": 0.7
+    }
+   },
+   "level_when_playing_lufs": -29.54
+  }
+ },
+ "calibration": {
+  "piano": {
+   "key": "v4:19001b7bd8388335:b8ead12081fd2b83:aa447cbe4d28dc3f:4251e6ef363fedf3:a8544f2aec877a7d",
+   "lufs_raw": -33.673,
+   "raw_scale_db": 0.0,
+   "stems": 4,
+   "note": "four-part mf chorale, placed dry sum, pre-normalisation scale",
+   "time_base_lag_ms": 0.4,
+   "time_base_search_ms": 30,
+   "time_base_at_search_edge": false,
+   "time_base_global_peak_ms": 0.4,
+   "time_base_notes": 56,
+   "time_base_per_note_median_ms": 0.0,
+   "time_base_per_note_p10_p90_ms": [
+    -1.0,
+    1.0
+   ]
+  },
+  "quartet": {
+   "key": "v4:e09e8b8cf44ccc6c:b8ead12081fd2b83:aa447cbe4d28dc3f:4251e6ef363fedf3:a8544f2aec877a7d",
+   "lufs_raw": -33.326,
+   "raw_scale_db": -22.286,
+   "stems": 4,
+   "note": "four-part mf chorale, placed dry sum, pre-normalisation scale",
+   "time_base_lag_ms": 2.27,
+   "time_base_search_ms": 30,
+   "time_base_at_search_edge": false,
+   "time_base_global_peak_ms": 2.27,
+   "time_base_notes": 56,
+   "time_base_per_note_median_ms": 1.0,
+   "time_base_per_note_p10_p90_ms": [
+    0.0,
+    3.5
+   ]
+  }
+ },
+ "inter_group": {
+  "quartet-piano": {
+   "entry_lag_difference_ms": 0.95,
+   "entry_lag_difference_ms_by_quarter": [
+    null,
+    null,
+    2.24,
+    2.93
+   ],
+   "shared_onsets": 201,
+   "direct_xcorr_lag_ms": 2.64,
+   "direct_xcorr_prominence": 1.107,
+   "shared_attacks": 53,
+   "direct_xcorr_lag_ms_attacks": -3.18,
+   "direct_xcorr_prominence_attacks": 1.112,
+   "time_base_difference_ms": 1.87
+  }
+ },
+ "alignment_gate": "time base difference between groups (timing probe) under 5.0 ms; doubled-onset lags are information",
+ "alignment_ok": true,
+ "alignment_worst_ms": 1.87,
+ "stems_dir": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/quintet/ricercar_quintet.stems",
+ "stems_note": "dry stems as they enter the hall (seated, gains, latency compensation, the master's normalisation gain), 32-bit float, same start as the mix; the hall and the 18 Hz high-pass are not in them",
+ "output": {
+  "wav": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/quintet/ricercar_quintet.wav",
+  "m4a": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/quintet/ricercar_quintet.m4a",
+  "duration_s": 234.1,
+  "format": "48000 Hz, 2 ch, PCM_24",
+  "true_peak_dbtp_wav": -1.0,
+  "true_peak_dbtp_m4a": -1.02,
+  "normalise_gain_db": 3.92,
+  "integrated_lufs": -21.63,
+  "loudness_range_lu": 20.2,
+  "short_term_max_lufs": -12.74,
+  "stereo_correlation": 0.52,
+  "mono_fold_down_db": -1.19,
+  "hall_re_dry_db": 4.12,
+  "clicks_away_from_onsets": 0,
+  "click_times_s": [],
+  "periodic_candidates_dropped": 0
+ },
+ "balance_where_all_play": {
+  "seconds": 76.6,
+  "quartet": -28.77,
+  "piano": -28.88
+ },
+ "loudness_curve_5s_lufs": [
+  -35.8,
+  -36.5,
+  -36.4,
+  -36.6,
+  -35.1,
+  -29.9,
+  -29.8,
+  -28.6,
+  -27.5,
+  -25.3,
+  -27.4,
+  -29.4,
+  -28.5,
+  -25.0,
+  -24.0,
+  -20.8,
+  -16.5,
+  -17.0,
+  -19.5,
+  -35.0,
+  -30.1,
+  -32.5,
+  -36.2,
+  -38.3,
+  -36.2,
+  -31.7,
+  -30.6,
+  -30.4,
+  -28.5,
+  -25.0,
+  -24.4,
+  -31.3,
+  -32.3,
+  -26.1,
+  -18.2,
+  -14.4,
+  -13.9,
+  -25.8,
+  -26.8,
+  -24.2,
+  -20.4,
+  -18.2,
+  -20.9,
+  -29.8,
+  -31.2,
+  -33.8
+ ]
+}

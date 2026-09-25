@@ -1,0 +1,24 @@
+{
+ "title": "test: chorale, orchestra + piano (mix.py adapter test)",
+ "comment": "End-to-end test of mix.py with the orchestra renderer: string sections on all voices, a flute an octave above the soprano and a horn on the bass from bar 5, piano doubling everything from bar 3. Score: orchestration/calibration/chorale.ly, plan chorale.plan.json.",
+ "groups": {
+  "orch": {"renderer": "orchestra", "parts": ["vn1", "vn2", "va", "vc", "fl", "hn"]},
+  "piano": {"renderer": "piano", "parts": ["soprano", "alto", "tenor", "bass"]}
+ },
+ "assignments": [
+  {"voice": "soprano", "part": "vn1"},
+  {"voice": "alto", "part": "vn2"},
+  {"voice": "tenor", "part": "va"},
+  {"voice": "bass", "part": "vc"},
+  {"voice": "soprano", "part": "fl", "at": "5:1", "octave": 12, "level": -0.5},
+  {"voice": "bass", "part": "hn", "at": "5:1", "octave": 12, "level": -1},
+  {"voice": "soprano", "part": "soprano", "at": "3:1"},
+  {"voice": "alto", "part": "alto", "at": "3:1"},
+  {"voice": "tenor", "part": "tenor", "at": "3:1"},
+  {"voice": "bass", "part": "bass", "at": "3:1"}
+ ],
+ "mix": {"lead_in": 0.5, "reference_group": "orch",
+         "groups": {"orch": {"hall_re_dry_db": 4.0, "render_args": ["--jobs", "4"]},
+                    "piano": {"hall_re_dry_db": 4.0, "stage": {"*": {"az": 0, "depth": 3.0, "width": 0.6}},
+                              "render_args": ["--jobs", "2"]}}}
+}

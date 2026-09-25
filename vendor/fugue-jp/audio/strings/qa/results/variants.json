@@ -1,0 +1,335 @@
+{
+ "state": {
+  "head": "f3a7af6",
+  "render_quartet_commit": "c71ee34",
+  "render_quartet_sha": "b32c34e0dd47ed48",
+  "sfz": {
+   "bass.sfz": "00762544528904ce",
+   "cello.sfz": "1509632bd473c8ed",
+   "viola.sfz": "eeb0117a420062b4",
+   "violin.sfz": "bf2e18602a9816a2",
+   "violin2.sfz": "c50e3d0762fdcf75"
+  }
+ },
+ "piano_target": {
+  "log": [
+   "MIDI written by perform.py (target=piano)",
+   "soprano: no CC1, dynamic level taken from note velocities",
+   "alto: no CC1, dynamic level taken from note velocities",
+   "tenor: no CC1, dynamic level taken from note velocities",
+   "pedal: no CC1, dynamic level taken from note velocities",
+   "tenor: 11 notes 63.75-71.21s (down to 41) handed to the resting Cello"
+  ],
+  "notes": 648,
+  "wrong_pitch": [],
+  "n_wrong": 0,
+  "first_10s_k_db": -36.8,
+  "loudest_10s_k_db": -14.4,
+  "range_db": 22.5,
+  "cc1_derived": {
+   "vn1": [
+    37,
+    120
+   ],
+   "vn2": [
+    36,
+    116
+   ],
+   "va": [
+    39,
+    125
+   ],
+   "vc": [
+    48,
+    125
+   ]
+  }
+ },
+ "bass_double": {
+  "on": {
+   "double_notes": 112,
+   "cello_notes": 112,
+   "pitch_cents_median_abs": 1.0,
+   "wrong_octave_or_note": 0,
+   "checked": 97,
+   "lowest_key": 24,
+   "cb_stem_db_per_5s": [
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -46.3,
+    -44.6,
+    -44.7,
+    -44.5,
+    -43.7,
+    -40.4,
+    -38.8,
+    -38.9,
+    -37.6,
+    -42.1,
+    -43.5,
+    -33.3,
+    -30.9,
+    -30.8,
+    -31.5,
+    -28.9,
+    -31.7,
+    -30.1,
+    -26.7,
+    -25.1,
+    -25.3,
+    -25.3,
+    -25.8,
+    -26.6
+   ],
+   "log": [
+    "MIDI written by perform.py (target=strings)",
+    "tenor: 11 notes 63.75-71.23s (down to 41) handed to the resting Cello"
+   ]
+  },
+  "auto": {
+   "double_notes": 112,
+   "cello_notes": 112,
+   "pitch_cents_median_abs": 1.0,
+   "wrong_octave_or_note": 0,
+   "checked": 97,
+   "lowest_key": 24,
+   "cb_stem_db_per_5s": [
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -200.0,
+    -55.2,
+    -30.0,
+    -25.1,
+    -25.4,
+    -25.6,
+    -27.4,
+    -26.9
+   ],
+   "log": [
+    "MIDI written by perform.py (target=strings)",
+    "tenor: 11 notes 63.75-71.23s (down to 41) handed to the resting Cello"
+   ]
+  },
+  "cello_cc1_max": 124,
+  "cello_cc1_at_or_above_ff_114_s": [
+   120.0,
+   120.234,
+   120.469,
+   "...",
+   141.631,
+   141.931,
+   142.231
+  ]
+ },
+ "voicing": {
+  "windows": [
+   {
+    "plan": "role_level",
+    "voice": "alto",
+    "at": "1:1",
+    "role": "subject",
+    "re_others_db": 36.2
+   },
+   {
+    "plan": "role_level",
+    "voice": "soprano",
+    "at": "3:1",
+    "role": "answer",
+    "re_others_db": 1.7
+   },
+   {
+    "plan": "role_level",
+    "voice": "tenor",
+    "at": "6:1",
+    "role": "subject",
+    "re_others_db": 0.8
+   },
+   {
+    "plan": "role_level",
+    "voice": "pedal",
+    "at": "8:1",
+    "role": "answer",
+    "re_others_db": -0.8
+   },
+   {
+    "plan": "role_level",
+    "voice": "soprano",
+    "at": "12:1",
+    "role": "subject",
+    "re_others_db": -3.6
+   },
+   {
+    "plan": "role_level",
+    "voice": "tenor",
+    "at": "16:1",
+    "role": "subject",
+    "re_others_db": -2.5
+   },
+   {
+    "plan": "role_level",
+    "voice": "alto",
+    "at": "20:1",
+    "role": "subject",
+    "re_others_db": 0.3
+   },
+   {
+    "plan": "role_level",
+    "voice": "tenor",
+    "at": "26:1",
+    "role": "subject",
+    "re_others_db": -3.2
+   },
+   {
+    "plan": "role_level",
+    "voice": "soprano",
+    "at": "27:1",
+    "role": "subject",
+    "re_others_db": -1.8
+   },
+   {
+    "plan": "role_level",
+    "voice": "alto",
+    "at": "28:1",
+    "role": "subject",
+    "re_others_db": -3.1
+   },
+   {
+    "plan": "role_level",
+    "voice": "soprano",
+    "at": "31:1",
+    "role": "subject",
+    "re_others_db": -2.5
+   },
+   {
+    "plan": "role_level",
+    "voice": "pedal",
+    "at": "33:1",
+    "role": "subject",
+    "re_others_db": -2.8
+   },
+   {
+    "plan": "role_level",
+    "voice": "tenor",
+    "at": "35:1",
+    "role": "subject",
+    "re_others_db": -4.3
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "alto",
+    "at": "1:1",
+    "role": "subject",
+    "re_others_db": 35.9
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "soprano",
+    "at": "3:1",
+    "role": "answer",
+    "re_others_db": -2.8
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "tenor",
+    "at": "6:1",
+    "role": "subject",
+    "re_others_db": -3.9
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "pedal",
+    "at": "8:1",
+    "role": "answer",
+    "re_others_db": -5.3
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "soprano",
+    "at": "12:1",
+    "role": "subject",
+    "re_others_db": -7.4
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "tenor",
+    "at": "16:1",
+    "role": "subject",
+    "re_others_db": -6.5
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "alto",
+    "at": "20:1",
+    "role": "subject",
+    "re_others_db": -3.2
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "tenor",
+    "at": "26:1",
+    "role": "subject",
+    "re_others_db": -5.5
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "soprano",
+    "at": "27:1",
+    "role": "subject",
+    "re_others_db": -4.9
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "alto",
+    "at": "28:1",
+    "role": "subject",
+    "re_others_db": -5.7
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "soprano",
+    "at": "31:1",
+    "role": "subject",
+    "re_others_db": -5.8
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "pedal",
+    "at": "33:1",
+    "role": "subject",
+    "re_others_db": -5.1
+   },
+   {
+    "plan": "no_role_level",
+    "voice": "tenor",
+    "at": "35:1",
+    "role": "subject",
+    "re_others_db": -6.3
+   }
+  ],
+  "lift_db_median": 3.3,
+  "lift_db_min": 0.3,
+  "lift_db_max": 4.7
+ }
+}

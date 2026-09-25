@@ -1,0 +1,25 @@
+{
+ "extra_levels": 0.75,
+ "min_beats": 1.75,
+ "tracks": {
+  "Violin I": {
+   "long_notes": 36,
+   "max_cc_added": 10
+  },
+  "Violin II": {
+   "long_notes": 32,
+   "max_cc_added": 10
+  },
+  "Viola": {
+   "long_notes": 38,
+   "max_cc_added": 10
+  },
+  "Cello": {
+   "long_notes": 52,
+   "max_cc_added": 10
+  }
+ },
+ "no_extra": [
+  "61:3-63:1"
+ ]
+}

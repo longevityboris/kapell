@@ -1,0 +1,576 @@
+{
+ "ranges": {
+  "log": [
+   "soprano: note at 3.50s below compass, no free lower instrument -> transposed up to 64",
+   "bass: note at 3.50s below compass, no free lower instrument -> transposed up to 45",
+   "soprano: 1 notes outside the Violin I compass octave-shifted"
+  ],
+  "jobs": [
+   [
+    "bass",
+    "vc",
+    "main",
+    [
+     36,
+     34,
+     45,
+     81
+    ]
+   ],
+   [
+    "soprano",
+    "vn1",
+    "main",
+    [
+     53,
+     54,
+     64,
+     100,
+     89
+    ]
+   ]
+  ],
+  "rows": [
+   {
+    "t": 0.5,
+    "key_in": 53,
+    "key_rendered": 53,
+    "cents_fft": 3.5,
+    "cents_yin": 3.3,
+    "level_db": -17.8
+   },
+   {
+    "t": 2.0,
+    "key_in": 54,
+    "key_rendered": 54,
+    "cents_fft": 4.7,
+    "cents_yin": 4.7,
+    "level_db": -17.7
+   },
+   {
+    "t": 3.5,
+    "key_in": 52,
+    "key_rendered": 64,
+    "cents_fft": 0.8,
+    "cents_yin": 1.2,
+    "level_db": -17.5
+   },
+   {
+    "t": 5.0,
+    "key_in": 100,
+    "key_rendered": 100,
+    "cents_fft": -6.7,
+    "cents_yin": -7.0,
+    "level_db": -25.4
+   },
+   {
+    "t": 6.5,
+    "key_in": 101,
+    "key_rendered": 89,
+    "cents_fft": -1.7,
+    "cents_yin": -1.6,
+    "level_db": -24.5
+   },
+   {
+    "t": 0.5,
+    "key_in": 36,
+    "key_rendered": 36,
+    "cents_fft": 0.8,
+    "cents_yin": 1.6,
+    "level_db": -17.1
+   },
+   {
+    "t": 2.0,
+    "key_in": 34,
+    "key_rendered": 34,
+    "cents_fft": 3.0,
+    "cents_yin": 3.4,
+    "level_db": -17.1
+   },
+   {
+    "t": 3.5,
+    "key_in": 33,
+    "key_rendered": 45,
+    "cents_fft": -1.0,
+    "cents_yin": -1.1,
+    "level_db": -16.7
+   },
+   {
+    "t": 5.0,
+    "key_in": 81,
+    "key_rendered": 81,
+    "cents_fft": -2.0,
+    "cents_yin": -2.0,
+    "level_db": -21.5
+   }
+  ]
+ },
+ "dense": {
+  "vn1": {
+   "n": 57,
+   "switch_found": 50,
+   "switch_missing": 0,
+   "switch_median_ms": 11.2,
+   "switch_p90_ms": 35.0,
+   "switch_max_ms": 40.0,
+   "repeats": [
+    {
+     "on": 2.625,
+     "key": 74,
+     "repeat": true,
+     "dip_db": 8.0
+    },
+    {
+     "on": 2.688,
+     "key": 74,
+     "repeat": true,
+     "dip_db": 7.4
+    },
+    {
+     "on": 2.75,
+     "key": 74,
+     "repeat": true,
+     "dip_db": 8.0
+    },
+    {
+     "on": 2.812,
+     "key": 74,
+     "repeat": true,
+     "dip_db": 7.7
+    },
+    {
+     "on": 2.875,
+     "key": 74,
+     "repeat": true,
+     "dip_db": 8.0
+    },
+    {
+     "on": 2.938,
+     "key": 74,
+     "repeat": true,
+     "dip_db": 7.9
+    },
+    {
+     "on": 3.0,
+     "key": 74,
+     "repeat": true,
+     "dip_db": 8.1
+    }
+   ],
+   "missing": []
+  },
+  "vc": {
+   "n": 16,
+   "switch_found": 16,
+   "switch_missing": 0,
+   "switch_median_ms": 2.5,
+   "switch_p90_ms": 11.2,
+   "switch_max_ms": 12.5,
+   "repeats": [],
+   "missing": []
+  },
+  "articulation": {
+   "bass": {
+    "normal": 0,
+    "legato": 0,
+    "short": 17
+   },
+   "soprano": {
+    "normal": 0,
+    "legato": 0,
+    "short": 58
+   }
+  }
+ },
+ "type0": {
+  "jobs": [
+   [
+    "track0",
+    "vc",
+    [
+     40,
+     41,
+     43
+    ]
+   ],
+   [
+    "track0",
+    "va",
+    [
+     55,
+     57,
+     59
+    ]
+   ],
+   [
+    "track0",
+    "vn2",
+    [
+     64,
+     65,
+     67
+    ]
+   ],
+   [
+    "track0",
+    "vn1",
+    [
+     72,
+     74,
+     76
+    ]
+   ]
+  ],
+  "notes": []
+ },
+ "overlap": {
+  "note_list": [
+   [
+    0.5,
+    1.5,
+    72,
+    80,
+    0
+   ],
+   [
+    1.0,
+    3.0,
+    72,
+    80,
+    0
+   ],
+   [
+    4.0,
+    6.0,
+    76,
+    80,
+    0
+   ],
+   [
+    5.0,
+    6.0,
+    74,
+    80,
+    80
+   ]
+  ],
+  "log": [
+   "soprano: note 76 at 4.00s has no note-off, closed at 6.00s (end of track)"
+  ],
+  "level_re_first_note_db": {
+   "1.2s": 2.6,
+   "1.7s": -17.9,
+   "2.0s": -42.0,
+   "2.5s": -86.6,
+   "2.9s": -182.7,
+   "3.3s": -182.7,
+   "4.2s": -3.9
+  },
+  "expected": "72 sounds 0.5-3.0 s (two strokes: 0.5-1.5 and 1.0-3.0); a zero-length 76 at 4.0; 74 at 5-6 s"
+ },
+ "cc7": {
+  "expected_db": -32.1,
+  "measured_db": -31.9
+ },
+ "bend": {
+  "0": {
+   "expected_c": 0,
+   "measured_fft_c": 0.0,
+   "measured_yin_c": 0.5
+  },
+  "+8191": {
+   "expected_c": 200,
+   "measured_fft_c": 194.8,
+   "measured_yin_c": 195.3
+  },
+  "-8192": {
+   "expected_c": -200,
+   "measured_fft_c": -205.1,
+   "measured_yin_c": -205.1
+  }
+ },
+ "long": {
+  "per_inst": {
+   "vn1": {
+    "key": 81,
+    "max_step_50ms_db": 4.28,
+    "p99_step_db": 4.14,
+    "wander_p2_p98_db": 4.3,
+    "max_dev_1s_smooth_db": 3.22,
+    "level_2s_blocks_db": [
+     -25.2,
+     -25.2,
+     -25.1,
+     -25.1,
+     -25.2,
+     -25.2,
+     -25.1,
+     -25.1,
+     -25.1,
+     -26.3
+    ],
+    "pitch_1s_blocks_c": [
+     -2.6,
+     -0.0,
+     -0.5,
+     -0.2,
+     -0.6,
+     -0.4,
+     -0.9,
+     0.1,
+     -2.9,
+     -0.6,
+     -1.6,
+     -1.5,
+     0.2,
+     -2.9,
+     -0.7,
+     -1.3,
+     -1.6,
+     0.2,
+     -2.9
+    ],
+    "pitch_drift_c": 3.1,
+    "level_at_20s_re_2_6s_db": 0.0,
+    "hf_peak_re_local_max_db": 10.1,
+    "hf_peaks_over_15db": 0
+   },
+   "vn2": {
+    "key": 62,
+    "max_step_50ms_db": 2.43,
+    "p99_step_db": 1.74,
+    "wander_p2_p98_db": 2.0,
+    "max_dev_1s_smooth_db": 1.65,
+    "level_2s_blocks_db": [
+     -21.0,
+     -21.0,
+     -21.0,
+     -21.0,
+     -21.0,
+     -21.0,
+     -21.0,
+     -21.0,
+     -21.0,
+     -22.1
+    ],
+    "pitch_1s_blocks_c": [
+     -1.6,
+     -1.5,
+     -1.5,
+     -1.4,
+     -1.3,
+     -1.3,
+     -1.3,
+     -1.9,
+     -1.3,
+     -1.6,
+     -1.5,
+     -1.4,
+     -2.0,
+     -1.3,
+     -1.6,
+     -1.5,
+     -1.4,
+     -1.9,
+     -1.3
+    ],
+    "pitch_drift_c": 0.7,
+    "level_at_20s_re_2_6s_db": 0.0,
+    "hf_peak_re_local_max_db": 12.4,
+    "hf_peaks_over_15db": 0
+   },
+   "va": {
+    "key": 48,
+    "max_step_50ms_db": 0.79,
+    "p99_step_db": 0.75,
+    "wander_p2_p98_db": 0.8,
+    "max_dev_1s_smooth_db": 0.46,
+    "level_2s_blocks_db": [
+     -21.2,
+     -21.2,
+     -21.2,
+     -21.3,
+     -21.2,
+     -21.2,
+     -21.2,
+     -21.3,
+     -21.3,
+     -22.3
+    ],
+    "pitch_1s_blocks_c": [
+     0.0,
+     0.0,
+     -0.0,
+     -0.0,
+     -0.0,
+     -0.0,
+     -0.0,
+     -0.0,
+     -0.1,
+     -0.0,
+     -0.0,
+     -0.1,
+     -0.0,
+     -0.1,
+     -0.0,
+     -0.0,
+     -0.1,
+     -0.0,
+     -0.1
+    ],
+    "pitch_drift_c": 0.1,
+    "level_at_20s_re_2_6s_db": -0.0,
+    "hf_peak_re_local_max_db": 16.8,
+    "hf_peaks_over_15db": 39
+   },
+   "vc": {
+    "key": 36,
+    "max_step_50ms_db": 1.3,
+    "p99_step_db": 0.79,
+    "wander_p2_p98_db": 0.9,
+    "max_dev_1s_smooth_db": 0.76,
+    "level_2s_blocks_db": [
+     -19.6,
+     -19.6,
+     -19.6,
+     -19.6,
+     -19.6,
+     -19.6,
+     -19.6,
+     -19.6,
+     -19.6,
+     -20.7
+    ],
+    "pitch_1s_blocks_c": [
+     -0.1,
+     -0.1,
+     -0.0,
+     -0.0,
+     -0.1,
+     -0.2,
+     -0.2,
+     -0.1,
+     -0.1,
+     -0.1,
+     -0.2,
+     -0.1,
+     -0.1,
+     -0.1,
+     -0.1,
+     -0.1,
+     -0.1,
+     -0.1,
+     -0.1
+    ],
+    "pitch_drift_c": 0.2,
+    "level_at_20s_re_2_6s_db": 0.0,
+    "hf_peak_re_local_max_db": 17.0,
+    "hf_peaks_over_15db": 204
+   }
+  },
+  "fixed_mod": {
+   "vn1": {
+    "mod_10_100hz_db": -4.6,
+    "interharmonic_median_db": -33.2,
+    "interharmonic_p95_db": -31.1
+   },
+   "vn2": {
+    "mod_10_100hz_db": -3.9,
+    "interharmonic_median_db": -14.3,
+    "interharmonic_p95_db": -12.2
+   },
+   "va": {
+    "mod_10_100hz_db": 2.9,
+    "interharmonic_median_db": -29.4,
+    "interharmonic_p95_db": -28.8
+   },
+   "vc": {
+    "mod_10_100hz_db": 25.9,
+    "interharmonic_median_db": -17.4,
+    "interharmonic_p95_db": -17.2
+   }
+  }
+ },
+ "unison": {
+  "60": {
+   "same_recording": true,
+   "waveform_corr": -0.407,
+   "sum_re_energy_sum_db": {
+    "min": -3.4,
+    "max": -1.7,
+    "p5": -2.9,
+    "p95": -1.8
+   },
+   "sum_wander_db": 1.5,
+   "single_wander_db": 1.9,
+   "mix_mono_wander_db": 1.9
+  },
+  "55": {
+   "same_recording": true,
+   "waveform_corr": 0.646,
+   "sum_re_energy_sum_db": {
+    "min": 1.8,
+    "max": 2.5,
+    "p5": 1.9,
+    "p95": 2.5
+   },
+   "sum_wander_db": 1.3,
+   "single_wander_db": 1.5
+  },
+  "69": {
+   "same_recording": false,
+   "waveform_corr": 0.513,
+   "sum_re_energy_sum_db": {
+    "min": -0.7,
+    "max": 2.7,
+    "p5": 0.8,
+    "p95": 2.3
+   },
+   "sum_wander_db": 3.3,
+   "single_wander_db": 3.4,
+   "mix_mono_wander_db": 6.6
+  },
+  "76": {
+   "same_recording": false,
+   "waveform_corr": 0.016,
+   "sum_re_energy_sum_db": {
+    "min": -3.0,
+    "max": 1.6,
+    "p5": -1.7,
+    "p95": 1.4
+   },
+   "sum_wander_db": 4.7,
+   "single_wander_db": 3.0
+  }
+ },
+ "determinism": {
+  "vc": {
+   "identical": true,
+   "diff_re_signal_db": -200.0
+  },
+  "va": {
+   "identical": true,
+   "diff_re_signal_db": -200.0
+  },
+  "vn2": {
+   "identical": true,
+   "diff_re_signal_db": -200.0
+  },
+  "vn1": {
+   "identical": true,
+   "diff_re_signal_db": -200.0
+  }
+ },
+ "state": {
+  "head": "f4f00f7",
+  "render_quartet_sha": "21460898f592ea6b",
+  "perform_sha": "4d527a2643657675",
+  "sfz": {
+   "bass.sfz": "fc96ab59f9e683a7",
+   "cello.sfz": "e002fbc00fac9a98",
+   "viola.sfz": "7ecae68c0f77a41c",
+   "violin.sfz": "d103bf15d9facbdb",
+   "violin2.sfz": "f083e98b2947f500"
+  }
+ }
+}

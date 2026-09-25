@@ -1,0 +1,87 @@
+{
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "onset_tolerance_ticks": 60,
+ "tempo_changes": 613,
+ "parts": {
+  "vn1": {
+   "track": "Violin I",
+   "expected": 191,
+   "matched": 191,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    65,
+    84
+   ]
+  },
+  "vn2": {
+   "track": "Violin II",
+   "expected": 209,
+   "matched": 209,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    57,
+    77
+   ]
+  },
+  "va": {
+   "track": "Viola",
+   "expected": 200,
+   "matched": 200,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    48,
+    68
+   ]
+  },
+  "vc": {
+   "track": "Cello",
+   "expected": 141,
+   "matched": 141,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    36,
+    57
+   ]
+  }
+ },
+ "coverage": {
+  "soprano": {
+   "notes": 191,
+   "covered": 191,
+   "allowed_gaps": 0,
+   "uncovered": []
+  },
+  "alto": {
+   "notes": 217,
+   "covered": 217,
+   "allowed_gaps": 0,
+   "uncovered": []
+  },
+  "tenor": {
+   "notes": 192,
+   "covered": 192,
+   "allowed_gaps": 0,
+   "uncovered": []
+  },
+  "bass": {
+   "notes": 141,
+   "covered": 141,
+   "allowed_gaps": 0,
+   "uncovered": []
+  }
+ }
+}

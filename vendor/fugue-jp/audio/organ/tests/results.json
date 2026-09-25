@@ -1,0 +1,178 @@
+{
+ "registration_ladder_HW": {
+  "flute8": {
+   "k_level_db": -13.1,
+   "centroid_hz": 230,
+   "energy_above_2k_db": -42.6
+  },
+  "flute8+4": {
+   "k_level_db": -11.1,
+   "centroid_hz": 390,
+   "energy_above_2k_db": -32.5
+  },
+  "principal8": {
+   "k_level_db": -8.8,
+   "centroid_hz": 392,
+   "energy_above_2k_db": -31.0
+  },
+  "principal8+4": {
+   "k_level_db": -8.4,
+   "centroid_hz": 571,
+   "energy_above_2k_db": -21.3
+  },
+  "principal8+4+2": {
+   "k_level_db": -5.1,
+   "centroid_hz": 696,
+   "energy_above_2k_db": -12.8
+  },
+  "plenum": {
+   "k_level_db": -3.1,
+   "centroid_hz": 1082,
+   "energy_above_2k_db": -7.3
+  },
+  "plenum_reed": {
+   "k_level_db": -1.7,
+   "centroid_hz": 1044,
+   "energy_above_2k_db": -8.7
+  }
+ },
+ "registration_ladder_PED": {
+  "pedal8": {
+   "k_level_db": -21.9,
+   "centroid_hz": 117,
+   "energy_above_2k_db": -58.4
+  },
+  "pedal16": {
+   "k_level_db": -16.7,
+   "centroid_hz": 102,
+   "energy_above_2k_db": -68.1
+  },
+  "pedal16+8": {
+   "k_level_db": -15.5,
+   "centroid_hz": 105,
+   "energy_above_2k_db": -63.9
+  },
+  "pedal16+8+4": {
+   "k_level_db": -13.7,
+   "centroid_hz": 144,
+   "energy_above_2k_db": -44.1
+  },
+  "pedal_reed": {
+   "k_level_db": -13.4,
+   "centroid_hz": 234,
+   "energy_above_2k_db": -37.2
+  },
+  "pedal_plenum_reed": {
+   "k_level_db": -11.1,
+   "centroid_hz": 342,
+   "energy_above_2k_db": -30.1
+  }
+ },
+ "ladder_levels_rise": true,
+ "ladder_brightness_rises_flute_to_plenum": true,
+ "swell": {
+  "open_db": -9.1,
+  "closed_db": -30.1,
+  "reopened_db": -10.0,
+  "open_centroid": 1255,
+  "closed_centroid": 870,
+  "open_above_2k_db": -7.5,
+  "closed_above_2k_db": -12.0,
+  "closed_minus_open_db": -20.9,
+  "not_enclosed_level_change_db": -0.6
+ },
+ "text_events": {
+  "HW_timeline": [
+   [
+    0.0,
+    1
+   ],
+   [
+    1.0,
+    5
+   ]
+  ],
+  "tenor_divisions": [
+   [
+    0.0,
+    "POS"
+   ],
+   [
+    1.0,
+    "HW"
+   ]
+  ],
+  "ok": true
+ },
+ "preset_plenum_HW_stops": [
+  "Mixtur 6 fach",
+  "Octava 2'",
+  "Octava 4'",
+  "Principal 8'",
+  "Qvinta 3'"
+ ],
+ "custom_list_HW_stops": [
+  "Gedackt flött 8'",
+  "Octava 4'"
+ ],
+ "unknown_registration": {
+  "exit_code": 1,
+  "message": "unknown registration \"fortissimo\" for HW; known: flute8, flute8+4, plenum, plenum16, plenum16_reed, plenum_reed, principal8, principal8+4, principal8+4+2, reed8"
+ },
+ "key_sharing": {
+  "shared_keys": 1,
+  "pipe_events_one": 1,
+  "pipe_events_two": 1,
+  "level_two_minus_one_db": 0.0,
+  "handover_restrikes": 1,
+  "handover_pipe_events": 2
+ },
+ "folding": {
+  "folded": {
+   "PED": 1
+  },
+  "warnings": [
+   "bass: zero-length note 40 at 1.000 s played as a 30 ms touch",
+   "1 notes folded by octaves into the PED compass (36, 64)"
+  ],
+  "no_fold_exit_code": 1,
+  "no_fold_message": "key 30 is outside the PED compass 36-64 (--no-fold)"
+ },
+ "stems": {
+  "max_abs_diff_sum_vs_mix_dbfs": -88.6,
+  "first_sound_s": 0.461,
+  "lead_in_s": 0.5,
+  "anticipation_ms": {
+   "fraction_of_speech": 0.5,
+   "median": 16.8,
+   "p95": 33.5,
+   "max": 39.2
+  }
+ },
+ "velocity_ignored_identical": true,
+ "deterministic_identical": true,
+ "velocity_max_abs_diff": 0.0,
+ "determinism_max_abs_diff": 0.0,
+ "checks": {
+  "HW ladder: level never falls by more than 0.5 dB from flute8 to plenum_reed": true,
+  "HW ladder: plenum has >= 6 dB more energy above 2 kHz than flute8": true,
+  "PED ladder: pedal8 < pedal16+8 < pedal16+8+4 < pedal_plenum_reed": true,
+  "swell: closed is 15-24 dB below open": true,
+  "swell: closed is darker (lower centroid, less above 2 kHz)": true,
+  "swell: reopened within 1.5 dB of open": true,
+  "swell: CC11 ignored on a division not enclosed (within 1 dB)": true,
+  "organ: text events change registration and move a voice": true,
+  "preset plenum draws the HW plenum (5 stops with the Mixtur)": true,
+  "custom stop list resolves (accents, case, punctuation ignored)": true,
+  "unknown registration name is an error": true,
+  "key sharing: one set of pipes (same events, level within 0.5 dB)": true,
+  "hand-over between voices is re-struck": true,
+  "folding: out-of-compass key folded and counted; --no-fold is an error": true,
+  "zero-length note played as a touch, with a warning": true,
+  "stems sum to the dry mix (< -80 dBFS difference)": true,
+  "first sound within 45 ms before the lead-in (anticipation only)": true,
+  "velocity ignored (bit-identical)": true,
+  "deterministic (bit-identical)": true
+ },
+ "all_pass": true
+}

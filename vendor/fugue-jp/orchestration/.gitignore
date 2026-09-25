@@ -1,0 +1,6 @@
+out/**/*.mid
+out/**/render/
+out/**/perform/
+out/**/*.wav
+out/**/*.m4a
+calibration/render/

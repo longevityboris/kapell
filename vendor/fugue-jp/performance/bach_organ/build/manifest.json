@@ -1,0 +1,33 @@
+{
+ "title": "The Neighbour: ricercar a 4 on the pipe organ (Bach version)",
+ "orchestration": "orchestration.json",
+ "out": "../build",
+ "lead_in": 0.5,
+ "peak_dbtp": -1.0,
+ "hall": "detmold",
+ "reference_group": "organ",
+ "groups": {
+  "organ": {
+   "renderer": "organ",
+   "midi": "organ.mid",
+   "parts": {
+    "soprano": {
+     "track": "soprano",
+     "instrument": "HW"
+    },
+    "alto": {
+     "track": "alto",
+     "instrument": "OW"
+    },
+    "tenor": {
+     "track": "tenor",
+     "instrument": "POS"
+    },
+    "bass": {
+     "track": "bass",
+     "instrument": "PED"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,134 @@
+{
+ "parts": {
+  "quartet/Violin I": {
+   "notes": 191,
+   "pitched": 191,
+   "dropped": [],
+   "body_cut": [],
+   "body_db_re_peak_min_median": [
+    -36.5,
+    -23.8
+   ],
+   "cents_median": 0.0,
+   "cents_abs_p95": 3.1,
+   "cents_worst": 3.8,
+   "partials_used": {
+    "1": 105,
+    "2": 23,
+    "3": 34,
+    "4": 29
+   },
+   "onset_lag_ms_median": 2.0,
+   "onset_lag_ms_p10_p90": [
+    -9.0,
+    6.0
+   ],
+   "rests_checked": 5,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "quartet/Violin II": {
+   "notes": 209,
+   "pitched": 209,
+   "dropped": [],
+   "body_cut": [],
+   "body_db_re_peak_min_median": [
+    -36.4,
+    -26.3
+   ],
+   "cents_median": 0.1,
+   "cents_abs_p95": 2.6,
+   "cents_worst": 8.9,
+   "partials_used": {
+    "1": 186,
+    "2": 13,
+    "3": 9,
+    "4": 1
+   },
+   "onset_lag_ms_median": 1.0,
+   "onset_lag_ms_p10_p90": [
+    -9.2,
+    9.0
+   ],
+   "rests_checked": 4,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "quartet/Viola": {
+   "notes": 200,
+   "pitched": 200,
+   "dropped": [],
+   "body_cut": [],
+   "body_db_re_peak_min_median": [
+    -36.3,
+    -24.6
+   ],
+   "cents_median": -0.0,
+   "cents_abs_p95": 2.4,
+   "cents_worst": -5.5,
+   "partials_used": {
+    "1": 140,
+    "2": 44,
+    "3": 16
+   },
+   "onset_lag_ms_median": 2.0,
+   "onset_lag_ms_p10_p90": [
+    -8.0,
+    9.099999999999994
+   ],
+   "rests_checked": 2,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "quartet/Cello": {
+   "notes": 141,
+   "pitched": 141,
+   "dropped": [],
+   "body_cut": [],
+   "body_db_re_peak_min_median": [
+    -37.1,
+    -25.2
+   ],
+   "cents_median": -0.0,
+   "cents_abs_p95": 3.4,
+   "cents_worst": -17.0,
+   "partials_used": {
+    "1": 75,
+    "2": 51,
+    "3": 15
+   },
+   "onset_lag_ms_median": 1.0,
+   "onset_lag_ms_p10_p90": [
+    -16.0,
+    37.0
+   ],
+   "rests_checked": 1,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  }
+ },
+ "files": {
+  "wav_format": [
+   48000,
+   2,
+   "PCM_24"
+  ],
+  "ffmpeg_wav": {
+   "I": -18.0,
+   "LRA": 15.6,
+   "Peak": -1.0
+  },
+  "ffmpeg_m4a": {
+   "I": -18.0,
+   "LRA": 15.6,
+   "Peak": -1.0
+  },
+  "m4a_lag_samples": 0,
+  "duration_s": [
+   244.58,
+   244.58
+  ],
+  "pass": true
+ },
+ "pass": true
+}

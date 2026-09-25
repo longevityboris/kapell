@@ -1,0 +1,418 @@
+{
+ "format": {
+  "samplerate": 48000,
+  "channels": 2,
+  "subtype": "PCM_24",
+  "duration_s": 234.225
+ },
+ "levels": {
+  "sample_peak_dbfs": -1.006,
+  "true_peak_x4_dbtp": -1.0,
+  "clipped_samples": 0,
+  "dc": [
+   1.521105321721687e-06,
+   2.751975851202326e-06
+  ],
+  "dc_db": [
+   -116.4,
+   -111.2
+  ],
+  "ebur128": {
+   "I_lufs": -18.4,
+   "LRA_lu": 18.2,
+   "true_peak_dbfs": -1.0
+  }
+ },
+ "noise": {
+  "first_note_at_s": 0.3,
+  "lead_in_max_abs": 0.0,
+  "lead_in_rms_dbfs": -200.0,
+  "quietest_100ms_inside_dbfs": -46.5,
+  "quietest_at_s": 9.55,
+  "loudest_100ms_dbfs": -12.9
+ },
+ "tail": {
+  "last_key_lift_s": 232.406,
+  "file_end_s": 234.225,
+  "seconds_after_lift": 1.818,
+  "final_chord_dbfs": -36.2,
+  "level_when_fade_starts_re_final_chord_db": -49.4,
+  "level_when_fade_starts_re_peak_db": -72.6,
+  "t_to_minus60_re_final_chord_s": 1.6,
+  "last_10ms_dbfs": -142.6
+ },
+ "stereo": {
+  "lr_balance_db": -1.33,
+  "correlation": 0.492,
+  "side_re_mid_db": -4.6,
+  "mono_foldown_loss_db": -1.29,
+  "dry_stem_lr_db": {
+   "vn1": 4.22,
+   "vn2": 1.78,
+   "va": 1.68,
+   "vc": 0.71
+  }
+ },
+ "timeline": {
+  "offset_default_s": -0.3,
+  "offset_keep_start_s": 0.0,
+  "residual_re_signal_db": -79.3,
+  "best_env_lag_ms": 0
+ },
+ "m4a": {
+  "ffprobe": [
+   {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "duration": "234.282667",
+    "bit_rate": "258539"
+   }
+  ],
+  "decoded_samplerate": 48000,
+  "decoded_len_minus_wav": 667,
+  "env_lag_ms": 0.0,
+  "decoded_true_peak_dbtp": -0.93,
+  "decoded_clipped": 0,
+  "ebur128": {
+   "I_lufs": -18.4,
+   "LRA_lu": 18.2,
+   "true_peak_dbfs": -0.9
+  }
+ },
+ "balance_k_weighted_re_loudest": {
+  "vn1": {
+   "median": -1.0,
+   "p10": -4.4,
+   "loudest_share": 0.34
+  },
+  "vn2": {
+   "median": -2.7,
+   "p10": -5.5,
+   "loudest_share": 0.07
+  },
+  "va": {
+   "median": -1.6,
+   "p10": -5.2,
+   "loudest_share": 0.29
+  },
+  "vc": {
+   "median": -0.8,
+   "p10": -3.7,
+   "loudest_share": 0.3
+  },
+  "windows": 163
+ },
+ "clarity": {
+  "short": {
+   "dry_stem": {
+    "n": 4,
+    "new_dominates": 1.0,
+    "median_db": 26.4,
+    "p10_db": 18.0
+   },
+   "mix": {
+    "n": 4,
+    "new_dominates": 0.5,
+    "median_db": -0.2,
+    "p10_db": -4.1
+   },
+   "dry_sum": {
+    "n": 4,
+    "new_dominates": 0.75,
+    "median_db": 10.3,
+    "p10_db": 2.5
+   },
+   "hall_none": {
+    "n": 4,
+    "new_dominates": 1.0,
+    "median_db": 9.7,
+    "p10_db": 4.1
+   }
+  },
+  "low_cello": {
+   "dry_stem": {
+    "n": 30,
+    "new_dominates": 0.967,
+    "median_db": 7.0,
+    "p10_db": 2.0
+   },
+   "mix": {
+    "n": 30,
+    "new_dominates": 0.867,
+    "median_db": 3.5,
+    "p10_db": -1.5
+   },
+   "dry_sum": {
+    "n": 30,
+    "new_dominates": 0.933,
+    "median_db": 5.6,
+    "p10_db": 1.4
+   },
+   "hall_none": {
+    "n": 30,
+    "new_dominates": 0.933,
+    "median_db": 5.5,
+    "p10_db": 1.2
+   }
+  }
+ },
+ "low_end": {
+  "mix_lt150_share_db": -12.2,
+  "dry_lt150_share_db": -12.4,
+  "mix_150_500_share_db": -2.4,
+  "dry_150_500_share_db": -2.6
+ },
+ "hall": {
+  "ir_len_s": 3.1,
+  "c80_reported": 4.63,
+  "wet_flag_db": 0.0,
+  "program": {
+   "vn1": {
+    "reverb_re_dry_db": -2.8,
+    "c80_db": 5.9
+   },
+   "vn2": {
+    "reverb_re_dry_db": -0.8,
+    "c80_db": 5.1
+   },
+   "va": {
+    "reverb_re_dry_db": -0.1,
+    "c80_db": 3.7
+   },
+   "vc": {
+    "reverb_re_dry_db": 1.6,
+    "c80_db": 4.6
+   },
+   "all": {
+    "reverb_re_dry_db": 0.1,
+    "c80_db": 4.7
+   },
+   "white_noise_reverb_re_dry_db": -0.1
+  },
+  "octave": {
+   "63": {
+    "EDT": 1.14,
+    "T20": 2.27,
+    "T30": 2.26,
+    "rt_local_0p5_1p0": 2.02,
+    "rt_local_1p2_1p44": 1.68,
+    "rt_local_1p5_2p5": 1.95,
+    "level_step_at_1p44_db": -0.1,
+    "late_re_early_db": -3.8,
+    "band_energy_share_db": -16.9
+   },
+   "125": {
+    "EDT": 1.89,
+    "T20": 1.8,
+    "T30": 1.89,
+    "rt_local_0p5_1p0": 1.9,
+    "rt_local_1p2_1p44": 1.61,
+    "rt_local_1p5_2p5": 1.92,
+    "level_step_at_1p44_db": -0.3,
+    "late_re_early_db": -1.0,
+    "band_energy_share_db": -14.3
+   },
+   "250": {
+    "EDT": 1.83,
+    "T20": 1.5,
+    "T30": 1.53,
+    "rt_local_0p5_1p0": 1.54,
+    "rt_local_1p2_1p44": 2.18,
+    "rt_local_1p5_2p5": 1.64,
+    "level_step_at_1p44_db": -6.2,
+    "late_re_early_db": 0.4,
+    "band_energy_share_db": -12.4
+   },
+   "500": {
+    "EDT": 1.69,
+    "T20": 1.56,
+    "T30": 1.61,
+    "rt_local_0p5_1p0": 1.65,
+    "rt_local_1p2_1p44": 1.67,
+    "rt_local_1p5_2p5": 1.61,
+    "level_step_at_1p44_db": -4.6,
+    "late_re_early_db": 1.7,
+    "band_energy_share_db": -9.9
+   },
+   "1000": {
+    "EDT": 1.68,
+    "T20": 1.58,
+    "T30": 1.61,
+    "rt_local_0p5_1p0": 1.64,
+    "rt_local_1p2_1p44": 1.77,
+    "rt_local_1p5_2p5": 1.62,
+    "level_step_at_1p44_db": -4.4,
+    "late_re_early_db": 0.9,
+    "band_energy_share_db": -8.2
+   },
+   "2000": {
+    "EDT": 1.62,
+    "T20": 1.49,
+    "T30": 1.51,
+    "rt_local_0p5_1p0": 1.54,
+    "rt_local_1p2_1p44": 1.61,
+    "rt_local_1p5_2p5": 1.53,
+    "level_step_at_1p44_db": -5.3,
+    "late_re_early_db": -0.7,
+    "band_energy_share_db": -8.5
+   },
+   "4000": {
+    "EDT": 1.42,
+    "T20": 1.31,
+    "T30": 1.31,
+    "rt_local_0p5_1p0": 1.32,
+    "rt_local_1p2_1p44": 1.31,
+    "rt_local_1p5_2p5": 1.35,
+    "level_step_at_1p44_db": -5.8,
+    "late_re_early_db": -1.4,
+    "band_energy_share_db": -6.9
+   },
+   "8000": {
+    "EDT": 0.94,
+    "T20": 0.92,
+    "T30": 0.93,
+    "rt_local_0p5_1p0": 0.94,
+    "rt_local_1p2_1p44": 1.17,
+    "rt_local_1p5_2p5": 1.17,
+    "level_step_at_1p44_db": -6.3,
+    "late_re_early_db": -4.6,
+    "band_energy_share_db": -8.9
+   }
+  }
+ },
+ "clicks": {
+  "validation": {
+   "planted": [
+    0.7,
+    1.5,
+    2.3,
+    3.1
+   ],
+   "amps_re_signal_rms_db": [
+    -12.9,
+    -18.9,
+    -25.0,
+    -31.0
+   ],
+   "found": [
+    0.7,
+    1.5,
+    2.299
+   ],
+   "false": []
+  },
+  "per_stem": {
+   "vn1": {
+    "n": 0,
+    "worst": []
+   },
+   "vn2": {
+    "n": 16,
+    "worst": [
+     {
+      "t": 208.887,
+      "hf_re_local_db": 15.4,
+      "re_fullband_db": -18.4
+     },
+     {
+      "t": 142.647,
+      "hf_re_local_db": 21.8,
+      "re_fullband_db": -22.4
+     },
+     {
+      "t": 171.298,
+      "hf_re_local_db": 16.6,
+      "re_fullband_db": -23.3
+     },
+     {
+      "t": 171.298,
+      "hf_re_local_db": 16.6,
+      "re_fullband_db": -23.3
+     },
+     {
+      "t": 216.439,
+      "hf_re_local_db": 16.3,
+      "re_fullband_db": -26.1
+     }
+    ]
+   },
+   "va": {
+    "n": 11,
+    "worst": [
+     {
+      "t": 138.829,
+      "hf_re_local_db": 20.7,
+      "re_fullband_db": -26.5
+     },
+     {
+      "t": 138.829,
+      "hf_re_local_db": 20.7,
+      "re_fullband_db": -26.5
+     },
+     {
+      "t": 154.872,
+      "hf_re_local_db": 19.0,
+      "re_fullband_db": -27.6
+     },
+     {
+      "t": 154.872,
+      "hf_re_local_db": 19.0,
+      "re_fullband_db": -27.6
+     },
+     {
+      "t": 61.815,
+      "hf_re_local_db": 17.7,
+      "re_fullband_db": -28.5
+     }
+    ]
+   },
+   "vc": {
+    "n": 6,
+    "worst": [
+     {
+      "t": 178.024,
+      "hf_re_local_db": 19.2,
+      "re_fullband_db": -23.5
+     },
+     {
+      "t": 85.811,
+      "hf_re_local_db": 16.3,
+      "re_fullband_db": -23.7
+     },
+     {
+      "t": 174.869,
+      "hf_re_local_db": 19.0,
+      "re_fullband_db": -24.5
+     },
+     {
+      "t": 85.755,
+      "hf_re_local_db": 16.4,
+      "re_fullband_db": -28.1
+     },
+     {
+      "t": 207.194,
+      "hf_re_local_db": 15.5,
+      "re_fullband_db": -29.2
+     }
+    ]
+   }
+  },
+  "mix": {
+   "n": 0,
+   "worst": []
+  }
+ },
+ "state": {
+  "head": "86480b8",
+  "render_quartet_sha": "24e3b9f5284dcd47",
+  "perform_sha": "4d527a2643657675",
+  "sfz": {
+   "bass.sfz": "fc96ab59f9e683a7",
+   "cello.sfz": "e002fbc00fac9a98",
+   "viola.sfz": "7ecae68c0f77a41c",
+   "violin.sfz": "d103bf15d9facbdb",
+   "violin2.sfz": "f083e98b2947f500"
+  }
+ }
+}

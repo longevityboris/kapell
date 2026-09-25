@@ -1,0 +1,148 @@
+{
+ "state": {
+  "head": "d9bb89e",
+  "render_quartet_commit": "c71ee34",
+  "render_quartet_sha": "b32c34e0dd47ed48",
+  "sfz": {
+   "bass.sfz": "00762544528904ce",
+   "cello.sfz": "1509632bd473c8ed",
+   "viola.sfz": "eeb0117a420062b4",
+   "violin.sfz": "bf2e18602a9816a2",
+   "violin2.sfz": "c50e3d0762fdcf75"
+  }
+ },
+ "results": {
+  "violin2/67/cc1=62": {
+   "layer_alone_p2p_db": {
+    "pp": 1.2
+   },
+   "layer_level_db": {
+    "pp": -42.2
+   },
+   "actual_sum_p2p_db": 1.2,
+   "power_sum_p2p_db": 1.2
+  },
+  "violin2/67/cc1=68": {
+   "layer_alone_p2p_db": {
+    "pp": 1.2,
+    "mf": 1.2
+   },
+   "layer_level_db": {
+    "pp": -50.2,
+    "mf": -42.0
+   },
+   "actual_sum_p2p_db": 6.3,
+   "power_sum_p2p_db": 1.0
+  },
+  "violin2/67/cc1=101": {
+   "layer_alone_p2p_db": {
+    "mf": 1.1
+   },
+   "layer_level_db": {
+    "mf": -33.9
+   },
+   "actual_sum_p2p_db": 1.1,
+   "power_sum_p2p_db": 1.1
+  },
+  "violin2/67/cc1=107": {
+   "layer_alone_p2p_db": {
+    "mf": 1.1,
+    "ff": 0.7
+   },
+   "layer_level_db": {
+    "mf": -39.5,
+    "ff": -34.3
+   },
+   "actual_sum_p2p_db": 6.8,
+   "power_sum_p2p_db": 0.6
+  },
+  "cello/60/cc1=62": {
+   "layer_alone_p2p_db": {
+    "pp": 1.1
+   },
+   "layer_level_db": {
+    "pp": -45.7
+   },
+   "actual_sum_p2p_db": 1.1,
+   "power_sum_p2p_db": 1.1
+  },
+  "cello/60/cc1=68": {
+   "layer_alone_p2p_db": {
+    "pp": 1.1,
+    "mf": 1.6
+   },
+   "layer_level_db": {
+    "pp": -53.7,
+    "mf": -45.8
+   },
+   "actual_sum_p2p_db": 7.0,
+   "power_sum_p2p_db": 1.5
+  },
+  "cello/60/cc1=101": {
+   "layer_alone_p2p_db": {
+    "mf": 1.6
+   },
+   "layer_level_db": {
+    "mf": -36.8
+   },
+   "actual_sum_p2p_db": 1.6,
+   "power_sum_p2p_db": 1.6
+  },
+  "cello/60/cc1=107": {
+   "layer_alone_p2p_db": {
+    "mf": 1.6,
+    "ff": 1.0
+   },
+   "layer_level_db": {
+    "mf": -42.2,
+    "ff": -36.9
+   },
+   "actual_sum_p2p_db": 7.1,
+   "power_sum_p2p_db": 0.9
+  },
+  "viola/54/cc1=62": {
+   "layer_alone_p2p_db": {
+    "pp": 3.4
+   },
+   "layer_level_db": {
+    "pp": -44.0
+   },
+   "actual_sum_p2p_db": 3.4,
+   "power_sum_p2p_db": 3.4
+  },
+  "viola/54/cc1=68": {
+   "layer_alone_p2p_db": {
+    "pp": 3.4,
+    "mf": 0.9
+   },
+   "layer_level_db": {
+    "pp": -51.9,
+    "mf": -43.9
+   },
+   "actual_sum_p2p_db": 6.4,
+   "power_sum_p2p_db": 0.9
+  },
+  "viola/54/cc1=101": {
+   "layer_alone_p2p_db": {
+    "mf": 0.9
+   },
+   "layer_level_db": {
+    "mf": -35.0
+   },
+   "actual_sum_p2p_db": 0.9,
+   "power_sum_p2p_db": 0.9
+  },
+  "viola/54/cc1=107": {
+   "layer_alone_p2p_db": {
+    "mf": 0.9,
+    "ff": 0.8
+   },
+   "layer_level_db": {
+    "mf": -40.3,
+    "ff": -35.1
+   },
+   "actual_sum_p2p_db": 7.8,
+   "power_sum_p2p_db": 0.7
+  }
+ }
+}

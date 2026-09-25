@@ -1,0 +1,715 @@
+{
+ "input": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/bach_organ/build/organ.mid",
+ "voices": {
+  "alto": {
+   "notes": 217,
+   "divisions": [
+    [
+     0.0,
+     "OW"
+    ]
+   ],
+   "rms_dbfs_when_sounding": -29.68,
+   "peak_dbfs": -13.23,
+   "stereo": {
+    "lr_correlation": 0.768,
+    "mono_folddown_db": -0.54,
+    "mono_folddown_worst_1s_db": -2.77
+   }
+  },
+  "bass": {
+   "notes": 141,
+   "divisions": [
+    [
+     0.0,
+     "PED"
+    ]
+   ],
+   "rms_dbfs_when_sounding": -26.07,
+   "peak_dbfs": -9.03,
+   "stereo": {
+    "lr_correlation": 0.86,
+    "mono_folddown_db": -0.33,
+    "mono_folddown_worst_1s_db": -1.98
+   }
+  },
+  "soprano": {
+   "notes": 191,
+   "divisions": [
+    [
+     0.0,
+     "HW"
+    ],
+    [
+     96.365,
+     "POS"
+    ],
+    [
+     118.193,
+     "HW"
+    ]
+   ],
+   "rms_dbfs_when_sounding": -27.65,
+   "peak_dbfs": -8.82,
+   "stereo": {
+    "lr_correlation": 0.757,
+    "mono_folddown_db": -0.57,
+    "mono_folddown_worst_1s_db": -3.91
+   }
+  },
+  "tenor": {
+   "notes": 192,
+   "divisions": [
+    [
+     0.0,
+     "POS"
+    ],
+    [
+     96.365,
+     "HW"
+    ],
+    [
+     118.193,
+     "POS"
+    ],
+    [
+     227.561,
+     "HW"
+    ]
+   ],
+   "rms_dbfs_when_sounding": -28.09,
+   "peak_dbfs": -11.71,
+   "stereo": {
+    "lr_correlation": 0.816,
+    "mono_folddown_db": -0.43,
+    "mono_folddown_worst_1s_db": -1.56
+   }
+  }
+ },
+ "warnings": [],
+ "registration": {
+  "HW": [
+   {
+    "t": 0.0,
+    "stops": [
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 60.0,
+    "stops": [
+     "Octava 4'",
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 66.316,
+    "stops": [
+     "Octava 2'",
+     "Octava 4'",
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 96.365,
+    "stops": [
+     "Gedackt flött 8'"
+    ]
+   },
+   {
+    "t": 118.193,
+    "stops": [
+     "Gedackt flött 8'"
+    ]
+   },
+   {
+    "t": 131.908,
+    "stops": [
+     "Gedackt flött 8'",
+     "Spitz flött 4'"
+    ]
+   },
+   {
+    "t": 138.765,
+    "stops": [
+     "Octava 4'",
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 145.622,
+    "stops": [
+     "Octava 2'",
+     "Octava 4'",
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 156.053,
+    "stops": [
+     "Gedackt flött 8'"
+    ]
+   },
+   {
+    "t": 169.387,
+    "stops": [
+     "Octava 2'",
+     "Octava 4'",
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 176.053,
+    "stops": [
+     "Mixtur 6 fach",
+     "Octava 2'",
+     "Octava 4'",
+     "Principal 8'",
+     "Qvinta 3'"
+    ]
+   },
+   {
+    "t": 179.387,
+    "stops": [
+     "Mixtur 6 fach",
+     "Octava 2'",
+     "Octava 4'",
+     "Principal 8'",
+     "Quintadena 16'",
+     "Qvinta 3'",
+     "Trommeten 8'"
+    ]
+   },
+   {
+    "t": 184.836,
+    "stops": [
+     "Mixtur 6 fach",
+     "Octava 2'",
+     "Octava 4'",
+     "Principal 8'",
+     "Qvinta 3'"
+    ]
+   },
+   {
+    "t": 186.8,
+    "stops": [
+     "Octava 2'",
+     "Octava 4'",
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 188.83,
+    "stops": [
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 195.687,
+    "stops": [
+     "Octava 4'",
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 202.544,
+    "stops": [
+     "Mixtur 6 fach",
+     "Octava 2'",
+     "Octava 4'",
+     "Principal 8'",
+     "Qvinta 3'",
+     "Trommeten 8'"
+    ]
+   },
+   {
+    "t": 211.115,
+    "stops": [
+     "Octava 2'",
+     "Octava 4'",
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 216.258,
+    "stops": [
+     "Principal 8'"
+    ]
+   },
+   {
+    "t": 223.758,
+    "stops": [
+     "Gedackt flött 8'"
+    ]
+   }
+  ],
+  "POS": [
+   {
+    "t": 0.0,
+    "stops": [
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 37.895,
+    "stops": [
+     "Flött 4'",
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 54.079,
+    "stops": [
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 60.0,
+    "stops": [
+     "Flött 4'",
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 72.632,
+    "stops": [
+     "Flött 8'",
+     "Octava 2'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 82.105,
+    "stops": [
+     "Cimball 3f.",
+     "Flött 8'",
+     "Octava 2'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 96.365,
+    "stops": [
+     "Flött 4'",
+     "Flött 8'",
+     "Krumb Horn 8'"
+    ]
+   },
+   {
+    "t": 118.193,
+    "stops": [
+     "Flött 8'"
+    ]
+   },
+   {
+    "t": 131.908,
+    "stops": [
+     "Flött 4'",
+     "Flött 8'"
+    ]
+   },
+   {
+    "t": 145.622,
+    "stops": [
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 156.053,
+    "stops": [
+     "Flött 4'",
+     "Flött 8'"
+    ]
+   },
+   {
+    "t": 162.72,
+    "stops": [
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 169.387,
+    "stops": [
+     "Flött 4'",
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 176.053,
+    "stops": [
+     "Cimball 3f.",
+     "Flött 8'",
+     "Octava 2'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 179.387,
+    "stops": [
+     "Cimball 3f.",
+     "Flött 8'",
+     "Krumb Horn 8'",
+     "Octava 2'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 184.836,
+    "stops": [
+     "Flött 4'",
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 186.8,
+    "stops": [
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 188.83,
+    "stops": [
+     "Flött 8'"
+    ]
+   },
+   {
+    "t": 202.544,
+    "stops": [
+     "Flött 8'",
+     "Octava 2'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 211.115,
+    "stops": [
+     "Flött 4'",
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   },
+   {
+    "t": 216.258,
+    "stops": [
+     "Flött 8'",
+     "Principal 4'"
+    ]
+   }
+  ],
+  "OW": [
+   {
+    "t": 0.0,
+    "stops": [
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 12.632,
+    "stops": [
+     "Octava 2'",
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 27.632,
+    "stops": [
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 73.421,
+    "stops": [
+     "Octava 2'",
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 96.365,
+    "stops": [
+     "Quintadena 8'"
+    ]
+   },
+   {
+    "t": 118.193,
+    "stops": [
+     "Quintadena 8'"
+    ]
+   },
+   {
+    "t": 131.908,
+    "stops": [
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 156.053,
+    "stops": [
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 162.72,
+    "stops": [
+     "Octava 2'",
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 169.387,
+    "stops": [
+     "Octava 2'",
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 176.053,
+    "stops": [
+     "Nasat 3'",
+     "Octava 2'",
+     "Quintadena 8'",
+     "Schallmeijen 8'",
+     "Zap: flöite 4'",
+     "Zimball 2 fach"
+    ]
+   },
+   {
+    "t": 184.836,
+    "stops": [
+     "Octava 2'",
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 186.8,
+    "stops": [
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 188.83,
+    "stops": [
+     "Quintadena 8'"
+    ]
+   },
+   {
+    "t": 202.544,
+    "stops": [
+     "Octava 2'",
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 216.258,
+    "stops": [
+     "Quintadena 8'",
+     "Zap: flöite 4'"
+    ]
+   },
+   {
+    "t": 225.633,
+    "stops": [
+     "Quintadena 8'"
+    ]
+   }
+  ],
+  "PED": [
+   {
+    "t": 0.0,
+    "stops": [
+     "Gedackter Bass 8'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 66.316,
+    "stops": [
+     "Gedackter Bass 8'",
+     "Octava Bass 4'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 80.526,
+    "stops": [
+     "Corneten Bass 4'",
+     "Dussanen Bass 8'",
+     "Gedackter Bass 8'",
+     "Trommeten Bass 8'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 96.365,
+    "stops": [
+     "Gedackter Bass 8'"
+    ]
+   },
+   {
+    "t": 118.193,
+    "stops": [
+     "Gedackter Bass 8'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 156.053,
+    "stops": [
+     "Gedackter Bass 8'",
+     "Octava Bass 4'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 176.053,
+    "stops": [
+     "Gedackter Bass 8'",
+     "Octava Bass 4'",
+     "Posaunen Bass 16'",
+     "Trommeten Bass 8'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 184.836,
+    "stops": [
+     "Gedackter Bass 8'",
+     "Octava Bass 4'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 187.806,
+    "stops": [
+     "Gedackter Bass 8'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 202.544,
+    "stops": [
+     "Gedackter Bass 8'",
+     "Octava Bass 4'",
+     "Posaunen Bass 16'",
+     "Trommeten Bass 8'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 211.115,
+    "stops": [
+     "Gedackter Bass 8'",
+     "Octava Bass 4'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 216.258,
+    "stops": [
+     "Gedackter Bass 8'",
+     "Under Bass 16'"
+    ]
+   },
+   {
+    "t": 223.758,
+    "stops": [
+     "Gedackter Bass 8'"
+    ]
+   }
+  ]
+ },
+ "output": {
+  "wav": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/bach_organ/ricercar_bach_organ.wav",
+  "m4a_tagged": true,
+  "m4a": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/bach_organ/ricercar_bach_organ.m4a"
+ },
+ "duration_s": 241.688,
+ "lead_in_s": 0.5,
+ "temperament": "equal",
+ "a4": 440.0,
+ "pipe_events": 1631,
+ "notes_in": 741,
+ "key_presses": 741,
+ "key_presses_without_pipes": 0,
+ "pipes_used": 337,
+ "shared_keys": 0,
+ "handover_restrikes": 0,
+ "folded_notes": {},
+ "anticipation_ms": {
+  "fraction_of_speech": 0.5,
+  "median": 12.6,
+  "p95": 38.5,
+  "max": 40.0
+ },
+ "borrowed_pipe_events": {
+  "PED/Under Bass 16' key 36": 6,
+  "PED/Gedackter Bass 8' key 36": 6,
+  "PED/Octava Bass 4' key 36": 3,
+  "PED/Posaunen Bass 16' key 36": 2,
+  "PED/Trommeten Bass 8' key 36": 2,
+  "PED/Under Bass 16' key 40": 8,
+  "PED/Gedackter Bass 8' key 40": 9,
+  "PED/Corneten Bass 4' key 40": 2,
+  "PED/Dussanen Bass 8' key 40": 2,
+  "PED/Trommeten Bass 8' key 40": 4,
+  "PED/Posaunen Bass 16' key 40": 2,
+  "PED/Octava Bass 4' key 40": 2,
+  "PED/Gedackter Bass 8' key 38": 1
+ },
+ "missing": {},
+ "release_join": {
+  "corr_median": 0.9984,
+  "corr_p5": 0.889,
+  "keyup_shift_ms_max_abs": 15.23,
+  "level_match_db_range": [
+   -3.74,
+   6.0
+  ]
+ },
+ "hall": {
+  "ir": "/Users/biobook/Music/SampleLibraries/IR/OpenAIR/lady_chapel_st_albans_cathedral__stereo__stalbans_a_ortf.wav",
+  "wet_db": -4.0,
+  "gain": 0.3119322380005886,
+  "hall_re_dry_db": -4.0,
+  "c80_added_db": 8.04
+ },
+ "final_decay_T20_s": 3.66,
+ "stereo_mix": {
+  "lr_correlation": 0.702,
+  "mono_folddown_db": -0.71,
+  "mono_folddown_worst_1s_db": -1.79
+ },
+ "stereo_dry_sum": {
+  "lr_correlation": 0.804,
+  "mono_folddown_db": -0.45,
+  "mono_folddown_worst_1s_db": -1.2
+ },
+ "normalisation_gain_db": -13.72,
+ "true_peak_dbtp": -1.0,
+ "loudness": {
+  "integrated_lufs": -18.1,
+  "lra_lu": 9.9,
+  "true_peak_dbtp": -1.0
+ },
+ "render_seconds": 17.4,
+ "pipe_render_seconds": 8.7
+}

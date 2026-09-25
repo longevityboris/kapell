@@ -1,0 +1,993 @@
+{
+ "n_notes": 128,
+ "n_sounding": 10,
+ "cc1_when_sounding": [
+  104,
+  110,
+  118,
+  127
+ ],
+ "max_cc1_when_silent": 127,
+ "cb_re_cello_db": {
+  "median": -5.85
+ },
+ "worst_cents": [
+  {
+   "on": 81.0776,
+   "dur": 1.625,
+   "cello_key": 41,
+   "cc1": 104,
+   "cb_re_cello_db": -29.2,
+   "cents": 401.4,
+   "cents_fft": -0.0
+  },
+  {
+   "on": 171.7776,
+   "dur": 4.149,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -5.5,
+   "cents": -2.6,
+   "cents_fft": -2.6
+  },
+  {
+   "on": 163.0081,
+   "dur": 2.376,
+   "cello_key": 39,
+   "cc1": 127,
+   "cb_re_cello_db": -25.5,
+   "cents": 2.1,
+   "cents_fft": 1.6
+  },
+  {
+   "on": 82.6976,
+   "dur": 2.378,
+   "cello_key": 40,
+   "cc1": 110,
+   "cb_re_cello_db": -3.6,
+   "cents": 0.7,
+   "cents_fft": 0.6
+  },
+  {
+   "on": 85.1274,
+   "dur": 0.405,
+   "cello_key": 40,
+   "cc1": 118,
+   "cb_re_cello_db": -6.2,
+   "cents": -0.7,
+   "cents_fft": -0.5
+  }
+ ],
+ "rows": [
+  {
+   "on": 25.9434,
+   "dur": 2.375,
+   "cello_key": 46,
+   "cc1": 77,
+   "cb_re_cello_db": -165.6
+  },
+  {
+   "on": 28.3758,
+   "dur": 0.401,
+   "cello_key": 46,
+   "cc1": 84,
+   "cb_re_cello_db": -161.9
+  },
+  {
+   "on": 28.7719,
+   "dur": 0.42,
+   "cello_key": 45,
+   "cc1": 84,
+   "cb_re_cello_db": -165.2
+  },
+  {
+   "on": 29.1866,
+   "dur": 2.375,
+   "cello_key": 46,
+   "cc1": 84,
+   "cb_re_cello_db": -166.4
+  },
+  {
+   "on": 31.6115,
+   "dur": 0.409,
+   "cello_key": 46,
+   "cc1": 85,
+   "cb_re_cello_db": -162.5
+  },
+  {
+   "on": 32.0152,
+   "dur": 0.411,
+   "cello_key": 45,
+   "cc1": 85,
+   "cb_re_cello_db": -165.5
+  },
+  {
+   "on": 32.4214,
+   "dur": 1.227,
+   "cello_key": 46,
+   "cc1": 85,
+   "cb_re_cello_db": -165.4
+  },
+  {
+   "on": 33.6359,
+   "dur": 0.373,
+   "cello_key": 48,
+   "cc1": 85,
+   "cb_re_cello_db": -163.9
+  },
+  {
+   "on": 34.0506,
+   "dur": 1.22,
+   "cello_key": 48,
+   "cc1": 85,
+   "cb_re_cello_db": -164.9
+  },
+  {
+   "on": 35.2593,
+   "dur": 0.366,
+   "cello_key": 51,
+   "cc1": 85,
+   "cb_re_cello_db": -165.9
+  },
+  {
+   "on": 35.6655,
+   "dur": 2.443,
+   "cello_key": 51,
+   "cc1": 85,
+   "cb_re_cello_db": -167.9
+  },
+  {
+   "on": 38.0962,
+   "dur": 0.42,
+   "cello_key": 49,
+   "cc1": 88,
+   "cb_re_cello_db": -163.8
+  },
+  {
+   "on": 38.5109,
+   "dur": 0.41,
+   "cello_key": 46,
+   "cc1": 88,
+   "cb_re_cello_db": -164.4
+  },
+  {
+   "on": 38.9155,
+   "dur": 1.22,
+   "cello_key": 48,
+   "cc1": 88,
+   "cb_re_cello_db": -166.1
+  },
+  {
+   "on": 40.1309,
+   "dur": 0.407,
+   "cello_key": 45,
+   "cc1": 88,
+   "cb_re_cello_db": -166.9
+  },
+  {
+   "on": 40.5329,
+   "dur": 0.822,
+   "cello_key": 41,
+   "cc1": 88,
+   "cb_re_cello_db": -167.5
+  },
+  {
+   "on": 41.3496,
+   "dur": 0.818,
+   "cello_key": 36,
+   "cc1": 88,
+   "cb_re_cello_db": -165.6
+  },
+  {
+   "on": 42.163,
+   "dur": 2.441,
+   "cello_key": 44,
+   "cc1": 88,
+   "cb_re_cello_db": -168.6
+  },
+  {
+   "on": 44.5988,
+   "dur": 0.818,
+   "cello_key": 43,
+   "cc1": 88,
+   "cb_re_cello_db": -168.0
+  },
+  {
+   "on": 45.4113,
+   "dur": 0.808,
+   "cello_key": 41,
+   "cc1": 88,
+   "cb_re_cello_db": -167.1
+  },
+  {
+   "on": 46.2145,
+   "dur": 0.815,
+   "cello_key": 40,
+   "cc1": 88,
+   "cb_re_cello_db": -165.9
+  },
+  {
+   "on": 47.0244,
+   "dur": 1.63,
+   "cello_key": 39,
+   "cc1": 88,
+   "cb_re_cello_db": -168.8
+  },
+  {
+   "on": 48.6494,
+   "dur": 2.44,
+   "cello_key": 37,
+   "cc1": 91,
+   "cb_re_cello_db": -169.0
+  },
+  {
+   "on": 51.0844,
+   "dur": 0.808,
+   "cello_key": 36,
+   "cc1": 93,
+   "cb_re_cello_db": -168.2
+  },
+  {
+   "on": 51.8876,
+   "dur": 1.221,
+   "cello_key": 40,
+   "cc1": 93,
+   "cb_re_cello_db": -167.7
+  },
+  {
+   "on": 53.103,
+   "dur": 0.412,
+   "cello_key": 43,
+   "cc1": 93,
+   "cb_re_cello_db": -169.9
+  },
+  {
+   "on": 53.5101,
+   "dur": 0.825,
+   "cello_key": 36,
+   "cc1": 93,
+   "cb_re_cello_db": -168.8
+  },
+  {
+   "on": 54.3302,
+   "dur": 0.812,
+   "cello_key": 48,
+   "cc1": 93,
+   "cb_re_cello_db": -165.9
+  },
+  {
+   "on": 55.1368,
+   "dur": 1.62,
+   "cello_key": 41,
+   "cc1": 93,
+   "cb_re_cello_db": -165.3
+  },
+  {
+   "on": 56.7508,
+   "dur": 1.628,
+   "cello_key": 46,
+   "cc1": 93,
+   "cb_re_cello_db": -164.0
+  },
+  {
+   "on": 58.3741,
+   "dur": 1.63,
+   "cello_key": 39,
+   "cc1": 93,
+   "cb_re_cello_db": -164.6
+  },
+  {
+   "on": 59.9991,
+   "dur": 1.624,
+   "cello_key": 41,
+   "cc1": 93,
+   "cb_re_cello_db": -165.4
+  },
+  {
+   "on": 61.6182,
+   "dur": 2.376,
+   "cello_key": 46,
+   "cc1": 93,
+   "cb_re_cello_db": -168.2
+  },
+  {
+   "on": 64.043,
+   "dur": 0.408,
+   "cello_key": 46,
+   "cc1": 93,
+   "cb_re_cello_db": -164.6
+  },
+  {
+   "on": 64.4459,
+   "dur": 0.414,
+   "cello_key": 45,
+   "cc1": 93,
+   "cb_re_cello_db": -167.9
+  },
+  {
+   "on": 64.8547,
+   "dur": 2.383,
+   "cello_key": 46,
+   "cc1": 93,
+   "cb_re_cello_db": -169.5
+  },
+  {
+   "on": 67.2871,
+   "dur": 0.414,
+   "cello_key": 46,
+   "cc1": 95,
+   "cb_re_cello_db": -166.0
+  },
+  {
+   "on": 67.6959,
+   "dur": 0.405,
+   "cello_key": 45,
+   "cc1": 95,
+   "cb_re_cello_db": -169.2
+  },
+  {
+   "on": 68.0962,
+   "dur": 1.228,
+   "cello_key": 46,
+   "cc1": 95,
+   "cb_re_cello_db": -169.2
+  },
+  {
+   "on": 69.3158,
+   "dur": 0.37,
+   "cello_key": 48,
+   "cc1": 95,
+   "cb_re_cello_db": -168.0
+  },
+  {
+   "on": 69.7271,
+   "dur": 1.219,
+   "cello_key": 48,
+   "cc1": 95,
+   "cb_re_cello_db": -169.2
+  },
+  {
+   "on": 70.9341,
+   "dur": 0.369,
+   "cello_key": 51,
+   "cc1": 96,
+   "cb_re_cello_db": -170.3
+  },
+  {
+   "on": 71.3445,
+   "dur": 2.44,
+   "cello_key": 51,
+   "cc1": 97,
+   "cb_re_cello_db": -172.9
+  },
+  {
+   "on": 73.7795,
+   "dur": 0.404,
+   "cello_key": 49,
+   "cc1": 104,
+   "cb_re_cello_db": -169.4
+  },
+  {
+   "on": 74.1781,
+   "dur": 0.415,
+   "cello_key": 46,
+   "cc1": 104,
+   "cb_re_cello_db": -170.2
+  },
+  {
+   "on": 74.5886,
+   "dur": 1.222,
+   "cello_key": 48,
+   "cc1": 104,
+   "cb_re_cello_db": -171.6
+  },
+  {
+   "on": 75.8006,
+   "dur": 0.412,
+   "cello_key": 44,
+   "cc1": 104,
+   "cb_re_cello_db": -174.0
+  },
+  {
+   "on": 76.2077,
+   "dur": 0.827,
+   "cello_key": 41,
+   "cc1": 104,
+   "cb_re_cello_db": -173.4
+  },
+  {
+   "on": 77.0295,
+   "dur": 0.818,
+   "cello_key": 39,
+   "cc1": 104,
+   "cb_re_cello_db": -170.1
+  },
+  {
+   "on": 77.8428,
+   "dur": 2.432,
+   "cello_key": 37,
+   "cc1": 104,
+   "cb_re_cello_db": -171.8
+  },
+  {
+   "on": 80.2702,
+   "dur": 0.812,
+   "cello_key": 36,
+   "cc1": 104,
+   "cb_re_cello_db": -171.3
+  },
+  {
+   "on": 81.0776,
+   "dur": 1.625,
+   "cello_key": 41,
+   "cc1": 104,
+   "cb_re_cello_db": -29.2,
+   "cents": 401.4,
+   "cents_fft": -0.0
+  },
+  {
+   "on": 82.6976,
+   "dur": 2.378,
+   "cello_key": 40,
+   "cc1": 110,
+   "cb_re_cello_db": -3.6,
+   "cents": 0.7,
+   "cents_fft": 0.6
+  },
+  {
+   "on": 85.1274,
+   "dur": 0.405,
+   "cello_key": 40,
+   "cc1": 118,
+   "cb_re_cello_db": -6.2,
+   "cents": -0.7,
+   "cents_fft": -0.5
+  },
+  {
+   "on": 85.5278,
+   "dur": 13.23,
+   "cello_key": 39,
+   "cc1": 118,
+   "cb_re_cello_db": -4.2,
+   "cents": 0.1,
+   "cents_fft": -0.0
+  },
+  {
+   "on": 98.7524,
+   "dur": 4.62,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -53.8
+  },
+  {
+   "on": 103.3678,
+   "dur": 3.462,
+   "cello_key": 39,
+   "cc1": 127,
+   "cb_re_cello_db": -157.8
+  },
+  {
+   "on": 106.8245,
+   "dur": 1.16,
+   "cello_key": 38,
+   "cc1": 127,
+   "cb_re_cello_db": -157.7
+  },
+  {
+   "on": 107.9795,
+   "dur": 2.32,
+   "cello_key": 42,
+   "cc1": 127,
+   "cb_re_cello_db": -161.1
+  },
+  {
+   "on": 110.2944,
+   "dur": 2.243,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -159.5
+  },
+  {
+   "on": 112.5997,
+   "dur": 4.622,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -157.9
+  },
+  {
+   "on": 117.2163,
+   "dur": 4.912,
+   "cello_key": 40,
+   "cc1": 127,
+   "cb_re_cello_db": -155.2
+  },
+  {
+   "on": 122.1207,
+   "dur": 2.909,
+   "cello_key": 52,
+   "cc1": 127,
+   "cb_re_cello_db": -158.9
+  },
+  {
+   "on": 125.0814,
+   "dur": 0.486,
+   "cello_key": 52,
+   "cc1": 127,
+   "cb_re_cello_db": -156.7
+  },
+  {
+   "on": 125.5619,
+   "dur": 0.488,
+   "cello_key": 53,
+   "cc1": 127,
+   "cb_re_cello_db": -160.4
+  },
+  {
+   "on": 126.0453,
+   "dur": 2.807,
+   "cello_key": 52,
+   "cc1": 127,
+   "cb_re_cello_db": -160.2
+  },
+  {
+   "on": 128.9076,
+   "dur": 0.474,
+   "cello_key": 52,
+   "cc1": 127,
+   "cb_re_cello_db": -157.7
+  },
+  {
+   "on": 129.3768,
+   "dur": 0.464,
+   "cello_key": 53,
+   "cc1": 127,
+   "cb_re_cello_db": -160.8
+  },
+  {
+   "on": 129.8362,
+   "dur": 1.397,
+   "cello_key": 52,
+   "cc1": 127,
+   "cb_re_cello_db": -159.8
+  },
+  {
+   "on": 131.2244,
+   "dur": 0.413,
+   "cello_key": 50,
+   "cc1": 127,
+   "cb_re_cello_db": -163.2
+  },
+  {
+   "on": 131.6834,
+   "dur": 1.37,
+   "cello_key": 50,
+   "cc1": 127,
+   "cb_re_cello_db": -163.6
+  },
+  {
+   "on": 133.0466,
+   "dur": 0.401,
+   "cello_key": 47,
+   "cc1": 127,
+   "cb_re_cello_db": -162.5
+  },
+  {
+   "on": 133.4921,
+   "dur": 2.672,
+   "cello_key": 47,
+   "cc1": 127,
+   "cb_re_cello_db": -165.6
+  },
+  {
+   "on": 136.1508,
+   "dur": 0.445,
+   "cello_key": 48,
+   "cc1": 127,
+   "cb_re_cello_db": -163.8
+  },
+  {
+   "on": 136.5906,
+   "dur": 0.448,
+   "cello_key": 52,
+   "cc1": 127,
+   "cb_re_cello_db": -163.1
+  },
+  {
+   "on": 137.0341,
+   "dur": 1.298,
+   "cello_key": 50,
+   "cc1": 127,
+   "cb_re_cello_db": -166.5
+  },
+  {
+   "on": 138.3219,
+   "dur": 0.433,
+   "cello_key": 53,
+   "cc1": 127,
+   "cb_re_cello_db": -164.5
+  },
+  {
+   "on": 138.7501,
+   "dur": 0.871,
+   "cello_key": 57,
+   "cc1": 127,
+   "cb_re_cello_db": -163.9
+  },
+  {
+   "on": 139.6163,
+   "dur": 0.846,
+   "cello_key": 54,
+   "cc1": 127,
+   "cb_re_cello_db": -162.8
+  },
+  {
+   "on": 140.4578,
+   "dur": 2.501,
+   "cello_key": 47,
+   "cc1": 127,
+   "cb_re_cello_db": -165.8
+  },
+  {
+   "on": 142.9539,
+   "dur": 0.821,
+   "cello_key": 52,
+   "cc1": 127,
+   "cb_re_cello_db": -163.7
+  },
+  {
+   "on": 143.7701,
+   "dur": 2.352,
+   "cello_key": 48,
+   "cc1": 127,
+   "cb_re_cello_db": -167.1
+  },
+  {
+   "on": 146.1862,
+   "dur": 1.039,
+   "cello_key": 48,
+   "cc1": 127,
+   "cb_re_cello_db": -165.0
+  },
+  {
+   "on": 147.2196,
+   "dur": 3.103,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -164.0
+  },
+  {
+   "on": 150.3724,
+   "dur": 1.53,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -163.6
+  },
+  {
+   "on": 151.9555,
+   "dur": 0.798,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -162.1
+  },
+  {
+   "on": 152.7482,
+   "dur": 0.793,
+   "cello_key": 42,
+   "cc1": 127,
+   "cb_re_cello_db": -162.4
+  },
+  {
+   "on": 153.527,
+   "dur": 3.112,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -165.1
+  },
+  {
+   "on": 156.6964,
+   "dur": 1.521,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -166.4
+  },
+  {
+   "on": 158.2655,
+   "dur": 0.802,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -165.5
+  },
+  {
+   "on": 159.0542,
+   "dur": 0.803,
+   "cello_key": 42,
+   "cc1": 127,
+   "cb_re_cello_db": -167.0
+  },
+  {
+   "on": 159.8502,
+   "dur": 2.375,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -169.8
+  },
+  {
+   "on": 162.2203,
+   "dur": 0.734,
+   "cello_key": 39,
+   "cc1": 127,
+   "cb_re_cello_db": -169.7
+  },
+  {
+   "on": 163.0081,
+   "dur": 2.376,
+   "cello_key": 39,
+   "cc1": 127,
+   "cb_re_cello_db": -25.5,
+   "cents": 2.1,
+   "cents_fft": 1.6
+  },
+  {
+   "on": 165.379,
+   "dur": 0.734,
+   "cello_key": 36,
+   "cc1": 127,
+   "cb_re_cello_db": -19.4,
+   "cents": -0.3,
+   "cents_fft": -0.5
+  },
+  {
+   "on": 166.1693,
+   "dur": 3.101,
+   "cello_key": 36,
+   "cc1": 127,
+   "cb_re_cello_db": -2.9,
+   "cents": -0.1,
+   "cents_fft": -0.4
+  },
+  {
+   "on": 169.3272,
+   "dur": 1.622,
+   "cello_key": 36,
+   "cc1": 127,
+   "cb_re_cello_db": -2.9,
+   "cents": 0.7,
+   "cents_fft": 0.5
+  },
+  {
+   "on": 170.9444,
+   "dur": 0.845,
+   "cello_key": 37,
+   "cc1": 127,
+   "cb_re_cello_db": -6.5,
+   "cents": 0.1,
+   "cents_fft": 0.1
+  },
+  {
+   "on": 171.7776,
+   "dur": 4.149,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -5.5,
+   "cents": -2.6,
+   "cents_fft": -2.6
+  },
+  {
+   "on": 175.9118,
+   "dur": 3.23,
+   "cello_key": 39,
+   "cc1": 127,
+   "cb_re_cello_db": -43.9
+  },
+  {
+   "on": 179.1369,
+   "dur": 1.484,
+   "cello_key": 42,
+   "cc1": 127,
+   "cb_re_cello_db": -158.7
+  },
+  {
+   "on": 180.6164,
+   "dur": 2.545,
+   "cello_key": 46,
+   "cc1": 127,
+   "cb_re_cello_db": -162.6
+  },
+  {
+   "on": 183.2188,
+   "dur": 0.438,
+   "cello_key": 46,
+   "cc1": 127,
+   "cb_re_cello_db": -159.2
+  },
+  {
+   "on": 183.6517,
+   "dur": 0.441,
+   "cello_key": 48,
+   "cc1": 127,
+   "cb_re_cello_db": -160.1
+  },
+  {
+   "on": 184.0874,
+   "dur": 2.553,
+   "cello_key": 46,
+   "cc1": 127,
+   "cb_re_cello_db": -164.5
+  },
+  {
+   "on": 186.6988,
+   "dur": 0.438,
+   "cello_key": 46,
+   "cc1": 127,
+   "cb_re_cello_db": -161.5
+  },
+  {
+   "on": 187.1318,
+   "dur": 0.445,
+   "cello_key": 48,
+   "cc1": 127,
+   "cb_re_cello_db": -162.9
+  },
+  {
+   "on": 187.572,
+   "dur": 1.305,
+   "cello_key": 46,
+   "cc1": 127,
+   "cb_re_cello_db": -164.7
+  },
+  {
+   "on": 188.8719,
+   "dur": 0.393,
+   "cello_key": 45,
+   "cc1": 127,
+   "cb_re_cello_db": -165.5
+  },
+  {
+   "on": 189.3084,
+   "dur": 1.311,
+   "cello_key": 45,
+   "cc1": 127,
+   "cb_re_cello_db": -166.5
+  },
+  {
+   "on": 190.6146,
+   "dur": 0.389,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -167.7
+  },
+  {
+   "on": 191.0467,
+   "dur": 2.618,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -169.7
+  },
+  {
+   "on": 193.6599,
+   "dur": 0.874,
+   "cello_key": 38,
+   "cc1": 127,
+   "cb_re_cello_db": -167.3
+  },
+  {
+   "on": 194.5286,
+   "dur": 2.546,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -172.0
+  },
+  {
+   "on": 197.1309,
+   "dur": 0.439,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -170.7
+  },
+  {
+   "on": 197.5648,
+   "dur": 0.441,
+   "cello_key": 40,
+   "cc1": 127,
+   "cb_re_cello_db": -169.3
+  },
+  {
+   "on": 198.0005,
+   "dur": 2.553,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -31.5,
+   "cents": 4.4,
+   "cents_fft": 1.1
+  },
+  {
+   "on": 200.6092,
+   "dur": 0.449,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -172.9
+  },
+  {
+   "on": 201.053,
+   "dur": 0.434,
+   "cello_key": 40,
+   "cc1": 127,
+   "cb_re_cello_db": -171.5
+  },
+  {
+   "on": 201.4824,
+   "dur": 1.313,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -173.9
+  },
+  {
+   "on": 202.7903,
+   "dur": 0.388,
+   "cello_key": 43,
+   "cc1": 127,
+   "cb_re_cello_db": -174.0
+  },
+  {
+   "on": 203.2215,
+   "dur": 1.313,
+   "cello_key": 43,
+   "cc1": 127,
+   "cb_re_cello_db": -173.5
+  },
+  {
+   "on": 204.5295,
+   "dur": 0.393,
+   "cello_key": 46,
+   "cc1": 127,
+   "cb_re_cello_db": -168.5
+  },
+  {
+   "on": 204.9661,
+   "dur": 2.605,
+   "cello_key": 46,
+   "cc1": 127,
+   "cb_re_cello_db": -169.2
+  },
+  {
+   "on": 207.5657,
+   "dur": 0.443,
+   "cello_key": 45,
+   "cc1": 127,
+   "cb_re_cello_db": -165.6
+  },
+  {
+   "on": 208.0041,
+   "dur": 0.442,
+   "cello_key": 41,
+   "cc1": 127,
+   "cb_re_cello_db": -165.7
+  },
+  {
+   "on": 208.4407,
+   "dur": 7.286,
+   "cello_key": 46,
+   "cc1": 127,
+   "cb_re_cello_db": -162.1
+  },
+  {
+   "on": 215.7891,
+   "dur": 11.471,
+   "cello_key": 46,
+   "cc1": 127,
+   "cb_re_cello_db": -156.8
+  }
+ ],
+ "state": {
+  "head": "683fb14",
+  "render_quartet_sha": "b32c34e0dd47ed48",
+  "perform_sha": "4d527a2643657675",
+  "sfz": {
+   "bass.sfz": "00762544528904ce",
+   "cello.sfz": "1509632bd473c8ed",
+   "viola.sfz": "eeb0117a420062b4",
+   "violin.sfz": "bf2e18602a9816a2",
+   "violin2.sfz": "c50e3d0762fdcf75"
+  }
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "runs": [
+  {
+   "run": "check",
+   "returncode": 0,
+   "seconds": 19.3,
+   "work_lines": [],
+   "fail_lines": [],
+   "last_line": "strings setup: all checks passed"
+  },
+  {
+   "run": "install1",
+   "returncode": 0,
+   "seconds": 21.6,
+   "work_lines": [],
+   "fail_lines": [],
+   "last_line": "strings setup: all checks passed"
+  },
+  {
+   "run": "install2",
+   "returncode": 0,
+   "seconds": 29.2,
+   "work_lines": [],
+   "fail_lines": [],
+   "last_line": "strings setup: all checks passed"
+  }
+ ],
+ "hashes_identical": true,
+ "hashes": [
+  "00762544528904ceae89d052d7683413efc4f4554a0599cf7485fa8e81c87ec4  ./bass.sfz",
+  "1509632bd473c8ed4b91de6f719b5d38fb0239b9b7113b7294d577ba5b7a7119  ./cello.sfz",
+  "eeb0117a420062b47b3429060f605c729d66763ee1073fccda2ef66307782ba6  ./viola.sfz",
+  "bf2e18602a9816a23e57e8decfcd395cc850d0ca63c7d80ad2f187319d2a8308  ./violin.sfz",
+  "c50e3d0762fdcf75d6a34e51731090c93e04eb38cec942c764a5015daaf27925  ./violin2.sfz",
+  "58c070f6471e6097f89d53a29a0d90ec4ffd70f3201a511a212d756722eb8f55  tuning_corrections.json",
+  "1c4eb9ed4b3ad23e5f622810bdf74cbbe03fe144019ba598b6c17a13a18459d6  samples/meta.json",
+  "f8dd4190419c8861fe9349f15eca6b66e19e382c984e3a80e9c85a9844f49a58  analysis.json"
+ ],
+ "help_prints_line_36": "#     wave files 3.2 (the site links a Google Drive copy), performance scripts 3.3."
+}

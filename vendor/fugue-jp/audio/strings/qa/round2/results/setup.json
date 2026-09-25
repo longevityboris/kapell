@@ -1,0 +1,51 @@
+{
+ "runs": [
+  {
+   "run": "check",
+   "returncode": 0,
+   "seconds": 24.6,
+   "work_lines": [],
+   "warn_fail": [],
+   "last_line": "strings setup: all checks passed"
+  },
+  {
+   "run": "install1",
+   "returncode": 0,
+   "seconds": 28.0,
+   "work_lines": [],
+   "warn_fail": [],
+   "last_line": "strings setup: all checks passed"
+  },
+  {
+   "run": "install2",
+   "returncode": 0,
+   "seconds": 24.9,
+   "work_lines": [],
+   "warn_fail": [],
+   "last_line": "strings setup: all checks passed"
+  },
+  {
+   "run": "install_after_touch",
+   "returncode": 0,
+   "seconds": 33.0,
+   "work_lines": [
+    "....  iowa_build.py --sfz-only (SFZ older than the builder or the tuning corrections)"
+   ],
+   "warn_fail": [],
+   "last_line": "strings setup: all checks passed"
+  }
+ ],
+ "hashes_identical_before_mid": true,
+ "mtimes_identical_before_mid": true,
+ "sample_wavs_untouched_before_mid": true,
+ "hashes_identical_after_touch": true,
+ "mtimes_changed_after_touch": [
+  "./bass.sfz",
+  "./cello.sfz",
+  "./viola.sfz",
+  "./violin.sfz",
+  "./violin2.sfz"
+ ],
+ "sample_wavs_untouched_after_touch": true,
+ "n_sample_wavs": 677
+}

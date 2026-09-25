@@ -1,0 +1,71 @@
+{
+ "wet_db": -4.0,
+ "printed_c80_db": 8.4,
+ "per_octave": {
+  "63": {
+   "reverb_re_dry_db": 4.0,
+   "c80_db": 5.7,
+   "ir_gain_re_flat_db": 8.0
+  },
+  "125": {
+   "reverb_re_dry_db": 6.6,
+   "c80_db": 2.4,
+   "ir_gain_re_flat_db": 10.6
+  },
+  "250": {
+   "reverb_re_dry_db": 5.5,
+   "c80_db": 1.6,
+   "ir_gain_re_flat_db": 9.5
+  },
+  "500": {
+   "reverb_re_dry_db": 5.0,
+   "c80_db": 0.8,
+   "ir_gain_re_flat_db": 9.0
+  },
+  "1000": {
+   "reverb_re_dry_db": 3.7,
+   "c80_db": 2.0,
+   "ir_gain_re_flat_db": 7.7
+  },
+  "2000": {
+   "reverb_re_dry_db": 0.4,
+   "c80_db": 5.0,
+   "ir_gain_re_flat_db": 4.4
+  },
+  "4000": {
+   "reverb_re_dry_db": -1.0,
+   "c80_db": 6.4,
+   "ir_gain_re_flat_db": 3.0
+  },
+  "8000": {
+   "reverb_re_dry_db": -6.1,
+   "c80_db": 12.7,
+   "ir_gain_re_flat_db": -2.1
+  }
+ },
+ "c80_iso_500_2k_db": 2.6,
+ "test_music_band_share_db": {
+  "63": -23.6,
+  "125": -7.0,
+  "250": -8.1,
+  "500": -3.6,
+  "1000": -11.3,
+  "2000": -10.8,
+  "4000": -13.6,
+  "8000": -30.8
+ },
+ "test_music_reverb_re_dry_db": 5.0,
+ "test_music_c80_db": 1.7,
+ "state": {
+  "head": "8508445",
+  "render_quartet_sha": "b32c34e0dd47ed48",
+  "perform_sha": "4d527a2643657675",
+  "sfz": {
+   "bass.sfz": "00762544528904ce",
+   "cello.sfz": "1509632bd473c8ed",
+   "viola.sfz": "eeb0117a420062b4",
+   "violin.sfz": "bf2e18602a9816a2",
+   "violin2.sfz": "c50e3d0762fdcf75"
+  }
+ }
+}

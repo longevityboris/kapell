@@ -1,0 +1,252 @@
+{
+ "parts": {
+  "quartet/Violin I": {
+   "notes": 149,
+   "pitched": 149,
+   "dropped": [],
+   "cents_median": 0.3,
+   "cents_abs_p95": 2.9,
+   "cents_worst": 4.4,
+   "partials_used": {
+    "1": 79,
+    "2": 20,
+    "3": 24,
+    "4": 26
+   },
+   "onset_lag_ms_median": -2.0,
+   "onset_lag_ms_p10_p90": [
+    -13.2,
+    11.0
+   ],
+   "rests_checked": 4,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "quartet/Violin II": {
+   "notes": 160,
+   "pitched": 160,
+   "dropped": [],
+   "cents_median": 0.1,
+   "cents_abs_p95": 2.6,
+   "cents_worst": 3.9,
+   "partials_used": {
+    "1": 141,
+    "2": 9,
+    "3": 9,
+    "4": 1
+   },
+   "onset_lag_ms_median": 0.0,
+   "onset_lag_ms_p10_p90": [
+    -9.1,
+    14.099999999999994
+   ],
+   "rests_checked": 3,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "quartet/Viola": {
+   "notes": 178,
+   "pitched": 178,
+   "dropped": [],
+   "cents_median": 0.1,
+   "cents_abs_p95": 2.5,
+   "cents_worst": 3.2,
+   "partials_used": {
+    "1": 116,
+    "2": 46,
+    "3": 16
+   },
+   "onset_lag_ms_median": 0.0,
+   "onset_lag_ms_p10_p90": [
+    -10.0,
+    15.300000000000011
+   ],
+   "rests_checked": 4,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "quartet/Cello": {
+   "notes": 102,
+   "pitched": 102,
+   "dropped": [],
+   "cents_median": -0.0,
+   "cents_abs_p95": 2.7,
+   "cents_worst": 3.4,
+   "partials_used": {
+    "1": 41,
+    "2": 45,
+    "3": 16
+   },
+   "onset_lag_ms_median": -1.5,
+   "onset_lag_ms_p10_p90": [
+    -15.899999999999999,
+    39.50000000000003
+   ],
+   "rests_checked": 2,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "piano/soprano": {
+   "notes": 51,
+   "pitched": 51,
+   "dropped": [],
+   "cents_median": 2.5,
+   "cents_abs_p95": 6.1,
+   "cents_worst": 6.6,
+   "partials_used": {
+    "1": 51
+   },
+   "onset_lag_ms_median": 1.0,
+   "onset_lag_ms_p10_p90": [
+    1.0,
+    2.0
+   ],
+   "rests_checked": 3,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "piano/alto": {
+   "notes": 90,
+   "pitched": 90,
+   "dropped": [],
+   "cents_median": 0.6,
+   "cents_abs_p95": 3.1,
+   "cents_worst": 4.2,
+   "partials_used": {
+    "1": 76,
+    "2": 14
+   },
+   "onset_lag_ms_median": 1.0,
+   "onset_lag_ms_p10_p90": [
+    1.0,
+    2.0
+   ],
+   "rests_checked": 2,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "piano/tenor": {
+   "notes": 62,
+   "pitched": 62,
+   "dropped": [],
+   "cents_median": -0.5,
+   "cents_abs_p95": 7.5,
+   "cents_worst": -9.0,
+   "partials_used": {
+    "1": 53,
+    "2": 9
+   },
+   "onset_lag_ms_median": 1.0,
+   "onset_lag_ms_p10_p90": [
+    0.0,
+    4.0
+   ],
+   "rests_checked": 1,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "piano/bass": {
+   "notes": 67,
+   "pitched": 67,
+   "dropped": [],
+   "cents_median": -4.9,
+   "cents_abs_p95": 8.9,
+   "cents_worst": -10.3,
+   "partials_used": {
+    "1": 57,
+    "2": 10
+   },
+   "onset_lag_ms_median": 1.0,
+   "onset_lag_ms_p10_p90": [
+    -1.0,
+    7.399999999999999
+   ],
+   "rests_checked": 2,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "piano/soprano_8va": {
+   "notes": 36,
+   "pitched": 36,
+   "dropped": [],
+   "cents_median": 8.9,
+   "cents_abs_p95": 14.7,
+   "cents_worst": 18.6,
+   "partials_used": {
+    "1": 36
+   },
+   "onset_lag_ms_median": 1.0,
+   "onset_lag_ms_p10_p90": [
+    1.0,
+    2.0
+   ],
+   "rests_checked": 1,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "piano/bass_8vb": {
+   "notes": 23,
+   "pitched": 23,
+   "dropped": [],
+   "cents_median": -14.7,
+   "cents_abs_p95": 17.2,
+   "cents_worst": -17.4,
+   "partials_used": {
+    "2": 13,
+    "3": 6,
+    "4": 4
+   },
+   "onset_lag_ms_median": 7.0,
+   "onset_lag_ms_p10_p90": [
+    -1.0,
+    36.00000000000002
+   ],
+   "rests_checked": 2,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  },
+  "piano/pedal_8vb": {
+   "notes": 1,
+   "pitched": 1,
+   "dropped": [],
+   "cents_median": -14.9,
+   "cents_abs_p95": 14.9,
+   "cents_worst": -14.9,
+   "partials_used": {
+    "2": 1
+   },
+   "onset_lag_ms_median": -1.0,
+   "onset_lag_ms_p10_p90": [
+    -1.0,
+    -1.0
+   ],
+   "rests_checked": 1,
+   "sound_in_rests_dB_re_peak": [],
+   "pass": true
+  }
+ },
+ "files": {
+  "wav_format": [
+   48000,
+   2,
+   "PCM_24"
+  ],
+  "ffmpeg_wav": {
+   "I": -21.8,
+   "LRA": 20.5,
+   "Peak": -1.0
+  },
+  "ffmpeg_m4a": {
+   "I": -21.8,
+   "LRA": 20.5,
+   "Peak": -1.0
+  },
+  "m4a_lag_samples": 0,
+  "duration_s": [
+   234.09,
+   234.09
+  ],
+  "pass": true
+ },
+ "pass": true
+}

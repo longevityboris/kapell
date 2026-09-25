@@ -1,0 +1,1934 @@
+{
+ "c2": {
+  "key": 36,
+  "layer_lovel": [
+   1,
+   27,
+   35,
+   37,
+   44,
+   47,
+   51,
+   57,
+   65,
+   73,
+   81,
+   89,
+   97,
+   105,
+   113,
+   121
+  ],
+  "level_span_db": 39.2,
+  "level_v1_v31_v63_v95_v127": [
+   -63.42,
+   -47.08,
+   -37.64,
+   -31.66,
+   -24.27
+  ],
+  "non_monotonic_steps": [],
+  "max_level_step_db": 1.61,
+  "max_level_step_at": [
+   1,
+   3
+  ],
+  "level_step_at_boundaries_db": [
+   [
+    27,
+    0.76
+   ],
+   [
+    35,
+    1.11
+   ],
+   [
+    37,
+    0.8
+   ],
+   [
+    45,
+    0.6
+   ],
+   [
+    47,
+    0.47
+   ],
+   [
+    51,
+    0.49
+   ],
+   [
+    57,
+    0.36
+   ],
+   [
+    65,
+    0.34
+   ],
+   [
+    73,
+    0.37
+   ],
+   [
+    81,
+    0.37
+   ],
+   [
+    89,
+    0.35
+   ],
+   [
+    97,
+    0.51
+   ],
+   [
+    105,
+    0.39
+   ],
+   [
+    113,
+    0.52
+   ],
+   [
+    121,
+    0.47
+   ]
+  ],
+  "hf_jump_at_boundaries_db": [
+   [
+    27,
+    1.97
+   ],
+   [
+    35,
+    7.19
+   ],
+   [
+    37,
+    7.34
+   ],
+   [
+    45,
+    3.91
+   ],
+   [
+    47,
+    1.96
+   ],
+   [
+    51,
+    2.78
+   ],
+   [
+    57,
+    2.18
+   ],
+   [
+    65,
+    1.75
+   ],
+   [
+    73,
+    1.3
+   ],
+   [
+    81,
+    2.19
+   ],
+   [
+    89,
+    1.14
+   ],
+   [
+    97,
+    2.07
+   ],
+   [
+    105,
+    1.19
+   ],
+   [
+    113,
+    1.85
+   ],
+   [
+    121,
+    1.02
+   ]
+  ],
+  "hf_step_within_layers_median_abs_db": 0.0,
+  "centroid_v1_v63_v127": [
+   169.5,
+   206.8,
+   242.0
+  ],
+  "hf_v1_v63_v127": [
+   -63.33,
+   -36.0,
+   -23.49
+  ],
+  "corr_level_vs_velocity": 0.978,
+  "corr_hf_vs_velocity": 0.952,
+  "cents_range": [
+   -5.27,
+   -4.39
+  ],
+  "cents_by_layer": {
+   "1": -5.03,
+   "27": -4.45,
+   "35": -4.39,
+   "37": -4.49,
+   "44": -4.69,
+   "47": -4.72,
+   "51": -4.76,
+   "57": -4.86,
+   "65": -4.89,
+   "73": -4.96,
+   "81": -5.03,
+   "89": -5.07,
+   "97": -5.08,
+   "105": -5.17,
+   "113": -5.24,
+   "121": -5.27
+  },
+  "rows": [
+   {
+    "vel": 1,
+    "level_db": -63.42,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 3,
+    "level_db": -61.81,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 5,
+    "level_db": -60.22,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 7,
+    "level_db": -58.62,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 9,
+    "level_db": -57.01,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 11,
+    "level_db": -55.53,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 13,
+    "level_db": -54.15,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 15,
+    "level_db": -53.19,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 17,
+    "level_db": -52.38,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 19,
+    "level_db": -51.56,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 21,
+    "level_db": -50.81,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 23,
+    "level_db": -50.11,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 25,
+    "level_db": -49.42,
+    "centroid_hz": 169.5,
+    "hf_db": -63.33,
+    "cents": -5.03
+   },
+   {
+    "vel": 27,
+    "level_db": -48.66,
+    "centroid_hz": 174.2,
+    "hf_db": -61.36,
+    "cents": -4.45
+   },
+   {
+    "vel": 29,
+    "level_db": -47.97,
+    "centroid_hz": 174.2,
+    "hf_db": -61.36,
+    "cents": -4.45
+   },
+   {
+    "vel": 31,
+    "level_db": -47.08,
+    "centroid_hz": 174.2,
+    "hf_db": -61.36,
+    "cents": -4.45
+   },
+   {
+    "vel": 33,
+    "level_db": -45.97,
+    "centroid_hz": 174.2,
+    "hf_db": -61.36,
+    "cents": -4.45
+   },
+   {
+    "vel": 35,
+    "level_db": -44.86,
+    "centroid_hz": 181.6,
+    "hf_db": -54.17,
+    "cents": -4.39
+   },
+   {
+    "vel": 37,
+    "level_db": -44.06,
+    "centroid_hz": 189.2,
+    "hf_db": -46.83,
+    "cents": -4.49
+   },
+   {
+    "vel": 39,
+    "level_db": -43.35,
+    "centroid_hz": 189.2,
+    "hf_db": -46.83,
+    "cents": -4.49
+   },
+   {
+    "vel": 41,
+    "level_db": -42.67,
+    "centroid_hz": 189.2,
+    "hf_db": -46.83,
+    "cents": -4.49
+   },
+   {
+    "vel": 43,
+    "level_db": -42.04,
+    "centroid_hz": 189.2,
+    "hf_db": -46.83,
+    "cents": -4.49
+   },
+   {
+    "vel": 45,
+    "level_db": -41.44,
+    "centroid_hz": 194.4,
+    "hf_db": -42.92,
+    "cents": -4.69
+   },
+   {
+    "vel": 47,
+    "level_db": -40.97,
+    "centroid_hz": 198.0,
+    "hf_db": -40.96,
+    "cents": -4.72
+   },
+   {
+    "vel": 49,
+    "level_db": -40.48,
+    "centroid_hz": 198.0,
+    "hf_db": -40.96,
+    "cents": -4.72
+   },
+   {
+    "vel": 51,
+    "level_db": -39.99,
+    "centroid_hz": 202.7,
+    "hf_db": -38.18,
+    "cents": -4.76
+   },
+   {
+    "vel": 53,
+    "level_db": -39.5,
+    "centroid_hz": 202.7,
+    "hf_db": -38.18,
+    "cents": -4.76
+   },
+   {
+    "vel": 55,
+    "level_db": -39.09,
+    "centroid_hz": 202.7,
+    "hf_db": -38.18,
+    "cents": -4.76
+   },
+   {
+    "vel": 57,
+    "level_db": -38.73,
+    "centroid_hz": 206.8,
+    "hf_db": -36.0,
+    "cents": -4.86
+   },
+   {
+    "vel": 59,
+    "level_db": -38.35,
+    "centroid_hz": 206.8,
+    "hf_db": -36.0,
+    "cents": -4.86
+   },
+   {
+    "vel": 61,
+    "level_db": -37.98,
+    "centroid_hz": 206.8,
+    "hf_db": -36.0,
+    "cents": -4.86
+   },
+   {
+    "vel": 63,
+    "level_db": -37.64,
+    "centroid_hz": 206.8,
+    "hf_db": -36.0,
+    "cents": -4.86
+   },
+   {
+    "vel": 65,
+    "level_db": -37.3,
+    "centroid_hz": 210.9,
+    "hf_db": -34.25,
+    "cents": -4.89
+   },
+   {
+    "vel": 67,
+    "level_db": -36.96,
+    "centroid_hz": 210.9,
+    "hf_db": -34.25,
+    "cents": -4.89
+   },
+   {
+    "vel": 69,
+    "level_db": -36.61,
+    "centroid_hz": 210.9,
+    "hf_db": -34.25,
+    "cents": -4.89
+   },
+   {
+    "vel": 71,
+    "level_db": -36.25,
+    "centroid_hz": 210.9,
+    "hf_db": -34.25,
+    "cents": -4.89
+   },
+   {
+    "vel": 73,
+    "level_db": -35.88,
+    "centroid_hz": 212.9,
+    "hf_db": -32.95,
+    "cents": -4.96
+   },
+   {
+    "vel": 75,
+    "level_db": -35.53,
+    "centroid_hz": 212.9,
+    "hf_db": -32.95,
+    "cents": -4.96
+   },
+   {
+    "vel": 77,
+    "level_db": -35.18,
+    "centroid_hz": 212.9,
+    "hf_db": -32.95,
+    "cents": -4.96
+   },
+   {
+    "vel": 79,
+    "level_db": -34.8,
+    "centroid_hz": 212.9,
+    "hf_db": -32.95,
+    "cents": -4.96
+   },
+   {
+    "vel": 81,
+    "level_db": -34.43,
+    "centroid_hz": 219.4,
+    "hf_db": -30.76,
+    "cents": -5.03
+   },
+   {
+    "vel": 83,
+    "level_db": -34.01,
+    "centroid_hz": 219.4,
+    "hf_db": -30.76,
+    "cents": -5.03
+   },
+   {
+    "vel": 85,
+    "level_db": -33.6,
+    "centroid_hz": 219.4,
+    "hf_db": -30.76,
+    "cents": -5.03
+   },
+   {
+    "vel": 87,
+    "level_db": -33.25,
+    "centroid_hz": 219.4,
+    "hf_db": -30.76,
+    "cents": -5.03
+   },
+   {
+    "vel": 89,
+    "level_db": -32.9,
+    "centroid_hz": 222.3,
+    "hf_db": -29.62,
+    "cents": -5.07
+   },
+   {
+    "vel": 91,
+    "level_db": -32.55,
+    "centroid_hz": 222.3,
+    "hf_db": -29.62,
+    "cents": -5.07
+   },
+   {
+    "vel": 93,
+    "level_db": -32.16,
+    "centroid_hz": 222.3,
+    "hf_db": -29.62,
+    "cents": -5.07
+   },
+   {
+    "vel": 95,
+    "level_db": -31.66,
+    "centroid_hz": 222.3,
+    "hf_db": -29.62,
+    "cents": -5.07
+   },
+   {
+    "vel": 97,
+    "level_db": -31.15,
+    "centroid_hz": 226.3,
+    "hf_db": -27.55,
+    "cents": -5.08
+   },
+   {
+    "vel": 99,
+    "level_db": -30.65,
+    "centroid_hz": 226.3,
+    "hf_db": -27.55,
+    "cents": -5.08
+   },
+   {
+    "vel": 101,
+    "level_db": -30.15,
+    "centroid_hz": 226.3,
+    "hf_db": -27.55,
+    "cents": -5.08
+   },
+   {
+    "vel": 103,
+    "level_db": -29.72,
+    "centroid_hz": 226.3,
+    "hf_db": -27.55,
+    "cents": -5.08
+   },
+   {
+    "vel": 105,
+    "level_db": -29.33,
+    "centroid_hz": 231.8,
+    "hf_db": -26.36,
+    "cents": -5.17
+   },
+   {
+    "vel": 107,
+    "level_db": -28.9,
+    "centroid_hz": 231.8,
+    "hf_db": -26.36,
+    "cents": -5.17
+   },
+   {
+    "vel": 109,
+    "level_db": -28.43,
+    "centroid_hz": 231.8,
+    "hf_db": -26.36,
+    "cents": -5.17
+   },
+   {
+    "vel": 111,
+    "level_db": -27.86,
+    "centroid_hz": 231.8,
+    "hf_db": -26.36,
+    "cents": -5.17
+   },
+   {
+    "vel": 113,
+    "level_db": -27.34,
+    "centroid_hz": 238.9,
+    "hf_db": -24.51,
+    "cents": -5.24
+   },
+   {
+    "vel": 115,
+    "level_db": -26.8,
+    "centroid_hz": 238.9,
+    "hf_db": -24.51,
+    "cents": -5.24
+   },
+   {
+    "vel": 117,
+    "level_db": -26.27,
+    "centroid_hz": 238.9,
+    "hf_db": -24.51,
+    "cents": -5.24
+   },
+   {
+    "vel": 119,
+    "level_db": -25.82,
+    "centroid_hz": 238.9,
+    "hf_db": -24.51,
+    "cents": -5.24
+   },
+   {
+    "vel": 121,
+    "level_db": -25.35,
+    "centroid_hz": 242.0,
+    "hf_db": -23.49,
+    "cents": -5.27
+   },
+   {
+    "vel": 123,
+    "level_db": -24.86,
+    "centroid_hz": 242.0,
+    "hf_db": -23.49,
+    "cents": -5.27
+   },
+   {
+    "vel": 125,
+    "level_db": -24.5,
+    "centroid_hz": 242.0,
+    "hf_db": -23.49,
+    "cents": -5.27
+   },
+   {
+    "vel": 127,
+    "level_db": -24.27,
+    "centroid_hz": 242.0,
+    "hf_db": -23.49,
+    "cents": -5.27
+   }
+  ]
+ },
+ "c4": {
+  "key": 60,
+  "layer_lovel": [
+   1,
+   27,
+   35,
+   37,
+   44,
+   47,
+   51,
+   57,
+   65,
+   73,
+   81,
+   89,
+   97,
+   105,
+   113,
+   121
+  ],
+  "level_span_db": 41.5,
+  "level_v1_v31_v63_v95_v127": [
+   -65.82,
+   -50.3,
+   -39.01,
+   -32.08,
+   -24.32
+  ],
+  "non_monotonic_steps": [],
+  "max_level_step_db": 1.61,
+  "max_level_step_at": [
+   9,
+   11
+  ],
+  "level_step_at_boundaries_db": [
+   [
+    27,
+    0.66
+   ],
+   [
+    35,
+    1.16
+   ],
+   [
+    37,
+    1.11
+   ],
+   [
+    45,
+    0.76
+   ],
+   [
+    47,
+    0.59
+   ],
+   [
+    51,
+    0.62
+   ],
+   [
+    57,
+    0.4
+   ],
+   [
+    65,
+    0.33
+   ],
+   [
+    73,
+    0.48
+   ],
+   [
+    81,
+    0.41
+   ],
+   [
+    89,
+    0.34
+   ],
+   [
+    97,
+    0.46
+   ],
+   [
+    105,
+    0.59
+   ],
+   [
+    113,
+    0.5
+   ],
+   [
+    121,
+    0.48
+   ]
+  ],
+  "hf_jump_at_boundaries_db": [
+   [
+    27,
+    3.13
+   ],
+   [
+    35,
+    5.01
+   ],
+   [
+    37,
+    4.92
+   ],
+   [
+    45,
+    3.74
+   ],
+   [
+    47,
+    1.86
+   ],
+   [
+    51,
+    2.75
+   ],
+   [
+    57,
+    1.28
+   ],
+   [
+    65,
+    2.34
+   ],
+   [
+    73,
+    2.34
+   ],
+   [
+    81,
+    2.14
+   ],
+   [
+    89,
+    1.05
+   ],
+   [
+    97,
+    0.57
+   ],
+   [
+    105,
+    1.78
+   ],
+   [
+    113,
+    0.1
+   ],
+   [
+    121,
+    -0.5
+   ]
+  ],
+  "hf_step_within_layers_median_abs_db": 0.0,
+  "centroid_v1_v63_v127": [
+   396.2,
+   458.7,
+   493.2
+  ],
+  "hf_v1_v63_v127": [
+   -54.46,
+   -31.77,
+   -21.95
+  ],
+  "corr_level_vs_velocity": 0.9836,
+  "corr_hf_vs_velocity": 0.9515,
+  "cents_range": [
+   -2.4,
+   -1.95
+  ],
+  "cents_by_layer": {
+   "1": -2.28,
+   "27": -2.37,
+   "35": -2.4,
+   "37": -2.37,
+   "44": -2.35,
+   "47": -2.36,
+   "51": -2.34,
+   "57": -2.34,
+   "65": -1.95,
+   "73": -2.05,
+   "81": -2.06,
+   "89": -2.05,
+   "97": -2.08,
+   "105": -2.04,
+   "113": -2.07,
+   "121": -2.07
+  },
+  "rows": [
+   {
+    "vel": 1,
+    "level_db": -65.82,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 3,
+    "level_db": -64.22,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 5,
+    "level_db": -62.62,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 7,
+    "level_db": -61.02,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 9,
+    "level_db": -59.42,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 11,
+    "level_db": -57.81,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 13,
+    "level_db": -56.2,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 15,
+    "level_db": -55.35,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 17,
+    "level_db": -54.75,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 19,
+    "level_db": -54.15,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 21,
+    "level_db": -53.55,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 23,
+    "level_db": -52.95,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 25,
+    "level_db": -52.34,
+    "centroid_hz": 396.2,
+    "hf_db": -54.46,
+    "cents": -2.28
+   },
+   {
+    "vel": 27,
+    "level_db": -51.68,
+    "centroid_hz": 422.6,
+    "hf_db": -51.33,
+    "cents": -2.37
+   },
+   {
+    "vel": 29,
+    "level_db": -51.08,
+    "centroid_hz": 422.6,
+    "hf_db": -51.33,
+    "cents": -2.37
+   },
+   {
+    "vel": 31,
+    "level_db": -50.3,
+    "centroid_hz": 422.6,
+    "hf_db": -51.33,
+    "cents": -2.37
+   },
+   {
+    "vel": 33,
+    "level_db": -49.17,
+    "centroid_hz": 422.6,
+    "hf_db": -51.33,
+    "cents": -2.37
+   },
+   {
+    "vel": 35,
+    "level_db": -48.01,
+    "centroid_hz": 430.9,
+    "hf_db": -46.32,
+    "cents": -2.4
+   },
+   {
+    "vel": 37,
+    "level_db": -46.9,
+    "centroid_hz": 441.7,
+    "hf_db": -41.4,
+    "cents": -2.37
+   },
+   {
+    "vel": 39,
+    "level_db": -45.8,
+    "centroid_hz": 441.7,
+    "hf_db": -41.4,
+    "cents": -2.37
+   },
+   {
+    "vel": 41,
+    "level_db": -44.88,
+    "centroid_hz": 441.7,
+    "hf_db": -41.4,
+    "cents": -2.37
+   },
+   {
+    "vel": 43,
+    "level_db": -44.15,
+    "centroid_hz": 441.7,
+    "hf_db": -41.4,
+    "cents": -2.37
+   },
+   {
+    "vel": 45,
+    "level_db": -43.39,
+    "centroid_hz": 447.3,
+    "hf_db": -37.66,
+    "cents": -2.35
+   },
+   {
+    "vel": 47,
+    "level_db": -42.8,
+    "centroid_hz": 451.5,
+    "hf_db": -35.8,
+    "cents": -2.36
+   },
+   {
+    "vel": 49,
+    "level_db": -42.2,
+    "centroid_hz": 451.5,
+    "hf_db": -35.8,
+    "cents": -2.36
+   },
+   {
+    "vel": 51,
+    "level_db": -41.58,
+    "centroid_hz": 456.2,
+    "hf_db": -33.05,
+    "cents": -2.34
+   },
+   {
+    "vel": 53,
+    "level_db": -40.97,
+    "centroid_hz": 456.2,
+    "hf_db": -33.05,
+    "cents": -2.34
+   },
+   {
+    "vel": 55,
+    "level_db": -40.54,
+    "centroid_hz": 456.2,
+    "hf_db": -33.05,
+    "cents": -2.34
+   },
+   {
+    "vel": 57,
+    "level_db": -40.14,
+    "centroid_hz": 458.7,
+    "hf_db": -31.77,
+    "cents": -2.34
+   },
+   {
+    "vel": 59,
+    "level_db": -39.76,
+    "centroid_hz": 458.7,
+    "hf_db": -31.77,
+    "cents": -2.34
+   },
+   {
+    "vel": 61,
+    "level_db": -39.39,
+    "centroid_hz": 458.7,
+    "hf_db": -31.77,
+    "cents": -2.34
+   },
+   {
+    "vel": 63,
+    "level_db": -39.01,
+    "centroid_hz": 458.7,
+    "hf_db": -31.77,
+    "cents": -2.34
+   },
+   {
+    "vel": 65,
+    "level_db": -38.68,
+    "centroid_hz": 463.8,
+    "hf_db": -29.43,
+    "cents": -1.95
+   },
+   {
+    "vel": 67,
+    "level_db": -38.3,
+    "centroid_hz": 463.8,
+    "hf_db": -29.43,
+    "cents": -1.95
+   },
+   {
+    "vel": 69,
+    "level_db": -37.86,
+    "centroid_hz": 463.8,
+    "hf_db": -29.43,
+    "cents": -1.95
+   },
+   {
+    "vel": 71,
+    "level_db": -37.32,
+    "centroid_hz": 463.8,
+    "hf_db": -29.43,
+    "cents": -1.95
+   },
+   {
+    "vel": 73,
+    "level_db": -36.84,
+    "centroid_hz": 468.6,
+    "hf_db": -27.09,
+    "cents": -2.05
+   },
+   {
+    "vel": 75,
+    "level_db": -36.37,
+    "centroid_hz": 468.6,
+    "hf_db": -27.09,
+    "cents": -2.05
+   },
+   {
+    "vel": 77,
+    "level_db": -35.92,
+    "centroid_hz": 468.6,
+    "hf_db": -27.09,
+    "cents": -2.05
+   },
+   {
+    "vel": 79,
+    "level_db": -35.56,
+    "centroid_hz": 468.6,
+    "hf_db": -27.09,
+    "cents": -2.05
+   },
+   {
+    "vel": 81,
+    "level_db": -35.15,
+    "centroid_hz": 476.9,
+    "hf_db": -24.95,
+    "cents": -2.06
+   },
+   {
+    "vel": 83,
+    "level_db": -34.66,
+    "centroid_hz": 476.9,
+    "hf_db": -24.95,
+    "cents": -2.06
+   },
+   {
+    "vel": 85,
+    "level_db": -34.2,
+    "centroid_hz": 476.9,
+    "hf_db": -24.95,
+    "cents": -2.06
+   },
+   {
+    "vel": 87,
+    "level_db": -33.84,
+    "centroid_hz": 476.9,
+    "hf_db": -24.95,
+    "cents": -2.06
+   },
+   {
+    "vel": 89,
+    "level_db": -33.5,
+    "centroid_hz": 481.8,
+    "hf_db": -23.9,
+    "cents": -2.05
+   },
+   {
+    "vel": 91,
+    "level_db": -33.06,
+    "centroid_hz": 481.8,
+    "hf_db": -23.9,
+    "cents": -2.05
+   },
+   {
+    "vel": 93,
+    "level_db": -32.54,
+    "centroid_hz": 481.8,
+    "hf_db": -23.9,
+    "cents": -2.05
+   },
+   {
+    "vel": 95,
+    "level_db": -32.08,
+    "centroid_hz": 481.8,
+    "hf_db": -23.9,
+    "cents": -2.05
+   },
+   {
+    "vel": 97,
+    "level_db": -31.62,
+    "centroid_hz": 485.7,
+    "hf_db": -23.33,
+    "cents": -2.08
+   },
+   {
+    "vel": 99,
+    "level_db": -31.15,
+    "centroid_hz": 485.7,
+    "hf_db": -23.33,
+    "cents": -2.08
+   },
+   {
+    "vel": 101,
+    "level_db": -30.7,
+    "centroid_hz": 485.7,
+    "hf_db": -23.33,
+    "cents": -2.08
+   },
+   {
+    "vel": 103,
+    "level_db": -30.11,
+    "centroid_hz": 485.7,
+    "hf_db": -23.33,
+    "cents": -2.08
+   },
+   {
+    "vel": 105,
+    "level_db": -29.52,
+    "centroid_hz": 493.4,
+    "hf_db": -21.55,
+    "cents": -2.04
+   },
+   {
+    "vel": 107,
+    "level_db": -28.93,
+    "centroid_hz": 493.4,
+    "hf_db": -21.55,
+    "cents": -2.04
+   },
+   {
+    "vel": 109,
+    "level_db": -28.43,
+    "centroid_hz": 493.4,
+    "hf_db": -21.55,
+    "cents": -2.04
+   },
+   {
+    "vel": 111,
+    "level_db": -28.07,
+    "centroid_hz": 493.4,
+    "hf_db": -21.55,
+    "cents": -2.04
+   },
+   {
+    "vel": 113,
+    "level_db": -27.57,
+    "centroid_hz": 496.0,
+    "hf_db": -21.45,
+    "cents": -2.07
+   },
+   {
+    "vel": 115,
+    "level_db": -27.03,
+    "centroid_hz": 496.0,
+    "hf_db": -21.45,
+    "cents": -2.07
+   },
+   {
+    "vel": 117,
+    "level_db": -26.5,
+    "centroid_hz": 496.0,
+    "hf_db": -21.45,
+    "cents": -2.07
+   },
+   {
+    "vel": 119,
+    "level_db": -25.97,
+    "centroid_hz": 496.0,
+    "hf_db": -21.45,
+    "cents": -2.07
+   },
+   {
+    "vel": 121,
+    "level_db": -25.49,
+    "centroid_hz": 493.2,
+    "hf_db": -21.95,
+    "cents": -2.07
+   },
+   {
+    "vel": 123,
+    "level_db": -25.06,
+    "centroid_hz": 493.2,
+    "hf_db": -21.95,
+    "cents": -2.07
+   },
+   {
+    "vel": 125,
+    "level_db": -24.67,
+    "centroid_hz": 493.2,
+    "hf_db": -21.95,
+    "cents": -2.07
+   },
+   {
+    "vel": 127,
+    "level_db": -24.32,
+    "centroid_hz": 493.2,
+    "hf_db": -21.95,
+    "cents": -2.07
+   }
+  ]
+ },
+ "c6": {
+  "key": 84,
+  "layer_lovel": [
+   1,
+   27,
+   35,
+   37,
+   44,
+   47,
+   51,
+   57,
+   65,
+   73,
+   81,
+   89,
+   97,
+   105,
+   113,
+   121
+  ],
+  "level_span_db": 43.9,
+  "level_v1_v31_v63_v95_v127": [
+   -71.67,
+   -55.73,
+   -43.01,
+   -35.73,
+   -27.8
+  ],
+  "non_monotonic_steps": [],
+  "max_level_step_db": 1.64,
+  "max_level_step_at": [
+   11,
+   13
+  ],
+  "level_step_at_boundaries_db": [
+   [
+    27,
+    0.68
+   ],
+   [
+    35,
+    1.61
+   ],
+   [
+    37,
+    0.78
+   ],
+   [
+    45,
+    0.51
+   ],
+   [
+    47,
+    1.08
+   ],
+   [
+    51,
+    0.9
+   ],
+   [
+    57,
+    0.27
+   ],
+   [
+    65,
+    0.2
+   ],
+   [
+    73,
+    0.28
+   ],
+   [
+    81,
+    0.33
+   ],
+   [
+    89,
+    0.22
+   ],
+   [
+    97,
+    0.48
+   ],
+   [
+    105,
+    0.3
+   ],
+   [
+    113,
+    0.35
+   ],
+   [
+    121,
+    0.51
+   ]
+  ],
+  "hf_jump_at_boundaries_db": [
+   [
+    27,
+    -0.72
+   ],
+   [
+    35,
+    0.85
+   ],
+   [
+    37,
+    2.53
+   ],
+   [
+    45,
+    -0.64
+   ],
+   [
+    47,
+    2.78
+   ],
+   [
+    51,
+    5.01
+   ],
+   [
+    57,
+    0.26
+   ],
+   [
+    65,
+    4.8
+   ],
+   [
+    73,
+    0.65
+   ],
+   [
+    81,
+    1.5
+   ],
+   [
+    89,
+    1.04
+   ],
+   [
+    97,
+    -0.01
+   ],
+   [
+    105,
+    1.07
+   ],
+   [
+    113,
+    1.09
+   ],
+   [
+    121,
+    1.3
+   ]
+  ],
+  "hf_step_within_layers_median_abs_db": 0.0,
+  "centroid_v1_v63_v127": [
+   980.7,
+   995.5,
+   1074.0
+  ],
+  "hf_v1_v63_v127": [
+   -37.95,
+   -27.88,
+   -16.44
+  ],
+  "corr_level_vs_velocity": 0.9843,
+  "corr_hf_vs_velocity": 0.9628,
+  "cents_range": [
+   8.76,
+   9.68
+  ],
+  "cents_by_layer": {
+   "1": 9.68,
+   "27": 9.43,
+   "35": 9.3,
+   "37": 8.93,
+   "44": 8.96,
+   "47": 8.83,
+   "51": 8.8,
+   "57": 8.76,
+   "65": 9.23,
+   "73": 9.15,
+   "81": 9.21,
+   "89": 9.16,
+   "97": 9.13,
+   "105": 9.25,
+   "113": 9.24,
+   "121": 9.13
+  },
+  "rows": [
+   {
+    "vel": 1,
+    "level_db": -71.67,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 3,
+    "level_db": -70.07,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 5,
+    "level_db": -68.47,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 7,
+    "level_db": -66.87,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 9,
+    "level_db": -65.27,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 11,
+    "level_db": -63.65,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 13,
+    "level_db": -62.01,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 15,
+    "level_db": -61.14,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 17,
+    "level_db": -60.53,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 19,
+    "level_db": -59.92,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 21,
+    "level_db": -59.29,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 23,
+    "level_db": -58.66,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 25,
+    "level_db": -58.03,
+    "centroid_hz": 980.7,
+    "hf_db": -37.95,
+    "cents": 9.68
+   },
+   {
+    "vel": 27,
+    "level_db": -57.35,
+    "centroid_hz": 997.7,
+    "hf_db": -38.67,
+    "cents": 9.43
+   },
+   {
+    "vel": 29,
+    "level_db": -56.72,
+    "centroid_hz": 997.7,
+    "hf_db": -38.67,
+    "cents": 9.43
+   },
+   {
+    "vel": 31,
+    "level_db": -55.73,
+    "centroid_hz": 997.7,
+    "hf_db": -38.67,
+    "cents": 9.43
+   },
+   {
+    "vel": 33,
+    "level_db": -54.15,
+    "centroid_hz": 997.7,
+    "hf_db": -38.67,
+    "cents": 9.43
+   },
+   {
+    "vel": 35,
+    "level_db": -52.54,
+    "centroid_hz": 1011.0,
+    "hf_db": -37.82,
+    "cents": 9.3
+   },
+   {
+    "vel": 37,
+    "level_db": -51.76,
+    "centroid_hz": 979.8,
+    "hf_db": -35.29,
+    "cents": 8.93
+   },
+   {
+    "vel": 39,
+    "level_db": -50.95,
+    "centroid_hz": 979.8,
+    "hf_db": -35.29,
+    "cents": 8.93
+   },
+   {
+    "vel": 41,
+    "level_db": -50.36,
+    "centroid_hz": 979.8,
+    "hf_db": -35.29,
+    "cents": 8.93
+   },
+   {
+    "vel": 43,
+    "level_db": -49.98,
+    "centroid_hz": 979.8,
+    "hf_db": -35.29,
+    "cents": 8.93
+   },
+   {
+    "vel": 45,
+    "level_db": -49.47,
+    "centroid_hz": 931.4,
+    "hf_db": -35.93,
+    "cents": 8.96
+   },
+   {
+    "vel": 47,
+    "level_db": -48.39,
+    "centroid_hz": 995.8,
+    "hf_db": -33.15,
+    "cents": 8.83
+   },
+   {
+    "vel": 49,
+    "level_db": -47.05,
+    "centroid_hz": 995.8,
+    "hf_db": -33.15,
+    "cents": 8.83
+   },
+   {
+    "vel": 51,
+    "level_db": -46.15,
+    "centroid_hz": 999.9,
+    "hf_db": -28.14,
+    "cents": 8.8
+   },
+   {
+    "vel": 53,
+    "level_db": -45.08,
+    "centroid_hz": 999.9,
+    "hf_db": -28.14,
+    "cents": 8.8
+   },
+   {
+    "vel": 55,
+    "level_db": -44.57,
+    "centroid_hz": 999.9,
+    "hf_db": -28.14,
+    "cents": 8.8
+   },
+   {
+    "vel": 57,
+    "level_db": -44.3,
+    "centroid_hz": 995.5,
+    "hf_db": -27.88,
+    "cents": 8.76
+   },
+   {
+    "vel": 59,
+    "level_db": -43.98,
+    "centroid_hz": 995.5,
+    "hf_db": -27.88,
+    "cents": 8.76
+   },
+   {
+    "vel": 61,
+    "level_db": -43.7,
+    "centroid_hz": 995.5,
+    "hf_db": -27.88,
+    "cents": 8.76
+   },
+   {
+    "vel": 63,
+    "level_db": -43.01,
+    "centroid_hz": 995.5,
+    "hf_db": -27.88,
+    "cents": 8.76
+   },
+   {
+    "vel": 65,
+    "level_db": -42.81,
+    "centroid_hz": 1027.8,
+    "hf_db": -23.08,
+    "cents": 9.23
+   },
+   {
+    "vel": 67,
+    "level_db": -42.12,
+    "centroid_hz": 1027.8,
+    "hf_db": -23.08,
+    "cents": 9.22
+   },
+   {
+    "vel": 69,
+    "level_db": -41.65,
+    "centroid_hz": 1027.8,
+    "hf_db": -23.08,
+    "cents": 9.23
+   },
+   {
+    "vel": 71,
+    "level_db": -41.45,
+    "centroid_hz": 1027.8,
+    "hf_db": -23.08,
+    "cents": 9.23
+   },
+   {
+    "vel": 73,
+    "level_db": -41.17,
+    "centroid_hz": 1035.6,
+    "hf_db": -22.43,
+    "cents": 9.15
+   },
+   {
+    "vel": 75,
+    "level_db": -40.72,
+    "centroid_hz": 1035.6,
+    "hf_db": -22.43,
+    "cents": 9.15
+   },
+   {
+    "vel": 77,
+    "level_db": -40.21,
+    "centroid_hz": 1035.6,
+    "hf_db": -22.43,
+    "cents": 9.15
+   },
+   {
+    "vel": 79,
+    "level_db": -39.57,
+    "centroid_hz": 1035.6,
+    "hf_db": -22.43,
+    "cents": 9.15
+   },
+   {
+    "vel": 81,
+    "level_db": -39.24,
+    "centroid_hz": 1041.5,
+    "hf_db": -20.93,
+    "cents": 9.21
+   },
+   {
+    "vel": 83,
+    "level_db": -38.65,
+    "centroid_hz": 1041.5,
+    "hf_db": -20.93,
+    "cents": 9.21
+   },
+   {
+    "vel": 85,
+    "level_db": -38.09,
+    "centroid_hz": 1041.5,
+    "hf_db": -20.93,
+    "cents": 9.21
+   },
+   {
+    "vel": 87,
+    "level_db": -37.63,
+    "centroid_hz": 1041.5,
+    "hf_db": -20.93,
+    "cents": 9.21
+   },
+   {
+    "vel": 89,
+    "level_db": -37.41,
+    "centroid_hz": 1035.6,
+    "hf_db": -19.89,
+    "cents": 9.16
+   },
+   {
+    "vel": 91,
+    "level_db": -36.83,
+    "centroid_hz": 1035.6,
+    "hf_db": -19.89,
+    "cents": 9.16
+   },
+   {
+    "vel": 93,
+    "level_db": -36.2,
+    "centroid_hz": 1035.6,
+    "hf_db": -19.89,
+    "cents": 9.16
+   },
+   {
+    "vel": 95,
+    "level_db": -35.73,
+    "centroid_hz": 1035.6,
+    "hf_db": -19.89,
+    "cents": 9.16
+   },
+   {
+    "vel": 97,
+    "level_db": -35.25,
+    "centroid_hz": 1033.6,
+    "hf_db": -19.9,
+    "cents": 9.13
+   },
+   {
+    "vel": 99,
+    "level_db": -34.77,
+    "centroid_hz": 1033.6,
+    "hf_db": -19.9,
+    "cents": 9.13
+   },
+   {
+    "vel": 101,
+    "level_db": -34.31,
+    "centroid_hz": 1033.6,
+    "hf_db": -19.9,
+    "cents": 9.13
+   },
+   {
+    "vel": 103,
+    "level_db": -33.75,
+    "centroid_hz": 1033.6,
+    "hf_db": -19.9,
+    "cents": 9.13
+   },
+   {
+    "vel": 105,
+    "level_db": -33.45,
+    "centroid_hz": 1045.6,
+    "hf_db": -18.83,
+    "cents": 9.25
+   },
+   {
+    "vel": 107,
+    "level_db": -32.9,
+    "centroid_hz": 1045.6,
+    "hf_db": -18.83,
+    "cents": 9.25
+   },
+   {
+    "vel": 109,
+    "level_db": -32.33,
+    "centroid_hz": 1045.6,
+    "hf_db": -18.83,
+    "cents": 9.25
+   },
+   {
+    "vel": 111,
+    "level_db": -31.73,
+    "centroid_hz": 1045.6,
+    "hf_db": -18.83,
+    "cents": 9.25
+   },
+   {
+    "vel": 113,
+    "level_db": -31.38,
+    "centroid_hz": 1053.1,
+    "hf_db": -17.74,
+    "cents": 9.24
+   },
+   {
+    "vel": 115,
+    "level_db": -30.81,
+    "centroid_hz": 1053.1,
+    "hf_db": -17.74,
+    "cents": 9.24
+   },
+   {
+    "vel": 117,
+    "level_db": -30.22,
+    "centroid_hz": 1053.1,
+    "hf_db": -17.74,
+    "cents": 9.24
+   },
+   {
+    "vel": 119,
+    "level_db": -29.56,
+    "centroid_hz": 1053.1,
+    "hf_db": -17.74,
+    "cents": 9.24
+   },
+   {
+    "vel": 121,
+    "level_db": -29.05,
+    "centroid_hz": 1074.0,
+    "hf_db": -16.44,
+    "cents": 9.13
+   },
+   {
+    "vel": 123,
+    "level_db": -28.42,
+    "centroid_hz": 1074.0,
+    "hf_db": -16.44,
+    "cents": 9.13
+   },
+   {
+    "vel": 125,
+    "level_db": -28.01,
+    "centroid_hz": 1074.0,
+    "hf_db": -16.44,
+    "cents": 9.13
+   },
+   {
+    "vel": 127,
+    "level_db": -27.8,
+    "centroid_hz": 1074.0,
+    "hf_db": -16.44,
+    "cents": 9.13
+   }
+  ]
+ }
+}

@@ -1,0 +1,187 @@
+{
+"fl/iowa": {
+"notes": 112,
+"median_abs_c": 0.2,
+"max_abs_c": 2.0
+},
+"fl/vsco": {
+"notes": 33,
+"median_abs_c": 0.3,
+"max_abs_c": 1.9
+},
+"ob/iowa": {
+"notes": 104,
+"median_abs_c": 0.3,
+"max_abs_c": 1.9
+},
+"ob/vsco": {
+"notes": 44,
+"median_abs_c": 0.2,
+"max_abs_c": 2.0
+},
+"ob/vpo3": {
+"notes": 9,
+"median_abs_c": 0.6,
+"max_abs_c": 1.7
+},
+"cl/iowa": {
+"notes": 139,
+"median_abs_c": 0.4,
+"max_abs_c": 1.9
+},
+"cl/vsco": {
+"notes": 65,
+"median_abs_c": 0.3,
+"max_abs_c": 1.7
+},
+"cl/vpo3": {
+"notes": 18,
+"median_abs_c": 0.2,
+"max_abs_c": 1.0
+},
+"bn/iowa": {
+"notes": 122,
+"median_abs_c": 0.5,
+"max_abs_c": 2.0
+},
+"bn/vsco": {
+"notes": 48,
+"median_abs_c": 0.3,
+"max_abs_c": 2.2
+},
+"bn/vpo3": {
+"notes": 13,
+"median_abs_c": 0.3,
+"max_abs_c": 1.3
+},
+"hn/iowa": {
+"notes": 95,
+"median_abs_c": 0.7,
+"max_abs_c": 4.0
+},
+"hn/vsco": {
+"notes": 51,
+"median_abs_c": 0.3,
+"max_abs_c": 4.6
+},
+"hn/vpo3": {
+"notes": 16,
+"median_abs_c": 0.4,
+"max_abs_c": 4.7
+},
+"tpt/iowa": {
+"notes": 107,
+"median_abs_c": 0.5,
+"max_abs_c": 2.0
+},
+"tpt/vsco": {
+"notes": 53,
+"median_abs_c": 0.6,
+"max_abs_c": 2.0
+},
+"tpt/vpo3": {
+"notes": 54,
+"median_abs_c": 0.2,
+"max_abs_c": 1.3
+},
+"tbn/iowa": {
+"notes": 99,
+"median_abs_c": 0.4,
+"max_abs_c": 2.0
+},
+"tbn/vsco": {
+"notes": 59,
+"median_abs_c": 0.4,
+"max_abs_c": 1.9
+},
+"tbn/vpo3": {
+"notes": 11,
+"median_abs_c": 0.5,
+"max_abs_c": 1.1
+},
+"btbn/iowa": {
+"notes": 129,
+"median_abs_c": 0.2,
+"max_abs_c": 2.0
+},
+"btbn/vpo3": {
+"notes": 20,
+"median_abs_c": 0.6,
+"max_abs_c": 2.0
+},
+"tba/iowa": {
+"notes": 108,
+"median_abs_c": 0.5,
+"max_abs_c": 6.1
+},
+"tba/vsco": {
+"notes": 36,
+"median_abs_c": 0.3,
+"max_abs_c": 1.9
+},
+"tba/vpo3": {
+"notes": 9,
+"median_abs_c": 0.2,
+"max_abs_c": 1.9
+},
+"timp/vsco": {
+"notes": 23,
+"median_abs_c": 0.8,
+"max_abs_c": 5.7
+},
+"timp/vpo3": {
+"notes": 25,
+"median_abs_c": 0.1,
+"max_abs_c": 1.0
+},
+"vn1/vsco": {
+"notes": 44,
+"median_abs_c": 0.1,
+"max_abs_c": 2.0
+},
+"vn1/vpo3": {
+"notes": 28,
+"median_abs_c": 0.2,
+"max_abs_c": 2.0
+},
+"vn2/vsco": {
+"notes": 44,
+"median_abs_c": 0.1,
+"max_abs_c": 2.0
+},
+"vn2/vpo3": {
+"notes": 28,
+"median_abs_c": 0.2,
+"max_abs_c": 1.6
+},
+"va/vsco": {
+"notes": 50,
+"median_abs_c": 0.2,
+"max_abs_c": 1.9
+},
+"va/vpo3": {
+"notes": 14,
+"median_abs_c": 0.5,
+"max_abs_c": 2.0
+},
+"vc/vsco": {
+"notes": 51,
+"median_abs_c": 0.2,
+"max_abs_c": 11.2
+},
+"vc/vpo3": {
+"notes": 11,
+"median_abs_c": 0.3,
+"max_abs_c": 2.0
+},
+"cb/vsco": {
+"notes": 38,
+"median_abs_c": 0.3,
+"max_abs_c": 1.9
+},
+"cb/vpo3": {
+"notes": 19,
+"median_abs_c": 0.2,
+"max_abs_c": 1.0
+}
+}

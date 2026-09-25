@@ -1,0 +1,39 @@
+{
+ "title": "The Neighbour, ricercar a 4 - string quartet (Beethoven: Grosse Fuge / Op. 131)",
+ "orchestration": "orchestration.json",
+ "out": "../ricercar_beethoven_quartet",
+ "lead_in": 0.5,
+ "peak_dbtp": -1.0,
+ "hall": "detmold",
+ "reference_group": "quartet",
+ "groups": {
+  "quartet": {
+   "renderer": "quartet",
+   "midi": "quartet.mid",
+   "parts": {
+    "vn1": {
+     "track": "Violin I",
+     "instrument": "vn1"
+    },
+    "vn2": {
+     "track": "Violin II",
+     "instrument": "vn2"
+    },
+    "va": {
+     "track": "Viola",
+     "instrument": "va"
+    },
+    "vc": {
+     "track": "Cello",
+     "instrument": "vc"
+    }
+   },
+   "gain_db": 0.0,
+   "hall_re_dry_db": 1.5,
+   "render_args": [
+    "--short-ms",
+    "480"
+   ]
+  }
+ }
+}

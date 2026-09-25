@@ -1,0 +1,100 @@
+{
+ "title": "The Neighbour - ricercar a 4 on the Theme from Jurassic Park - piano quintet",
+ "orchestration": "orchestration.json",
+ "out": "../ricercar_quintet",
+ "lead_in": 0.5,
+ "peak_dbtp": -1.0,
+ "hall": "detmold",
+ "reference_group": "quartet",
+ "groups": {
+  "quartet": {
+   "renderer": "quartet",
+   "midi": "quartet.mid",
+   "parts": {
+    "vn1": {
+     "track": "Violin I",
+     "instrument": "vn1"
+    },
+    "vn2": {
+     "track": "Violin II",
+     "instrument": "vn2"
+    },
+    "va": {
+     "track": "Viola",
+     "instrument": "va"
+    },
+    "vc": {
+     "track": "Cello",
+     "instrument": "vc"
+    }
+   },
+   "gain_db": 0.0,
+   "hall_re_dry_db": 4.0,
+   "stage": {
+    "vn1": {
+     "az": 30,
+     "depth": 0.0
+    },
+    "vn2": {
+     "az": 10,
+     "depth": 0.4
+    },
+    "va": {
+     "az": -10,
+     "depth": 0.4
+    },
+    "vc": {
+     "az": -28,
+     "depth": 0.0
+    }
+   }
+  },
+  "piano": {
+   "renderer": "piano",
+   "midi": "piano.mid",
+   "parts": {
+    "soprano": {
+     "track": "soprano",
+     "instrument": null
+    },
+    "alto": {
+     "track": "alto",
+     "instrument": null
+    },
+    "tenor": {
+     "track": "tenor",
+     "instrument": null
+    },
+    "bass": {
+     "track": "bass",
+     "instrument": null
+    },
+    "soprano_8va": {
+     "track": "soprano_8va",
+     "instrument": null
+    },
+    "bass_8vb": {
+     "track": "bass_8vb",
+     "instrument": null
+    },
+    "pedal_8vb": {
+     "track": "pedal_8vb",
+     "instrument": null
+    }
+   },
+   "gain_db": -1.0,
+   "hall_re_dry_db": 4.0,
+   "stage": {
+    "*": {
+     "az": 0,
+     "depth": 1.2,
+     "width": 0.7
+    }
+   },
+   "render_args": [
+    "--jobs",
+    "2"
+   ]
+  }
+ }
+}

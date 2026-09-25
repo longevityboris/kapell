@@ -1,0 +1,136 @@
+{
+ "lt0p5s": {
+  "dry_stem": {
+   "n": 111,
+   "new_dominates": 0.973,
+   "median_db": 18.0,
+   "p10_db": 2.8
+  },
+  "mix": {
+   "n": 111,
+   "new_dominates": 0.82,
+   "median_db": 4.7,
+   "p10_db": -3.6
+  },
+  "dry_sum": {
+   "n": 111,
+   "new_dominates": 0.937,
+   "median_db": 10.6,
+   "p10_db": 1.8
+  },
+  "hall_none": {
+   "n": 111,
+   "new_dominates": 0.955,
+   "median_db": 9.6,
+   "p10_db": 1.6
+  },
+  "old_default_wet-4": {
+   "n": 111,
+   "new_dominates": 0.739,
+   "median_db": 3.9,
+   "p10_db": -5.5
+  }
+ },
+ "by_voice_mix": {
+  "vn1": {
+   "n": 49,
+   "new_dominates": 0.816,
+   "median_db": 7.7,
+   "p10_db": -1.6
+  },
+  "vn2": {
+   "n": 60,
+   "new_dominates": 0.95,
+   "median_db": 7.9,
+   "p10_db": 1.9
+  },
+  "va": {
+   "n": 70,
+   "new_dominates": 0.757,
+   "median_db": 3.0,
+   "p10_db": -5.6
+  },
+  "vc": {
+   "n": 102,
+   "new_dominates": 0.814,
+   "median_db": 2.3,
+   "p10_db": -1.8
+  }
+ },
+ "ge1s": {
+  "dry_stem": {
+   "n": 97,
+   "new_dominates": 0.948,
+   "median_db": 11.4,
+   "p10_db": 1.2
+  },
+  "mix": {
+   "n": 97,
+   "new_dominates": 0.814,
+   "median_db": 3.5,
+   "p10_db": -1.9
+  },
+  "dry_sum": {
+   "n": 97,
+   "new_dominates": 0.918,
+   "median_db": 7.4,
+   "p10_db": 1.1
+  },
+  "hall_none": {
+   "n": 97,
+   "new_dominates": 0.876,
+   "median_db": 7.0,
+   "p10_db": -0.2
+  },
+  "old_default_wet-4": {
+   "n": 97,
+   "new_dominates": 0.784,
+   "median_db": 2.4,
+   "p10_db": -3.9
+  }
+ },
+ "0p5_1s": {
+  "dry_stem": {
+   "n": 73,
+   "new_dominates": 0.986,
+   "median_db": 11.9,
+   "p10_db": 2.4
+  },
+  "mix": {
+   "n": 73,
+   "new_dominates": 0.863,
+   "median_db": 5.2,
+   "p10_db": -2.8
+  },
+  "dry_sum": {
+   "n": 73,
+   "new_dominates": 0.945,
+   "median_db": 8.3,
+   "p10_db": 1.4
+  },
+  "hall_none": {
+   "n": 73,
+   "new_dominates": 0.945,
+   "median_db": 8.0,
+   "p10_db": 0.9
+  },
+  "old_default_wet-4": {
+   "n": 73,
+   "new_dominates": 0.849,
+   "median_db": 3.7,
+   "p10_db": -4.3
+  }
+ },
+ "state": {
+  "head": "86480b8",
+  "render_quartet_sha": "24e3b9f5284dcd47",
+  "perform_sha": "4d527a2643657675",
+  "sfz": {
+   "bass.sfz": "fc96ab59f9e683a7",
+   "cello.sfz": "e002fbc00fac9a98",
+   "viola.sfz": "7ecae68c0f77a41c",
+   "violin.sfz": "d103bf15d9facbdb",
+   "violin2.sfz": "f083e98b2947f500"
+  }
+ }
+}

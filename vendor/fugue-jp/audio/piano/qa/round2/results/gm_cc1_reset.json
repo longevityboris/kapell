@@ -1,0 +1,29 @@
+{
+ "probe": "GM-style file (not perform.py): per track CC121, CC1=0 (modulation reset), CC7=100, CC11=127, notes at velocity 100",
+ "default_cc_dynamics": "velocity",
+ "velocity_in": [
+  100,
+  100
+ ],
+ "velocity_eff": [
+  1,
+  1
+ ],
+ "stem_rms_prenorm_dbfs": {
+  "Piano RH": -70.6,
+  "Piano LH": -66.28
+ },
+ "normalise_gain_db": 42.64,
+ "warning_printed": false,
+ "with_--cc-dynamics_off": {
+  "velocity_eff": [
+   100,
+   100
+  ],
+  "stem_rms_prenorm_dbfs": {
+   "Piano RH": -35.54,
+   "Piano LH": -33.66
+  },
+  "normalise_gain_db": 7.72
+ }
+}

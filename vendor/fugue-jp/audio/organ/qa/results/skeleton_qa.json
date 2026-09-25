@@ -1,0 +1,706 @@
+{
+ "pitch": {
+  "soprano": {
+   "notes_measured": 178,
+   "median_cents": 0.0,
+   "p95_abs_cents": 0.6,
+   "max_abs_cents": 0.94,
+   "over_5c": 0
+  },
+  "alto": {
+   "notes_measured": 203,
+   "median_cents": 0.01,
+   "p95_abs_cents": 0.67,
+   "max_abs_cents": 2.23,
+   "over_5c": 0
+  },
+  "bass": {
+   "notes_measured": 133,
+   "median_cents": -0.13,
+   "p95_abs_cents": 3.64,
+   "max_abs_cents": 6.51,
+   "over_5c": 1
+  },
+  "tenor": {
+   "notes_measured": 176,
+   "median_cents": 0.02,
+   "p95_abs_cents": 0.4,
+   "max_abs_cents": 0.67,
+   "over_5c": 0
+  },
+  "all": {
+   "notes": 690,
+   "shared_keys_skipped": 1,
+   "median_cents": 0.01,
+   "p95_abs_cents": 1.48,
+   "max_abs_cents": 6.51,
+   "over_5c": 1
+  },
+  "outliers": [
+   {
+    "voice": "bass",
+    "t_s": 50.39,
+    "key": 43,
+    "dur_s": 0.34,
+    "cents": -6.5,
+    "comb_peak": 1.09,
+    "division": "PED",
+    "h16": true,
+    "isolated_same_window_cents": 10.27,
+    "isolated_long_note_cents": 0.44
+   }
+  ]
+ },
+ "onset": {
+  "soprano": {
+   "notes_measured": 84,
+   "energy10_median_ms": 3.3,
+   "energy10_p95_abs_ms": 19.1,
+   "energy50_median_ms": 18.0,
+   "energy50_p95_abs_ms": 36.7
+  },
+  "alto": {
+   "notes_measured": 86,
+   "energy10_median_ms": 8.6,
+   "energy10_p95_abs_ms": 26.0,
+   "energy50_median_ms": 30.0,
+   "energy50_p95_abs_ms": 63.0
+  },
+  "bass": {
+   "notes_measured": 40,
+   "energy10_median_ms": 11.3,
+   "energy10_p95_abs_ms": 79.5,
+   "energy50_median_ms": 56.0,
+   "energy50_p95_abs_ms": 115.1
+  },
+  "tenor": {
+   "notes_measured": 46,
+   "energy10_median_ms": 6.0,
+   "energy10_p95_abs_ms": 24.3,
+   "energy50_median_ms": 32.0,
+   "energy50_p95_abs_ms": 74.3
+  },
+  "all_energy10": {
+   "notes": 256,
+   "median_ms": 6.0,
+   "p95_abs_ms": 34.7,
+   "max_abs_ms": 87.3
+  },
+  "HW_energy10": {
+   "notes": 157,
+   "median_ms": 4.7,
+   "p95_abs_ms": 24.7
+  },
+  "OW_energy10": {
+   "notes": 13,
+   "median_ms": 7.3,
+   "p95_abs_ms": 47.3
+  },
+  "PED_energy10": {
+   "notes": 40,
+   "median_ms": 11.3,
+   "p95_abs_ms": 79.5
+  },
+  "POS_energy10": {
+   "notes": 46,
+   "median_ms": 4.7,
+   "p95_abs_ms": 23.0
+  },
+  "all_energy50": {
+   "notes": 256,
+   "median_ms": 27.3,
+   "p95_abs_ms": 80.0,
+   "max_abs_ms": 148.7
+  },
+  "HW_energy50": {
+   "notes": 157,
+   "median_ms": 24.7,
+   "p95_abs_ms": 51.6
+  },
+  "OW_energy50": {
+   "notes": 13,
+   "median_ms": 30.0,
+   "p95_abs_ms": 109.7
+  },
+  "PED_energy50": {
+   "notes": 40,
+   "median_ms": 56.0,
+   "p95_abs_ms": 115.1
+  },
+  "POS_energy50": {
+   "notes": 46,
+   "median_ms": 30.0,
+   "p95_abs_ms": 60.0
+  }
+ },
+ "presence": {
+  "weak_comb_notes": [
+   {
+    "voice": "bass",
+    "bar_s": 26.91,
+    "key": 46,
+    "comb_peak": 1.19
+   },
+   {
+    "voice": "bass",
+    "bar_s": 27.3,
+    "key": 45,
+    "comb_peak": 1.2
+   },
+   {
+    "voice": "bass",
+    "bar_s": 29.99,
+    "key": 46,
+    "comb_peak": 1.18
+   },
+   {
+    "voice": "bass",
+    "bar_s": 30.37,
+    "key": 45,
+    "comb_peak": 1.21
+   },
+   {
+    "voice": "bass",
+    "bar_s": 31.91,
+    "key": 48,
+    "comb_peak": 1.28
+   },
+   {
+    "voice": "bass",
+    "bar_s": 33.45,
+    "key": 51,
+    "comb_peak": 1.33
+   },
+   {
+    "voice": "bass",
+    "bar_s": 36.15,
+    "key": 49,
+    "comb_peak": 1.29
+   },
+   {
+    "voice": "bass",
+    "bar_s": 36.53,
+    "key": 46,
+    "comb_peak": 1.16
+   },
+   {
+    "voice": "bass",
+    "bar_s": 38.07,
+    "key": 45,
+    "comb_peak": 1.16
+   },
+   {
+    "voice": "bass",
+    "bar_s": 39.23,
+    "key": 36,
+    "comb_peak": 1.18
+   },
+   {
+    "voice": "bass",
+    "bar_s": 42.31,
+    "key": 43,
+    "comb_peak": 1.46
+   },
+   {
+    "voice": "bass",
+    "bar_s": 48.46,
+    "key": 36,
+    "comb_peak": 1.18
+   },
+   {
+    "voice": "bass",
+    "bar_s": 50.39,
+    "key": 43,
+    "comb_peak": 1.09
+   },
+   {
+    "voice": "bass",
+    "bar_s": 50.77,
+    "key": 36,
+    "comb_peak": 1.18
+   },
+   {
+    "voice": "bass",
+    "bar_s": 60.77,
+    "key": 44,
+    "comb_peak": 1.45
+   },
+   {
+    "voice": "bass",
+    "bar_s": 70.0,
+    "key": 44,
+    "comb_peak": 1.46
+   },
+   {
+    "voice": "bass",
+    "bar_s": 120.79,
+    "key": 53,
+    "comb_peak": 1.46
+   },
+   {
+    "voice": "bass",
+    "bar_s": 124.46,
+    "key": 53,
+    "comb_peak": 1.46
+   },
+   {
+    "voice": "bass",
+    "bar_s": 126.26,
+    "key": 50,
+    "comb_peak": 1.35
+   },
+   {
+    "voice": "bass",
+    "bar_s": 128.06,
+    "key": 47,
+    "comb_peak": 1.31
+   },
+   {
+    "voice": "bass",
+    "bar_s": 131.17,
+    "key": 48,
+    "comb_peak": 1.38
+   },
+   {
+    "voice": "bass",
+    "bar_s": 131.62,
+    "key": 52,
+    "comb_peak": 1.46
+   },
+   {
+    "voice": "bass",
+    "bar_s": 133.36,
+    "key": 53,
+    "comb_peak": 1.41
+   },
+   {
+    "voice": "bass",
+    "bar_s": 153.39,
+    "key": 50,
+    "comb_peak": 1.2
+   },
+   {
+    "voice": "bass",
+    "bar_s": 167.45,
+    "key": 42,
+    "comb_peak": 1.48
+   }
+  ],
+  "n_weak": 25
+ },
+ "stuck": {
+  "soprano": {
+   "rests_checked": 5,
+   "max_level_in_rests_db_re_peak": -93.7,
+   "notes_checked": 98,
+   "not_6db_down_1s_after_keyup": 0,
+   "median_decay_db_at_1s": -47.5,
+   "slowest_decay_db_at_1s": -28.6,
+   "flagged": []
+  },
+  "alto": {
+   "rests_checked": 2,
+   "max_level_in_rests_db_re_peak": -93.8,
+   "notes_checked": 77,
+   "not_6db_down_1s_after_keyup": 0,
+   "median_decay_db_at_1s": -48.4,
+   "slowest_decay_db_at_1s": -29.6,
+   "flagged": []
+  },
+  "bass": {
+   "rests_checked": 1,
+   "max_level_in_rests_db_re_peak": -128.6,
+   "notes_checked": 12,
+   "not_6db_down_1s_after_keyup": 0,
+   "median_decay_db_at_1s": -33.8,
+   "slowest_decay_db_at_1s": -26.5,
+   "flagged": []
+  },
+  "tenor": {
+   "rests_checked": 3,
+   "max_level_in_rests_db_re_peak": -92.5,
+   "notes_checked": 41,
+   "not_6db_down_1s_after_keyup": 0,
+   "median_decay_db_at_1s": -45.5,
+   "slowest_decay_db_at_1s": -35.6,
+   "flagged": []
+  }
+ },
+ "clicks": {
+  "soprano": {
+   "candidates": 7,
+   "at_note_boundaries": 7,
+   "elsewhere": 0,
+   "elsewhere_times_s": []
+  },
+  "alto": {
+   "candidates": 4,
+   "at_note_boundaries": 4,
+   "elsewhere": 0,
+   "elsewhere_times_s": []
+  },
+  "bass": {
+   "candidates": 0,
+   "at_note_boundaries": 0,
+   "elsewhere": 0,
+   "elsewhere_times_s": []
+  },
+  "tenor": {
+   "candidates": 3,
+   "at_note_boundaries": 3,
+   "elsewhere": 0,
+   "elsewhere_times_s": []
+  }
+ },
+ "balance": {},
+ "registration_segments": [
+  {
+   "from_s": 0.0,
+   "to_s": 36.92,
+   "rms_dbfs": -30.2,
+   "k_dbfs": -30.2,
+   "centroid_hz": 470,
+   "voices_rms_dbfs": {
+    "soprano": -33.5,
+    "alto": -35.0,
+    "bass": -34.4
+   },
+   "HW": 1,
+   "POS": 1,
+   "PED": 1
+  },
+  {
+   "from_s": 36.92,
+   "to_s": 58.46,
+   "rms_dbfs": -22.2,
+   "k_dbfs": -22.6,
+   "centroid_hz": 404,
+   "voices_rms_dbfs": {
+    "soprano": -29.9,
+    "alto": -29.5,
+    "bass": -29.5,
+    "tenor": -30.6
+   },
+   "HW": 1,
+   "POS": 2,
+   "PED": 2
+  },
+  {
+   "from_s": 58.46,
+   "to_s": 70.77,
+   "rms_dbfs": -22.3,
+   "k_dbfs": -22.4,
+   "centroid_hz": 510,
+   "voices_rms_dbfs": {
+    "soprano": -30.8,
+    "alto": -28.4,
+    "bass": -29.0,
+    "tenor": -28.3
+   },
+   "HW": 2,
+   "POS": 3,
+   "PED": 2
+  },
+  {
+   "from_s": 70.77,
+   "to_s": 78.46,
+   "rms_dbfs": -20.4,
+   "k_dbfs": -19.2,
+   "centroid_hz": 1058,
+   "voices_rms_dbfs": {
+    "soprano": -27.4,
+    "alto": -26.7,
+    "bass": -27.5,
+    "tenor": -25.9
+   },
+   "HW": 3,
+   "POS": 3,
+   "PED": 3
+  },
+  {
+   "from_s": 78.46,
+   "to_s": 94.16,
+   "rms_dbfs": -15.8,
+   "k_dbfs": -14.9,
+   "centroid_hz": 870,
+   "voices_rms_dbfs": {
+    "soprano": -23.1,
+    "alto": -22.6,
+    "bass": -22.2,
+    "tenor": -23.7
+   },
+   "HW": 5,
+   "POS": 4,
+   "PED": 5
+  },
+  {
+   "from_s": 94.16,
+   "to_s": 117.54,
+   "rms_dbfs": -25.6,
+   "k_dbfs": -24.3,
+   "centroid_hz": 1125,
+   "voices_rms_dbfs": {
+    "soprano": -26.5,
+    "alto": -36.9,
+    "bass": -37.7,
+    "tenor": -37.3
+   },
+   "HW": 5,
+   "POS": 3,
+   "PED": 1
+  },
+  {
+   "from_s": 117.54,
+   "to_s": 132.06,
+   "rms_dbfs": -27.4,
+   "k_dbfs": -27.6,
+   "centroid_hz": 286,
+   "voices_rms_dbfs": {
+    "soprano": -34.3,
+    "alto": -32.5,
+    "bass": -33.4,
+    "tenor": -29.4
+   },
+   "HW": 1,
+   "POS": 1,
+   "PED": 1
+  },
+  {
+   "from_s": 132.06,
+   "to_s": 138.97,
+   "rms_dbfs": -21.6,
+   "k_dbfs": -21.7,
+   "centroid_hz": 459,
+   "voices_rms_dbfs": {
+    "soprano": -29.6,
+    "alto": -28.7,
+    "bass": -29.3,
+    "tenor": -29.3
+   },
+   "HW": 2,
+   "POS": 2,
+   "PED": 2
+  },
+  {
+   "from_s": 138.97,
+   "to_s": 145.68,
+   "rms_dbfs": -24.5,
+   "k_dbfs": -24.5,
+   "centroid_hz": 510,
+   "voices_rms_dbfs": {
+    "soprano": -31.4,
+    "alto": -29.8,
+    "bass": -30.9,
+    "tenor": -30.9
+   },
+   "HW": 1,
+   "POS": 2,
+   "PED": 2
+  },
+  {
+   "from_s": 145.68,
+   "to_s": 155.62,
+   "rms_dbfs": -21.6,
+   "k_dbfs": -21.7,
+   "centroid_hz": 383,
+   "voices_rms_dbfs": {
+    "soprano": -31.3,
+    "alto": -28.7,
+    "bass": -27.7,
+    "tenor": -26.5
+   },
+   "HW": 2,
+   "POS": 3,
+   "PED": 2
+  },
+  {
+   "from_s": 155.62,
+   "to_s": 161.93,
+   "rms_dbfs": -26.1,
+   "k_dbfs": -26.7,
+   "centroid_hz": 212,
+   "voices_rms_dbfs": {
+    "bass": -34.2,
+    "tenor": -30.0
+   },
+   "HW": 2,
+   "POS": 2,
+   "PED": 2
+  },
+  {
+   "from_s": 161.93,
+   "to_s": 168.25,
+   "rms_dbfs": -23.4,
+   "k_dbfs": -23.4,
+   "centroid_hz": 432,
+   "voices_rms_dbfs": {
+    "alto": -28.0,
+    "bass": -34.4,
+    "tenor": -28.1
+   },
+   "HW": 1,
+   "POS": 2,
+   "PED": 2
+  },
+  {
+   "from_s": 168.25,
+   "to_s": 174.56,
+   "rms_dbfs": -21.1,
+   "k_dbfs": -20.8,
+   "centroid_hz": 654,
+   "voices_rms_dbfs": {
+    "soprano": -29.6,
+    "alto": -25.3,
+    "bass": -28.2,
+    "tenor": -27.5
+   },
+   "HW": 3,
+   "POS": 3,
+   "PED": 3
+  },
+  {
+   "from_s": 174.56,
+   "to_s": 177.72,
+   "rms_dbfs": -17.4,
+   "k_dbfs": -16.4,
+   "centroid_hz": 985,
+   "voices_rms_dbfs": {
+    "soprano": -22.7,
+    "alto": -25.3,
+    "bass": -22.9,
+    "tenor": -22.9
+   },
+   "HW": 5,
+   "POS": 4,
+   "PED": 5
+  },
+  {
+   "from_s": 177.72,
+   "to_s": 182.86,
+   "rms_dbfs": -17.7,
+   "k_dbfs": -16.4,
+   "centroid_hz": 1168,
+   "voices_rms_dbfs": {
+    "soprano": -23.6,
+    "alto": -23.9,
+    "bass": -22.0,
+    "tenor": -22.9
+   },
+   "HW": 7,
+   "POS": 4,
+   "PED": 5
+  },
+  {
+   "from_s": 182.86,
+   "to_s": 186.92,
+   "rms_dbfs": -22.0,
+   "k_dbfs": -22.3,
+   "centroid_hz": 482,
+   "voices_rms_dbfs": {
+    "soprano": -28.6,
+    "alto": -28.1,
+    "bass": -29.6,
+    "tenor": -28.1
+   },
+   "HW": 2,
+   "POS": 2,
+   "PED": 2
+  },
+  {
+   "from_s": 186.92,
+   "to_s": 193.59,
+   "rms_dbfs": -22.1,
+   "k_dbfs": -22.0,
+   "centroid_hz": 531,
+   "voices_rms_dbfs": {
+    "soprano": -27.5,
+    "alto": -26.9,
+    "bass": -30.6,
+    "tenor": -30.3
+   },
+   "HW": 2,
+   "POS": 2,
+   "PED": 2
+  },
+  {
+   "from_s": 193.59,
+   "to_s": 200.25,
+   "rms_dbfs": -18.9,
+   "k_dbfs": -18.3,
+   "centroid_hz": 698,
+   "voices_rms_dbfs": {
+    "soprano": -25.9,
+    "alto": -24.2,
+    "bass": -26.4,
+    "tenor": -26.9
+   },
+   "HW": 3,
+   "POS": 3,
+   "PED": 3
+  },
+  {
+   "from_s": 200.25,
+   "to_s": 208.59,
+   "rms_dbfs": -17.5,
+   "k_dbfs": -16.3,
+   "centroid_hz": 1028,
+   "voices_rms_dbfs": {
+    "soprano": -23.2,
+    "alto": -22.8,
+    "bass": -21.8,
+    "tenor": -24.5
+   },
+   "HW": 6,
+   "POS": 4,
+   "PED": 5
+  },
+  {
+   "from_s": 208.59,
+   "to_s": 213.59,
+   "rms_dbfs": -19.8,
+   "k_dbfs": -19.5,
+   "centroid_hz": 588,
+   "voices_rms_dbfs": {
+    "soprano": -26.1,
+    "alto": -25.3,
+    "bass": -27.5,
+    "tenor": -28.5
+   },
+   "HW": 3,
+   "POS": 3,
+   "PED": 3
+  },
+  {
+   "from_s": 213.59,
+   "to_s": 237.93,
+   "rms_dbfs": -23.1,
+   "k_dbfs": -23.1,
+   "centroid_hz": 420,
+   "voices_rms_dbfs": {
+    "soprano": -30.9,
+    "alto": -28.5,
+    "bass": -29.7,
+    "tenor": -28.8
+   },
+   "HW": 1,
+   "POS": 2,
+   "PED": 2
+  }
+ ],
+ "system_decay_at_cutoffs": [
+  {
+   "cutoff_s": 232.09,
+   "gap_s": 5.83,
+   "broadband": {
+    "level_80ms_db": -4.7,
+    "C80_db": 2.9,
+    "T20_s": 2.65
+   },
+   "1k": {
+    "level_80ms_db": -7.5,
+    "C80_db": 6.7,
+    "T20_s": 2.65
+   }
+  }
+ ]
+}

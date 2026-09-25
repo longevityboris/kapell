@@ -1,0 +1,160 @@
+{
+ "detector": "qa_truncation.detect (10-frame means either side of a >25 dB drop)",
+ "demo": {
+  "alto": [],
+  "soprano": [
+   {
+    "t_stem": 41.92,
+    "drop_db": -34.4,
+    "level_re_stem_max_db": -17.7,
+    "cut_note": {
+     "key": 75,
+     "after_on_ms": 171.1,
+     "before_off_ms": 21.1
+    }
+   }
+  ],
+  "tenor": [
+   {
+    "t_stem": 20.004,
+    "drop_db": -26.3,
+    "level_re_stem_max_db": -34.4,
+    "cut_note": {
+     "key": 58,
+     "after_on_ms": 161.4,
+     "before_off_ms": 28.9
+    }
+   },
+   {
+    "t_stem": 55.093,
+    "drop_db": -66.2,
+    "level_re_stem_max_db": -23.7,
+    "cut_note": {
+     "key": 55,
+     "after_on_ms": 161.4,
+     "before_off_ms": 1146.4
+    }
+   }
+  ],
+  "pedal": [
+   {
+    "t_stem": 129.99,
+    "drop_db": -41.0,
+    "level_re_stem_max_db": -7.8,
+    "cut_note": {
+     "key": 29,
+     "after_on_ms": 181.5,
+     "before_off_ms": 1898.3
+    }
+   }
+  ]
+ },
+ "qa": {
+  "alto": [],
+  "soprano": [],
+  "tenor": [],
+  "pedal": []
+ },
+ "rerun_stream_parallel4": [
+  {
+   "truncations": {
+    "alto": 0,
+    "soprano": 0,
+    "tenor": 0,
+    "pedal": 0
+   },
+   "cut": {
+    "alto": [],
+    "soprano": [],
+    "tenor": [],
+    "pedal": []
+   }
+  },
+  {
+   "truncations": {
+    "alto": 0,
+    "soprano": 0,
+    "tenor": 0,
+    "pedal": 0
+   },
+   "cut": {
+    "alto": [],
+    "soprano": [],
+    "tenor": [],
+    "pedal": []
+   }
+  },
+  {
+   "truncations": {
+    "alto": 0,
+    "soprano": 0,
+    "tenor": 0,
+    "pedal": 0
+   },
+   "cut": {
+    "alto": [],
+    "soprano": [],
+    "tenor": [],
+    "pedal": []
+   }
+  }
+ ],
+ "rerun_ram_parallel4": [
+  {
+   "truncations": {
+    "alto": 0,
+    "soprano": 0,
+    "tenor": 0,
+    "pedal": 0
+   },
+   "cut": {
+    "alto": [],
+    "soprano": [],
+    "tenor": [],
+    "pedal": []
+   }
+  },
+  {
+   "truncations": {
+    "alto": 0,
+    "soprano": 0,
+    "tenor": 0,
+    "pedal": 0
+   },
+   "cut": {
+    "alto": [],
+    "soprano": [],
+    "tenor": [],
+    "pedal": []
+   }
+  },
+  {
+   "truncations": {
+    "alto": 0,
+    "soprano": 0,
+    "tenor": 0,
+    "pedal": 0
+   },
+   "cut": {
+    "alto": [],
+    "soprano": [],
+    "tenor": [],
+    "pedal": []
+   }
+  }
+ ],
+ "first_session_render": {
+  "truncations": 1,
+  "cut": [
+   [
+    "soprano",
+    100.696,
+    {
+     "key": 75,
+     "after_on_ms": 170.8,
+     "before_off_ms": 1185.3
+    }
+   ]
+  ]
+ }
+}

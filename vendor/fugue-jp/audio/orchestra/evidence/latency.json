@@ -1,0 +1,449 @@
+{
+ "fl/iowa": {
+  "sus": {
+   "pp": 65.0,
+   "mf": 40.0,
+   "ff": 32.5,
+   "_median": 40.0
+  },
+  "sus_short": {
+   "pp": 7.5,
+   "mf": 7.5,
+   "ff": 10.0,
+   "_median": 7.5
+  }
+ },
+ "fl/vsco": {
+  "stac": {
+   "L1of4": 72.5,
+   "L2of4": 50.0,
+   "L3of4": 50.0,
+   "_median": 50.0
+  },
+  "sus": {
+   "L1of1": 35.0,
+   "_median": 35.0
+  }
+ },
+ "ob/iowa": {
+  "sus": {
+   "pp": 47.5,
+   "mf": 17.5,
+   "ff": 15.0,
+   "_median": 17.5
+  },
+  "sus_short": {
+   "pp": 10.0,
+   "mf": 7.5,
+   "ff": 10.0,
+   "_median": 10.0
+  }
+ },
+ "ob/vsco": {
+  "stac": {
+   "L1of3": 45.0,
+   "L2of3": 27.5,
+   "L3of3": 27.5,
+   "_median": 27.5
+  },
+  "sus": {
+   "L1of2": 50.0,
+   "L2of2": 30.0,
+   "_median": 40.0
+  }
+ },
+ "ob/vpo3": {
+  "sus": {
+   "L1of1": 30.0,
+   "_median": 30.0
+  },
+  "sus_short": {
+   "L1of1": 10.0,
+   "_median": 10.0
+  }
+ },
+ "cl/iowa": {
+  "sus": {
+   "pp": 57.5,
+   "mf": 32.5,
+   "ff": 27.5,
+   "_median": 32.5
+  },
+  "sus_short": {
+   "pp": 7.5,
+   "mf": 10.0,
+   "ff": 10.0,
+   "_median": 10.0
+  }
+ },
+ "cl/vsco": {
+  "stac": {
+   "L1of3": 51.25,
+   "L2of3": 47.5,
+   "L3of3": 32.5,
+   "_median": 47.5
+  },
+  "sus": {
+   "L1of3": 77.5,
+   "L2of3": 42.5,
+   "L3of3": 32.5,
+   "_median": 42.5
+  }
+ },
+ "cl/vpo3": {
+  "sus": {
+   "L1of1": 36.25,
+   "_median": 36.25
+  },
+  "sus_short": {
+   "L1of1": 8.75,
+   "_median": 8.75
+  }
+ },
+ "bn/iowa": {
+  "sus": {
+   "pp": 42.5,
+   "mf": 25.0,
+   "ff": 17.5,
+   "_median": 25.0
+  },
+  "sus_short": {
+   "pp": 15.0,
+   "mf": 12.5,
+   "ff": 12.5,
+   "_median": 12.5
+  }
+ },
+ "bn/vsco": {
+  "stac": {
+   "L1of2": 38.75,
+   "L2of2": 37.5,
+   "_median": 38.125
+  },
+  "sus": {
+   "L1of2": 61.25,
+   "L2of2": 35.0,
+   "_median": 48.125
+  }
+ },
+ "bn/vpo3": {
+  "sus": {
+   "L1of1": 30.0,
+   "_median": 30.0
+  },
+  "sus_short": {
+   "L1of1": 15.0,
+   "_median": 15.0
+  }
+ },
+ "hn/iowa": {
+  "sus": {
+   "pp": 17.5,
+   "mf": 20.0,
+   "ff": 27.5,
+   "_median": 20.0
+  },
+  "sus_short": {
+   "pp": 10.0,
+   "mf": 12.5,
+   "ff": 10.0,
+   "_median": 10.0
+  }
+ },
+ "hn/vsco": {
+  "stac": {
+   "L1of3": 52.5,
+   "L2of3": 37.5,
+   "L3of3": 35.0,
+   "_median": 37.5
+  },
+  "sus": {
+   "L1of4": 80.0,
+   "L2of4": 48.75,
+   "L3of4": 48.75,
+   "_median": 48.75
+  }
+ },
+ "hn/vpo3": {
+  "stac": {
+   "L1of1": -45.0,
+   "_median": -45.0
+  },
+  "sus": {
+   "L1of1": 32.5,
+   "_median": 32.5
+  }
+ },
+ "tpt/iowa": {
+  "sus": {
+   "pp": 20.0,
+   "mf": 17.5,
+   "ff": 18.75,
+   "_median": 18.75
+  },
+  "sus_short": {
+   "pp": 10.0,
+   "mf": 5.0,
+   "ff": 10.0,
+   "_median": 10.0
+  }
+ },
+ "tpt/vsco": {
+  "stac": {
+   "L1of3": 35.0,
+   "L2of3": 25.0,
+   "L3of3": 17.5,
+   "_median": 25.0
+  },
+  "sus": {
+   "L1of2": 30.0,
+   "L2of2": 25.0,
+   "_median": 27.5
+  }
+ },
+ "tpt/vpo3": {
+  "sus": {
+   "L1of2": 17.5,
+   "L2of2": 15.0,
+   "_median": 16.25
+  },
+  "sus_short": {
+   "L1of2": 7.5,
+   "L2of2": 10.0,
+   "_median": 8.75
+  }
+ },
+ "tbn/iowa": {
+  "sus": {
+   "pp": 65.0,
+   "mf": 50.0,
+   "ff": 55.0,
+   "_median": 55.0
+  },
+  "sus_short": {
+   "pp": 7.5,
+   "mf": 5.0,
+   "ff": 5.0,
+   "_median": 5.0
+  }
+ },
+ "tbn/vsco": {
+  "stac": {
+   "L1of4": 32.5,
+   "L2of4": 27.5,
+   "L3of4": 40.0,
+   "L4of4": 32.5,
+   "_median": 32.5
+  },
+  "sus": {
+   "L1of3": 62.5,
+   "L2of3": 45.0,
+   "L3of3": 42.5,
+   "_median": 45.0
+  }
+ },
+ "tbn/vpo3": {
+  "sus": {
+   "L1of1": 17.5,
+   "_median": 17.5
+  },
+  "sus_short": {
+   "L1of1": 5.0,
+   "_median": 5.0
+  }
+ },
+ "btbn/iowa": {
+  "sus": {
+   "pp": 68.75,
+   "mf": 67.5,
+   "ff": 71.25,
+   "_median": 68.75
+  },
+  "sus_short": {
+   "pp": 17.5,
+   "mf": 7.5,
+   "ff": 16.25,
+   "_median": 16.25
+  }
+ },
+ "btbn/vpo3": {
+  "stac": {
+   "L1of1": -45.0,
+   "_median": -45.0
+  },
+  "sus": {
+   "L1of1": 57.5,
+   "_median": 57.5
+  }
+ },
+ "tba/iowa": {
+  "sus": {
+   "pp": 28.75,
+   "mf": 35.0,
+   "ff": 48.75,
+   "_median": 35.0
+  },
+  "sus_short": {
+   "pp": 12.5,
+   "mf": 27.5,
+   "ff": 20.0,
+   "_median": 20.0
+  }
+ },
+ "tba/vsco": {
+  "stac": {
+   "L1of2": 35.0,
+   "L2of2": 38.75,
+   "_median": 36.875
+  },
+  "sus": {
+   "L1of3": 50.0,
+   "L2of3": 60.0,
+   "L3of3": 75.0,
+   "_median": 60.0
+  }
+ },
+ "tba/vpo3": {
+  "sus": {
+   "L1of1": 52.5,
+   "_median": 52.5
+  },
+  "sus_short": {
+   "L1of1": 5.0,
+   "_median": 5.0
+  }
+ },
+ "timp/vsco": {
+  "hit": {
+   "L1of3": 10.0,
+   "L2of3": 7.5,
+   "L3of3": 7.5,
+   "_median": 7.5
+  },
+  "roll": {
+   "L1of3": 15.0,
+   "L3of3": 13.75,
+   "_median": 14.375
+  }
+ },
+ "timp/vpo3": {
+  "hit": {
+   "L1of1": 5.0,
+   "_median": 5.0
+  },
+  "roll": {
+   "L1of1": 25.0,
+   "_median": 25.0
+  }
+ },
+ "vn1/vsco": {
+  "stac": {
+   "L1of2": 82.5,
+   "L2of2": 100.0,
+   "_median": 91.25
+  },
+  "sus": {
+   "L1of2": 27.5,
+   "L2of2": 80.0,
+   "_median": 53.75
+  }
+ },
+ "vn1/vpo3": {
+  "stac": {
+   "L1of1": 61.25,
+   "_median": 61.25
+  },
+  "sus": {
+   "L1of1": 96.25,
+   "_median": 96.25
+  }
+ },
+ "vn2/vsco": {
+  "stac": {
+   "L1of2": 82.5,
+   "L2of2": 100.0,
+   "_median": 91.25
+  },
+  "sus": {
+   "L1of2": 27.5,
+   "L2of2": 80.0,
+   "_median": 53.75
+  }
+ },
+ "vn2/vpo3": {
+  "stac": {
+   "L1of1": 47.5,
+   "_median": 47.5
+  },
+  "sus": {
+   "L1of1": 76.25,
+   "_median": 76.25
+  }
+ },
+ "va/vsco": {
+  "stac": {
+   "L1of2": 36.25,
+   "L2of2": 46.25,
+   "_median": 41.25
+  },
+  "sus": {
+   "L1of2": 90.0,
+   "L2of2": 90.0,
+   "_median": 90.0
+  }
+ },
+ "va/vpo3": {
+  "sus": {
+   "L1of1": 96.25,
+   "_median": 96.25
+  },
+  "sus_short": {
+   "L1of1": 7.5,
+   "_median": 7.5
+  }
+ },
+ "vc/vsco": {
+  "stac": {
+   "L1of2": 55.0,
+   "L2of2": 57.5,
+   "_median": 56.25
+  },
+  "sus": {
+   "L1of2": 87.5,
+   "L2of2": 52.5,
+   "_median": 70.0
+  }
+ },
+ "vc/vpo3": {
+  "sus": {
+   "L1of1": 50.0,
+   "_median": 50.0
+  },
+  "sus_short": {
+   "L1of1": 7.5,
+   "_median": 7.5
+  }
+ },
+ "cb/vsco": {
+  "stac": {
+   "L1of2": 65.0,
+   "L2of2": 60.0,
+   "_median": 62.5
+  },
+  "sus": {
+   "L1of2": 75.0,
+   "L2of2": 62.5,
+   "_median": 68.75
+  }
+ },
+ "cb/vpo3": {
+  "stac": {
+   "L1of1": 75.0,
+   "_median": 75.0
+  },
+  "sus": {
+   "L1of1": 62.5,
+   "_median": 62.5
+  }
+ }
+}

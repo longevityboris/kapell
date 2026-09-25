@@ -1,0 +1,66 @@
+{
+ "midi": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/bach_organ/build/organ.mid",
+ "voices": {
+  "alto": {
+   "notes": 217,
+   "present": 217,
+   "dropped": [],
+   "prominence_db_p5": 53.2,
+   "cents_median": -0.09,
+   "cents_abs_p95": 0.99,
+   "cents_abs_max": 2.15,
+   "pitch_window_s": "0.06-0.4, partials 1-4"
+  },
+  "bass": {
+   "notes": 141,
+   "present": 141,
+   "dropped": [],
+   "prominence_db_p5": 15.3,
+   "cents_median": -0.06,
+   "cents_abs_p95": 2.42,
+   "cents_abs_max": 12.59,
+   "pitch_window_s": "0.06-1.0, partials 2-4"
+  },
+  "soprano": {
+   "notes": 191,
+   "present": 191,
+   "dropped": [],
+   "prominence_db_p5": 50.8,
+   "cents_median": 0.07,
+   "cents_abs_p95": 0.67,
+   "cents_abs_max": 2.23,
+   "pitch_window_s": "0.06-0.4, partials 1-4"
+  },
+  "tenor": {
+   "notes": 192,
+   "present": 192,
+   "dropped": [],
+   "prominence_db_p5": 37.4,
+   "cents_median": 0.29,
+   "cents_abs_p95": 1.76,
+   "cents_abs_max": 2.12,
+   "pitch_window_s": "0.06-0.4, partials 1-4"
+  }
+ },
+ "files": {
+  "wav": {
+   "path": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/bach_organ/ricercar_bach_organ.wav",
+   "integrated_lufs": -18.1,
+   "lra_lu": 9.9,
+   "true_peak_dbtp": -1.0,
+   "duration_s": 241.69,
+   "samplerate": 48000,
+   "subtype": "PCM_24"
+  },
+  "m4a": {
+   "path": "/Users/biobook/Music/llm-music/fugue-jp/ricercar/performance/bach_organ/ricercar_bach_organ.m4a",
+   "integrated_lufs": -18.1,
+   "lra_lu": 9.9,
+   "true_peak_dbtp": -1.0,
+   "duration_s": 241.71
+  }
+ },
+ "notes": 741,
+ "present": 741,
+ "ok": true
+}

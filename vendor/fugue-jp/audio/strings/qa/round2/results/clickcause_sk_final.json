@@ -1,0 +1,248 @@
+{
+ "n_flags": 19,
+ "n_block_boundary_slips": 12,
+ "slips_per_inst": {
+  "vn1": 0,
+  "vn2": 5,
+  "va": 6,
+  "vc": 1
+ },
+ "same_in_both_alignments": [
+  [
+   "vc",
+   85.134
+  ],
+  [
+   "vc",
+   166.175
+  ],
+  [
+   "vc",
+   169.333
+  ],
+  [
+   "vn2",
+   19.041
+  ],
+  [
+   "vn2",
+   22.283
+  ],
+  [
+   "vn2",
+   106.251
+  ],
+  [
+   "vn2",
+   193.654
+  ]
+ ],
+ "re_fullband_db_range": [
+  -29.5,
+  -21.1
+ ],
+ "rows": [
+  {
+   "inst": "vc",
+   "t": 85.134,
+   "hf_re_local_db": 15.9,
+   "re_fullband_db": -24.7,
+   "d2_ratio_render": 8.4,
+   "d2_ratio_other_alignment": 8.3,
+   "renders_agree_db": -37.9,
+   "pos_in_256_block": 162
+  },
+  {
+   "inst": "vc",
+   "t": 128.908,
+   "hf_re_local_db": 17.3,
+   "re_fullband_db": -25.9,
+   "d2_ratio_render": 4.9,
+   "d2_ratio_other_alignment": 3.4,
+   "renders_agree_db": -39.2,
+   "pos_in_256_block": 0
+  },
+  {
+   "inst": "vc",
+   "t": 166.175,
+   "hf_re_local_db": 17.4,
+   "re_fullband_db": -26.6,
+   "d2_ratio_render": 12.1,
+   "d2_ratio_other_alignment": 11.9,
+   "renders_agree_db": -32.3,
+   "pos_in_256_block": 227
+  },
+  {
+   "inst": "vc",
+   "t": 169.333,
+   "hf_re_local_db": 19.0,
+   "re_fullband_db": -23.9,
+   "d2_ratio_render": 14.9,
+   "d2_ratio_other_alignment": 14.9,
+   "renders_agree_db": -41.8,
+   "pos_in_256_block": 180
+  },
+  {
+   "inst": "va",
+   "t": 41.739,
+   "hf_re_local_db": 22.7,
+   "re_fullband_db": -29.3,
+   "d2_ratio_render": 8.4,
+   "d2_ratio_other_alignment": 4.1,
+   "renders_agree_db": -38.7,
+   "pos_in_256_block": 0
+  },
+  {
+   "inst": "va",
+   "t": 77.836,
+   "hf_re_local_db": 21.4,
+   "re_fullband_db": -29.1,
+   "d2_ratio_render": 7.1,
+   "d2_ratio_other_alignment": 3.3,
+   "renders_agree_db": -35.4,
+   "pos_in_256_block": 255
+  },
+  {
+   "inst": "va",
+   "t": 132.598,
+   "hf_re_local_db": 20.8,
+   "re_fullband_db": -28.5,
+   "d2_ratio_render": 5.5,
+   "d2_ratio_other_alignment": 3.2,
+   "renders_agree_db": -35.3,
+   "pos_in_256_block": 255
+  },
+  {
+   "inst": "va",
+   "t": 136.161,
+   "hf_re_local_db": 21.7,
+   "re_fullband_db": -26.4,
+   "d2_ratio_render": 6.8,
+   "d2_ratio_other_alignment": 2.5,
+   "renders_agree_db": -37.3,
+   "pos_in_256_block": 255
+  },
+  {
+   "inst": "va",
+   "t": 138.316,
+   "hf_re_local_db": 20.6,
+   "re_fullband_db": -29.5,
+   "d2_ratio_render": 5.4,
+   "d2_ratio_other_alignment": 3.7,
+   "renders_agree_db": -41.0,
+   "pos_in_256_block": 0
+  },
+  {
+   "inst": "va",
+   "t": 204.961,
+   "hf_re_local_db": 22.9,
+   "re_fullband_db": -27.5,
+   "d2_ratio_render": 8.2,
+   "d2_ratio_other_alignment": 3.2,
+   "renders_agree_db": -36.6,
+   "pos_in_256_block": 0
+  },
+  {
+   "inst": "vn2",
+   "t": 12.961,
+   "hf_re_local_db": 21.4,
+   "re_fullband_db": -23.8,
+   "d2_ratio_render": 11.9,
+   "d2_ratio_other_alignment": 4.3,
+   "renders_agree_db": -31.4,
+   "pos_in_256_block": 0
+  },
+  {
+   "inst": "vn2",
+   "t": 19.041,
+   "hf_re_local_db": 16.1,
+   "re_fullband_db": -26.5,
+   "d2_ratio_render": 3.2,
+   "d2_ratio_other_alignment": 3.2,
+   "renders_agree_db": -35.3,
+   "pos_in_256_block": 124
+  },
+  {
+   "inst": "vn2",
+   "t": 22.283,
+   "hf_re_local_db": 16.5,
+   "re_fullband_db": -26.4,
+   "d2_ratio_render": 4.2,
+   "d2_ratio_other_alignment": 3.4,
+   "renders_agree_db": -34.8,
+   "pos_in_256_block": 0
+  },
+  {
+   "inst": "vn2",
+   "t": 77.835,
+   "hf_re_local_db": 22.8,
+   "re_fullband_db": -21.1,
+   "d2_ratio_render": 5.7,
+   "d2_ratio_other_alignment": 2.7,
+   "renders_agree_db": -33.2,
+   "pos_in_256_block": 255
+  },
+  {
+   "inst": "vn2",
+   "t": 106.251,
+   "hf_re_local_db": 19.6,
+   "re_fullband_db": -27.3,
+   "d2_ratio_render": 4.2,
+   "d2_ratio_other_alignment": 3.7,
+   "renders_agree_db": -35.6,
+   "pos_in_256_block": 0
+  },
+  {
+   "inst": "vn2",
+   "t": 110.859,
+   "hf_re_local_db": 19.9,
+   "re_fullband_db": -27.8,
+   "d2_ratio_render": 4.1,
+   "d2_ratio_other_alignment": 1.7,
+   "renders_agree_db": -34.9,
+   "pos_in_256_block": 0
+  },
+  {
+   "inst": "vn2",
+   "t": 115.489,
+   "hf_re_local_db": 21.3,
+   "re_fullband_db": -26.6,
+   "d2_ratio_render": 6.1,
+   "d2_ratio_other_alignment": 3.7,
+   "renders_agree_db": -36.9,
+   "pos_in_256_block": 0
+  },
+  {
+   "inst": "vn2",
+   "t": 193.654,
+   "hf_re_local_db": 18.0,
+   "re_fullband_db": -28.9,
+   "d2_ratio_render": 3.5,
+   "d2_ratio_other_alignment": 3.0,
+   "renders_agree_db": -35.8,
+   "pos_in_256_block": 255
+  },
+  {
+   "inst": "vn2",
+   "t": 197.132,
+   "hf_re_local_db": 15.5,
+   "re_fullband_db": -26.0,
+   "d2_ratio_render": 5.0,
+   "d2_ratio_other_alignment": 2.9,
+   "renders_agree_db": -32.4,
+   "pos_in_256_block": 255
+  }
+ ],
+ "state": {
+  "head": "e3815bf",
+  "render_quartet_sha": "b32c34e0dd47ed48",
+  "perform_sha": "4d527a2643657675",
+  "sfz": {
+   "bass.sfz": "00762544528904ce",
+   "cello.sfz": "1509632bd473c8ed",
+   "viola.sfz": "eeb0117a420062b4",
+   "violin.sfz": "bf2e18602a9816a2",
+   "violin2.sfz": "c50e3d0762fdcf75"
+  }
+ }
+}

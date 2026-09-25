@@ -1,0 +1,80 @@
+{
+ "no_reverb": {
+  "alto": {
+   "n": 170,
+   "median_db": 25.4,
+   "p10_db": 8.2,
+   "n_below_3db": 6
+  },
+  "soprano": {
+   "n": 160,
+   "median_db": 25.5,
+   "p10_db": 10.2,
+   "n_below_3db": 4
+  },
+  "tenor": {
+   "n": 110,
+   "median_db": 18.3,
+   "p10_db": 2.1,
+   "n_below_3db": 16
+  },
+  "pedal": {
+   "n": 86,
+   "median_db": 14.5,
+   "p10_db": 3.3,
+   "n_below_3db": 7
+  }
+ },
+ "wet_-13": {
+  "alto": {
+   "n": 170,
+   "median_db": 25.2,
+   "p10_db": 7.4,
+   "n_below_3db": 8
+  },
+  "soprano": {
+   "n": 160,
+   "median_db": 24.6,
+   "p10_db": 8.7,
+   "n_below_3db": 6
+  },
+  "tenor": {
+   "n": 110,
+   "median_db": 18.8,
+   "p10_db": 0.9,
+   "n_below_3db": 17
+  },
+  "pedal": {
+   "n": 86,
+   "median_db": 14.0,
+   "p10_db": 2.2,
+   "n_below_3db": 10
+  }
+ },
+ "wet_-4_default": {
+  "alto": {
+   "n": 170,
+   "median_db": 22.1,
+   "p10_db": 6.3,
+   "n_below_3db": 9
+  },
+  "soprano": {
+   "n": 160,
+   "median_db": 21.8,
+   "p10_db": 5.8,
+   "n_below_3db": 9
+  },
+  "tenor": {
+   "n": 110,
+   "median_db": 15.4,
+   "p10_db": 0.6,
+   "n_below_3db": 19
+  },
+  "pedal": {
+   "n": 86,
+   "median_db": 10.6,
+   "p10_db": 0.9,
+   "n_below_3db": 13
+  }
+ }
+}

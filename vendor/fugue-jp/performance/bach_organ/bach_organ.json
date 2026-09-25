@@ -1,0 +1,326 @@
+{
+ "title": "The Neighbour: ricercar a 4 on the pipe organ (Bach version)",
+ "about": "The four voices on the Norrfjärden Church organ (audio/organ), one division each so the lines stay apart in colour and position: soprano on the Hauptwerck, alto on the Oberwerck, tenor on the Rückpositief, bass on the Pedal (16'+8' as its floor). In the arioso the soprano takes the Rückpositief Krummhorn as a solo and the tenor moves to the Hauptwerck Gedackt; both return at 35. Dynamics are terraced: the registration changes only at section and entry joins, each division at a point where its own voice attacks (no stop is drawn under a held key), never as a hairpin. Because each voice has its own division, a join can lift only the voice that carries the entry (41 and 43: the soprano's inversion; 55-57: the tune as a cantus firmus on the Principal over flutes). Principal chorus built 8', 8'+4', 8'+4'+2' through the fugue; Climax I (26:3) adds the pedal's lighter reeds (Trompete 8', Dulzian 8', Cornet 4') under the manuals' principal choruses 8'+4'+2', and the tenor's stretto head (27:1) its Rueckpositief plenum; the Posaune 16' and the manual plenums with their mixtures are kept for Climax II (52:1; manual reeds and the Quintadena 16' added at the fff peak 53:1), so it is the peak: Climax I is held to about the level of the f in bars 24-25 and Climax II's loudest 3 s is 1.8 dB above it (levels.py); the apotheosis peak (59:1) puts the tune on the Hauptwerck plenum with Trommeten over the answer in the pedal reeds, the free inner voices on principal choruses. Flutes for the subito-piano spans (arioso accompaniment with the Gedackter Bass 8' alone in the pedal, fuga inversa, the dominant pedal) and for the coda's d'' and tolling pedal under the tenor's last head. The augmented inversion in the pedal (46-55) has the 4' from its first note and the reeds at 52. The hinge (54) steps down in three terraces, each on an attack (reeds, then mixtures, then the pedal's 4'), to the flutes at 55. The final chord is on the softest stops, the tenor moved to the Hauptwerck Gedackt. In Part I only the entering voice's division steps up at an entry (5:1 the alto, 13:1 the tenor, 20:1 the tenor with the soprano, 22:1 the soprano's + 2'). The Oberwerck's own plenum draws the Spitzquinten 1 1/2', whose recorded pipes beat (audio/organ/README.md, Limits), so the alto's chorus registrations are custom lists without it. gain_db balances the divisions as recorded (K-weighted stem levels on this piece: the Oberwerck sits about 3 dB and the Hauptwerck about 1.5 dB under the Rückpositief at the same tier). Rendered by render.sh: orchestrate.py (plan.json, this spec; integrity check), articulate.py (baroque touch), render_organ.py with the church acoustic, qa_organ.py, presence.py and levels.py (the shape: pauses, climaxes, arioso solo, hinge, coda, entries).",
+ "marks": {
+  "from": "../../design/final-lab/piece.py"
+ },
+ "groups": {
+  "organ": {
+   "renderer": "organ",
+   "parts": {
+    "soprano": {
+     "division": "HW"
+    },
+    "alto": {
+     "division": "OW"
+    },
+    "tenor": {
+     "division": "POS"
+    },
+    "bass": {
+     "division": "PED"
+    }
+   },
+   "options": {
+    "registration": {
+     "custom": {
+      "ow_chorus": {
+       "stops": [
+        "Quintadena 8'",
+        "Zap: flöite 4'",
+        "Octava 2'"
+       ]
+      },
+      "ow_plenum": {
+       "stops": [
+        "Quintadena 8'",
+        "Zap: flöite 4'",
+        "Nasat 3'",
+        "Octava 2'",
+        "Zimball 2 fach"
+       ]
+      },
+      "ow_plenum_reed": {
+       "stops": [
+        "Quintadena 8'",
+        "Zap: flöite 4'",
+        "Nasat 3'",
+        "Octava 2'",
+        "Zimball 2 fach",
+        "Schallmeijen 8'"
+       ]
+      },
+      "pedal_reeds_light": {
+       "stops": [
+        "Under Bass 16'",
+        "Gedackter Bass 8'",
+        "Trommeten Bass 8'",
+        "Dussanen Bass 8'",
+        "Corneten Bass 4'"
+       ]
+      },
+      "arioso_solo": {
+       "stops": [
+        "Krumb Horn 8'",
+        "Flött 8'",
+        "Flött 4'"
+       ]
+      }
+     },
+     "manual_changes": [
+      {
+       "at": "30:1",
+       "voice": "soprano",
+       "division": "POS"
+      },
+      {
+       "at": "30:1",
+       "voice": "tenor",
+       "division": "HW"
+      },
+      {
+       "at": "35:1",
+       "voice": "soprano",
+       "division": "HW"
+      },
+      {
+       "at": "35:1",
+       "voice": "tenor",
+       "division": "POS"
+      },
+      {
+       "at": "66:1",
+       "voice": "tenor",
+       "division": "HW"
+      }
+     ],
+     "changes": [
+      {
+       "at": "1:1",
+       "HW": "principal8",
+       "OW": "flute8+4",
+       "POS": "principal8",
+       "PED": "pedal16+8",
+       "why": "I exposition, p to mp: the tune alone on the Principal 8'; the answer on the Quintadena with its 4' flute"
+      },
+      {
+       "at": "5:1",
+       "OW": "ow_chorus",
+       "why": "the alto's answer: only its division steps up, to the Oberwerck chorus (Quintadena 8', flute 4', Octava 2'), so it leads the soprano's countersubject; the alto attacks at 5:1"
+      },
+      {
+       "at": "9:4",
+       "OW": "flute8+4",
+       "why": "the alto turns to the countersubject under the bass's subject: back to Quintadena and flute 4'; the alto attacks F3 at 9:4"
+      },
+      {
+       "at": "13:1",
+       "POS": "principal8+4",
+       "why": "entry 4, mf: the tenor's answer steps up alone; the alto's CS2 stays on flutes 8'+4' and the soprano's descant on the Principal 8'"
+      },
+      {
+       "at": "18:1.5",
+       "POS": "principal8",
+       "why": "episode, mp: the tenor's terrace down (an echo); its G3 is held to 18:1.5, its next attack"
+      },
+      {
+       "at": "20:1",
+       "HW": "principal8+4",
+       "POS": "principal8+4",
+       "why": "stretto, the false dawn, building to f: the tenor's subject steps up with the soprano; the bass's countersubject waits for 22:1 and the free alto for 24:2"
+      },
+      {
+       "at": "22:1",
+       "HW": "principal8+4+2",
+       "PED": "pedal16+8+4",
+       "why": "the soprano's subject: its division gains the 2' as it enters, and the bass (it attacks D-flat 3 at 22:1) steps up behind it; the free alto waits for 24:2 so it stays under the entry"
+      },
+      {
+       "at": "24:1",
+       "POS": "principal8+4+2",
+       "why": "f: the tenor's + 2' (it attacks E-flat 4 at 24:1)"
+      },
+      {
+       "at": "24:2",
+       "OW": "ow_chorus",
+       "why": "the alto's chorus, on its C5 at 24:2 (its A-flat is held from 23:4)"
+      },
+      {
+       "at": "26:3",
+       "PED": "pedal_reeds_light",
+       "why": "liquidation and Climax I, ff: the pedal's lighter reeds (Trompete 8', Dulzian 8', Cornet 4' over 16'+8') under the heads on E, G, B-flat, D-flat, the manuals on their principal choruses 8'+4'+2'. The Posaune 16' and the manual mixtures and reeds are kept for Climax II, the piece's peak: with them here Climax I measured as loud as Climax II (the Posaune alone is 1.6 dB of it) and the tenor's head at 27:1 sat 5-6 dB under the pedal. The bass attacks E2 at 26:3"
+      },
+      {
+       "at": "27:1",
+       "POS": "plenum",
+       "why": "the tenor's stretto head (G3, held seven beats) on the Rueckpositief plenum (+ Cimbel): the entering voice's division steps up, as in Parts III-V; the tenor attacks at 27:1"
+      },
+      {
+       "at": "30:1",
+       "HW": "flute8",
+       "OW": "flute8",
+       "POS": "arioso_solo",
+       "PED": "pedal8",
+       "why": "II arioso dolente, subito pp after the general pause: the soprano's S2 as a Krummhorn solo (with Floett 8' and 4', so it stays 3 dB over the alto's pulsing Quintadena on the held C5 of bar 33) on the Rueckpositief over the alto's Quintadena, the tenor's Gedackt and the Gedackter Bass 8' alone in the pedal (16'+8' pulsed as loud as the solo); the bass attacks F2 at 30:1"
+      },
+      {
+       "at": "35:1",
+       "HW": "flute8",
+       "OW": "flute8",
+       "POS": "flute8",
+       "PED": "pedal16+8",
+       "why": "III fuga inversa, pp: the inversion enters alone in the pedal"
+      },
+      {
+       "at": "39:1",
+       "HW": "flute8+4",
+       "OW": "flute8+4",
+       "POS": "flute8+4",
+       "why": "A minor established: + 4'"
+      },
+      {
+       "at": "41:1",
+       "HW": "principal8+4",
+       "why": "third entry, the inversion in the soprano: only its division steps up (principal 8'+4'), the others stay on flutes 8'+4'"
+      },
+      {
+       "at": "43:1",
+       "HW": "principal8+4+2",
+       "POS": "principal8",
+       "why": "mf into the A-minor cadence 45:3: the soprano's inversion on 8'+4'+2', the tenor on principals"
+      },
+      {
+       "at": "46:1",
+       "HW": "flute8",
+       "OW": "flute8+4",
+       "POS": "flute8+4",
+       "PED": "pedal16+8+4",
+       "why": "IV the dominant pedal, subito p misterioso: the augmented inversion in the pedal under the tenor's lament; the pedal's 4' brings the augmentation out from its first note (the bass attacks F2 at 46:1)"
+      },
+      {
+       "at": "48:1",
+       "OW": "ow_chorus",
+       "POS": "principal8",
+       "why": "combination, mp: S2 (alto) and S1 (tenor) together, their divisions up a step"
+      },
+      {
+       "at": "50:1",
+       "HW": "principal8+4+2",
+       "OW": "ow_chorus",
+       "POS": "principal8+4",
+       "why": "towards f; the soprano enters at 50:3 with the heads in diminution (three speeds: diminution, S1 in the tenor, the augmentation in the pedal)"
+      },
+      {
+       "at": "52:1",
+       "HW": "plenum",
+       "OW": "ow_plenum_reed",
+       "POS": "plenum",
+       "PED": "pedal_plenum_reed",
+       "why": "Climax II: C major, the light; every voice attacks at 52:1. The manual plenums with their mixtures and the pedal reeds are first heard together here; the alto's diminution head takes the Schalmei at once, so its reed edge carries it against the soprano's G5"
+      },
+      {
+       "at": "53:1",
+       "HW": "plenum16_reed",
+       "POS": "plenum_reed",
+       "why": "fff peak: the complete C7, manual reeds (Trommeten, Krummhorn) and the Quintadena 16'"
+      },
+      {
+       "at": "54:1",
+       "HW": "plenum",
+       "OW": "ow_chorus",
+       "POS": "principal8+4",
+       "PED": "pedal16+8+4",
+       "why": "the hinge, f to p in three terraces, each on an attack (no subito): the reeds go first; the soprano keeps the Hauptwerck plenum for its descent F5-E-flat 5, the others on principal choruses and the pedal on 16'+8'+4'. All four attack at 54:1"
+      },
+      {
+       "at": "54:3",
+       "HW": "principal8+4+2",
+       "OW": "flute8+4",
+       "POS": "principal8",
+       "why": "the mixtures go (soprano, alto and tenor attack at 54:3)"
+      },
+      {
+       "at": "54:4",
+       "PED": "pedal16+8",
+       "why": "the pedal's step, as the bass attacks F-sharp 2 (G-flat)"
+      },
+      {
+       "at": "55:1",
+       "HW": "principal8",
+       "OW": "flute8",
+       "POS": "flute8",
+       "why": "V apotheosis, p: the whole tune in B-flat major as a cantus firmus on the Principal 8' over flutes 8' (CS2 in the tenor, the free alto) and the lament in the pedal"
+      },
+      {
+       "at": "57:1",
+       "HW": "principal8+4",
+       "why": "mf: only the tune steps up (principal 8'+4')"
+      },
+      {
+       "at": "59:1",
+       "HW": "plenum_reed",
+       "OW": "ow_chorus",
+       "POS": "principal8+4+2",
+       "PED": "pedal_plenum_reed",
+       "why": "apotheosis peak, f at 60:4: the tune's second half on the plenum with Trommeten over the answer in the pedal reeds; the free inner voices on principal choruses (alto and tenor attack at 59:1), so the tune and the answer lead and the peak stays under Climax II"
+      },
+      {
+       "at": "61:3",
+       "HW": "principal8+4+2",
+       "POS": "principal8+4",
+       "PED": "pedal16+8+4",
+       "why": "towards mp: every voice attacks at 61:3"
+      },
+      {
+       "at": "63:1",
+       "HW": "principal8",
+       "OW": "flute8+4",
+       "POS": "principal8",
+       "PED": "pedal16+8",
+       "why": "p: c'' rises to d'' over V7-I and the tolling tonic pedal"
+      },
+      {
+       "at": "65:1",
+       "HW": "flute8",
+       "PED": "pedal8",
+       "why": "coda, pp: the soprano's d'' to the Gedackt 8' and the tolling pedal to the Gedackter Bass 8' (both re-attack at 65:1), so the tenor's last subject head, a real entry, keeps its Floett 8' + Principal 4' and leads. For the final chord (66:1, every voice attacks) the tenor's hand moves to the Hauptwerck Gedackt (manual_changes): the Rueckpositief's softest stop, Floett 8', stood 3.4 dB over the other voices and kept the chord above the p opening"
+      },
+      {
+       "at": "65:3",
+       "OW": "flute8",
+       "why": "the alto's F4 is held to 65:3"
+      }
+     ],
+     "gain_db": {
+      "soprano": 1.5,
+      "alto": 3.0,
+      "tenor": 0.0,
+      "bass": 0.0
+     }
+    }
+   }
+  }
+ },
+ "assignments": [
+  {
+   "voice": "soprano",
+   "part": "soprano"
+  },
+  {
+   "voice": "alto",
+   "part": "alto"
+  },
+  {
+   "voice": "tenor",
+   "part": "tenor"
+  },
+  {
+   "voice": "bass",
+   "part": "bass"
+  }
+ ],
+ "mix": {
+  "lead_in": 0.5,
+  "reference_group": "organ"
+ }
+}

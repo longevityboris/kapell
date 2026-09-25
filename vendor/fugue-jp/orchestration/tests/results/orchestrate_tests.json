@@ -1,0 +1,184 @@
+{
+ "clean output passes": {
+  "pass": true,
+  "detail": []
+ },
+ "semitone error caught": {
+  "pass": true,
+  "detail": [
+   "va: 1 assigned note(s) missing: ['alto 9:4 F3+0']",
+   "va: 1 note(s) that no assignment accounts for: ['key 54 at 9:4.00312']",
+   "alto: 1 score note(s) played by no part: ['9:4 F3']"
+  ]
+ },
+ "undeclared octave caught": {
+  "pass": true,
+  "detail": [
+   "bass: 1 assigned note(s) missing: ['bass 35:1 E3+0']",
+   "bass: 1 note(s) that no assignment accounts for: ['key 64 at 34:4.99688']",
+   "bass: 1 score note(s) played by no part: ['35:1 E3']"
+  ]
+ },
+ "dropped note caught": {
+  "pass": true,
+  "detail": [
+   "vc: 1 assigned note(s) missing: ['bass 9:1 Bb2+0']",
+   "bass: 1 score note(s) played by no part: ['9:1 Bb2']"
+  ]
+ },
+ "added note caught": {
+  "pass": true,
+  "detail": [
+   "vn1: 1 note(s) that no assignment accounts for: ['key 99 at 1:1']"
+  ]
+ },
+ "hanging note caught": {
+  "pass": true,
+  "detail": [
+   "alto: 1 note-on(s) without note-off",
+   "alto: 8 note-on(s) on a key that is still sounding",
+   "alto: alto 35:4 A4 lasts past its notated end"
+  ]
+ },
+ "tempo mismatch caught": {
+  "pass": true,
+  "detail": [
+   "piano: tempo map or ticks per quarter differ from the first group's"
+  ]
+ },
+ "uncovered score notes caught": {
+  "pass": true,
+  "detail": [
+   "tenor: 6 score note(s) played by no part: ['48:1 Bb3', '48:4 Bb3', '48:4.5 A3', '49:1 Bb3', '49:4 Bb3']"
+  ]
+ },
+ "declared gap accepted": {
+  "pass": true,
+  "detail": []
+ },
+ "spec rejected: overlap": {
+  "pass": true,
+  "detail": [
+   "SystemExit: part 'vn1': windows overlap (soprano 1:1-35:1 and alto 2:1-3:1); split them or use another part"
+  ]
+ },
+ "spec rejected: octave7": {
+  "pass": true,
+  "detail": [
+   "SystemExit: line #23 (alto -> soprano): octave 7 must be one of (-24, -12, 0, 12, 24) (octave doublings only)"
+  ]
+ },
+ "spec rejected: voice": {
+  "pass": true,
+  "detail": [
+   "SystemExit: line #23: voice 'quintus' is not one of ['soprano', 'alto', 'tenor', 'bass']"
+  ]
+ },
+ "spec rejected: tempo_override": {
+  "pass": true,
+  "detail": [
+   "SystemExit: group 'piano': plan_overrides may not change ['tempo']: every group shares one tempo map and one set of humanised onsets"
+  ]
+ },
+ "pedal pitch the voice never sounds rejected": {
+  "pass": true,
+  "detail": [
+   "SystemExit: pedal point bass->pedal_8vb: pitch 43 is not sounded by bass in 46:1-50:1"
+  ]
+ },
+ "pedal note held past the pedal caught": {
+  "pass": true,
+  "detail": [
+   "pedal_8vb: pedal note 29 at 45:4.99479 is not a pitch bass holds (bridge 1 beats)"
+  ]
+ },
+ "unknown mark rejected": {
+  "pass": true,
+  "detail": [
+   "SystemExit: bad position 'nowhere+2': expected \"bar:beat\", \"end\" or MARK[+N[:beat]] (marks: apotheosis_coda, arioso, entry4_episode, expo, inversa, pedal_climax, sec01_expo, sec02_entry4_episode, sec03_stretto_liquidation, sec04_arioso, sec05_inversa, sec06_pedal_climax, sec07_apotheosis_coda, stretto_liquidation)"
+  ]
+ },
+ "section list that disagrees with the score rejected": {
+  "pass": true,
+  "detail": [
+   "SystemExit: marks from /var/folders/qh/7w8n7nzn5ns_qjyyllhjxnt40000gn/T/tmptgrwqc2a/secs.json: the sections add up to 10 bars, the score has 66; the score and the section list disagree"
+  ]
+ },
+ "marks resolved from piece.py": {
+  "pass": true,
+  "detail": {
+   "expo": "1:1",
+   "entry4_episode": "13:1",
+   "stretto_liquidation": "20:1",
+   "arioso": "30:1",
+   "inversa": "35:1",
+   "pedal_climax": "46:1",
+   "apotheosis_coda": "55:1"
+  }
+ },
+ "piano marker": {
+  "pass": true,
+  "detail": [
+   "perform.py target=piano",
+   "orchestrate.py group=piano renderer=piano spec=spec.json"
+  ]
+ },
+ "quartet marker": {
+  "pass": true,
+  "detail": [
+   "perform.py target=strings",
+   "orchestrate.py group=quartet renderer=quartet spec=spec.json"
+  ]
+ },
+ "quartet track names": {
+  "pass": true,
+  "detail": [
+   "Violin I",
+   "Violin II",
+   "Viola",
+   "Cello"
+  ]
+ },
+ "piano pedal only where it plays": {
+  "pass": true,
+  "detail": "pedal-down bars [50, 51, 52]..[64, 65, 66]"
+ },
+ "CC20 before every vn2 note": {
+  "pass": true,
+  "detail": "160/160"
+ },
+ "detache window = 32": {
+  "pass": true,
+  "detail": [
+   32
+  ]
+ },
+ "viola CC1 = alto envelope in 9:4-13, tenor envelope in 14-29": {
+  "pass": true,
+  "detail": "alto True, tenor True"
+ },
+ "level -1 lowers piano velocity by one dynamic step (8-16 perform units)": {
+  "pass": true,
+  "detail": "velocity change -16..-12"
+ },
+ "vn1 and piano soprano 8va share onset ticks where they double (51-58)": {
+  "pass": true,
+  "detail": "36 shared onsets"
+ },
+ "an orchestra group with 17 parts builds, 17 note tracks, integrity OK": {
+  "pass": true,
+  "detail": "ok True, 17 note tracks, errors []"
+ },
+ "alto on vn2 throughout: notes below the vn2 compass fail the integrity check": {
+  "pass": true,
+  "detail": [
+   "vn2: 3 note(s) outside the vn2 compass 55-96 (lowest 53, highest 77; 9:4.00312 key 53, 12:"
+  ]
+ },
+ "allow_octave_shift turns them into warnings": {
+  "pass": true,
+  "detail": [
+   "vn2: 3 note(s) outside the vn2 compass 55-96 (lowest 53, highest 77; 9:4.00312 key 53, 12:"
+  ]
+ }
+}

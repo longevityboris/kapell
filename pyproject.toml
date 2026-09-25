@@ -1,0 +1,25 @@
+[project]
+name = "kapell"
+version = "0.1.0"
+description = "A composition kit for agent-written counterpoint: search, proof, quality analysis, performance and sampled rendering"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Boris Djordjevic" }]
+dependencies = ["numpy", "scipy", "mido", "soundfile", "music21"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+kapell = "kapell.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kapell"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

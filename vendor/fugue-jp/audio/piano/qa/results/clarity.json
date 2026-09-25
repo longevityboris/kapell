@@ -1,0 +1,147 @@
+{
+ "runs": {
+  "bass_q66": {
+   "sixteenth_ms": 227,
+   "overlap_prev_note_db_median": -16.4,
+   "overlap_worst_db": -12.2,
+   "early50_share_db": -7.4
+  },
+  "bass_q100": {
+   "sixteenth_ms": 150,
+   "overlap_prev_note_db_median": -15.0,
+   "overlap_worst_db": -11.5,
+   "early50_share_db": -5.1
+  },
+  "bass_q132": {
+   "sixteenth_ms": 114,
+   "overlap_prev_note_db_median": -14.4,
+   "overlap_worst_db": -11.3,
+   "early50_share_db": -3.8
+  },
+  "tenor_q66": {
+   "sixteenth_ms": 227,
+   "overlap_prev_note_db_median": -19.5,
+   "overlap_worst_db": -17.7,
+   "early50_share_db": -7.2
+  },
+  "tenor_q100": {
+   "sixteenth_ms": 150,
+   "overlap_prev_note_db_median": -18.3,
+   "overlap_worst_db": -16.4,
+   "early50_share_db": -5.1
+  },
+  "tenor_q132": {
+   "sixteenth_ms": 114,
+   "overlap_prev_note_db_median": -17.1,
+   "overlap_worst_db": -15.5,
+   "early50_share_db": -3.6
+  },
+  "treble_q66": {
+   "sixteenth_ms": 227,
+   "overlap_prev_note_db_median": -22.2,
+   "overlap_worst_db": -12.3,
+   "early50_share_db": -5.7
+  },
+  "treble_q100": {
+   "sixteenth_ms": 150,
+   "overlap_prev_note_db_median": -19.3,
+   "overlap_worst_db": -8.2,
+   "early50_share_db": -4.0
+  },
+  "treble_q132": {
+   "sixteenth_ms": 114,
+   "overlap_prev_note_db_median": -17.3,
+   "overlap_worst_db": -6.6,
+   "early50_share_db": -3.2
+  }
+ },
+ "releases_in_rest": {
+  "24": {
+   "after_100ms_db": -15.9,
+   "after_200ms_db": -24.9,
+   "after_400ms_db": -38.7,
+   "after_800ms_db": -52.3
+  },
+  "28": {
+   "after_100ms_db": -19.7,
+   "after_200ms_db": -31.4,
+   "after_400ms_db": -44.2,
+   "after_800ms_db": -52.8
+  },
+  "31": {
+   "after_100ms_db": -18.8,
+   "after_200ms_db": -30.7,
+   "after_400ms_db": -42.2,
+   "after_800ms_db": -51.1
+  },
+  "36": {
+   "after_100ms_db": -24.1,
+   "after_200ms_db": -30.6,
+   "after_400ms_db": -42.2,
+   "after_800ms_db": -52.4
+  },
+  "40": {
+   "after_100ms_db": -24.3,
+   "after_200ms_db": -29.3,
+   "after_400ms_db": -43.5,
+   "after_800ms_db": -54.5
+  },
+  "43": {
+   "after_100ms_db": -18.4,
+   "after_200ms_db": -28.1,
+   "after_400ms_db": -40.1,
+   "after_800ms_db": -52.9
+  },
+  "48": {
+   "after_100ms_db": -22.6,
+   "after_200ms_db": -25.3,
+   "after_400ms_db": -46.0,
+   "after_800ms_db": -53.7
+  },
+  "55": {
+   "after_100ms_db": -21.2,
+   "after_200ms_db": -31.7,
+   "after_400ms_db": -39.3,
+   "after_800ms_db": -51.9
+  },
+  "60": {
+   "after_100ms_db": -22.2,
+   "after_200ms_db": -31.2,
+   "after_400ms_db": -44.6,
+   "after_800ms_db": -54.0
+  },
+  "67": {
+   "after_100ms_db": -23.4,
+   "after_200ms_db": -30.5,
+   "after_400ms_db": -40.1,
+   "after_800ms_db": -51.6
+  },
+  "72": {
+   "after_100ms_db": -17.1,
+   "after_200ms_db": -30.4,
+   "after_400ms_db": -38.9,
+   "after_800ms_db": -48.0
+  },
+  "79": {
+   "after_100ms_db": -18.3,
+   "after_200ms_db": -22.7,
+   "after_400ms_db": -31.8,
+   "after_800ms_db": -41.6
+  },
+  "84": {
+   "after_100ms_db": -18.7,
+   "after_200ms_db": -24.2,
+   "after_400ms_db": -39.5,
+   "after_800ms_db": -44.7
+  }
+ },
+ "noise_floor_after_release_db_re_peak": {
+  "24": -78.3,
+  "36": -72.5,
+  "48": -70.4,
+  "60": -67.9,
+  "72": -66.9,
+  "84": -69.2,
+  "96": -53.2
+ }
+}

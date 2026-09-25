@@ -1,0 +1,275 @@
+{
+ "ok": true,
+ "errors": [],
+ "warnings": [
+  "timp: 1 note(s) held across a hand-off shortened to the next note",
+  "vn1: 1 note(s) held across a hand-off shortened to the next note",
+  "vn2: 2 note(s) held across a hand-off shortened to the next note",
+  "va: 2 note(s) held across a hand-off shortened to the next note",
+  "vc: 3 note(s) held across a hand-off shortened to the next note"
+ ],
+ "onset_tolerance_ticks": 60,
+ "tempo_changes": 285,
+ "parts": {
+  "fl": {
+   "track": "fl",
+   "expected": 41,
+   "matched": 41,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    72,
+    96
+   ]
+  },
+  "ob": {
+   "track": "ob",
+   "expected": 78,
+   "matched": 78,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    60,
+    83
+   ]
+  },
+  "cl": {
+   "track": "cl",
+   "expected": 89,
+   "matched": 89,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    53,
+    69
+   ]
+  },
+  "cl.2": {
+   "track": "cl.2",
+   "expected": 32,
+   "matched": 32,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    53,
+    61
+   ]
+  },
+  "bn": {
+   "track": "bn",
+   "expected": 69,
+   "matched": 69,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    36,
+    57
+   ]
+  },
+  "hn.1": {
+   "track": "hn.1",
+   "expected": 4,
+   "matched": 4,
+   "pedal_notes": 3,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    46,
+    70
+   ]
+  },
+  "hn.2": {
+   "track": "hn.2",
+   "expected": 45,
+   "matched": 45,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    54,
+    77
+   ]
+  },
+  "tpt": {
+   "track": "tpt",
+   "expected": 32,
+   "matched": 32,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    65,
+    84
+   ]
+  },
+  "tpt.2": {
+   "track": "tpt.2",
+   "expected": 9,
+   "matched": 9,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    74,
+    77
+   ]
+  },
+  "tbn": {
+   "track": "tbn",
+   "expected": 30,
+   "matched": 30,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    48,
+    63
+   ]
+  },
+  "btbn": {
+   "track": "btbn",
+   "expected": 24,
+   "matched": 24,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    36,
+    46
+   ]
+  },
+  "tba": {
+   "track": "tba",
+   "expected": 24,
+   "matched": 24,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    36,
+    46
+   ]
+  },
+  "timp": {
+   "track": "timp",
+   "expected": 14,
+   "matched": 14,
+   "pedal_notes": 1,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    39,
+    51
+   ]
+  },
+  "vn1": {
+   "track": "vn1",
+   "expected": 145,
+   "matched": 145,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    65,
+    84
+   ]
+  },
+  "vn2": {
+   "track": "vn2",
+   "expected": 156,
+   "matched": 156,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    57,
+    77
+   ]
+  },
+  "va": {
+   "track": "va",
+   "expected": 151,
+   "matched": 151,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    48,
+    68
+   ]
+  },
+  "vc": {
+   "track": "vc",
+   "expected": 104,
+   "matched": 104,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    36,
+    53
+   ]
+  },
+  "cb": {
+   "track": "cb",
+   "expected": 28,
+   "matched": 28,
+   "pedal_notes": 0,
+   "missing": 0,
+   "extra": 0,
+   "shortened": 0,
+   "range": [
+    24,
+    34
+   ]
+  }
+ },
+ "coverage": {
+  "soprano": {
+   "notes": 191,
+   "covered": 191,
+   "allowed_gaps": 0,
+   "uncovered": []
+  },
+  "alto": {
+   "notes": 217,
+   "covered": 217,
+   "allowed_gaps": 0,
+   "uncovered": []
+  },
+  "tenor": {
+   "notes": 192,
+   "covered": 192,
+   "allowed_gaps": 0,
+   "uncovered": []
+  },
+  "bass": {
+   "notes": 141,
+   "covered": 141,
+   "allowed_gaps": 0,
+   "uncovered": []
+  }
+ }
+}

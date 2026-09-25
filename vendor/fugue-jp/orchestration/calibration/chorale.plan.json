@@ -1,0 +1,8 @@
+{
+ "voices": ["soprano", "alto", "tenor", "bass"],
+ "measure": "1",
+ "tempo": [{"at": "1:1", "bpm": 72}],
+ "dynamics": [{"at": "1:1", "level": "mf"}],
+ "role_boost": {"free": 0},
+ "humanize": {"ms": 6, "vel": 2}
+}

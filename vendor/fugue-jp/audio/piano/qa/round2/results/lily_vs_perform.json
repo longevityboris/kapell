@@ -1,0 +1,17 @@
+{
+ "what": "fugue.ly: LilyPond's own MIDI (lilypond 2.24, 647 notes) vs perform.py --target piano (648 notes), matched by pitch and onset within 0.05 quarter",
+ "unmatched_lilypond_notes": 0,
+ "extra_perform_notes": [
+  {
+   "quarter": 67.503,
+   "key": 67,
+   "voice": "soprano",
+   "why": "soprano/alto unison on one staff: LilyPond's MIDI writes it once; the renderer merges it into one hammer blow (key_sharing.unisons_merged = 1)"
+  }
+ ],
+ "onset_offset_ticks_960_per_quarter": [
+  -14,
+  5
+ ],
+ "note": "offsets are perform.py's humanise (+-5 ms) and 8 ms melody lead"
+}

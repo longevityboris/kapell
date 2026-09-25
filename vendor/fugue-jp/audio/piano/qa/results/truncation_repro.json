@@ -1,0 +1,79 @@
+{
+ "runs": [
+  {
+   "kind": "render_piano.py (streaming)",
+   "load_avg": 478.9,
+   "truncations": 0,
+   "cut": []
+  },
+  {
+   "kind": "sfizz_render + hint_ram_based=1",
+   "load_avg": 423.6,
+   "seconds": 21.1,
+   "truncations": 0,
+   "cut": []
+  },
+  {
+   "kind": "render_piano.py (streaming)",
+   "load_avg": 346.4,
+   "truncations": 0,
+   "cut": []
+  },
+  {
+   "kind": "sfizz_render + hint_ram_based=1",
+   "load_avg": 292.1,
+   "seconds": 13.8,
+   "truncations": 0,
+   "cut": []
+  },
+  {
+   "kind": "render_piano.py (streaming)",
+   "load_avg": 249.2,
+   "truncations": 0,
+   "cut": []
+  },
+  {
+   "kind": "sfizz_render + hint_ram_based=1",
+   "load_avg": 234.9,
+   "seconds": 19.8,
+   "truncations": 0,
+   "cut": []
+  },
+  {
+   "kind": "render_piano.py (streaming)",
+   "load_avg": 245.5,
+   "truncations": 1,
+   "cut": [
+    [
+     "alto",
+     0.462,
+     {
+      "key": 70,
+      "after_on_ms": 162.0,
+      "before_off_ms": 1142.0
+     }
+    ]
+   ]
+  },
+  {
+   "kind": "sfizz_render + hint_ram_based=1",
+   "load_avg": 213.3,
+   "seconds": 16.9,
+   "truncations": 0,
+   "cut": []
+  },
+  {
+   "kind": "render_piano.py (streaming)",
+   "load_avg": 191.6,
+   "truncations": 0,
+   "cut": []
+  },
+  {
+   "kind": "sfizz_render + hint_ram_based=1",
+   "load_avg": 170.2,
+   "seconds": 16.2,
+   "truncations": 0,
+   "cut": []
+  }
+ ]
+}

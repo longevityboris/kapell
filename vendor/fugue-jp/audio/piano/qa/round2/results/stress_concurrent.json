@@ -1,0 +1,44 @@
+{
+ "what": "3 concurrent demo renders, --jobs 4 each (12 sfizz instances), load average ~800 on 16 cores, plus the first --jobs 4 render",
+ "runs": {
+  "stress1": {
+   "truncation": {
+    "checked_stems": 4,
+    "rerendered": {},
+    "found": {}
+   },
+   "stems_identical_to_first_render": {
+    "alto": true,
+    "soprano": true,
+    "tenor": true,
+    "pedal": true
+   }
+  },
+  "stress2": {
+   "truncation": {
+    "checked_stems": 4,
+    "rerendered": {},
+    "found": {}
+   },
+   "stems_identical_to_first_render": {
+    "alto": true,
+    "soprano": true,
+    "tenor": true,
+    "pedal": true
+   }
+  },
+  "stress3": {
+   "truncation": {
+    "checked_stems": 4,
+    "rerendered": {},
+    "found": {}
+   },
+   "stems_identical_to_first_render": {
+    "alto": true,
+    "soprano": true,
+    "tenor": true,
+    "pedal": true
+   }
+  }
+ }
+}

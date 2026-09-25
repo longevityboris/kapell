@@ -1,0 +1,147 @@
+{
+ "state": {
+  "head": "f3a7af6",
+  "render_quartet_commit": "c71ee34",
+  "render_quartet_sha": "b32c34e0dd47ed48",
+  "sfz": {
+   "bass.sfz": "00762544528904ce",
+   "cello.sfz": "1509632bd473c8ed",
+   "viola.sfz": "eeb0117a420062b4",
+   "violin.sfz": "bf2e18602a9816a2",
+   "violin2.sfz": "c50e3d0762fdcf75"
+  }
+ },
+ "render": "/tmp/sqa/fugue_qa",
+ "format": {
+  "wav_rate": 48000,
+  "wav_channels": 2,
+  "wav_subtype": "PCM_24",
+  "wav_s": 145.985,
+  "m4a_codec": "aac",
+  "m4a_rate": 48000,
+  "m4a_channels": 2,
+  "m4a_bitrate": 257005,
+  "m4a_s": 146.048
+ },
+ "level": {
+  "true_peak_wav_dbtp": -1.0,
+  "sample_peak_wav_dbfs": -1.01,
+  "clipped_samples": 0,
+  "true_peak_m4a_decoded_dbtp": -1.04,
+  "m4a_decoded_samples_over_0dbfs": 0,
+  "integrated_lufs": -14.7,
+  "loudness_range_lu": 20.9,
+  "dc_offset": [
+   4.42e-06,
+   1.03e-05
+  ],
+  "dc_re_rms_db": [
+   -87.1,
+   -80.8
+  ]
+ },
+ "noise": {
+  "quietest_100ms_during_programme_db": -48.1,
+  "programme_peak_100ms_db": -11.9,
+  "before_first_note_s": 0.3,
+  "before_first_note_db": -89.8
+ },
+ "tail": {
+  "file_end_after_last_note_off_s": 2.55,
+  "last_note_level_db": -14.9,
+  "minus60_re_last_note_after_s": 1.65,
+  "last_0p5s_before_fade_db_re_peak": -71.6,
+  "ir_file_length_s": 1.44,
+  "ir_length_s": 3.5,
+  "ir_energy_after_4s_db": null
+ },
+ "stereo": {
+  "lr_correlation": 0.62,
+  "window_corr_min": 0.086,
+  "window_corr_median": 0.62,
+  "mono_foldown_loss_db": -0.9,
+  "side_re_mid_db": -6.2,
+  "L_minus_R_db": -0.96,
+  "dry_single_instrument_pan": {
+   "vn1": {
+    "L_minus_R_db": 14.6,
+    "corr": 0.677
+   },
+   "va": {
+    "L_minus_R_db": -1.9,
+    "corr": 0.886
+   },
+   "vc": {
+    "L_minus_R_db": -9.8,
+    "corr": 0.985
+   }
+  }
+ },
+ "balance": {
+  "windows": 431,
+  "median_db_re_loudest": {
+   "vn1": -1.6,
+   "vn2": -1.7,
+   "va": -1.6,
+   "vc": -1.1
+  },
+  "p10_db_re_loudest": {
+   "vn1": -5.6,
+   "vn2": -4.8,
+   "va": -5.3,
+   "vc": -3.8
+  },
+  "median_k_db": {
+   "vn1": -28.2,
+   "vn2": -26.9,
+   "va": -27.3,
+   "vc": -27.7
+  }
+ },
+ "runs": {
+  "pairs": 83,
+  "dry_dip_db_median": 14.4,
+  "mix_dip_db_median": 4.3,
+  "mix_dip_db_p10": 2.7,
+  "sixteenth_own_pitch_dominant_in_mix": 0.783,
+  "n_pitch": 83
+ },
+ "bass": {
+  "mix_over_dry_db_by_octave": {
+   "63": -0.9,
+   "125": 2.4,
+   "250": 1.7,
+   "500": 2.4,
+   "1000": 2.2,
+   "2000": -1.7,
+   "4000": -1.4
+  },
+  "re_1k_db": {
+   "63": -3.1,
+   "125": 0.2,
+   "250": -0.5,
+   "500": 0.2,
+   "1000": 0.0,
+   "2000": -3.9,
+   "4000": -3.6
+  },
+  "ir_t30_s_by_octave": {
+   "63": 1.84,
+   "125": 1.78,
+   "250": 1.59,
+   "500": 1.56,
+   "1000": 1.62,
+   "2000": 1.5,
+   "4000": 1.3
+  },
+  "mix_octave_levels_db": {
+   "63": -46.2,
+   "125": -27.2,
+   "250": -25.9,
+   "500": -25.1,
+   "1000": -30.0,
+   "2000": -33.3,
+   "4000": -35.9
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "title": "test: chorale, organ + quartet (mix.py organ adapter test)",
+ "comment": "End-to-end test of the organ group: four voices on HW/POS/PED with a registration change and the swell on POS, the quartet doubling soprano and bass from bar 5. Score: orchestration/calibration/chorale.ly, plan chorale.plan.json.",
+ "groups": {
+  "organ": {"renderer": "organ", "parts": ["soprano", "alto", "tenor", "bass"],
+            "options": {"swell": true,
+                        "registration": {"changes": [{"at": "1:1", "HW": "principal8", "POS": "flute8", "PED": "pedal16+8"},
+                                                     {"at": "5:1", "HW": "principal8+4"}]}}},
+  "quartet": {"renderer": "quartet", "parts": ["vn1", "vc"]}
+ },
+ "assignments": [
+  {"voice": "soprano", "part": "soprano"},
+  {"voice": "alto", "part": "alto"},
+  {"voice": "tenor", "part": "tenor"},
+  {"voice": "bass", "part": "bass"},
+  {"voice": "soprano", "part": "vn1", "at": "5:1"},
+  {"voice": "bass", "part": "vc", "at": "5:1"}
+ ],
+ "mix": {"lead_in": 0.5, "reference_group": "organ",
+         "groups": {"organ": {"hall_re_dry_db": 5.0, "render_args": ["--jobs", "4"]},
+                    "quartet": {"hall_re_dry_db": 4.0}}}
+}

@@ -1,0 +1,91 @@
+{
+ "title": "The Neighbour - ricercar a 4 on John Williams's Theme from Jurassic Park - symphony orchestra",
+ "orchestration": "orchestration.json",
+ "out": "../ricercar_symphonic",
+ "lead_in": 0.5,
+ "peak_dbtp": -1.0,
+ "hall": "detmold",
+ "reference_group": "orchestra",
+ "groups": {
+  "orchestra": {
+   "renderer": "orchestra",
+   "midi": "orchestra.mid",
+   "parts": {
+    "fl": {
+     "track": "fl",
+     "instrument": "fl"
+    },
+    "ob": {
+     "track": "ob",
+     "instrument": "ob"
+    },
+    "cl": {
+     "track": "cl",
+     "instrument": "cl"
+    },
+    "cl.2": {
+     "track": "cl.2",
+     "instrument": "cl"
+    },
+    "bn": {
+     "track": "bn",
+     "instrument": "bn"
+    },
+    "hn.1": {
+     "track": "hn.1",
+     "instrument": "hn"
+    },
+    "hn.2": {
+     "track": "hn.2",
+     "instrument": "hn"
+    },
+    "tpt": {
+     "track": "tpt",
+     "instrument": "tpt"
+    },
+    "tpt.2": {
+     "track": "tpt.2",
+     "instrument": "tpt"
+    },
+    "tbn": {
+     "track": "tbn",
+     "instrument": "tbn"
+    },
+    "btbn": {
+     "track": "btbn",
+     "instrument": "btbn"
+    },
+    "tba": {
+     "track": "tba",
+     "instrument": "tba"
+    },
+    "timp": {
+     "track": "timp",
+     "instrument": "timp"
+    },
+    "vn1": {
+     "track": "vn1",
+     "instrument": "vn1"
+    },
+    "vn2": {
+     "track": "vn2",
+     "instrument": "vn2"
+    },
+    "va": {
+     "track": "va",
+     "instrument": "va"
+    },
+    "vc": {
+     "track": "vc",
+     "instrument": "vc"
+    },
+    "cb": {
+     "track": "cb",
+     "instrument": "cb"
+    }
+   },
+   "gain_db": 0.0,
+   "hall_re_dry_db": 3.0
+  }
+ }
+}

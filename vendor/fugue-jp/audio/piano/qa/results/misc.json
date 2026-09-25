@@ -1,0 +1,75 @@
+{
+ "setup": {
+  "install_mode_twice": "exit 0 both, 6.8 s, no file mtimes changed",
+  "--force": "SFZs and calibration byte-identical, IR audio identical (2 header bytes differ)",
+  "--check": "exit 0 in 4.6 s, URLs reachable (Salamander 741757374 B, Detmold 985710535 B, sfizz git)",
+  "--check with empty PIANO_LIB": "fails cleanly, nothing downloaded"
+ },
+ "run_tests_sh": {
+  "seconds": 17.2,
+  "exit": 0,
+  "numbers_match_README": true,
+  "git_diff_after": "none"
+ },
+ "pedal_chain": {
+  "perform.py pedal every bar over 4 bars": "8 CC64 per voice track, renderer pedal_changes 8, noise SFZ only on stem 0"
+ },
+ "treble_noteoff_noise_vs_stock_sfz": {
+  "stock_jump_db": [
+   -2.1,
+   -1.6,
+   5.6,
+   6.7,
+   10.3
+  ],
+  "derived_jump_db": [
+   -0.2,
+   -3.0,
+   9.7,
+   10.5,
+   11.5
+  ],
+  "keys": [
+   86,
+   93,
+   98,
+   104,
+   106
+  ],
+  "note": "inherited key-release noise, -18..-23 dB re the attack peak in both"
+ },
+ "outputs": {
+  "wav": "PCM_24 48000 Hz 2 ch",
+  "m4a": "AAC 48000 Hz 2 ch ~248 kb/s, lag 0, true peak -1.00/-1.04 dBTP",
+  "attribution_metadata": "none in WAV or M4A"
+ },
+ "split_voice_overlap_demo": {
+  "pedal": {
+   "n": 100,
+   "overlap_db_median": -11.6,
+   "overlap_db_p90": -7.8,
+   "frac_prev_within_6db": 0.04,
+   "frac_prev_louder": 0.0,
+   "k_overlap_db_median": -11.7,
+   "k_frac_prev_within_6db": 0.04
+  },
+  "tenor": {
+   "n": 140,
+   "overlap_db_median": -13.6,
+   "overlap_db_p90": -9.3,
+   "frac_prev_within_6db": 0.0,
+   "frac_prev_louder": 0.0,
+   "k_overlap_db_median": -13.6,
+   "k_frac_prev_within_6db": 0.0
+  },
+  "soprano": {
+   "n": 205,
+   "overlap_db_median": -17.7,
+   "overlap_db_p90": -12.0,
+   "frac_prev_within_6db": 0.0,
+   "frac_prev_louder": 0.0,
+   "k_overlap_db_median": -17.9,
+   "k_frac_prev_within_6db": 0.0
+  }
+ }
+}
