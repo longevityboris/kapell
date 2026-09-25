@@ -13,6 +13,7 @@ import time
 from pathlib import Path
 
 from kapell.commands import KapellError
+from kapell.piece.engrave import prepare_layout
 
 SPEC = {
     "name": "engrave",
@@ -58,28 +59,45 @@ def run(args, ctx):
     if missing and args.layout != "all":
         raise KapellError("no_layout", f"no layout {missing[0]!r}: neither score/{missing[0]}.ly nor a kit template",
                           f"available: {sorted(have)}")
-    piece = cfg.get("piece", {})
     done, failed = {}, {}
     with tempfile.TemporaryDirectory(prefix="kapell-engrave-") as tmp:
         for name in want:
             kind, src = have[name]
+            notes = []
             if kind == "template":
-                text = src.read_text().replace("@TITLE@", piece.get("name", ctx.root.name)).replace(
-                    "@SUBTITLE@", piece.get("subtitle", ""))
+                try:
+                    text, notes = prepare_layout(ctx.root, cfg, name, src.read_text())
+                except ValueError as exc:
+                    raise KapellError("layout_invalid", str(exc), "check [piece].measure and the performance spec") from exc
                 src = Path(tmp) / f"{name}.ly"
                 src.write_text(text)
+                # Retain the generated score for review and reproducible re-engraving
+                # with lilypond -I <project score folder>.
+                (out_dir / f"{name}.ly").write_text(text)
             t0 = time.time()
-            r = subprocess.run([lily, "-s", "-I", str(score_dir), "-o", str(out_dir / name), str(src)],
-                               cwd=score_dir, capture_output=True, text=True, timeout=600)
+            try:
+                r = subprocess.run([lily, "--loglevel=WARNING", "-I", str(score_dir),
+                                    "-o", str(Path(tmp) / name), str(src)],
+                                   cwd=score_dir, capture_output=True, text=True, timeout=600)
+            except subprocess.TimeoutExpired:
+                failed[name] = "LilyPond timed out after 600 seconds"
+                continue
+            log = out_dir / f"{name}.log"
+            log.write_text(r.stdout + r.stderr)
+            rendered = Path(tmp) / f"{name}.pdf"
             pdf = out_dir / f"{name}.pdf"
-            if r.returncode == 0 and pdf.is_file():
+            if r.returncode == 0 and rendered.is_file():
+                shutil.copy2(rendered, pdf)
                 pages = len(re.findall(rb"/Type\s*/Page[^s]", pdf.read_bytes()))
-                done[name] = {"source": kind, "pdf": str(pdf), "pages": pages, "s": round(time.time() - t0, 1)}
+                done[name] = {"source": kind, "pdf": str(pdf), "pages": pages,
+                              "s": round(time.time() - t0, 1), "log": str(log),
+                              "warnings": [line.strip() for line in r.stderr.splitlines() if "warning:" in line.lower()],
+                              "notes": notes}
             else:
                 failed[name] = (r.stderr.strip().splitlines() or ["?"])[-1][:200]
     data = {"out": str(out_dir), "printed": done, "not_available": missing}
     if failed:
         data["failed"] = failed
-        raise KapellError("engrave_failed", f"lilypond failed: {failed}", "run lilypond on the layout by hand for the full log",
+        raise KapellError("engrave_failed", f"lilypond failed: {failed}", f"see {out_dir}/*.log for the full log",
                           exit_code=3)
     return data
