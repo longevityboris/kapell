@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from kapell.analysis import check, harmony, parse_bars, parse_measure, splice, strict, suspensions
+from kapell.analysis import check, grid, harmony, spanmap, parse_bars, parse_measure, splice, strict, suspensions
 from kapell.commands import Context, KapellError, Result
 
 NEIGHBOUR = Path("/Users/biobook/Music/llm-music/fugue-jp/ricercar")
@@ -130,6 +130,23 @@ def test_splice_bar_helpers():
     out = splice.splice_bars(sc, {"soprano": ["e'1"]}, 2)
     assert out["soprano"] == ["c'1", "e'1", "r1", "d'1"]
     assert splice.section_bars("% bars 13-19\n") == (13, 19)
+
+
+def test_grid_flags():
+    rows = grid.grid(src=ly(soprano="c'2 e'2 |", alto="c'2 g'2 |"), voices="soprano,alto")
+    assert rows[0]["flags"] == ["UNI"] and rows[1]["cells"] == [".C4", ".C4"]
+    assert rows[4]["flags"] == ["X"] and rows[4]["cells"] == ["E4", "G4"]
+
+
+def test_spanmap_labels():
+    plan = {"roles": [{"voice": "soprano", "at": "1:1", "until": "2:1", "role": "subject"},
+                      {"voice": "alto", "at": "1:1", "until": "3:1", "role": "cs", "landing_from": "2:3"}],
+            "keep": [{"voice": "bass", "at": "2:1", "until": "2:3", "what": "x"}]}
+    r = spanmap.compute(plan, [{"id": "s1", "bars": 2}], "soprano,alto,bass")[0]
+    assert r["voices"]["soprano"] == [{"from": "1:1", "to": "2:1", "label": "LOCKED subject"},
+                                      {"from": "2:1", "to": "3:1", "label": "FREE"}]
+    assert [x["label"] for x in r["voices"]["alto"]] == ["CS", "CS landing (free)"]
+    assert [x["label"] for x in r["voices"]["bass"]] == ["FREE", "KEEP", "FREE"]
 
 
 # ---- fixture: The Neighbour -----------------------------------------------------------------

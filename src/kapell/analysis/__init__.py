@@ -8,10 +8,14 @@ Stable entry points (other lanes import these; extend, do not rename):
     strict.run(path, voices=None, bars=None, measure=None, src=None) -> {clash, xrel, acc, acc2, items}
     harmony.analyse(path, key=None, bars=None, voices=None, measure=None, src=None)
         -> {attacks: [{pos, bar, beat, bass, pcs, chord, roman}], stats}
-    grid.rows(data, a, b, step, attacks)        spanmap.compute(plan, sections, voices)
-    splice.check_section(section_path, skeleton, plan, base=None, voices=None, ranges=None)
+    grid.grid(path, voices=None, bars=None, step='1/8', attacks=False) -> [{pos, cells, names, chord, flags}]
+    spanmap.compute(plan, sections, voices=None) -> [{id, first, last, voices: {v: [{from, to, label}]}}]
+    splice.check_section(section, skeleton, plan, base=None, voices=None, ranges=None)
+        -> {section, bars, checked, pass, failures, known_unisons, check, strict, review, lines}
+Every function also accepts src=<LilyPond text> instead of a path; each module has lines(result)
+reproducing the original script's text output.
 
-Common flag vocabulary (see common.py helpers in each module):
+Common flag vocabulary (parsed by the helpers below):
     --voices s,a,t,b   --bars A-B   --measure 3/4   --key bes | 1-20=bb,21-30=f   --full
 """
 from fractions import Fraction as F
