@@ -1,0 +1,17 @@
+{
+ "_comment": "Plan for qa/dyn_qa.ly (qa/qa_dynamics.py). No humanising, so only the plan level (and the tenor's role in bars 19-20) differs between the phrase segments.",
+ "voices": ["soprano", "tenor", "bass"],
+ "measure": "1",
+ "tempo": [{"at": "1:1", "bpm": 80}],
+ "dynamics": [
+  {"at": "1:1", "level": "pp"},
+  {"at": "4:1", "level": "mf"},
+  {"at": "7:1", "level": "ff"},
+  {"at": "10:1", "level": "pp"},
+  {"at": "10:1", "until": "14:1", "to": "ff"},
+  {"at": "14:1", "until": "18:1", "to": "pp"},
+  {"at": "19:1", "level": "mf"}
+ ],
+ "roles": [{"voice": "tenor", "at": "19:1", "until": "21:1", "role": "subject"}],
+ "humanize": {"ms": 0, "vel": 0}
+}

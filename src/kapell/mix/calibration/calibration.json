@@ -1,0 +1,70 @@
+{
+ "piano": {
+  "key": "v4:19001b7bd8388335:b8ead12081fd2b83:aa447cbe4d28dc3f:4251e6ef363fedf3:a8544f2aec877a7d",
+  "lufs_raw": -33.673,
+  "raw_scale_db": 0.0,
+  "stems": 4,
+  "note": "four-part mf chorale, placed dry sum, pre-normalisation scale",
+  "time_base_lag_ms": 0.4,
+  "time_base_search_ms": 30,
+  "time_base_at_search_edge": false,
+  "time_base_global_peak_ms": 0.4,
+  "time_base_notes": 56,
+  "time_base_per_note_median_ms": 0.0,
+  "time_base_per_note_p10_p90_ms": [
+   -1.0,
+   1.0
+  ]
+ },
+ "quartet": {
+  "key": "v4:e09e8b8cf44ccc6c:b8ead12081fd2b83:aa447cbe4d28dc3f:4251e6ef363fedf3:a8544f2aec877a7d",
+  "lufs_raw": -33.326,
+  "raw_scale_db": -22.286,
+  "stems": 4,
+  "note": "four-part mf chorale, placed dry sum, pre-normalisation scale",
+  "time_base_lag_ms": 2.27,
+  "time_base_search_ms": 30,
+  "time_base_at_search_edge": false,
+  "time_base_global_peak_ms": 2.27,
+  "time_base_notes": 56,
+  "time_base_per_note_median_ms": 1.0,
+  "time_base_per_note_p10_p90_ms": [
+   0.0,
+   3.5
+  ]
+ },
+ "orchestra": {
+  "key": "v4:cb3129b7936ebbc3:b8ead12081fd2b83:aa447cbe4d28dc3f:ed64ef6025335e82:a8544f2aec877a7d",
+  "lufs_raw": -37.587,
+  "raw_scale_db": 0.0,
+  "stems": 4,
+  "note": "four-part mf chorale, placed dry sum, pre-normalisation scale",
+  "time_base_lag_ms": 3.26,
+  "time_base_search_ms": 30,
+  "time_base_at_search_edge": false,
+  "time_base_global_peak_ms": -76.66,
+  "time_base_notes": 56,
+  "time_base_per_note_median_ms": 2.5,
+  "time_base_per_note_p10_p90_ms": [
+   -27.0,
+   15.0
+  ]
+ },
+ "organ": {
+  "key": "v4:e28180742076b326:b8ead12081fd2b83:aa447cbe4d28dc3f:ed64ef6025335e82:a8544f2aec877a7d",
+  "lufs_raw": -9.736,
+  "raw_scale_db": 5.75,
+  "stems": 4,
+  "note": "four-part mf chorale, placed dry sum, pre-normalisation scale",
+  "time_base_lag_ms": 10.69,
+  "time_base_search_ms": 30,
+  "time_base_at_search_edge": false,
+  "time_base_global_peak_ms": 10.69,
+  "time_base_notes": 56,
+  "time_base_per_note_median_ms": 14.5,
+  "time_base_per_note_p10_p90_ms": [
+   -11.5,
+   52.5
+  ]
+ }
+}

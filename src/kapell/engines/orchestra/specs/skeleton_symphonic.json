@@ -1,0 +1,333 @@
+{
+ "title": "Ricercar (skeleton) - symphony orchestra (renderer test orchestration)",
+ "comment": "The orchestra renderer's end-to-end test through orchestrate.py, not the final scoring. Strings carry the four voices throughout (basses double the bass 8vb from the episode to the arioso and from the dominant pedal to the coda); the arioso's lament goes to a solo clarinet while the first violins rest; woodwinds double the entering voices; a horn (F3) and a timpani roll (F2) hold the dominant pedal F in bars 46-49 (pedal_climax .. +4, the bass's f,1 | f,2 f,4 ges,4 pedal); brass (a2 horns, trumpet, trombones, tuba 8vb) only in Climax I, Climax II and the apotheosis peak. Positions are section marks from design/final-lab/piece.py.",
+ "marks": {
+  "from": "../../../design/final-lab/piece.py"
+ },
+ "groups": {
+  "orchestra": {
+   "renderer": "orchestra",
+   "parts": {
+    "vn1": {},
+    "vn2": {},
+    "va": {},
+    "vc": {},
+    "cb": {},
+    "fl": {},
+    "ob": {},
+    "cl": {},
+    "bn": {},
+    "hn.1": {
+     "players": "a2"
+    },
+    "hn.2": {
+     "players": "a2"
+    },
+    "tpt": {},
+    "tbn": {},
+    "btbn": {},
+    "tba": {},
+    "timp": {}
+   },
+   "options": {
+    "sidecar": {
+     "hall": {
+      "wet_db": -5.0
+     }
+    }
+   }
+  }
+ },
+ "assignments": [
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "expo",
+   "until": "arioso"
+  },
+  {
+   "voice": "soprano",
+   "part": "cl",
+   "at": "arioso",
+   "until": "inversa",
+   "articulation": "legato"
+  },
+  {
+   "voice": "soprano",
+   "part": "vn1",
+   "at": "inversa",
+   "until": "end"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "expo",
+   "until": "expo+8:4"
+  },
+  {
+   "voice": "alto",
+   "part": "va",
+   "at": "expo+8:4",
+   "until": "entry4_episode"
+  },
+  {
+   "voice": "alto",
+   "part": "vn2",
+   "at": "entry4_episode",
+   "until": "end"
+  },
+  {
+   "voice": "tenor",
+   "part": "va",
+   "at": "entry4_episode",
+   "until": "end"
+  },
+  {
+   "voice": "bass",
+   "part": "vc"
+  },
+  {
+   "voice": "bass",
+   "part": "cb",
+   "at": "entry4_episode",
+   "until": "arioso",
+   "octave": -12,
+   "level": -0.5
+  },
+  {
+   "voice": "bass",
+   "part": "cb",
+   "at": "inversa+7",
+   "until": "apotheosis_coda+8",
+   "octave": -12,
+   "level": -0.5
+  },
+  {
+   "voice": "soprano",
+   "part": "ob",
+   "at": "entry4_episode",
+   "until": "arioso",
+   "level": -0.5
+  },
+  {
+   "voice": "alto",
+   "part": "cl",
+   "at": "stretto_liquidation+3",
+   "until": "arioso",
+   "level": -0.5
+  },
+  {
+   "voice": "bass",
+   "part": "bn",
+   "at": "stretto_liquidation",
+   "until": "arioso",
+   "level": -0.5
+  },
+  {
+   "voice": "soprano",
+   "part": "fl",
+   "at": "stretto_liquidation+6",
+   "until": "arioso",
+   "octave": 12,
+   "level": -0.5
+  },
+  {
+   "voice": "bass",
+   "part": "bn",
+   "at": "inversa",
+   "until": "inversa+5",
+   "level": -0.5
+  },
+  {
+   "voice": "tenor",
+   "part": "cl",
+   "at": "inversa+2",
+   "until": "pedal_climax",
+   "level": -0.5
+  },
+  {
+   "voice": "bass",
+   "part": "bn",
+   "at": "pedal_climax",
+   "until": "end",
+   "level": -0.5
+  },
+  {
+   "voice": "soprano",
+   "part": "ob",
+   "at": "inversa+7",
+   "until": "apotheosis_coda+8",
+   "level": -0.5
+  },
+  {
+   "voice": "alto",
+   "part": "cl",
+   "at": "pedal_climax+2",
+   "until": "apotheosis_coda+8",
+   "level": -0.5
+  },
+  {
+   "voice": "soprano",
+   "part": "fl",
+   "at": "pedal_climax+4",
+   "until": "apotheosis_coda",
+   "octave": 12,
+   "level": -0.5
+  },
+  {
+   "voice": "soprano",
+   "part": "fl",
+   "at": "apotheosis_coda",
+   "until": "apotheosis_coda+8",
+   "level": -0.5
+  },
+  {
+   "voice": "tenor",
+   "part": "hn.1",
+   "at": "stretto_liquidation+6",
+   "until": "arioso",
+   "level": -1
+  },
+  {
+   "voice": "soprano",
+   "part": "tpt",
+   "at": "stretto_liquidation+7",
+   "until": "arioso",
+   "level": -1
+  },
+  {
+   "voice": "tenor",
+   "part": "tbn",
+   "at": "stretto_liquidation+6",
+   "until": "arioso",
+   "level": -1
+  },
+  {
+   "voice": "bass",
+   "part": "btbn",
+   "at": "stretto_liquidation+6",
+   "until": "arioso",
+   "level": -1
+  },
+  {
+   "voice": "bass",
+   "part": "tba",
+   "at": "stretto_liquidation+6",
+   "until": "arioso",
+   "octave": -12,
+   "level": -1
+  },
+  {
+   "voice": "tenor",
+   "part": "hn.1",
+   "at": "pedal_climax+4",
+   "until": "apotheosis_coda",
+   "level": -1
+  },
+  {
+   "voice": "alto",
+   "part": "hn.2",
+   "at": "pedal_climax+4",
+   "until": "apotheosis_coda",
+   "level": -1
+  },
+  {
+   "voice": "soprano",
+   "part": "tpt",
+   "at": "pedal_climax+4",
+   "until": "apotheosis_coda",
+   "level": -1
+  },
+  {
+   "voice": "tenor",
+   "part": "tbn",
+   "at": "pedal_climax+4",
+   "until": "apotheosis_coda",
+   "level": -1
+  },
+  {
+   "voice": "bass",
+   "part": "btbn",
+   "at": "pedal_climax+4",
+   "until": "apotheosis_coda",
+   "level": -1
+  },
+  {
+   "voice": "bass",
+   "part": "tba",
+   "at": "pedal_climax+4",
+   "until": "apotheosis_coda",
+   "level": -1
+  },
+  {
+   "voice": "alto",
+   "part": "hn.1",
+   "at": "apotheosis_coda+2",
+   "until": "apotheosis_coda+8",
+   "level": -1
+  },
+  {
+   "voice": "tenor",
+   "part": "hn.2",
+   "at": "apotheosis_coda",
+   "until": "end",
+   "level": -1.5
+  },
+  {
+   "voice": "soprano",
+   "part": "tpt",
+   "at": "apotheosis_coda+4",
+   "until": "apotheosis_coda+6",
+   "level": -1
+  },
+  {
+   "voice": "tenor",
+   "part": "tbn",
+   "at": "apotheosis_coda+4",
+   "until": "apotheosis_coda+6",
+   "level": -1
+  },
+  {
+   "voice": "bass",
+   "part": "btbn",
+   "at": "apotheosis_coda+4",
+   "until": "apotheosis_coda+6",
+   "level": -1
+  },
+  {
+   "voice": "bass",
+   "part": "tba",
+   "at": "apotheosis_coda+4",
+   "until": "apotheosis_coda+6",
+   "octave": -12,
+   "level": -1.5
+  }
+ ],
+ "pedal_points": [
+  {
+   "voice": "bass",
+   "part": "hn.1",
+   "at": "pedal_climax",
+   "until": "pedal_climax+4",
+   "octave": 12,
+   "level": -1
+  },
+  {
+   "voice": "bass",
+   "part": "timp",
+   "at": "pedal_climax",
+   "until": "pedal_climax+4",
+   "articulation": "roll",
+   "level": -1
+  }
+ ],
+ "mix": {
+  "lead_in": 0.3,
+  "reference_group": "orchestra",
+  "groups": {
+   "orchestra": {
+    "hall_re_dry_db": 3.0
+   }
+  }
+ }
+}

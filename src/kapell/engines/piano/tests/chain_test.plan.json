@@ -1,0 +1,16 @@
+{
+ "_comment": "Dynamics test plan for tests/chain_test.ly. No roles and no humanising, so that only the dynamic level differs between the three phrases; perform.py's own phrasing (metric accents, contour, long-note weight) is identical in each.",
+ "voices": ["soprano", "bass"],
+ "measure": "1",
+ "tempo": [{"at": "1:1", "bpm": 72}],
+ "dynamics": [
+  {"at": "1:1", "level": "pp"},
+  {"at": "6:1", "level": "mf"},
+  {"at": "11:1", "level": "ff"},
+  {"at": "16:1", "level": "pp"},
+  {"at": "16:1", "until": "20:1", "to": "ff"},
+  {"at": "20:1", "until": "24:1", "to": "pp"}
+ ],
+ "role_boost": {"free": 0},
+ "humanize": {"ms": 0, "vel": 0}
+}

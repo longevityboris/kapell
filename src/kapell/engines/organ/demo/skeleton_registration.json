@@ -1,0 +1,36 @@
+{
+ "about": "Registration plan for the ricercar skeleton (design/final-lab/SK_final.ly, 66 bars) on the Norrfjärden organ: terraced registration at the plan's joins instead of hairpins. Quiet 8' exposition, principals building through the stretto, plenum with pedal reeds for Climax I; the arioso as a Sesquialtera solo on the Rückpositief over the Oberwerck's Quintadena; the inverted fugue building again from 8' flutes; plenum and pedal reeds for Climax II and the apotheosis; a quiet principal coda (pp in the plan).",
+ "measure": "1",
+ "manuals": {"soprano": "HW", "alto": "HW", "tenor": "POS", "bass": "PED"},
+ "manual_changes": [
+  {"at": "30:1", "voice": "soprano", "division": "POS"},
+  {"at": "30:1", "voice": "alto", "division": "OW"},
+  {"at": "30:1", "voice": "tenor", "division": "OW"},
+  {"at": "35:1", "voice": "soprano", "division": "HW"},
+  {"at": "35:1", "voice": "alto", "division": "HW"},
+  {"at": "35:1", "voice": "tenor", "division": "POS"}
+ ],
+ "changes": [
+  {"at": "1:1",  "HW": "flute8",          "POS": "flute8",          "OW": "flute8", "PED": "pedal8"},
+  {"at": "13:1", "HW": "principal8",      "POS": "principal8",      "PED": "pedal16+8"},
+  {"at": "20:1", "HW": "principal8+4",    "POS": "principal8+4"},
+  {"at": "24:1", "HW": "principal8+4+2",  "POS": "principal8+4+2",  "PED": "pedal16+8+4"},
+  {"at": "26:3", "HW": "plenum",          "POS": "plenum",          "PED": "pedal_plenum_reed"},
+  {"at": "30:1", "POS": "sesquialtera",   "OW": "flute8",           "PED": "pedal8"},
+  {"at": "35:1", "HW": "flute8",          "POS": "flute8",          "PED": "pedal8"},
+  {"at": "39:1", "HW": "flute8+4",        "POS": "flute8+4",        "PED": "pedal16+8"},
+  {"at": "41:1", "HW": "principal8",      "POS": "principal8"},
+  {"at": "43:1", "HW": "principal8+4",    "POS": "principal8+4"},
+  {"at": "46:1", "HW": "flute8+4",        "POS": "flute8+4",        "PED": "pedal16+8"},
+  {"at": "48:1", "HW": "principal8",      "POS": "principal8"},
+  {"at": "50:1", "HW": "principal8+4+2",  "POS": "principal8+4",    "PED": "pedal16+8+4"},
+  {"at": "52:1", "HW": "plenum",          "POS": "plenum",          "PED": "pedal_plenum_reed"},
+  {"at": "53:1", "HW": "plenum16_reed"},
+  {"at": "54:1", "HW": "principal8+4",    "POS": "principal8",      "PED": "pedal16+8"},
+  {"at": "55:1", "HW": "principal8+4",    "POS": "principal8"},
+  {"at": "57:1", "HW": "principal8+4+2",  "POS": "principal8+4",    "PED": "pedal16+8+4"},
+  {"at": "59:1", "HW": "plenum_reed",     "POS": "plenum",          "PED": "pedal_plenum_reed"},
+  {"at": "61:3", "HW": "principal8+4+2",  "POS": "principal8+4",    "PED": "pedal16+8+4"},
+  {"at": "63:1", "HW": "principal8",      "POS": "principal8",      "PED": "pedal16+8"}
+ ]
+}

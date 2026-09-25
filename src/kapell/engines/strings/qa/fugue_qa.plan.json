@@ -1,0 +1,32 @@
+{
+  "voices": ["soprano", "alto", "tenor", "pedal"],
+  "measure": "1",
+  "tempo": [
+    {"at": "1:1", "bpm": 64, "unit": "quarter"},
+    {"at": "35:1", "until": "37:1", "to_bpm": 50}
+  ],
+  "fermatas": [{"at": "37:1", "extra_beats": 2}],
+  "dynamics": [
+    {"at": "1:1", "level": "pp"},
+    {"at": "9:1", "until": "26:1", "to": "f"},
+    {"at": "26:1", "level": "f"},
+    {"at": "31:1", "until": "33:1", "to": "ff"}
+  ],
+  "roles": [
+    {"voice": "alto", "at": "1:1", "until": "3:1", "role": "subject"},
+    {"voice": "soprano", "at": "3:1", "until": "5:1", "role": "answer"},
+    {"voice": "tenor", "at": "6:1", "until": "8:1", "role": "subject"},
+    {"voice": "pedal", "at": "8:1", "until": "10:1", "role": "answer"},
+    {"voice": "soprano", "at": "12:1", "until": "14:1", "role": "subject"},
+    {"voice": "tenor", "at": "16:1", "until": "18:1", "role": "subject"},
+    {"voice": "alto", "at": "20:1", "until": "22:1", "role": "subject"},
+    {"voice": "tenor", "at": "26:1", "until": "28:1", "role": "subject"},
+    {"voice": "soprano", "at": "27:1", "until": "29:1", "role": "subject"},
+    {"voice": "alto", "at": "28:1", "until": "30:1", "role": "subject"},
+    {"voice": "soprano", "at": "31:1", "until": "33:1", "role": "subject"},
+    {"voice": "pedal", "at": "33:1", "until": "35:1", "role": "subject"},
+    {"voice": "tenor", "at": "35:1", "until": "37:1", "role": "subject"}
+  ],
+  "role_level": {"subject": 0.8, "answer": 0.8, "free": -0.2},
+  "humanize": {"ms": 6, "vel": 2}
+}
