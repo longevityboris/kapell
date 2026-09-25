@@ -1,0 +1,90 @@
+{
+ "check": {
+  "bars": {
+   "A": 66,
+   "B": 66,
+   "S": 66,
+   "T": 66
+  },
+  "beat-par": 0,
+  "dissonances": 299,
+  "dissonances_strong": 81,
+  "dissonances_weak": 218,
+  "errors": 0,
+  "lines_by_kind": {
+   "CROS": 13,
+   "D4?": 7,
+   "DIR": 1,
+   "DIS": 299,
+   "MEL": 2
+  },
+  "parallels": 0,
+  "unjustified": 0,
+  "unjustified_lines": 0
+ },
+ "check_with_ranges": {
+  "bars": {
+   "A": 66,
+   "B": 66,
+   "S": 66,
+   "T": 66
+  },
+  "beat-par": 0,
+  "dissonances": 299,
+  "dissonances_strong": 81,
+  "dissonances_weak": 218,
+  "errors": 0,
+  "lines_by_kind": {
+   "CROS": 13,
+   "D4?": 7,
+   "DIR": 1,
+   "DIS": 299,
+   "MEL": 2
+  },
+  "parallels": 0,
+  "ranges": {
+   "alto": "53-77",
+   "bass": "36-62",
+   "soprano": "60-84",
+   "tenor": "48-72"
+  },
+  "unjustified": 0,
+  "unjustified_lines": 0
+ },
+ "engrave": {
+  "byte_deterministic": false,
+  "compare": "page count + pdftotext -layout dump",
+  "note": "lilypond 2.26 PDFs embed CreationDate and differ in size run to run; text and pages match",
+  "piano": {
+   "pages": 3
+  },
+  "quartet": {
+   "pages": 4
+  }
+ },
+ "fixture": "The Neighbour",
+ "harmony_stats": {
+  "attacks": 360,
+  "chromatic_to_key_pct": 0,
+  "dim7_pct": 3,
+  "distinct_labels": 162,
+  "line": "attacks 360; seventh-type 10%; dim7 3%; chromatic-to-key 0%; distinct labels 162",
+  "seventh_type_pct": 10
+ },
+ "score": "score/music-voices.ly",
+ "skeleton": {
+  "SK_final.ly": "1e4927257b65a84c70cb10cfc9ac1fe807888056dbefaa4f9a64da4b5c7a2fdb",
+  "matches_committed": true,
+  "plan.json": "7804a26d6d18e0d7e50180d7848442a4ccb14369c02b3c3998f9738c917211ea"
+ },
+ "strict": {
+  "acc": 7,
+  "acc2": 31,
+  "clash": 0,
+  "xrel": 7
+ },
+ "suspensions": {
+  "strong": 18,
+  "weak": 13
+ }
+}
