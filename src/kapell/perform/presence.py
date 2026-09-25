@@ -19,6 +19,15 @@ Files: ffmpeg ebur128 loudness and true peak of WAV and m4a, duration, sample ra
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[2])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import re
@@ -29,9 +38,6 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 
-_SRC = str(Path(__file__).resolve().parents[2])   # .../src: kapell importable when run as a script
-if _SRC not in sys.path:
-    sys.path.append(_SRC)
 from kapell.mix.qa_mix import SR, notes_of, pitch_cents  # noqa: E402
 
 

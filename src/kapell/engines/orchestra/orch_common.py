@@ -3,6 +3,15 @@ sample-library locations and name parsing.  See CONTRACT.md for the MIDI
 interface and README.md for how the numbers were measured."""
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import os
 import re
 import sys
@@ -10,11 +19,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 STRINGS_DIR = HERE.parent / "strings"
-sys.path.insert(0, str(STRINGS_DIR))          # reuse (never edit) the quartet's helpers
 _sys = sys
-_SRC = str(Path(__file__).resolve().parents[3])   # .../src: lets kapell import when run as a script
-if _SRC not in _sys.path:
-    _sys.path.append(_SRC)
 from kapell.config import lib_dir  # noqa: E402
 
 LIB_ROOT = lib_dir()   # $KAPELL_LIB, else $PIANO_LIB, else ~/Music/SampleLibraries

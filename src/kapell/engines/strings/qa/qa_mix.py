@@ -24,6 +24,15 @@ bass          octave-band wet/dry ratio (mix vs the sum of the dry stems) and th
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import json
 import subprocess
 import sys
@@ -33,9 +42,8 @@ import numpy as np
 import soundfile as sf
 from scipy.signal import butter, resample_poly, sosfilt
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import LIB, SR, TMP, db, env_db, hz, k_weight, load, save, state  # noqa: E402
-from qa_chain import harm_score  # noqa: E402
+from kapell.engines.strings.qa.qa_lib import LIB, SR, TMP, db, env_db, hz, k_weight, load, save, state  # noqa: E402
+from kapell.engines.strings.qa.qa_chain import harm_score  # noqa: E402
 
 
 def true_peak_db(x):
@@ -108,8 +116,7 @@ def main():
     after = e[int(last_off / 0.05):]
     i60 = np.flatnonzero(after < lv_last - 60)
     ir_file, _ = sf.read(str(LIB / "IR" / "Detmold-Konzerthaus-S1R163-MS-48k.wav"), always_2d=True)
-    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    import hall                                     # the response the renderer convolves with (tail continued)
+    import kapell.engines.strings.hall as hall
     ir = hall.Hall("detmold", SR).ir
     irm = (ir ** 2).sum(axis=1)
     sch = np.cumsum(irm[::-1])[::-1]

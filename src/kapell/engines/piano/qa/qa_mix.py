@@ -11,6 +11,15 @@ low-end build-up.
 
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import json
 import subprocess
 import sys
@@ -19,8 +28,7 @@ from pathlib import Path
 import numpy as np
 import scipy.signal as ss
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import LEAD_IN, QA, PIANO, SR, TMP, db, kweight, midi_notes, read, rms_db, save  # noqa: E402
+from kapell.engines.piano.qa.qa_lib import LEAD_IN, QA, PIANO, SR, TMP, db, kweight, midi_notes, read, rms_db, save  # noqa: E402
 
 
 def true_peak_db(x: np.ndarray) -> float:
@@ -100,13 +108,12 @@ def analyse(name: str, plan: Path) -> dict:
     # bar starts from the MIDI: perform.py writes no bar markers, so map bars via the demo tempo grid:
     # use the notes' own bar positions from the score instead -> approximate with the QA per-bar clock below
     ent = []
-    from qa_lib import PERFORM  # noqa: F401
-    sys.path.insert(0, str(PERFORM.parent))
-    import perform as P  # the plan clock, for bar -> seconds
+    from kapell.engines.piano.qa.qa_lib import PERFORM  # noqa: F401
+    import kapell.perform.perform as P
     pl = P.Plan(plan_d)
     # rebuild perform.py's seconds grid exactly as build() does
     src = (PIANO.parents[2] / "fugue.ly").read_text()
-    from lyparse import parse_voice
+    from kapell.analysis.lyparse import parse_voice
     vv = {v: parse_voice(src, v, pl.measure) for v in pl.voices}
     end = max(nn[-1].end for nn in vv.values() if nn)
     from fractions import Fraction as F

@@ -18,6 +18,15 @@ For each plan (the demo plan and qa/fugue_qa.plan.json):
 
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import json
 import sys
 from pathlib import Path
@@ -26,8 +35,7 @@ import mido
 import numpy as np
 from scipy.signal import find_peaks
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import (LEAD_IN, PIANO, QA, ROOT, SR, TMP, harmonic_band_energy, midi_notes, onset_flux,  # noqa: E402
+from kapell.engines.piano.qa.qa_lib import (LEAD_IN, PIANO, QA, ROOT, SR, TMP, harmonic_band_energy, midi_notes, onset_flux,  # noqa: E402
                     perform, read, render, save)
 
 PLANS = {"demo": PIANO / "plans" / "fugue_jp.plan.json", "qa": QA / "fugue_qa.plan.json"}

@@ -10,14 +10,22 @@ moves a note by exactly 1200 cents.
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import sys
 from pathlib import Path
 
 import mido
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import LEAD_IN, SR, TMP, read, render, save, write_midi  # noqa: E402
+from kapell.engines.piano.qa.qa_lib import LEAD_IN, SR, TMP, read, render, save, write_midi  # noqa: E402
 
 N = mido.Message
 HOLD, STEP = 3.0, 3.6
@@ -80,7 +88,7 @@ def main() -> None:
         if not (B > 0) or k >= 89:  # few partials / undamped treble: the fit is unreliable, use partial 1
             p1 = next((f for n, f in ps if n == 1), None)
             if p1 is None:  # partial 1 outside the search band: fall back to the plain partial-1 search
-                from qa_lib import f0_estimate
+                from kapell.engines.piano.qa.qa_lib import f0_estimate
                 p1 = f0_estimate(seg, k, 1)
             f0, B = p1, float("nan")
         c2 = next((1200 * np.log2(f / (2 * fet)) for n, f in ps if n == 2), None)

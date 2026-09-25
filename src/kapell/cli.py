@@ -172,6 +172,11 @@ def main(argv: list[str] | None = None, *, commands_pkg=None, stdout=None, stder
             emit(success({"commands": sorted(handlers), "hint": "kapell agent-info, or kapell <command> --help"}),
                  as_json, flags["quiet"], out, err)
             return 0
+        # A missing dependency is an environment error even when the unavailable verb
+        # was called with options that cannot be registered until its module imports.
+        unavailable = next((d for d in found if d.name == argv[0]), None)
+        if unavailable is not None and unavailable.module is None and "--help" not in argv:
+            _stub_runner(unavailable)(None, None)
         try:
             args = parser.parse_args(argv)
         except SystemExit as exc:  # --help / --version
@@ -195,6 +200,10 @@ def main(argv: list[str] | None = None, *, commands_pkg=None, stdout=None, stder
     except KapellError as exc:
         emit(error(exc.code, exc.message, exc.suggestion), as_json, flags["quiet"], out, err)
         return exc.exit_code
+    except OSError as exc:
+        emit(error("environment", str(exc), "check file permissions and run kapell doctor"),
+             as_json, flags["quiet"], out, err)
+        return 2
     except KeyboardInterrupt:
         emit(error("interrupted", "interrupted", "re-run the command"), as_json, flags["quiet"], out, err)
         return 130
@@ -206,6 +215,8 @@ def main(argv: list[str] | None = None, *, commands_pkg=None, stdout=None, stder
              as_json, flags["quiet"], out, err)
         return 1
     if isinstance(res, Raw):
+        if flags["quiet"]:
+            return 0
         out.write(res.text if res.text.endswith("\n") else res.text + "\n")
         return 0
     emit(res, as_json, flags["quiet"], out, err)

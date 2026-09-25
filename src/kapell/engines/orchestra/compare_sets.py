@@ -30,6 +30,15 @@ score()); the table goes to README.md.
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import sys
@@ -40,11 +49,10 @@ import numpy as np
 import soundfile as sf
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-from orch_common import PARTS, SR, midi_name  # noqa: E402
-import orch_measure as M  # noqa: E402
-import render_orchestra as R  # noqa: E402
-from orch_build import CANDIDATES  # noqa: E402
+from kapell.engines.orchestra.orch_common import PARTS, SR, midi_name  # noqa: E402
+import kapell.engines.orchestra.orch_measure as M
+import kapell.engines.orchestra.render_orchestra as R
+from kapell.engines.orchestra.orch_build import CANDIDATES  # noqa: E402
 
 REGISTER = {"fl": 72, "ob": 67, "cl": 58, "bn": 45, "hn": 53, "tpt": 62, "tbn": 50, "btbn": 40, "tba": 34,
             "vn1": 67, "vn2": 62, "va": 55, "vc": 43, "cb": 33, "timp": 41}
@@ -129,7 +137,7 @@ def measure(part: str, wav: Path, notes: list, delay: float) -> dict:
         if c is not None:
             cents.append((c, sec, key))
     if part == "timp":
-        import orch_build as B
+        import kapell.engines.orchestra.orch_build as B
         for sec, on, off, key in notes:
             f = B.timp_pitch(np.stack([seg(on, on + 1.2)] * 2, axis=1), 0, key)
             cents.append((100 * (f - key), sec, key))

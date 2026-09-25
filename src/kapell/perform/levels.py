@@ -25,6 +25,15 @@ Checks (each with its criterion and a pass flag):
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[2])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import math
@@ -39,11 +48,7 @@ import scipy.signal as ss
 import soundfile as sf
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-_SRC = str(Path(__file__).resolve().parents[2])   # .../src: kapell importable when run as a script
-if _SRC not in sys.path:
-    sys.path.append(_SRC)
-from articulate import TempoMap  # noqa: E402
+from kapell.perform.articulate import TempoMap  # noqa: E402
 from kapell.perform import perform  # noqa: E402
 
 VOICES = ["soprano", "alto", "tenor", "bass"]

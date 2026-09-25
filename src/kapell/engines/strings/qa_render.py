@@ -26,6 +26,15 @@ OUT_BASENAME.wav.  Levels are K-weighted (BS.1770).
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import sys
@@ -36,8 +45,7 @@ import soundfile as sf
 from scipy.ndimage import median_filter
 from scipy.signal import butter, lfilter, sosfilt
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from measure_dynamics import a_weight, k_weight  # noqa: E402
+from kapell.engines.strings.measure_dynamics import a_weight, k_weight  # noqa: E402
 
 NAMES = {"vn1": "Violin I", "vn2": "Violin II", "va": "Viola", "vc": "Cello", "cb": "Contrabass"}
 

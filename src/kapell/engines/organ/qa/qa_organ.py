@@ -43,6 +43,15 @@ STEMS_DIR its --stems output. Everything is measured on the audio files:
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import math
@@ -55,9 +64,8 @@ import scipy.signal as ss
 import soundfile as sf
 
 HERE = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(HERE))
-from analyze_organ import harmonic_comb  # noqa: E402
-from render_organ import load_midi  # noqa: E402
+from kapell.engines.organ.analyze_organ import harmonic_comb  # noqa: E402
+from kapell.engines.organ.render_organ import load_midi  # noqa: E402
 
 
 def f_et(k):
@@ -281,7 +289,7 @@ def main():
                                            'p95_abs_ms': round(float(np.percentile(np.abs(arr), 95)), 1)}
     out['presence'] = {'weak_comb_notes': weak, 'n_weak': len(weak)}
     # re-measure every pitch outlier on the same pipes rendered alone (same stops, key, duration)
-    from pipe_engine import PipeBank, ReleaseCache, SampleCache, render_event
+    from kapell.engines.organ.pipe_engine import PipeBank, ReleaseCache, SampleCache, render_event
     bank = PipeBank(rep.get('temperament', 'equal'), rep.get('a4', 440.0))
     sc = SampleCache()
     rc = ReleaseCache(sc)

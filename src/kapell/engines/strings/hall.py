@@ -36,11 +36,20 @@ fitted to the measured response (0.25-1.1 s), crossfaded in at 1.0-1.2 s, to
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import numpy as np
 import soundfile as sf
 from scipy.signal import butter, fftconvolve, sosfilt, sosfiltfilt
 
-from iowa_common import IR_ROOT
+from kapell.engines.strings.iowa_common import IR_ROOT
 
 DETMOLD_IR = IR_ROOT / "Detmold-Konzerthaus-S1R163-MS-48k.wav"
 

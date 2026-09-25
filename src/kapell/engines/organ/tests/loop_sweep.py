@@ -20,6 +20,15 @@ their crossfaded wraps, retuning, release chosen for a long key press, phase-ali
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import math
@@ -32,9 +41,8 @@ import numpy as np
 import scipy.signal as ss
 
 HERE = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(HERE))
-from organ_paths import SR  # noqa: E402
-from pipe_engine import PipeBank, ReleaseCache, SampleCache, render_event  # noqa: E402
+from kapell.engines.organ.organ_paths import SR  # noqa: E402
+from kapell.engines.organ.pipe_engine import PipeBank, ReleaseCache, SampleCache, render_event  # noqa: E402
 
 COMPASS = {'HW': (36, 85), 'POS': (36, 85), 'OW': (36, 85), 'PED': (36, 64)}
 

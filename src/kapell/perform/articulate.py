@@ -31,6 +31,15 @@ holds. The notes are matched to the score in order per voice (pitch checked note
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[2])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import sys
@@ -38,9 +47,6 @@ from pathlib import Path
 
 import mido
 
-_SRC = str(Path(__file__).resolve().parents[2])   # .../src: kapell importable when run as a script
-if _SRC not in sys.path:
-    sys.path.append(_SRC)
 from kapell.analysis.lyparse import parse_voice  # noqa: E402
 from kapell.perform import perform  # noqa: E402
 

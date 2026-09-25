@@ -170,7 +170,10 @@ def lint(root, cfg: dict, versions=None) -> dict:
             continue
         miss = 0
         for f in feats:
-            fa, fu = _span(f, measure)
+            span = _span(f, measure)
+            if span is None or span[1] <= span[0] or span[1] == INF:
+                raise ValueError(f"invalid feature span: {f.get('label', '')}; need at < until")
+            fa, fu = span
             c = _cover(_cues(ver, f["voice"], fa, fu, measure, f.get("source", "")), fa, fu)
             if c < min_cover:
                 miss += 1

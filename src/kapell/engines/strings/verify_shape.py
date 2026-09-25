@@ -15,6 +15,15 @@ Usage:  python3 verify_shape.py [violin violin2 viola cello bass] [--json OUT]  
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import re
@@ -25,8 +34,7 @@ import numpy as np
 import soundfile as sf
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-from iowa_common import QUARTET_DIR  # noqa: E402
+from kapell.engines.strings.iowa_common import QUARTET_DIR  # noqa: E402
 
 SR = 48000
 INSTS = ("violin", "violin2", "viola", "cello", "bass")

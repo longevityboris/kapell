@@ -27,6 +27,15 @@ GrandOrgue plays a pipe, offline and deterministically:
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import json
 import math
 import re
@@ -36,8 +45,8 @@ from dataclasses import dataclass
 import numpy as np
 import soxr
 
-from odf import read_sample
-from organ_paths import PIPES_JSON, SR
+from kapell.engines.organ.odf import read_sample
+from kapell.engines.organ.organ_paths import PIPES_JSON, SR
 
 # Temperaments: cents relative to equal temperament per pitch class (C..B), with A = 0.
 TEMPERAMENTS = {

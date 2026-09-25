@@ -30,6 +30,15 @@ Notes keep their keys, velocities, note-ons and (unless one still sounds into a 
 so orchestrate.py --check applies unchanged. Run it after orchestrate.py and before
 swell.py (swell.py shapes each long note over its real length); render.sh re-runs the check.
 """
+
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[2])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
 import argparse
 import bisect
 import json
@@ -39,15 +48,10 @@ from pathlib import Path
 import mido
 
 HERE = Path(__file__).resolve().parent
-_SRC = str(Path(__file__).resolve().parents[2])   # .../src: kapell importable when run as a script
-if _SRC not in sys.path:
-    sys.path.append(_SRC)
 from kapell.engines import ENGINES  # noqa: E402
-sys.path.insert(0, str(ENGINES / "strings"))
-sys.path.insert(1, str(HERE))
 from kapell.perform import perform  # noqa: E402  (positions: perform.Plan.pos)
-import render_quartet as rq  # noqa: E402  (tempo_map, Note, shape_articulation: the renderer's own rules)
-from swell import TempoMap  # noqa: E402  (seconds -> ticks)
+import kapell.engines.strings.render_quartet as rq
+from kapell.perform.swell import TempoMap  # noqa: E402  (seconds -> ticks)
 
 CC_PER_LEVEL = 13
 CC_MIN = 20          # perform.py's floor

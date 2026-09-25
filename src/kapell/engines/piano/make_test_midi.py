@@ -32,6 +32,15 @@ derived from it:
 
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 from pathlib import Path
@@ -56,8 +65,7 @@ def calibrated_marks() -> dict:
     marks = {"pp": 29, "mf": 86, "ff": 115}
     try:
         import sys
-        sys.path.insert(0, str(Path(__file__).resolve().parent))
-        from piano_paths import CALIBRATION_JSON
+        from kapell.engines.piano.piano_paths import CALIBRATION_JSON
         marks.update({k: v for k, v in json.loads(CALIBRATION_JSON.read_text())["suggested_velocities"].items()
                       if k in marks})
     except (OSError, KeyError, ImportError):

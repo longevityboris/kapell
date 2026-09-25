@@ -109,6 +109,15 @@ MIDI CONVENTIONS (what perform.py --target strings writes)
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import math
@@ -128,10 +137,9 @@ import soundfile as sf
 from scipy.signal import fftconvolve, resample_poly
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-from iowa_common import QUARTET_DIR, SFIZZ_RENDER  # noqa: E402
-from iowa_build import CC1_TARGET, LAYER_DOWN, LAYER_HOME, LAYER_UP  # noqa: E402
-import hall  # noqa: E402
+from kapell.engines.strings.iowa_common import QUARTET_DIR, SFIZZ_RENDER  # noqa: E402
+from kapell.engines.strings.iowa_build import CC1_TARGET, LAYER_DOWN, LAYER_HOME, LAYER_UP  # noqa: E402
+import kapell.engines.strings.hall as hall
 
 SR = 48000
 LEVELS = {"ppp": 1, "pp": 2, "p": 3, "mp": 4, "mf": 5, "f": 6, "ff": 7, "fff": 8}
@@ -803,11 +811,8 @@ def export(y: np.ndarray, out: Path, peak_db: float):
     sf.write(str(wav), y.astype(np.float32), SR, subtype="PCM_24")
     if m4a.exists():
         m4a.unlink()
-    if shutil.which("afconvert"):
-        subprocess.run(["afconvert", "-f", "m4af", "-d", "aac", "-b", "256000", str(wav), str(m4a)], check=True)
-    else:
-        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(wav), "-c:a", "aac", "-b:a", "256k",
-                        str(m4a)], check=True)
+    from kapell.engines.encoding import encode_aac
+    encode_aac(wav, m4a)
     return wav, m4a, 20 * math.log10(tp), 20 * math.log10(true_peak(y))
 
 
@@ -818,7 +823,7 @@ def parse_level(s: str) -> float:
 
 def sfz_for(lib: str, inst: str, sfz_dir: Path) -> Path:
     if lib == "vpo3":
-        import vpo3
+        import kapell.engines.strings.vpo3 as vpo3
         return vpo3.VPO3_SFZ[vpo3.INST_PATCH[inst]]
     p = sfz_dir / INSTR[inst]["sfz"]
     return p if p.exists() else sfz_dir / "violin.sfz" if inst == "vn2" else p

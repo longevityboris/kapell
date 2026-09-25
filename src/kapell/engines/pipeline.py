@@ -83,6 +83,8 @@ def kind_of(folder: Path) -> tuple[str, Path | None]:
     renderers = {g.get("renderer", k) for k, g in json.loads(spec.read_text())["groups"].items()}
     if len(renderers) > 1:
         return "ensemble", spec
+    if not renderers:
+        raise KapellError("bad_spec", f"{spec}: groups must not be empty", exit_code=3)
     r = renderers.pop()
     return {"organ": "organ", "quartet": "quartet", "orchestra": "orchestra", "piano": "piano"}.get(r, "ensemble"), spec
 
@@ -230,9 +232,9 @@ def trim_front(wav: Path, seconds: float) -> None:
     info = sf.info(str(wav))
     sf.write(str(wav), x[int(round(seconds * sr)):], sr, subtype=info.subtype)
     m4a = wav.with_suffix(".m4a")
-    if m4a.exists() and shutil.which("afconvert"):
-        subprocess.run(["afconvert", "-f", "m4af", "-d", "aac", "-b", "256000", str(wav), str(m4a)],
-                       check=False, capture_output=True)
+    if m4a.exists():
+        from kapell.engines.encoding import encode_aac
+        encode_aac(wav, m4a)
 
 
 # ------------------------------------------------------------------------------ running steps
@@ -253,7 +255,10 @@ class Steps:
         if r.returncode:
             tail = self.log.read_text().strip().splitlines()[-6:]
             raise KapellError("step_failed", f"{name} failed (exit {r.returncode}): {' | '.join(tail)[-600:]}",
-                              f"full log: {self.log}", exit_code=2 if "No such file" in " ".join(tail) else 1)
+                              f"full log: {self.log}", exit_code=2 if any(marker in " ".join(tail) for marker in
+                                                 ("No such file", "ModuleNotFoundError", "PermissionError",
+                                                  "encoder_unavailable", "install ffmpeg", "Permission denied",
+                                                  "run ./setup_", "run setup_", "kapell setup")) else 1)
 
 
 def outdir(root: Path, cfg: dict, v: dict) -> Path:

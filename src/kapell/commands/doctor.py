@@ -23,7 +23,7 @@ SPEC = {
     "examples": [["doctor"], ["doctor", "--full"]],
 }
 
-PY_DEPS = ("numpy", "scipy", "mido", "soundfile", "music21")
+PY_DEPS = ("numpy", "scipy", "mido", "soundfile", "music21", "soxr")
 JEV_KEY = "TYPESAFE_API_KEY"
 
 # (check name, path relative to lib_dir(), what needs it)

@@ -35,6 +35,15 @@ Target "strings": CC11 (expression) and CC1 (dynamics crossfade) carry the dynam
 (sampled every 16th, with a gentle swell on long notes), velocities carry accents; programs
 violin, violin, viola, cello.
 """
+
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[2])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
 import json
 import math
 import sys
@@ -43,9 +52,6 @@ from fractions import Fraction as F
 import mido
 
 from pathlib import Path
-_SRC = str(Path(__file__).resolve().parents[2])   # .../src: kapell importable when run as a script
-if _SRC not in sys.path:
-    sys.path.append(_SRC)
 from kapell.analysis.lyparse import parse_voice  # noqa: E402
 
 LEVELS = {'ppp': 1, 'pp': 2, 'p': 3, 'mp': 4, 'mf': 5, 'f': 6, 'ff': 7, 'fff': 8}

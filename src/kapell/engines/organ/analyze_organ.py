@@ -26,6 +26,15 @@ temperament at A=440, with mutations and mixtures pure against the tempered unis
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import math
@@ -37,9 +46,8 @@ from pathlib import Path
 
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from odf import file_key, load_organ, read_sample  # noqa: E402
-from organ_paths import PIPES_JSON  # noqa: E402
+from kapell.engines.organ.odf import file_key, load_organ, read_sample  # noqa: E402
+from kapell.engines.organ.organ_paths import PIPES_JSON  # noqa: E402
 
 SINGLE_RANK_MAX_H = 48   # harmonic numbers above this (and the Sesquialtera) are compound stops
 COMPOUND = ('Mixtur', 'Sesquialtera', 'Cimball', 'Zimball')

@@ -22,6 +22,15 @@ after its last note (2 s after the note-off).
 Final files: format, true peak and loudness by ffmpeg (ebur128, independent of mix.py), m4a vs
 WAV alignment by cross-correlation, duration.
 """
+
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[2])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
 import json
 import math
 import subprocess
@@ -33,9 +42,6 @@ import numpy as np
 import soundfile as sf
 
 HERE = Path(__file__).resolve().parent
-_SRC = str(Path(__file__).resolve().parents[2])   # .../src: kapell importable when run as a script
-if _SRC not in sys.path:
-    sys.path.append(_SRC)
 from kapell.mix import mix  # noqa: E402  (stem loading and the onset envelope only)
 
 SR = 48000

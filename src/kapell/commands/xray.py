@@ -26,6 +26,7 @@ VENDOR = Path(__file__).resolve().parents[3] / "vendor" / "fugue-jp"
 
 def add_arguments(parser):
     parser.add_argument("score", nargs="?", help=".ly file with \\absolute voices (default: paths.score)")
+    parser.add_argument("--section", help="section number or file, spliced into the skeleton")
     parser.add_argument("--bars", help="A-B: limit check, strict and resolution to these bars (coverage and roles stay whole-piece)")
     parser.add_argument("--voices", help="voice variables, highest first (default: piece.voices)")
     parser.add_argument("--measure", help="bar length, e.g. 4/4 (default: piece.measure)")
@@ -57,13 +58,13 @@ def _check(path, voices, bars, measure, ranges, full):
         e, p, b, u = map(int, m.groups())
         viol = [ln for ln in out.splitlines() if ln.startswith(("ERR", "PAR!", "BEAT", "DIS!"))]
         return dict(source="vendored-subprocess", totals=dict(errors=e, parallels=p, beat_parallels=b, unjustified=u),
-                    violations=viol if full else viol[:CAP])
+                    violations=viol)
     r = check.run(str(path), voices=voices, bars=bars, measure=measure, ranges=ranges)
     t = r["totals"]
     viol = [v["line"] for v in r["violations"]]
     out = dict(source="module", totals={k: t[k] for k in ("errors", "parallels", "beat_parallels", "unjustified",
                                                           "crossings", "directs", "melodic")},
-               violations=viol if full else viol[:CAP])
+               violations=viol)
     if full:
         out["review"] = [x["line"] for x in r["review"]]
     return out
@@ -86,13 +87,44 @@ def _strict(path, voices, bars, measure, full):
     out = dict(source="module", clash=r["clash"], xrel=r["xrel"], acc=r["acc"], acc2=r["acc2"])
     clashes = [i["line"] for i in r["items"] if i.get("kind") == "CLASH"]
     if clashes:
-        out["clashes"] = clashes[:CAP]
+        out["clashes"] = clashes
     if full:
         out["items"] = [i["line"] for i in r["items"]]
     return out
 
 
 def run(args, ctx):
+    if args.section:
+        if args.score:
+            raise KapellError("bad_input", "use a score or --section, not both", exit_code=3)
+        from .splice import resolve_section, need, _cfg_path
+        from ..analysis import splice
+        import tempfile
+        import copy
+        section = resolve_section(ctx, args.section)
+        skeleton = need(_cfg_path(ctx, "skeleton"), "skeleton", "skeleton")
+        try:
+            src, a, b, _ = splice.spliced_source(str(section), str(skeleton), _opts(ctx, args)[0])
+        except ValueError as exc:
+            raise KapellError("bad_input", str(exc), exit_code=3) from exc
+        with tempfile.TemporaryDirectory(prefix="kapell-xray-") as tmp:
+            path = Path(tmp) / "spliced.ly"
+            path.write_text(src)
+            scoped = copy.copy(args)
+            scoped.section, scoped.score = None, str(path)
+            n = splice.nbars(splice.read_bars(src, _opts(ctx, args)[0]))
+            scoped.bars = args.bars or f"{max(1, a - 1)}-{min(n, b + 1)}"
+            result = run(scoped, ctx)
+            data = result.data if isinstance(result, Result) else result
+            data["file"] = f"{section} spliced into {skeleton.name}"
+            return result
+    try:
+        return _run(args, ctx)
+    except (ValueError, ZeroDivisionError) as exc:
+        raise KapellError("bad_input", str(exc), "check score, --measure and kapell.toml", 3) from exc
+
+
+def _run(args, ctx):
     from ..analysis import coverage, parse_bars, quotas, resolution, roles
 
     voices, measure, ranges = _opts(ctx, args)
@@ -125,9 +157,9 @@ def run(args, ctx):
     data["check"] = ck
     t = ck["totals"]
     gates["check"] = not (t["errors"] or t["parallels"] or t["beat_parallels"] or t["unjustified"])
-    viol += ck["violations"][:CAP]
+    viol += ck["violations"]
     if not full:
-        ck["violations"] = len(ck["violations"])
+        ck["violations"] = sum(t[k] for k in ("errors", "parallels", "beat_parallels", "unjustified"))
 
     sus = quotas.suspensions(path, voices=voices, measure=measure)
     data["suspensions"] = sus
@@ -136,6 +168,8 @@ def run(args, ctx):
     data["strict"] = st
     gates["strict_clash"] = st["clash"] == 0
     viol += st.get("clashes", [])
+    if not full:
+        st.pop("clashes", None)
 
     beats = int((cfg.get("checks") or {}).get("resolution_beats") or 4)
     res = resolution.check(src, voices, mfrac, beats, bars)
@@ -147,7 +181,7 @@ def run(args, ctx):
     if full:
         data["resolution"]["items"] = res_lines
     gates["resolution"] = not res
-    viol += res_lines[:CAP]
+    viol += res_lines
 
     measured = dict(strong_suspensions=sus["strong"], weak_suspensions=sus["weak"],
                     dis7=counts.get("DIS7", 0), unresolved=len(res), clash=st["clash"])
@@ -176,7 +210,7 @@ def run(args, ctx):
             data["roles"]["violations"] = msgs
         gates["roles"] = rl["ok"]
         measured["uncued_features"] = len(rl["violations"])
-        viol += msgs[:CAP]
+        viol += msgs
 
         q = quotas.evaluate(cfg.get("quotas") or {}, measured)
         data["quotas"] = q["quotas"]
@@ -189,7 +223,9 @@ def run(args, ctx):
     failed = [k for k, ok in gates.items() if not ok]
     data["failed"] = failed
     if failed:
-        data["violations"] = viol
+        data["violations"] = viol if full else viol[:24]
+        if not full and len(viol) > 24:
+            data["violations_truncated"] = len(viol) - 24
         if not full:
             data["hint"] = "kapell xray --full lists every item"
         return Result("fail", data)

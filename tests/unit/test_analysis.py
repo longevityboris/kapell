@@ -7,8 +7,6 @@ import pytest
 from kapell.analysis import check, grid, harmony, spanmap, parse_bars, parse_measure, splice, strict, suspensions
 from kapell.commands import Context, KapellError, Result
 
-NEIGHBOUR = Path("/Users/biobook/Music/llm-music/fugue-jp/ricercar")
-needs_fixture = pytest.mark.skipif(not (NEIGHBOUR / "kapell.toml").is_file(), reason="The Neighbour fixture not present")
 
 
 def ly(**voices):
@@ -151,9 +149,8 @@ def test_spanmap_labels():
 
 # ---- fixture: The Neighbour -----------------------------------------------------------------
 
-@needs_fixture
-def test_fixture_check_and_suspensions():
-    score = NEIGHBOUR / "score/music-voices.ly"
+def test_fixture_check_and_suspensions(neighbour):
+    score = neighbour / "score/music-voices.ly"
     cfg_ranges = {"soprano": [60, 84], "alto": [53, 77], "tenor": [48, 72], "bass": [36, 62]}
     r = check.run(score, ranges=cfg_ranges)
     t = r["totals"]
@@ -165,10 +162,9 @@ def test_fixture_check_and_suspensions():
     assert (st["clash"], st["xrel"], st["acc"], st["acc2"]) == (0, 7, 7, 31)
 
 
-@needs_fixture
-def test_fixture_splice_pass_and_lock_failure(tmp_path):
-    lab = NEIGHBOUR / "design/final-lab"
-    sec = NEIGHBOUR / "score/sections/sec01_expo.ly"
+def test_fixture_splice_pass_and_lock_failure(tmp_path, neighbour):
+    lab = neighbour / "design/final-lab"
+    sec = neighbour / "score/sections/sec01_expo.ly"
     r = splice.check_section(str(sec), str(lab / "SK_final.ly"), str(lab / "plan.json"))
     assert r["pass"] and r["bars"] == [1, 12] and r["checked"] == "1-13"
     # change the subject's first note (locked): the splice must fail on LOCK
@@ -197,11 +193,10 @@ def test_command_check_exit_5_on_violation(tmp_path):
     assert e.value.exit_code == 3
 
 
-@needs_fixture
-def test_command_check_and_splice_on_fixture():
+def test_command_check_and_splice_on_fixture(neighbour):
     from kapell import project
     from kapell.commands import check as cmd, splice as scmd
-    ctx = Context(root=NEIGHBOUR, cfg=project.load(NEIGHBOUR))
+    ctx = Context(root=neighbour, cfg=project.load(neighbour))
     out = cmd.run(_ns(), ctx)
     assert isinstance(out, dict) and out["violations"] == [] and out["totals"]["unjustified"] == 0
     assert "dissonance_lines" not in out

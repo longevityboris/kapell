@@ -2,12 +2,21 @@
 note, K-weighted level, spectral centroid, envelopes, onsets, clicks)."""
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import numpy as np
 from scipy.signal import butter, sosfilt
 
-from orch_common import SR, midi_to_hz
-from iowa_build import k_level_db          # noqa: F401  (re-exported)
-from verify_tuning import yin              # noqa: F401  the strings' YIN (read-only import)
+from kapell.engines.orchestra.orch_common import SR, midi_to_hz
+from kapell.engines.strings.iowa_build import k_level_db          # noqa: F401  (re-exported)
+from kapell.engines.strings.verify_tuning import yin              # noqa: F401  the strings' YIN (read-only import)
 
 
 def mono(x: np.ndarray) -> np.ndarray:

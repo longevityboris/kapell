@@ -15,6 +15,15 @@ measures again (--rounds).
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import subprocess
@@ -28,10 +37,9 @@ import numpy as np
 import soundfile as sf
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-import orch_build as B  # noqa: E402
-from orch_common import BUILT, PARTS, SFIZZ_RENDER, SR, midi_to_hz  # noqa: E402
-import orch_measure as M  # noqa: E402
+import kapell.engines.orchestra.orch_build as B
+from kapell.engines.orchestra.orch_common import BUILT, PARTS, SFIZZ_RENDER, SR, midi_to_hz  # noqa: E402
+import kapell.engines.orchestra.orch_measure as M
 
 GAP = 4.4                      # s between notes (sustains are held 4 s)
 

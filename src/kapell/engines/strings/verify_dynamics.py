@@ -15,6 +15,15 @@ Usage:
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import subprocess
@@ -27,9 +36,8 @@ import numpy as np
 import soundfile as sf
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-from iowa_common import INSTRUMENTS, QUARTET_DIR, SFIZZ_RENDER, midi_name  # noqa: E402
-from measure_dynamics import a_weight  # noqa: E402
+from kapell.engines.strings.iowa_common import INSTRUMENTS, QUARTET_DIR, SFIZZ_RENDER, midi_name  # noqa: E402
+from kapell.engines.strings.measure_dynamics import a_weight  # noqa: E402
 from scipy.signal import lfilter  # noqa: E402
 
 SR = 48000
@@ -38,7 +46,7 @@ NOTE_S, STEP_S = 1.6, 2.1
 
 
 def target_db():
-    from iowa_build import CC1_TARGET
+    from kapell.engines.strings.iowa_build import CC1_TARGET
     tx, ty = zip(*CC1_TARGET)
     return {c: float(np.interp(c, tx, ty)) for c in LADDER}
 
@@ -91,7 +99,7 @@ def main():
             sfz = QUARTET_DIR / f"{inst}.sfz"
             lo, hi = INSTRUMENTS[inst]["lo"], INSTRUMENTS[inst]["hi"]
         else:
-            from vpo3 import VPO3_RANGE, VPO3_SFZ
+            from kapell.engines.strings.vpo3 import VPO3_RANGE, VPO3_SFZ
             sfz = VPO3_SFZ[inst]
             lo, hi = VPO3_RANGE[inst]
         keys = list(range(lo, hi + 1, 3))

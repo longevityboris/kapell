@@ -162,6 +162,15 @@ MIDI contract (for the performance script)
 
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import hashlib
 import json
@@ -181,8 +190,7 @@ import numpy as np
 import scipy.signal as ss
 import soundfile as sf
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from piano_paths import (  # noqa: E402
+from kapell.engines.piano.piano_paths import (  # noqa: E402
     CALIBRATION_JSON,
     DERIVED_SFZ,
     DERIVED_SFZ_NO_PEDAL_NOISE,
@@ -764,7 +772,8 @@ def write_outputs(x: np.ndarray, out: Path, make_m4a: bool) -> dict:
         m4a = out.with_suffix(".m4a")
         if m4a.exists():
             m4a.unlink()
-        subprocess.run(["afconvert", "-f", "m4af", "-d", "aac", "-b", "256000", str(wav), str(m4a)], check=True)
+        from kapell.engines.encoding import encode_aac
+        encode_aac(wav, m4a)
         res["m4a"] = str(m4a)
         res["m4a_tagged"] = tag_m4a(m4a, out.name)
     return res

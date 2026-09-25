@@ -51,7 +51,12 @@ def summ(r, label):
             sw[key]=dict(span_db=round(float(lvv[-1]-lvv[0]),1), max_step=round(float(steps.max()),2), min_step=round(float(steps.min()),2))
         out['sweep']=sw
     return out
-a=summ(load(sys.argv[1]),'before'); b=summ(load(sys.argv[2]),'after')
-for k in a:
-    print(k); print('  before', a[k]); print('  after ', b[k])
-json.dump({'before':a,'after':b},open(sys.argv[3],'w'),indent=1)
+def main():
+    a=summ(load(sys.argv[1]),'before'); b=summ(load(sys.argv[2]),'after')
+    for k in a:
+        print(k); print('  before', a[k]); print('  after ', b[k])
+    json.dump({'before':a,'after':b},open(sys.argv[3],'w'),indent=1)
+
+
+if __name__ == "__main__":
+    main()

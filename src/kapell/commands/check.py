@@ -41,6 +41,8 @@ def run(args, ctx):
     bars = _bars(args.bars)
     src, label = None, None
     if args.section:
+        if args.score:
+            raise KapellError("bad_input", "use a score or --section, not both", exit_code=3)
         section = resolve_section(ctx, args.section)
         skeleton = need(_cfg_path(ctx, "skeleton"), "skeleton", "skeleton")
         try:
@@ -64,14 +66,14 @@ def run(args, ctx):
     except ValueError as exc:
         raise KapellError("bad_input", str(exc), "check --measure and --range syntax", 3)
     viol = [v["line"] for v in r["violations"]]
-    data = {"file": label, "totals": r["totals"], "violations": viol[:CAP]}
+    data = {"file": label, "totals": r["totals"], "violations": viol if args.full else viol[:CAP]}
     if bars:
         data["bars"] = f"{bars[0]}-{bars[1]}"
-    if len(viol) > CAP:
+    if not args.full and len(viol) > CAP:
         data["violations_truncated"] = len(viol) - CAP
     if args.full:
         data["review"] = [x["line"] for x in r["review"]]
         data["dissonance_lines"] = [x["line"] for x in r["dissonances"]]
-    elif r["review"]:
+    elif r["review"] or len(viol) > CAP:
         data["hint"] = "kapell check --full lists the review lines (CROS, DIR, MEL, D4?) and every dissonance"
     return Result("fail", data) if viol else data

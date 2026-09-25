@@ -29,6 +29,15 @@ the MIDI's own tempo map), which ``analyse_dynamics.py`` reads.
 
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import subprocess
@@ -38,8 +47,7 @@ from pathlib import Path
 import mido
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-from render_piano import TempoMap  # noqa: E402
+from kapell.engines.piano.render_piano import TempoMap  # noqa: E402
 
 PERFORM = HERE.parents[1] / "perform" / "perform.py"   # kapell/perform/perform.py
 SCORE = HERE / "tests" / "chain_test.ly"

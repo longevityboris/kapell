@@ -22,6 +22,15 @@
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import sys
@@ -31,8 +40,7 @@ from pathlib import Path
 import mido
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import (QA, ROOT, SR, TMP, db, env_db, hz, load, midi_cc, midi_notes, perform,  # noqa: E402
+from kapell.engines.strings.qa.qa_lib import (QA, ROOT, SR, TMP, db, env_db, hz, load, midi_cc, midi_notes, perform,  # noqa: E402
                     pitch_spectral, render, save, state)
 
 

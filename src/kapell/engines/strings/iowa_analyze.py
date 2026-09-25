@@ -7,6 +7,15 @@ Usage:  python3 iowa_analyze.py [--jobs 10] [--only violin,cello]
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import json
 import sys
@@ -15,10 +24,9 @@ from pathlib import Path
 
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
 from scipy.signal import butter, sosfiltfilt  # noqa: E402
 
-from iowa_common import (INSTRUMENTS, QUARTET_DIR, RAW_DIR, env_db, estimate_f0,  # noqa: E402
+from kapell.engines.strings.iowa_common import (INSTRUMENTS, QUARTET_DIR, RAW_DIR, env_db, estimate_f0,  # noqa: E402
                          load_audio, load_iowa, midi_name, midi_to_hz, parse_iowa_name)
 
 

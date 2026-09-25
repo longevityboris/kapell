@@ -7,12 +7,17 @@ other scripts only read from it.
 
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import os
 from pathlib import Path
-import sys as _sys
-_SRC = str(Path(__file__).resolve().parents[3])   # .../src: lets kapell import when run as a script
-if _SRC not in _sys.path:
-    _sys.path.append(_SRC)
 from kapell.config import lib_dir  # noqa: E402
 
 LIB = lib_dir()   # $KAPELL_LIB, else $PIANO_LIB, else ~/Music/SampleLibraries

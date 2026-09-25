@@ -19,15 +19,21 @@ the viola bringing the tenor's stretto entry (37); the cello returns with the au
 apotheosis are tutti with the piano's octave doublings; the coda thins to violin I's d'' over the
 piano's tolling tonic pedal in octaves.
 """
+
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[2])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
 import json
 import sys
 from fractions import Fraction as F
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-_SRC = str(Path(__file__).resolve().parents[2])   # .../src: kapell importable when run as a script
-if _SRC not in sys.path:
-    sys.path.append(_SRC)
 from kapell.analysis.lyparse import parse_voice  # noqa: E402
 
 # kapell: SCORE and OUT come from the command line (quintet_spec.py SCORE OUT); the defaults are the

@@ -37,6 +37,15 @@ samples already carry. Details and measurements: README.md.
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import hashlib
 import json
@@ -59,10 +68,9 @@ import scipy.signal as ss
 import soundfile as sf
 import soxr
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from odf import DIVISION_NAMES, norm_name  # noqa: E402
-from organ_paths import IR_FILE, PIPES_JSON, REGISTRATIONS_JSON, SR  # noqa: E402
-from pipe_engine import PipeBank, ReleaseCache, SampleCache, render_event  # noqa: E402
+from kapell.engines.organ.odf import DIVISION_NAMES, norm_name  # noqa: E402
+from kapell.engines.organ.organ_paths import IR_FILE, PIPES_JSON, REGISTRATIONS_JSON, SR  # noqa: E402
+from kapell.engines.organ.pipe_engine import PipeBank, ReleaseCache, SampleCache, render_event  # noqa: E402
 
 DIVS = ('HW', 'POS', 'OW', 'PED')
 DEFAULT_DIVISION = {'soprano': 'HW', 'alto': 'HW', 'tenor': 'POS', 'bass': 'PED'}
@@ -509,7 +517,8 @@ def write_wav(x, path, title):
 def write_m4a(wav, m4a, title):
     if m4a.exists():
         m4a.unlink()
-    subprocess.run(['afconvert', '-f', 'm4af', '-d', 'aac', '-b', '256000', str(wav), str(m4a)], check=True)
+    from kapell.engines.encoding import encode_aac
+    encode_aac(wav, m4a)
     if shutil.which('ffmpeg') is None:
         return False
     tmp = m4a.with_name(m4a.stem + '.tagging.m4a')

@@ -21,6 +21,15 @@ Outputs: out/<name>.mid (+ .wav/.m4a/.json with --render).
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[3])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import shutil
 import subprocess
@@ -32,8 +41,7 @@ import mido
 HERE = Path(__file__).resolve().parent
 R = Path.cwd()   # kapell: the piece root (run from it); was ricercar/
 ORCHESTRATE = HERE.parents[1] / "mix" / "orchestrate.py"
-sys.path.insert(0, str(HERE))
-from orch_common import PARTS  # noqa: E402
+from kapell.engines.orchestra.orch_common import PARTS  # noqa: E402
 
 OUT = HERE / "out"
 TPQ = 480

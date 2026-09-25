@@ -23,6 +23,15 @@ interfere (comb filtering / beating between two recordings of the same pitch).
 """
 from __future__ import annotations
 
+# Support direct script execution without changing sys.path on package import.
+if not __package__:
+    import sys as _bootstrap_sys
+    from pathlib import Path as _BootstrapPath
+    _bootstrap_src = str(_BootstrapPath(__file__).resolve().parents[4])
+    if _bootstrap_src not in _bootstrap_sys.path:
+        _bootstrap_sys.path.insert(0, _bootstrap_src)
+
+
 import argparse
 import subprocess
 import sys
@@ -31,11 +40,9 @@ from pathlib import Path
 import mido
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from qa_lib import QUARTET, SR, TMP, load, pitch_spectral, save, state  # noqa: E402
+from kapell.engines.strings.qa.qa_lib import QUARTET, SR, TMP, load, pitch_spectral, save, state  # noqa: E402
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from iowa_common import INSTRUMENTS, SFIZZ_RENDER  # noqa: E402
+from kapell.engines.strings.iowa_common import INSTRUMENTS, SFIZZ_RENDER  # noqa: E402
 
 CCS = [49, 62, 75, 88, 101, 114]
 NOTE_S, STEP_S = 8.0, 9.5
