@@ -20,6 +20,10 @@ KIT_SRC = REPO / "src"
 VENDOR = REPO / "vendor" / "fugue-jp"
 DEFAULT_NEIGHBOUR = "/Users/biobook/Music/llm-music/fugue-jp/ricercar"
 
+# Test the working tree, not whatever kapell happens to be installed.
+if str(KIT_SRC) not in sys.path:
+    sys.path.insert(0, str(KIT_SRC))
+
 
 def pytest_addoption(parser):
     parser.addoption("--slow", action="store_true", default=False,
